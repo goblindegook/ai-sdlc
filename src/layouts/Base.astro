@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { ClientRouter } from 'astro:transitions';
 import { updated } from '../data';
 
 interface Props { title: string; description?: string }
@@ -32,7 +33,9 @@ const links = [
     <meta property="og:url" content={canonical} />
     <meta property="og:locale" content="en" />
     <meta name="twitter:card" content="summary" />
+    <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
     <link rel="sitemap" href={`${base}/sitemap-index.xml`} />
+    <ClientRouter />
     {import.meta.env.PROD && <script is:inline src={`${base}/registerSW.js`}></script>}
     {import.meta.env.PROD && (
       <script is:inline>
@@ -51,7 +54,7 @@ const links = [
     />
   </head>
   <body>
-    <header class="site-head">
+    <header class="site-head" transition:animate="none">
       <div class="wrap">
         <a class="wordmark" href={`${base}/`}>AI-Augmented Software Development</a>
         <nav aria-label="Main">
@@ -76,12 +79,13 @@ const links = [
     <script>
       // The filter bar sticks just under the header while the header is pinned (its height varies as the menu
       // wraps), and at the very top on phones, where the header scrolls away.
-      const head = document.querySelector<HTMLElement>('.site-head')!;
+      // Page changes swap the header without reloading this script, so it re-attaches on every page load.
+      const head = () => document.querySelector<HTMLElement>('.site-head')!;
       const sync = () => document.documentElement.style.setProperty(
-        '--head-h', getComputedStyle(head).position === 'sticky' ? `${head.offsetHeight}px` : '0px');
-      new ResizeObserver(sync).observe(head);
+        '--head-h', getComputedStyle(head()).position === 'sticky' ? `${head().offsetHeight}px` : '0px');
+      const resize = new ResizeObserver(sync);
       matchMedia('(max-width: 680px)').addEventListener('change', sync); // pinned or not, from global.css
-      sync();
+      document.addEventListener('astro:page-load', () => { resize.disconnect(); resize.observe(head()); sync(); });
     </script>
   </body>
 </html>

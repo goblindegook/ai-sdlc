@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- The three rings, Adopt, Trial and Avoid, as bars on an ink square: the site's only colours. -->
+  <style>
+    .bg { fill: #17191c; }
+    .adopt { fill: #79c08b; } .trial { fill: #d9b25a; } .avoid { fill: #ec8b7c; }
+  </style>
+  <rect class="bg" width="64" height="64" rx="10" />
+  <rect class="adopt" x="12" y="13" width="40" height="10" />
+  <rect class="trial" x="12" y="27" width="30" height="10" />
+  <rect class="avoid" x="12" y="41" width="20" height="10" />
+</svg>
