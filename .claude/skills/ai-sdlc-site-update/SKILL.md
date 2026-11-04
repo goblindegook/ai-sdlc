@@ -67,7 +67,7 @@ Before proposing anything, look at what the site already says in the topics you 
 python3 -I <skill>/scripts/site_titles.py --topic testing --full
 ```
 
-It prints every recommendation (with its ring), challenge and open question with id, topic, topics, `updated`, and
+It prints every recommendation (with its ring), challenge and open question with id, topics (the first is the main one), `updated`, and
 (with `--full`) signals and cited evidence. A new finding usually strengthens or contradicts something already
 there; citing it from the existing item is better than a near-duplicate new item.
 

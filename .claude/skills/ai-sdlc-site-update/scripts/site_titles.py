@@ -1,5 +1,5 @@
 """Print what the site holds now, straight from content/*.json: every recommendation (with its ring), challenge and
-open question, with id, topic and topics, plus (with --full) signals and cited evidence titles.
+open question, with id and topics (the first is the main one), plus (with --full) signals and cited evidence titles.
 
 Usage: python3 -I site_titles.py [--site PATH] [--topic SLUG] [--full]
 Read-only.
@@ -25,7 +25,7 @@ def main():
             if a.topic and a.topic not in x["topics"]:
                 continue
             ring = f"[{x['ring']}] " if "ring" in x else ""
-            print(f"- {ring}{x[title]}   id={x['id']} topic={x['topic']} topics={','.join(x['topics'])} updated={x['updated']}")
+            print(f"- {ring}{x[title]}   id={x['id']} topics={','.join(x['topics'])} updated={x['updated']}")
             if a.full:
                 for s in x.get("signals", []):
                     print(f"    watch: {s}")
