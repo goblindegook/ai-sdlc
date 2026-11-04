@@ -4,7 +4,7 @@ description: >-
   Update the AI-Augmented Software Development site (the Astro site in the repository that holds this skill) with AI
   software development material ingested into the Obsidian wiki since the site's last update: new source notes,
   concept pages and syntheses about coding agents, prompting, agent loops, testing, review, security, measuring,
-  learning and XP practice. Finds what changed, drafts practical recommendations, challenges, open questions and
+  learning and XP practice. Finds what changed, drafts practical recommendations, trials, challenges and
   evidence in the site's style, gets the owner's approval, edits the site's content files, then builds and checks it. Use
   this whenever the owner asks to update, refresh or sync the AI dev site, the aisd site or the best-practices
   site from the wiki, to "pull in the latest ingests", or asks what new wiki research should go on the site, even
@@ -67,23 +67,25 @@ Before proposing anything, look at what the site already says in the topics you 
 python3 -I <skill>/scripts/site_titles.py --topic testing --full
 ```
 
-It prints every recommendation (with its ring), challenge and open question with id, topics (the first is the main one), `updated`, and
+It prints every recommendation (with its ring) and challenge with id, topics (the first is the main one), `updated`, and
 (with `--full`) signals and cited evidence. A new finding usually strengthens or contradicts something already
 there; citing it from the existing item is better than a near-duplicate new item.
 
 ### 3. Draft the changes
 
 For each qualifying source, decide what it adds:
-- **Evidence**: always, if anything on the site will cite it.
-- **Cite it from an existing item** (recommendation, challenge or open question) when it backs or adds to what
-  is already there.
+- **Evidence**: add an entry only when a recommendation or challenge will cite it. A source that
+  nothing cites does not go on the site at all (no entry in `evidence.json`, no "other sources" list): the Evidence
+  page lists cited sources only. If a source qualifies but fits nowhere, drop it from the proposal and say so.
+- **Cite it from an existing item** (recommendation or challenge) when it backs or adds to what is already
+  there.
 - **New recommendation** when it supports a practice the site doesn't have. Ring by strength of evidence (see the
-  data format); most single-source material is a Trial.
+  data format); most single-source material is a Trial, which shows on the Trials page.
 - **Avoid** when the evidence shows a practice fails or costs more for no gain.
-- **Challenge** only for a hard problem with no "stop doing this" answer. If a team could avoid it by not doing
-  something, it is an Avoid recommendation instead.
-- **Open question** when credible sources disagree and nothing settles it. Keep both sides; don't pick a winner
-  the evidence doesn't pick.
+- **Challenge** for a hard problem with no "stop doing this" answer, or when credible sources disagree and
+  nothing settles it. If a team could avoid it by not doing something, it is an Avoid recommendation instead.
+  For a disagreement, keep both sides and don't pick a winner the evidence doesn't pick; if a challenge on that
+  topic already exists, extend it rather than adding a second one.
 - **Ring change** of an existing item (promote or demote) when new evidence clearly calls for it. Propose it,
   never apply it without the owner's yes. When approved, say what changed in a short clause of the summary
   ("Now measured in teams' own delivery data.") so a reader who saw the old ring isn't confused.
@@ -106,7 +108,7 @@ The owner has been specific about how the site reads. These come from their corr
 - **No new page patterns.** New material goes into the existing lists through the content files. If something
   doesn't fit, say so rather than inventing a new section.
 - **Keep disagreement visible.** If a new source contradicts an item, say so in the proposal and keep both
-  positions, through an open question or a challenge, unless the owner decides otherwise.
+  positions in a challenge, unless the owner decides otherwise.
 
 ### 4. Ask before writing
 
@@ -117,7 +119,7 @@ Show the owner one compact proposal, grouped by topic, before touching any file:
   + Trial   <new recommendation title>          (<source>, <kind>)
             "<summary>"   Watch for: <signal> | <signal>
   ~ Cite    <existing item title> + <source>
-  ? Question  <new open question>
+  ! Challenge <new challenge title>
 Ring changes to decide: <item: from -> to, why> or none
 Left out: <note> (why: not about software development / already covered / duplicate)
 Gaps noticed (not for the site): ...
@@ -139,7 +141,8 @@ python3 -I <skill>/scripts/check_site.py
 
 The build fails on a missing evidence id, an unknown topic or a duplicate id. `check_wording.py` flags
 study-specific wording in recommendations and challenges; `check_site.py` checks links both ways, that only the
-Evidence page links out, and that no page shows counts or mentions the wiki. Fix what they report by rewording,
+Evidence page links out, that no page shows counts or mentions the wiki, and that every Evidence entry is cited
+by something (delete an uncited entry from `evidence.json`). Fix what they report by rewording,
 not by loosening the checks.
 
 Look at one changed item in the browser (the dev server, `npx astro dev`, or the built page) to confirm it shows

@@ -16,19 +16,6 @@
     "updated": "2026-11-03T17:17:00Z"
   },
   {
-    "id": "metr-time-horizons",
-    "title": "METR time horizons",
-    "url": "https://arxiv.org/abs/2503.14499",
-    "kind": "benchmark",
-    "era": "early-2025",
-    "finding": "Claude 3.7 handled tasks of about 50 minutes at 50% success, and the task length agents can do doubled every 3-7 months depending on the period measured.",
-    "topics": [
-      "looping",
-      "measuring"
-    ],
-    "updated": "2026-11-03T17:17:00Z"
-  },
-  {
     "id": "anthropic-internal-study",
     "title": "Anthropic internal study",
     "url": "https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic",
@@ -69,19 +56,6 @@
       "understanding",
       "xp-agile",
       "testing"
-    ],
-    "updated": "2026-11-03T17:17:00Z"
-  },
-  {
-    "id": "swe-milestone",
-    "title": "SWE-Milestone",
-    "url": "https://arxiv.org/abs/2603.13428",
-    "kind": "benchmark",
-    "era": null,
-    "caveat": "preprint",
-    "finding": "Scores fell from over 80% to at most 38% when tasks built on each other.",
-    "topics": [
-      "looping"
     ],
     "updated": "2026-11-03T17:17:00Z"
   },
@@ -272,18 +246,6 @@
     "topics": [
       "looping",
       "testing"
-    ],
-    "updated": "2026-11-03T17:17:00Z"
-  },
-  {
-    "id": "gorman-agentic-horizons",
-    "title": "Gorman, agentic horizons",
-    "url": "https://codemanship.wordpress.com/2026/08/27/agentic-horizons-when-the-wheels-start-to-wobble/",
-    "kind": "essay",
-    "era": null,
-    "finding": "An illustrative model, not a measurement: at 90% confidence per decision, 100 unchecked decisions leave a 0.003% chance of being right.",
-    "topics": [
-      "looping"
     ],
     "updated": "2026-11-03T17:17:00Z"
   },
@@ -634,30 +596,6 @@
     "updated": "2026-11-03T17:17:00Z"
   },
   {
-    "id": "singh-kocyigit-et-al",
-    "title": "Singh, Kocyigit et al.",
-    "url": "https://arxiv.org/abs/2411.03923",
-    "kind": "study",
-    "era": "older",
-    "finding": "Across 13 benchmarks and 7 models, contamination may inflate scores more than model releases report, and common detection settings (n-grams longer than 8, dropping rare matches) miss much of it.",
-    "topics": [
-      "measuring"
-    ],
-    "updated": "2026-11-03T17:17:00Z"
-  },
-  {
-    "id": "metr-time-horizon-11",
-    "title": "METR Time Horizon 1.1",
-    "url": "https://metr.org/blog/2026-1-29-time-horizon-1-1/",
-    "kind": "benchmark",
-    "era": null,
-    "finding": "A revised task suite raised GPT-5's time horizon from 138 to 214 minutes (+55%) and cut GPT-4's by 35-57%; only 5 of 31 long tasks have real human timings, and the since-2024 doubling time is restated as 108.9 days, with 88.6 days on the new suite.",
-    "topics": [
-      "measuring"
-    ],
-    "updated": "2026-11-03T17:17:00Z"
-  },
-  {
     "id": "peng-et-al",
     "title": "Peng et al.",
     "url": "https://arxiv.org/html/2302.06590v1",
@@ -705,18 +643,6 @@
     "topics": [
       "measuring",
       "xp-agile"
-    ],
-    "updated": "2026-11-03T17:17:00Z"
-  },
-  {
-    "id": "moradi-dakhel-et-al",
-    "title": "Moradi Dakhel et al.",
-    "url": "https://arxiv.org/html/2206.15331v2",
-    "kind": "study",
-    "era": "older",
-    "finding": "Students' correct ratio beat Copilot's on 5 course tasks.",
-    "topics": [
-      "measuring"
     ],
     "updated": "2026-11-03T17:17:00Z"
   },
@@ -798,19 +724,6 @@
       "measuring",
       "prompting",
       "risks-security"
-    ],
-    "updated": "2026-11-03T17:17:00Z"
-  },
-  {
-    "id": "mazloomzadeh-morovati-khomh",
-    "title": "Mazloomzadeh, Morovati & Khomh",
-    "url": "https://arxiv.org/abs/2607.21832",
-    "kind": "study",
-    "era": null,
-    "finding": "Of 9,428 agentic PRs in 489 Python repositories, model-adjusted merge probability ranged from Claude 84.3% to Devin 43.0%, the Claude-Codex gap was not significant (p=0.178) and raw counts reverse it; merge shows reviewers accepted the change, not that it was correct.",
-    "topics": [
-      "measuring",
-      "reviewing"
     ],
     "updated": "2026-11-03T17:17:00Z"
   },
@@ -1450,19 +1363,6 @@
     "updated": "2026-11-03T17:17:00Z"
   },
   {
-    "id": "gitclear-153m-lines",
-    "title": "GitClear, 153M lines",
-    "url": "https://www.gitclear.com/coding_on_copilot_data_shows_ais_downward_pressure_on_code_quality",
-    "kind": "vendor",
-    "era": "older",
-    "finding": "Short-term churn and copy/paste are rising, with churn projected to double vs 2021 (Copilot, 2020-2023).",
-    "topics": [
-      "reviewing",
-      "measuring"
-    ],
-    "updated": "2026-11-03T17:17:00Z"
-  },
-  {
     "id": "circleci-28-million-workflows",
     "title": "CircleCI, 28 million workflows",
     "url": "https://www.linkedin.com/pulse/what-28-million-workflows-reveal-ai-codings-biggest-risk-circleci-j9syc/",
@@ -1475,19 +1375,6 @@
       "xp-agile",
       "looping",
       "testing"
-    ],
-    "updated": "2026-11-03T17:17:00Z"
-  },
-  {
-    "id": "intercom-2x-nine-months-later",
-    "title": "Intercom, 2x nine months later",
-    "url": "https://ideas.fin.ai/p/2x-nine-months-later",
-    "kind": "practitioner",
-    "era": null,
-    "finding": "One disciplined team reported 3x merged PRs per person and a defect backlog down 54% (company self-report).",
-    "topics": [
-      "reviewing",
-      "measuring"
     ],
     "updated": "2026-11-03T17:17:00Z"
   },
@@ -1698,18 +1585,6 @@
     "topics": [
       "risks-security",
       "prompting"
-    ],
-    "updated": "2026-11-03T17:17:00Z"
-  },
-  {
-    "id": "owasp-top-10-for-llm-applications-2025",
-    "title": "OWASP Top 10 for LLM Applications 2025",
-    "url": "https://genai.owasp.org/llm-top-10/",
-    "kind": "practitioner",
-    "era": null,
-    "finding": "The risk list each row of the tab is mapped to (LLM01 to LLM10).",
-    "topics": [
-      "risks-security"
     ],
     "updated": "2026-11-03T17:17:00Z"
   },
@@ -2082,19 +1957,6 @@
     "updated": "2026-11-03T17:17:00Z"
   },
   {
-    "id": "agha-et-al-vawkum-trans-comput-sci-2023",
-    "title": "Agha et al., VAWKUM Trans. Comput. Sci. 2023",
-    "url": "https://doi.org/10.21015/vtcs.v11i1.1494",
-    "kind": "study",
-    "era": null,
-    "finding": "A low-rigour review of 22 pre-LLM studies calls TDD broadly positive for coverage, quality and productivity, but reports no effect sizes, does not include Fucci et al., and disagrees with it in direction.",
-    "topics": [
-      "testing",
-      "xp-agile"
-    ],
-    "updated": "2026-11-03T17:17:00Z"
-  },
-  {
     "id": "boeckeler-tdd-in-the-agent-loop",
     "title": "Boeckeler, TDD in the agent loop",
     "url": "https://martinfowler.com/articles/exploring-gen-ai/tdd-in-the-agent-loop.html",
@@ -2133,19 +1995,6 @@
     "topics": [
       "testing",
       "prompting"
-    ],
-    "updated": "2026-11-03T17:17:00Z"
-  },
-  {
-    "id": "sevenhuijsen-et-al-nesy-2025",
-    "title": "Sevenhuijsen et al., NeSy 2025",
-    "url": "https://raw.githubusercontent.com/mlresearch/v284/main/assets/sevenhuijsen25a/sevenhuijsen25a.pdf",
-    "kind": "study",
-    "era": null,
-    "finding": "Ten LLMs wrote C for three safety-critical Scania modules; Frama-C verified 540, 59 and 46 of 800 programs per module, and of 281 verified programs checked against 11 project coding rules about 124 passed all of them.",
-    "topics": [
-      "testing",
-      "risks-security"
     ],
     "updated": "2026-11-03T17:17:00Z"
   },
@@ -2310,48 +2159,12 @@
     "updated": "2026-11-03T17:17:00Z"
   },
   {
-    "id": "prather-et-al-icer-2024",
-    "title": "Prather et al., ICER 2024",
-    "url": "https://dl.acm.org/doi/10.1145/3632620.3671116",
-    "kind": "study",
-    "era": "older",
-    "finding": "9 of 10 struggling novices reached a \"solution\" they didn't understand, losing the \"I'm stuck\" signal.",
-    "topics": [
-      "understanding"
-    ],
-    "updated": "2026-11-03T17:17:00Z"
-  },
-  {
-    "id": "pnas-nexus-n10462",
-    "title": "PNAS Nexus, n=10,462",
-    "url": "https://doi.org/10.1093/pnasnexus/pgaf316",
-    "kind": "study",
-    "era": null,
-    "finding": "LLM summaries made thinking shallower and more uniform (similarity of advice 0.07 to 0.22), and blind readers rated the advice less helpful.",
-    "topics": [
-      "understanding"
-    ],
-    "updated": "2026-11-03T17:17:00Z"
-  },
-  {
     "id": "generation-effect-meta-analysis",
     "title": "Generation-effect meta-analysis",
     "url": "https://link.springer.com/content/pdf/10.3758/s13423-020-01762-3.pdf",
     "kind": "study",
     "era": null,
     "finding": "Across 310 experiments, people recalled about 10 points more of what they generated themselves; general psychology, not AI-specific.",
-    "topics": [
-      "understanding"
-    ],
-    "updated": "2026-11-03T17:17:00Z"
-  },
-  {
-    "id": "lee-et-al-chi-2025",
-    "title": "Lee et al., CHI 2025",
-    "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2025/01/lee_2025_ai_critical_thinking_survey.pdf",
-    "kind": "survey",
-    "era": "older",
-    "finding": "Across 319 knowledge workers (self-report), more trust in AI correlated with less critical thinking.",
     "topics": [
       "understanding"
     ],
@@ -2389,18 +2202,6 @@
     "kind": "study",
     "era": null,
     "finding": "Across three experiments with 1,058 online participants, after 11 to 12 problems with a GPT-5 sidebar people tested without it solved fewer problems (d from -0.20 to -0.45) and skipped more in two of three, with the cost sitting with people who asked for direct answers; fractions and reading comprehension, not coding, and no durability data.",
-    "topics": [
-      "understanding"
-    ],
-    "updated": "2026-11-03T17:17:00Z"
-  },
-  {
-    "id": "naur-1985",
-    "title": "Naur, 1985",
-    "url": "https://pages.cs.wisc.edu/~remzi/Naur.pdf",
-    "kind": "essay",
-    "era": null,
-    "finding": "Essay with case observations arguing that teams, not documents, hold a program's theory.",
     "topics": [
       "understanding"
     ],
@@ -2721,18 +2522,6 @@
     "updated": "2026-11-03T17:17:00Z"
   },
   {
-    "id": "beck-trust-factory",
-    "title": "Beck, Trust Factory",
-    "url": "https://newsletter.kentbeck.com/p/trust-factory",
-    "kind": "essay",
-    "era": null,
-    "finding": "Frames the aim of AI-assisted development as building trust as fast as we build code.",
-    "topics": [
-      "xp-agile"
-    ],
-    "updated": "2026-11-03T17:17:00Z"
-  },
-  {
     "id": "horikawa-et-al-preprint",
     "title": "Horikawa et al., preprint",
     "url": "https://arxiv.org/pdf/2511.04824",
@@ -2902,36 +2691,6 @@
     "updated": "2026-11-03T17:17:00Z"
   },
   {
-    "id": "wang-et-al-ai-agentic-programming-a-survey",
-    "title": "Wang et al., AI Agentic Programming: A Survey",
-    "url": "https://arxiv.org/abs/2508.11126",
-    "kind": "study",
-    "era": null,
-    "finding": "Secondary literature survey used for vocabulary only; two descriptions of other systems conflict with their primary papers and journal acceptance is not established.",
-    "topics": [],
-    "updated": "2026-11-03T17:17:00Z"
-  },
-  {
-    "id": "packer-et-al-memgpt",
-    "title": "Packer et al., MemGPT",
-    "url": "https://arxiv.org/html/2310.08560",
-    "kind": "study",
-    "era": "older",
-    "finding": "2023 preprint on agent memory with author-built datasets and single runs, on older models; read for background, no row.",
-    "topics": [],
-    "updated": "2026-11-03T17:17:00Z"
-  },
-  {
-    "id": "google-cloud-how-tdd-amplifies-ai-success",
-    "title": "Google Cloud, How TDD Amplifies AI Success",
-    "url": "https://cloud.google.com/discover/how-test-driven-development-amplifies-ai-success",
-    "kind": "vendor",
-    "era": null,
-    "finding": "Unbylined vendor page that restates DORA 2025 under a TDD framing and is not itself a TDD study.",
-    "topics": [],
-    "updated": "2026-11-03T17:17:00Z"
-  },
-  {
     "id": "suprmind-ai-hallucination-rates",
     "title": "Suprmind, AI hallucination rates",
     "url": "https://suprmind.ai/hub/ai-hallucination-rates-and-benchmarks/",
@@ -2941,56 +2700,6 @@
     "topics": [
       "measuring"
     ],
-    "updated": "2026-11-03T17:17:00Z"
-  },
-  {
-    "id": "blair-reflections-on-neuralese",
-    "title": "Blair, Reflections on Neuralese",
-    "url": "https://www.lesswrong.com/posts/qehggwKRMEyWqvjZG/reflections-on-neuralese",
-    "kind": "essay",
-    "era": null,
-    "finding": "",
-    "topics": [],
-    "updated": "2026-11-03T17:17:00Z"
-  },
-  {
-    "id": "doernenburg-ccmenu-quality",
-    "title": "Doernenburg, CCMenu quality",
-    "url": "https://martinfowler.com/articles/exploring-gen-ai/ccmenu-quality.html",
-    "kind": "practitioner",
-    "era": null,
-    "finding": "One developer's anecdote about agent-added technical debt, labelled by the author as not a study; read, no row.",
-    "topics": [],
-    "updated": "2026-11-03T17:17:00Z"
-  },
-  {
-    "id": "thompson-i-know-why-the-mathematicians-weep",
-    "title": "Thompson, I Know Why the Mathematicians Weep",
-    "url": "https://www.derekthompson.org/p/i-know-why-the-mathematicians-weep",
-    "kind": "essay",
-    "era": null,
-    "finding": "Opinion on mathematics, free preview only; read, no row.",
-    "topics": [],
-    "updated": "2026-11-03T17:17:00Z"
-  },
-  {
-    "id": "hickey-ai-is-not-a-tool",
-    "title": "Hickey, \"AI\" is Not a Tool",
-    "url": "https://www.linkedin.com/pulse/ai-tool-rich-hickey-kjl8e/",
-    "kind": "essay",
-    "era": null,
-    "finding": "Opinion essay with no data arguing AI is not a tool; read, no row.",
-    "topics": [],
-    "updated": "2026-11-03T17:17:00Z"
-  },
-  {
-    "id": "huahai-ai-is-a-tool-using-it-well-takes-skill",
-    "title": "Huahai, AI Is a Tool. Using It Well Takes Skill.",
-    "url": "https://yyhh.org/blog/2026/10/ai-is-a-tool/",
-    "kind": "essay",
-    "era": null,
-    "finding": "Opinion essay replying to Hickey with no data; read, no row.",
-    "topics": [],
     "updated": "2026-11-03T17:17:00Z"
   },
   {

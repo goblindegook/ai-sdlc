@@ -4,7 +4,6 @@
 import { TOPICS, type Topic } from './topics';
 import recsJson from '../../content/recommendations.json';
 import challengesJson from '../../content/challenges.json';
-import questionsJson from '../../content/questions.json';
 import evidenceJson from '../../content/evidence.json';
 
 export type Ring = 'adopt' | 'trial' | 'avoid';
@@ -14,22 +13,20 @@ export const mainTopic = (x: { topics: Topic[] }) => x.topics[0];
 export const topicOrder = (x: { topics: Topic[] }) => TOPICS.findIndex((t) => t.slug === mainTopic(x));
 export interface Rec extends Item { title: string; ring: Ring; summary: string; signals: string[] }
 export interface Challenge extends Item { title: string; summary: string }
-export interface Question extends Item { question: string; body: string }
 export interface Evidence {
   id: string; title: string; url: string; kind: string; era: string | null; caveat?: string;
   finding: string; topics: Topic[]; updated: string;
-  backs: string[]; cited: string[]; asked: string[];
+  backs: string[]; cited: string[];
 }
 
 export const recs = recsJson as Rec[];
 export const challenges = challengesJson as Challenge[];
-export const questions = questionsJson as Question[];
-export const evidence = (evidenceJson as Omit<Evidence, 'backs' | 'cited' | 'asked'>[]).map((e) => ({ ...e, backs: [], cited: [], asked: [] })) as Evidence[];
+export const evidence = (evidenceJson as Omit<Evidence, 'backs' | 'cited'>[]).map((e) => ({ ...e, backs: [], cited: [] })) as Evidence[];
 export const evidenceById = new Map(evidence.map((e) => [e.id, e]));
 
 const topics = new Set(TOPICS.map((t) => t.slug));
 const ids = new Set<string>();
-for (const [kind, list] of [['recommendation', recs], ['challenge', challenges], ['question', questions], ['evidence', evidence]] as const) {
+for (const [kind, list] of [['recommendation', recs], ['challenge', challenges], ['evidence', evidence]] as const) {
   for (const x of list as { id: string; topics: Topic[]; updated: string }[]) {
     if (ids.has(x.id)) throw new Error(`duplicate id: ${x.id}`);
     ids.add(x.id);
@@ -40,7 +37,7 @@ for (const [kind, list] of [['recommendation', recs], ['challenge', challenges],
 }
 
 // Evidence lists what uses it, and shows under every topic that cites it.
-const link = (users: Item[], field: 'backs' | 'cited' | 'asked') => {
+const link = (users: Item[], field: 'backs' | 'cited') => {
   for (const u of users) for (const id of u.evidence) {
     const ev = evidenceById.get(id);
     if (!ev) throw new Error(`${u.id} cites missing evidence ${id}`);
@@ -50,14 +47,14 @@ const link = (users: Item[], field: 'backs' | 'cited' | 'asked') => {
 };
 link(recs, 'backs');
 link(challenges, 'cited');
-link(questions, 'asked');
 
 export const recById = new Map(recs.map((r) => [r.id, r]));
 export const challengeById = new Map(challenges.map((c) => [c.id, c]));
-export const questionById = new Map(questions.map((q) => [q.id, q]));
+// Trials have their own page; Adopt and Avoid share the Recommendations page.
+export const recPage = (r: Rec) => (r.ring === 'trial' ? 'trials' : 'recommendations');
 
 // The footer date: when any item last changed.
-export const updated = [...recs, ...challenges, ...questions, ...evidence].map((x) => x.updated).sort().at(-1)!.slice(0, 10);
+export const updated = [...recs, ...challenges, ...evidence].map((x) => x.updated).sort().at(-1)!.slice(0, 10);
 
 export const RINGS: { slug: Ring; label: string; rule: string }[] = [
   { slug: 'adopt', label: 'Adopt', rule: 'Proven. Use it by default.' },

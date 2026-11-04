@@ -1,0 +1,22 @@
+---
+import Item from './Item.astro';
+import EvidenceList from './EvidenceList.astro';
+import type { Rec } from '../data';
+
+interface Props { rec: Rec; level?: 2 | 3 }
+const { rec: r, level } = Astro.props;
+---
+<Item id={r.id} title={r.title} topics={r.topics} level={level}>
+  <div class="rec-grid">
+    <div>
+      <p>{r.summary}</p>
+      {r.signals.length > 0 && (
+        <>
+          <h4 class="sub">Watch for</h4>
+          <ul>{r.signals.map((s) => <li>{s}</li>)}</ul>
+        </>
+      )}
+    </div>
+    <EvidenceList ids={r.evidence} />
+  </div>
+</Item>

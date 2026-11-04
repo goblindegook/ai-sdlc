@@ -2,16 +2,15 @@
 import Base from '../layouts/Base.astro';
 import TopicFilter from '../components/TopicFilter.astro';
 import Section from '../components/Section.astro';
-import Item from '../components/Item.astro';
-import EvidenceList from '../components/EvidenceList.astro';
+import Rec from '../components/Rec.astro';
 import { recs, RINGS, topicOrder } from '../data';
 
-const groups = (['adopt', 'avoid', 'trial'] as const).map((s) => ({
+const groups = (['adopt', 'avoid'] as const).map((s) => ({
   ...RINGS.find((r) => r.slug === s)!,
   items: recs.filter((r) => r.ring === s).sort((x, y) => topicOrder(x) - topicOrder(y)),
 }));
 ---
-<Base title="Recommendations" description="Adopt, avoid or trial: practices for AI-assisted development, each linked to its evidence.">
+<Base title="Recommendations" description="Adopt or avoid: practices for AI-assisted development, each linked to its evidence.">
   <h1>Recommendations</h1>
   <p>What to do, what to watch for in your team, and the evidence behind it.</p>
   <nav class="jump" aria-label="Sections"><span class="meta">Jump to</span>{groups.map((g) => <a href={`#${g.slug}`}>{g.label}</a>)}</nav>
@@ -20,22 +19,7 @@ const groups = (['adopt', 'avoid', 'trial'] as const).map((s) => ({
 
   {groups.map((g) => (
     <Section id={g.slug} title={g.label} note={g.rule} ring={g.slug}>
-      {g.items.map((r) => (
-        <Item id={r.id} title={r.title} topics={r.topics}>
-          <div class="rec-grid">
-            <div>
-              <p>{r.summary}</p>
-              {r.signals.length > 0 && (
-                <>
-                  <h4 class="sub">Watch for</h4>
-                  <ul>{r.signals.map((s) => <li>{s}</li>)}</ul>
-                </>
-              )}
-            </div>
-            <EvidenceList ids={r.evidence} />
-          </div>
-        </Item>
-      ))}
+      {g.items.map((r) => <Rec rec={r} />)}
     </Section>
   ))}
 </Base>

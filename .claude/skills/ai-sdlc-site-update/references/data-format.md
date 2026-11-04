@@ -6,9 +6,8 @@ all built from these files, so editing them is the whole job.
 
 | File | Holds |
 |---|---|
-| `content/recommendations.json` | Adopt, Avoid and Trial items |
-| `content/challenges.json` | Hard problems with no "stop doing this" answer |
-| `content/questions.json` | Open questions where sources disagree |
+| `content/recommendations.json` | Adopt, Avoid and Trial items (Trials show on their own page) |
+| `content/challenges.json` | Hard problems with no "stop doing this" answer, and open questions where sources disagree |
 | `content/evidence.json` | Every source the site cites, once each |
 | `content/topics.json` | The eight topics, in site order, with each topic's two "Why" lines on the overview |
 
@@ -53,12 +52,10 @@ all built from these files, so editing them is the whole job.
   "summary": "What goes wrong and what it costs a team, in plain words.", "evidence": ["..."], "updated": "..." }
 ```
 
-## questions.json
-
-```json
-{ "id": "...", "question": "Does X hold on current models?", "topics": ["testing"],
-  "body": "One or two sentences on what the sources disagree about.", "evidence": ["...", "..."], "updated": "..." }
-```
+- An unsettled question is a challenge too: title it as the problem ("Nobody knows how much to specify up
+  front"), and say in the summary what the sources disagree about, keeping both sides.
+- When a new source disputes an existing challenge, extend that challenge's summary rather than adding a second
+  item on the same topic.
 
 ## evidence.json
 

@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import LoopDiagram from '../components/LoopDiagram.astro';
 import { TOPICS } from '../data/topics';
-import { recs, recById, mainTopic, RINGS } from '../data';
+import { recs, recById, recPage, mainTopic, RINGS } from '../data';
 import { STEPS } from '../data/workflow';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -13,7 +13,7 @@ const rows = TOPICS.map((t) => ({
   avoid: recs.filter((r) => mainTopic(r) === t.slug && r.ring === 'avoid'),
 }));
 const rule = (slug: string) => RINGS.find((r) => r.slug === slug)!.rule;
-const rec = (id: string) => `${base}/recommendations/#${id}`;
+const rec = (id: string) => `${base}/${recPage(recById.get(id)!)}/#${id}`;
 
 // The workflow list names recommendations by id; a missing one fails the build rather than dropping out silently.
 const withRecs = (s: { recs: string[] }) => ({
@@ -28,7 +28,7 @@ const workflow = STEPS.map(withRecs);
     </div>
     <p class="radar-intro">
       Practices for building software with AI coding agents, each backed by <a href={`${base}/evidence/`}>evidence</a>.{' '}
-      <a href={`${base}/recommendations/#trial`}>Trials</a> are ideas worth testing that the data doesn't back yet.
+      <a href={`${base}/trials/`}>Trials</a> are ideas worth testing that the data doesn't back yet.
     </p>
     <LoopDiagram />
     <ol class="workflow" aria-label="Recommended practice at each step">
@@ -52,7 +52,7 @@ const workflow = STEPS.map(withRecs);
             <h3><a href={`${base}/recommendations/?topic=${r.slug}`}>{r.label}</a></h3>
             <p class="meta">{r.blurb}</p>
             <p class="meta">
-              <a href={`${base}/recommendations/?topic=${r.slug}#trial`}>Trials</a> ·{' '}
+              <a href={`${base}/trials/?topic=${r.slug}`}>Trials</a> ·{' '}
               <a href={`${base}/challenges/?topic=${r.slug}`}>Challenges</a>
             </p>
             <details class="radar-why fold">

@@ -3,13 +3,15 @@
     "id": "code-erodes-as-agents-build-on-their-own-work",
     "title": "Code erodes as agents build on their own work",
     "topics": [
-      "looping"
+      "looping",
+      "measuring"
     ],
-    "summary": "Each agent change on top of earlier agent changes adds a little duplication and complexity. Better prompts set a better starting point but don't stop the slide; only refactoring and review do.",
+    "summary": "Each agent change on top of earlier agent changes adds a little duplication and complexity. Better prompts set a better starting point but don't stop the slide; only refactoring and review do. Whether newer models maintain code better is disputed: one measure shows fast gains, another the same decay across model tiers.",
     "evidence": [
-      "slopcodebench"
+      "slopcodebench",
+      "swe-ci"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T15:43:00Z"
   },
   {
     "id": "you-cant-tell-from-a-task-how-well-the-agent-will-do",
@@ -29,23 +31,26 @@
     "topics": [
       "prompting"
     ],
-    "summary": "Agents do follow context-file instructions, which means each mention of a tool or step gets acted on, every task. Extra instructions raise spend even when they don't help the task.",
+    "summary": "Agents do follow context-file instructions, which means each mention of a tool or step gets acted on, every task. Extra instructions raise spend even when they don't help, and whether context files help at all is disputed: one source finds time saved, another no gain in success.",
     "evidence": [
-      "gloaguen-et-al"
+      "gloaguen-et-al",
+      "lulla-et-al-icse-workshop-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T15:43:00Z"
   },
   {
     "id": "agents-act-on-outdated-facts",
     "title": "Agents act on outdated facts",
     "topics": [
-      "prompting"
+      "prompting",
+      "understanding"
     ],
-    "summary": "When a fact changes, agents often keep using the old version from memory or context files. Updated decisions need to replace, not sit beside, the old ones.",
+    "summary": "When a fact changes, agents often keep using the old version from memory or context files. Updated decisions need to replace, not sit beside, the old ones. Building the update into every task may keep notes current, but even its advocates still trim them by hand.",
     "evidence": [
-      "stale"
+      "stale",
+      "liao-agents-dont-need-memory"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T15:43:00Z"
   },
   {
     "id": "agreeable-answers-mislead-without-being-wrong",
@@ -65,12 +70,14 @@
     "topics": [
       "reviewing"
     ],
-    "summary": "PR volume has grown several times over while reviewer numbers haven't. The extra review falls on the few people trusted to approve, who become the bottleneck.",
+    "summary": "PR volume has grown several times over while reviewer numbers haven't, so the extra review falls on the few people trusted to approve. Some teams move trust into tests and production checks and auto-merge part of their changes instead; whether that holds up isn't known yet.",
     "evidence": [
       "orosz-what-is-happening-with-code-reviews",
-      "baltes-et-al"
+      "baltes-et-al",
+      "pragmatic-engineer",
+      "honeycomb-2"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T15:43:00Z"
   },
   {
     "id": "people-follow-ai-advice-they-know-is-wrong",
@@ -102,13 +109,16 @@
     "id": "prompt-injection-has-no-proven-fix",
     "title": "Prompt injection has no proven fix",
     "topics": [
-      "risks-security"
+      "risks-security",
+      "reviewing"
     ],
-    "summary": "The one architecture shown to block most injection attacks has only been tested by its own authors, who say the problem isn't solved. Limit what an agent can do rather than hoping it can't be tricked. (OWASP LLM01)",
+    "summary": "The one architecture shown to block most injection attacks has only been tested by its own authors, who say the problem isn't solved, and a guardrail that stops most attacks still fails by security standards. Limit what an agent can do rather than hoping it can't be tricked; whether an agent should ever approve its own change is still open. (OWASP LLM01)",
     "evidence": [
-      "camel-debenedetti-et-al"
+      "camel-debenedetti-et-al",
+      "willison-the-lethal-trifecta",
+      "orosz-what-is-happening-with-code-reviews"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T15:43:00Z"
   },
   {
     "id": "test-loops-fix-the-code-not-a-misread-requirement",
@@ -129,11 +139,12 @@
     "topics": [
       "understanding"
     ],
-    "summary": "Checking agent code well takes hands-on coding skill, and relying on agents can wear that skill down. Without deliberate practice, a team loses the ability to review what it ships.",
+    "summary": "Checking agent code well takes hands-on coding skill, and relying on agents can wear that skill down. Without deliberate practice, a team loses the ability to review what it ships. Nobody knows yet whether the loss reverses or how to measure it.",
     "evidence": [
-      "anthropic-internal-study"
+      "anthropic-internal-study",
+      "storey-cognitive-debt"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T15:43:00Z"
   },
   {
     "id": "juniors-ask-the-model-instead-of-colleagues",
@@ -141,11 +152,12 @@
     "topics": [
       "understanding"
     ],
-    "summary": "Most of a junior engineer's questions now go to an assistant rather than a teammate. The quick answer replaces the conversation where they would have learned how the team actually works.",
+    "summary": "Most of a junior engineer's questions now go to an assistant rather than a teammate, and entry-level hiring is shrinking. The quick answer replaces the conversation where they would have learned how the team works, and nobody yet knows how juniors will grow into seniors.",
     "evidence": [
-      "anthropic-internal-study"
+      "anthropic-internal-study",
+      "brynjolfsson-et-al"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T15:43:00Z"
   },
   {
     "id": "shared-agent-memory-behaves-like-a-shared-database",
@@ -177,5 +189,116 @@
       "bache-agentic-ai-breaks-mob-programming"
     ],
     "updated": "2026-11-04T14:31:00Z"
+  },
+  {
+    "id": "test-first-results-may-not-hold-on-current-models",
+    "title": "Test-first results may not hold on current models",
+    "topics": [
+      "testing",
+      "xp-agile"
+    ],
+    "summary": "The evidence that writing tests first helps agents comes from one language and from models that predate current ones, and nobody has re-checked it. Vague requirements, where test-first is said to help most as a way of thinking, haven't been tried with agents.",
+    "evidence": [
+      "tdd-bench-verified-ibm"
+    ],
+    "updated": "2026-11-04T15:43:00Z"
+  },
+  {
+    "id": "nobody-agrees-what-the-human-bottleneck-is-now",
+    "title": "Nobody agrees what the human bottleneck is now",
+    "topics": [
+      "understanding",
+      "reviewing"
+    ],
+    "summary": "With agents writing the code, practitioners disagree on whether verification, judgement or understanding becomes the constraint. Each position rests on one person's experience or opinion.",
+    "evidence": [
+      "fornasier-getting-out-of-the-loop",
+      "litt"
+    ],
+    "updated": "2026-11-04T15:43:00Z"
+  },
+  {
+    "id": "strong-engineering-foundations-may-not-protect-you",
+    "title": "Strong engineering foundations may not protect you",
+    "topics": [
+      "measuring",
+      "xp-agile"
+    ],
+    "summary": "One industry survey says good practices partly shield teams from AI's downsides; telemetry across many companies finds no outcome protected. Don't assume a mature process makes agent adoption safe; watch your own delivery numbers.",
+    "evidence": [
+      "dora-2025",
+      "faros-22k-devs",
+      "bache-it-doesnt-help-to-push-ai-into-a-crappy-process"
+    ],
+    "updated": "2026-11-04T15:43:00Z"
+  },
+  {
+    "id": "nobody-knows-how-much-to-specify-up-front",
+    "title": "Nobody knows how much to specify up front",
+    "topics": [
+      "prompting",
+      "testing",
+      "xp-agile"
+    ],
+    "summary": "Giving agents more tests up front helped only to a point, and agents that designed before coding did better, so heavy spec-first work risks repeating waterfall. Others argue the spec is the lasting artifact and should be executable; the evidence doesn't settle it.",
+    "evidence": [
+      "mathews-nagappan-ase-2024",
+      "boeckeler-tdd-in-the-agent-loop",
+      "james-2",
+      "grove-the-new-code",
+      "farley-the-industry-is-catching-up",
+      "boeckeler-tdd-comparisons-repository",
+      "bache-the-last-year-changed-everything-about-tdd"
+    ],
+    "updated": "2026-11-04T15:43:00Z"
+  },
+  {
+    "id": "planning-and-execution-prompts-may-need-different-detail",
+    "title": "Planning and execution prompts may need different detail",
+    "topics": [
+      "prompting"
+    ],
+    "summary": "One practitioner argues for goals-only planning prompts and fully detailed execution prompts. It is an opinion nobody has tested.",
+    "evidence": [
+      "emanuel-overprompting"
+    ],
+    "updated": "2026-11-04T15:43:00Z"
+  },
+  {
+    "id": "fresh-or-continued-context-in-agent-loops-is-unsettled",
+    "title": "Fresh or continued context in agent loops is unsettled",
+    "topics": [
+      "looping"
+    ],
+    "summary": "Some loops reset the agent's context every iteration; one comparison on a single task found continuing did better for the cost. Nobody has compared them on real work.",
+    "evidence": [
+      "dan-luu-pl-tokens"
+    ],
+    "updated": "2026-11-04T15:43:00Z"
+  },
+  {
+    "id": "nobody-knows-if-multi-agent-orchestration-scales",
+    "title": "Nobody knows if multi-agent orchestration scales",
+    "topics": [
+      "looping",
+      "understanding"
+    ],
+    "summary": "Adding agents may run into the same coordination cost as adding people to a late project (Brooks's Law). No controlled comparison exists yet.",
+    "evidence": [
+      "storey-cognitive-debt"
+    ],
+    "updated": "2026-11-04T15:43:00Z"
+  },
+  {
+    "id": "its-unclear-how-much-of-a-system-a-team-must-understand",
+    "title": "It's unclear how much of a system a team must understand",
+    "topics": [
+      "understanding"
+    ],
+    "summary": "One view holds that a team's understanding of its system can't be rebuilt from documents once lost; another says most engineers work fine with a partial picture. With agents writing more of the code, the answer decides how much understanding a team has to keep.",
+    "evidence": [
+      "goedecke"
+    ],
+    "updated": "2026-11-04T15:43:00Z"
   }
 ]

@@ -1,0 +1,18 @@
+---
+import Base from '../layouts/Base.astro';
+import TopicFilter from '../components/TopicFilter.astro';
+import Rec from '../components/Rec.astro';
+import { recs, topicOrder } from '../data';
+
+const items = recs.filter((r) => r.ring === 'trial').sort((x, y) => topicOrder(x) - topicOrder(y));
+---
+<Base title="Trials" description="Ideas worth testing that the evidence doesn't back yet.">
+  <h1>Trials</h1>
+  <p>Ideas worth testing that the evidence doesn't back yet. Test them before relying on them.</p>
+
+  <TopicFilter noun="trials" />
+
+  <div class="ruled">
+    {items.map((r) => <Rec rec={r} level={2} />)}
+  </div>
+</Base>

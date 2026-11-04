@@ -1,8 +1,9 @@
 """Check the built site (dist/) for the rules the owner set. Run after `npx astro build`.
 
 Usage: python3 -I check_site.py [--site PATH]   (exit 1 on any failure)
-Checks: every internal evidence/recommendation/challenge/question link resolves; only the Evidence page links
-out to external sites; no page mentions the wiki; no "N recommendations"-style counts in visible text.
+Checks: every internal evidence/recommendation/trial/challenge link resolves; only the Evidence page links
+out to external sites; no page mentions the wiki; no "N recommendations"-style counts in visible text; every Evidence
+entry is cited by something.
 """
 import argparse, html, os, re, sys
 from pathlib import Path
@@ -10,8 +11,8 @@ from pathlib import Path
 # The site is the repository this skill lives in: <repo>/.claude/skills/ai-sdlc-site-update/scripts/this.py
 SITE = Path(__file__).resolve().parents[4]
 
-PAGES = {"overview": "index.html", "recommendations": "recommendations/index.html", "challenges": "challenges/index.html",
-         "questions": "questions/index.html", "evidence": "evidence/index.html"}
+PAGES = {"overview": "index.html", "recommendations": "recommendations/index.html", "trials": "trials/index.html",
+         "challenges": "challenges/index.html", "evidence": "evidence/index.html"}
 
 def visible(h):
     h = re.sub(r"<(script|style)\b.*?</\1>", " ", h, flags=re.S)
@@ -27,7 +28,7 @@ def main():
     fails = []
 
     for k, h in pages.items():
-        for target, anchor in re.findall(r'href="(?:/[^"/#]+)?/(recommendations|challenges|questions|evidence)/#([^"]+)"', h):
+        for target, anchor in re.findall(r'href="(?:/[^"/#]+)?/(recommendations|trials|challenges|evidence)/#([^"]+)"', h):
             if anchor not in ids[target]:
                 fails.append(f"{k}: broken link to /{target}/#{anchor}")
         if k != "evidence":
@@ -40,6 +41,11 @@ def main():
         m = re.search(r"(?<!Top )\b\d+\s+(recommendations|practices|challenges|questions|sources|trials|items)\b", text, re.I)
         if m:
             fails.append(f"{k}: shows a count ('{m.group(0)}')")
+
+    # The Evidence page lists cited sources only: every entry needs a "Used in" list.
+    for m in re.finditer(r"<details\b[^>]*\bid=\"([^\"]+)\"(.*?)</details>", pages["evidence"], flags=re.S):
+        if "Used in" not in m.group(2):
+            fails.append(f"evidence: {m.group(1)} is cited by nothing (remove it from evidence.json)")
 
     for f in fails:
         print("FAIL", f)

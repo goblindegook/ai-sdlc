@@ -57,7 +57,7 @@ def main():
         sys.exit("Where is the wiki? Pass --wiki <folder> or set OBSIDIAN_VAULT_PATH.")
     # The site's last update is the latest `updated` time on any item in content/*.json.
     if not a.since:
-        stamps = [x["updated"] for f in ("recommendations", "challenges", "questions", "evidence")
+        stamps = [x["updated"] for f in ("recommendations", "challenges", "evidence")
                   for x in json.load(open(os.path.join(a.site, "content", f + ".json")))]
         a.since = max(stamps)
     since = parse_time(a.since)
