@@ -2704,53 +2704,55 @@
   },
   {
     "id": "pragmatic-engineer",
-    "title": "Pragmatic Engineer",
+    "title": "Orosz with Majors, The Pragmatic Engineer 2026",
     "url": "https://newsletter.pragmaticengineer.com/p/stop-being-skeptical-about-ai-for",
-    "kind": "uncatalogued",
+    "kind": "essay",
     "era": null,
-    "finding": "",
+    "caveat": "secondhand summary of a podcast",
+    "finding": "Majors argues code review is the least valuable part of what humans add, that trust should move from authorship to tests and evals, and that engineers will ship code they never read.",
     "topics": [
       "reviewing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T16:50:00Z"
   },
   {
     "id": "honeycomb-2",
-    "title": "Honeycomb",
+    "title": "Nakashima (Honeycomb), AI norms and values part 2, 2026",
     "url": "https://www.honeycomb.io/blog/ai-norms-values-part-2-ai-honeycomb-engineering",
-    "kind": "uncatalogued",
+    "kind": "practitioner",
     "era": null,
-    "finding": "",
+    "caveat": "stated goals, not measured results",
+    "finding": "Sets a target of 25% of PRs reviewed by AI and auto-merged without human review by the end of 2026, at a change failure rate under 3%, and admits a related goal is already off track.",
     "topics": [
       "reviewing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T16:50:00Z"
   },
   {
     "id": "james-2",
-    "title": "James",
+    "title": "James, We learned this lesson already, 2026",
     "url": "https://quii.dev/We_learned_this_lesson_already",
-    "kind": "uncatalogued",
+    "kind": "essay",
     "era": null,
-    "finding": "",
+    "finding": "Argues that exhaustive upfront specification is waterfall in disguise and that spec-driven development repeats it: what to build is discovered by building.",
     "topics": [
       "prompting",
       "testing",
       "xp-agile"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T16:50:00Z"
   },
   {
     "id": "goedecke",
-    "title": "Goedecke",
+    "title": "Goedecke, In defense of not understanding your codebase, 2026",
     "url": "https://www.seangoedecke.com/in-defense-of-not-understanding-your-codebase/",
-    "kind": "uncatalogued",
+    "kind": "essay",
     "era": null,
-    "finding": "",
+    "finding": "Argues that partial, even wrong, understanding is the normal working state on large, high-turnover codebases, and that LLMs are one of many ordinary things that get in the way of it.",
     "topics": [
       "understanding"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T16:50:00Z"
   },
   {
     "id": "abitbol-revolut-ai-engineer-nyc-2026",

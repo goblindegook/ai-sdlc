@@ -7,7 +7,7 @@ const { ids } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const KIND: Record<string, string> = {
   rct: 'RCT', study: 'study', benchmark: 'benchmark', telemetry: 'telemetry', survey: 'survey',
-  vendor: 'vendor', practitioner: 'practitioner', essay: 'essay', uncatalogued: 'other',
+  vendor: 'vendor', practitioner: 'practitioner', essay: 'essay',
 };
 ---
 <div class="evidence-list">

@@ -3,7 +3,6 @@ import Base from '../layouts/Base.astro';
 import LoopDiagram from '../components/LoopDiagram.astro';
 import { TOPICS } from '../data/topics';
 import { recs, recById, recPage, mainTopic, RINGS } from '../data';
-import { STEPS } from '../data/workflow';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 // Each recommendation sits under the topic that raised it, so the radar lists it once.
@@ -14,12 +13,6 @@ const rows = TOPICS.map((t) => ({
 }));
 const rule = (slug: string) => RINGS.find((r) => r.slug === slug)!.rule;
 const rec = (id: string) => `${base}/${recPage(recById.get(id)!)}/#${id}`;
-
-// The workflow list names recommendations by id; a missing one fails the build rather than dropping out silently.
-const withRecs = (s: { recs: string[] }) => ({
-  ...s, items: s.recs.map((id) => recById.get(id) ?? (() => { throw new Error(`workflow: missing recommendation ${id}`); })()),
-});
-const workflow = STEPS.map(withRecs);
 ---
 <Base title="Overview">
   <section class="radar" aria-labelledby="radar-title">
@@ -31,14 +24,6 @@ const workflow = STEPS.map(withRecs);
       <a href={`${base}/trials/`}>Trials</a> are ideas worth testing that the data doesn't back yet.
     </p>
     <LoopDiagram />
-    <ol class="workflow" aria-label="Recommended practice at each step">
-      {workflow.map((s) => (
-        <li class="workflow-step">
-          <p class="workflow-name"><a href={`${base}/recommendations/?topic=${s.topic}`}>{s.name}</a></p>
-          <ul>{s.items.map((x) => <li><a href={rec(x.id)}>{x.title}</a></li>)}</ul>
-        </li>
-      ))}
-    </ol>
     <h2 class="radar-title">By topic</h2>
     <div class="radar-grid" role="list">
       <div class="radar-cols" aria-hidden="true">

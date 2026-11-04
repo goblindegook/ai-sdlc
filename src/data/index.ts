@@ -71,7 +71,6 @@ export const KINDS: { slug: string; label: string }[] = [
   { slug: 'vendor', label: 'Vendor reports' },
   { slug: 'practitioner', label: 'Practitioner reports' },
   { slug: 'essay', label: 'Essays and opinion' },
-  { slug: 'uncatalogued', label: 'Other cited pages' },
 ];
 
 export const ERA: Record<string, string> = { older: 'Pre-2025 models', 'early-2025': 'Early-2025 models' };

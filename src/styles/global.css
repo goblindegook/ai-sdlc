@@ -194,23 +194,11 @@ main.wrap { padding-block: clamp(2.5rem, 6vw, 4rem) 4rem; }
   .item-body { margin-left: 0; }
 }
 
-/* overview workflow: what to do at each step, under the diagram */
 .radar .diagram { margin: 1rem 0 1.75rem; }
-.workflow { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.25rem 2rem; }
-.workflow-step { margin: 0; }
-.workflow-name { margin: 0 0 0.3rem; font: 700 0.95rem/1.2 var(--head); font-stretch: 92%; }
-.workflow-name a { color: var(--ink); }
-.workflow ul { margin: 0; padding-left: 1.1rem; }
-.workflow li li { margin-bottom: 0.3rem; font-size: 0.95rem; line-height: 1.35; }
 /* Lists made only of links: no underline until hover or focus, so the underline doesn't turn into noise. */
-.workflow li li a, .radar-cell a { color: var(--ink); }
-.workflow li li a, .radar-cell a, .radar-topic .meta a { text-decoration: none; }
-:is(.workflow li li, .radar-cell, .radar-topic .meta) a:is(:hover, :focus-visible) { text-decoration: underline; }
-/* Wide: five columns sit under the five diagram boxes (28/760 inset, 16/760 gap), so the step names are not repeated. */
-@media (min-width: 960px) {
-  .workflow { grid-template-columns: repeat(5, minmax(0, 1fr)); column-gap: 2.1%; padding-inline: 3.68%; }
-  .workflow-name { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
-}
+.radar-cell a { color: var(--ink); }
+.radar-cell a, .radar-topic .meta a { text-decoration: none; }
+:is(.radar-cell, .radar-topic .meta) a:is(:hover, :focus-visible) { text-decoration: underline; }
 
 /* overview radar */
 .radar { margin-top: 0; }
