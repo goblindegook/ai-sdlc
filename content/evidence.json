@@ -1,7 +1,7 @@
 [
   {
     "id": "metr-rct-2025",
-    "title": "METR RCT (2025)",
+    "title": "Becker et al. (METR), arXiv 2025",
     "url": "https://arxiv.org/abs/2507.09089",
     "kind": "rct",
     "era": "early-2025",
@@ -13,11 +13,11 @@
       "understanding",
       "xp-agile"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "anthropic-internal-study",
-    "title": "Anthropic internal study",
+    "title": "Huang et al. (Anthropic), How AI is transforming work at Anthropic, 2025",
     "url": "https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic",
     "kind": "vendor",
     "era": null,
@@ -27,11 +27,11 @@
       "understanding",
       "xp-agile"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "metr-survey",
-    "title": "METR survey",
+    "title": "METR, AI usage survey, 2026",
     "url": "https://metr.org/blog/2026-05-11-ai-usage-survey/",
     "kind": "survey",
     "era": null,
@@ -41,11 +41,11 @@
       "looping",
       "measuring"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "dora-2025",
-    "title": "DORA 2025",
+    "title": "DORA, State of AI-assisted software development, 2025",
     "url": "https://services.google.com/fh/files/misc/2025_state_of_ai_assisted_software_development.pdf",
     "kind": "survey",
     "era": null,
@@ -57,7 +57,7 @@
       "xp-agile",
       "testing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "mathews-nagappan-ase-2024",
@@ -77,7 +77,7 @@
   },
   {
     "id": "chen-et-al-self-debugging",
-    "title": "Chen et al., Self-Debugging",
+    "title": "Chen et al., ICLR 2024",
     "url": "https://arxiv.org/pdf/2304.05128v2",
     "kind": "benchmark",
     "era": "older",
@@ -87,11 +87,11 @@
       "looping",
       "testing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "madaan-et-al-self-refine",
-    "title": "Madaan et al., Self-Refine",
+    "title": "Madaan et al., NeurIPS 2023",
     "url": "https://arxiv.org/html/2303.17651v2",
     "kind": "benchmark",
     "era": "older",
@@ -101,11 +101,11 @@
       "looping",
       "testing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "shinn-et-al-reflexion",
-    "title": "Shinn et al., Reflexion",
+    "title": "Shinn et al., NeurIPS 2023",
     "url": "https://arxiv.org/html/2303.11366v4",
     "kind": "benchmark",
     "era": "older",
@@ -117,11 +117,11 @@
       "prompting",
       "xp-agile"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "swe-agent-neurips-2024",
-    "title": "SWE-agent, NeurIPS 2024",
+    "title": "Yang et al., NeurIPS 2024",
     "url": "https://arxiv.org/abs/2405.15793",
     "kind": "benchmark",
     "era": "older",
@@ -132,11 +132,11 @@
       "testing",
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "metr-research-update-2025-08",
-    "title": "METR research update (2025-08)",
+    "title": "Rein (METR), Algorithmic vs. holistic evaluation, 2025",
     "url": "https://metr.org/blog/2025-08-12-research-update-towards-reconciling-slowdown-with-time-horizons/",
     "kind": "study",
     "era": "early-2025",
@@ -149,11 +149,11 @@
       "xp-agile",
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "uber-efficient-software-factory",
-    "title": "Uber efficient software factory",
+    "title": "Medisetty (Uber), Building an efficient software factory, 2026",
     "url": "https://www.uber.com/us/en/blog/efficient-software-factory/",
     "kind": "telemetry",
     "era": null,
@@ -165,11 +165,11 @@
       "prompting",
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "databricks-managing-ai-coding-costs",
-    "title": "Databricks, managing AI coding costs",
+    "title": "Databricks, Managing AI coding costs at scale, 2026",
     "url": "https://www.databricks.com/blog/managing-ai-coding-costs-scale",
     "kind": "vendor",
     "era": null,
@@ -180,11 +180,11 @@
       "measuring",
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "willison-the-lethal-trifecta",
-    "title": "Willison, the lethal trifecta",
+    "title": "Willison, The lethal trifecta for AI agents, 2025",
     "url": "https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/",
     "kind": "essay",
     "era": null,
@@ -194,11 +194,11 @@
       "risks-security",
       "reviewing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "loopsbench",
-    "title": "LoopsBench",
+    "title": "Li et al. (Microsoft), arXiv 2026",
     "url": "https://arxiv.org/abs/2608.00267",
     "kind": "benchmark",
     "era": null,
@@ -209,11 +209,11 @@
       "testing",
       "measuring"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "swe-gym-icml-2025",
-    "title": "SWE-Gym, ICML 2025",
+    "title": "Pan et al., ICML 2025",
     "url": "https://arxiv.org/abs/2412.21139",
     "kind": "benchmark",
     "era": null,
@@ -221,11 +221,11 @@
     "topics": [
       "looping"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "swe-search-iclr-2025",
-    "title": "SWE-Search, ICLR 2025",
+    "title": "Antoniades et al., ICLR 2025",
     "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/a1e6783e4d739196cad3336f12d402bf-Paper-Conference.pdf",
     "kind": "benchmark",
     "era": "older",
@@ -234,11 +234,11 @@
       "looping",
       "testing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "jain-are-harnesses-worth-the-cost-martinfowlercom",
-    "title": "Jain, are harnesses worth the cost (martinfowler.com)",
+    "title": "Jain, Are harnesses worth the cost?, 2026",
     "url": "https://martinfowler.com/articles/are-harnesses-worth-the-cost.html",
     "kind": "vendor",
     "era": null,
@@ -247,11 +247,11 @@
       "looping",
       "testing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "ralph-playbook",
-    "title": "Ralph playbook",
+    "title": "Farr, The Ralph playbook, 2026",
     "url": "https://github.com/ghuntley/how-to-ralph-wiggum",
     "kind": "practitioner",
     "era": null,
@@ -260,11 +260,11 @@
       "looping",
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "fortune-on-uber-ai-spending",
-    "title": "Fortune on Uber AI spending",
+    "title": "Angelo (Fortune), Uber burned through its 2026 AI budget, 2026",
     "url": "https://fortune.com/2026/05/26/uber-coo-ai-spending-tokens-claude-code/",
     "kind": "essay",
     "era": null,
@@ -274,11 +274,11 @@
       "risks-security",
       "measuring"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "slopcodebench",
-    "title": "SlopCodeBench",
+    "title": "Orlanski et al., arXiv 2026",
     "url": "https://arxiv.org/html/2603.24755v1",
     "kind": "benchmark",
     "era": null,
@@ -291,11 +291,11 @@
       "reviewing",
       "measuring"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "cooper-driving-in-gears",
-    "title": "Cooper, driving in gears",
+    "title": "Cooper, Coding agents and driving in gears, 2026",
     "url": "https://ian-cooper.writeas.com/coding-agents-and-driving-in-gears",
     "kind": "practitioner",
     "era": null,
@@ -304,11 +304,11 @@
       "looping",
       "reviewing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "osmani-software-factories",
-    "title": "Osmani, software factories",
+    "title": "Osmani, Software factories, 2026",
     "url": "https://addyosmani.com/blog/software-factories/",
     "kind": "practitioner",
     "era": null,
@@ -316,11 +316,11 @@
     "topics": [
       "looping"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "huntley-ralph",
-    "title": "Huntley, Ralph",
+    "title": "Huntley, Ralph Wiggum as a software engineer, 2025",
     "url": "https://ghuntley.com/ralph/",
     "kind": "practitioner",
     "era": null,
@@ -329,11 +329,11 @@
       "looping",
       "testing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "dan-luu-pl-tokens",
-    "title": "Dan Luu, PL tokens",
+    "title": "Luu, Programming language and token efficiency, 2026",
     "url": "https://danluu.com/pl-tokens/",
     "kind": "practitioner",
     "era": null,
@@ -343,11 +343,11 @@
       "measuring",
       "testing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "augmented-coding-patterns-catalog",
-    "title": "Augmented coding patterns catalog",
+    "title": "Augmented Coding Patterns, Patterns catalog",
     "url": "https://github.com/lexler/augmented-coding-patterns/tree/main/documents/patterns",
     "kind": "practitioner",
     "era": null,
@@ -360,11 +360,11 @@
       "understanding",
       "xp-agile"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "anthropic-effective-harnesses-for-long-running-agents",
-    "title": "Anthropic, effective harnesses for long-running agents",
+    "title": "Young (Anthropic), Effective harnesses for long-running agents, 2026",
     "url": "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents",
     "kind": "vendor",
     "era": null,
@@ -372,11 +372,11 @@
     "topics": [
       "looping"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "humanlayer-software-factory-write-up",
-    "title": "HumanLayer, software factory write-up",
+    "title": "Dex (HumanLayer), Why software factories fail, 2026",
     "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/wsff.md",
     "kind": "practitioner",
     "era": null,
@@ -387,11 +387,11 @@
       "prompting",
       "xp-agile"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "bockeler-sensors-for-coding-agents",
-    "title": "Böckeler, sensors for coding agents",
+    "title": "Böckeler, Maintainability sensors for coding agents, 2026",
     "url": "https://martinfowler.com/articles/sensors-for-coding-agents.html",
     "kind": "practitioner",
     "era": null,
@@ -401,11 +401,11 @@
       "testing",
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "uber-on-pragmatic-engineer",
-    "title": "Uber on Pragmatic Engineer",
+    "title": "Orosz, Uber's AI infra from the inside (podcast), 2026",
     "url": "https://youtu.be/MDUYSMJmi8A",
     "kind": "vendor",
     "era": null,
@@ -418,11 +418,11 @@
       "testing",
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "anthropic-solving-code-review-at-anthropic",
-    "title": "Anthropic, solving code review at Anthropic",
+    "title": "Osmani et al. (Anthropic), How the Claude Code team does code review, 2026",
     "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
     "kind": "vendor",
     "era": null,
@@ -435,11 +435,11 @@
       "risks-security",
       "measuring"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "fornasier-getting-out-of-the-loop",
-    "title": "Fornasier, getting out of the loop",
+    "title": "Fornasier, Getting out of the loop, 2026",
     "url": "https://github.com/patforna/getting-out-of-the-loop",
     "kind": "practitioner",
     "era": null,
@@ -450,11 +450,11 @@
       "understanding",
       "reviewing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "zechner-slowing-down",
-    "title": "Zechner, slowing down",
+    "title": "Zechner, Thoughts on slowing down, 2026",
     "url": "https://mariozechner.at/posts/2026-03-25-thoughts-on-slowing-the-fuck-down/",
     "kind": "essay",
     "era": null,
@@ -464,11 +464,11 @@
       "xp-agile",
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "karpathy-on-dwarkesh-2025-10",
-    "title": "Karpathy on Dwarkesh (2025-10)",
+    "title": "Karpathy, Dwarkesh Podcast 2025",
     "url": "https://www.dwarkesh.com/p/andrej-karpathy",
     "kind": "practitioner",
     "era": null,
@@ -479,11 +479,11 @@
       "measuring",
       "testing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "anthropic-the-advisor-strategy",
-    "title": "Anthropic, the advisor strategy",
+    "title": "Anthropic, The advisor strategy",
     "url": "https://claude.com/blog/the-advisor-strategy",
     "kind": "vendor",
     "era": null,
@@ -491,11 +491,11 @@
     "topics": [
       "looping"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "emanuel-overprompting",
-    "title": "Emanuel, overprompting",
+    "title": "Emanuel, The overprompting trap, 2026",
     "url": "https://www.jeffreyemanuel.com/writing/overprompting",
     "kind": "essay",
     "era": null,
@@ -504,11 +504,11 @@
       "looping",
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "morris-humans-and-agents",
-    "title": "Morris, humans and agents",
+    "title": "Morris, Humans and agents in software engineering loops, 2026",
     "url": "https://martinfowler.com/articles/exploring-gen-ai/humans-and-agents.html",
     "kind": "essay",
     "era": null,
@@ -516,11 +516,11 @@
     "topics": [
       "looping"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "boeckeler-local-models-for-coding",
-    "title": "Boeckeler, local models for coding",
+    "title": "Böckeler, Experiences with local models for coding, 2026",
     "url": "https://martinfowler.com/articles/exploring-gen-ai/local-models-for-coding-experiences.html",
     "kind": "practitioner",
     "era": null,
@@ -528,11 +528,11 @@
     "topics": [
       "looping"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "posthog-scheduled-agents",
-    "title": "PostHog, scheduled agents",
+    "title": "Yoon (PostHog), Jobs every engineer should automate with agents, 2026",
     "url": "https://newsletter.posthog.com/p/scheduled-agents",
     "kind": "vendor",
     "era": null,
@@ -540,7 +540,7 @@
     "topics": [
       "looping"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "bean-et-al-neurips-2025",
@@ -556,7 +556,7 @@
   },
   {
     "id": "swe-bench",
-    "title": "SWE-Bench+",
+    "title": "Aleithan et al., arXiv 2024",
     "url": "https://arxiv.org/abs/2410.06992",
     "kind": "benchmark",
     "era": "older",
@@ -565,11 +565,11 @@
       "measuring",
       "testing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "tdd-bench-verified-ibm",
-    "title": "TDD-Bench Verified (IBM)",
+    "title": "Ahmed et al. (IBM), arXiv 2024",
     "url": "https://arxiv.org/pdf/2412.02883",
     "kind": "benchmark",
     "era": "older",
@@ -580,11 +580,11 @@
       "prompting",
       "xp-agile"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "stanford-ai-index-2026",
-    "title": "Stanford AI Index 2026",
+    "title": "Stanford HAI, AI Index report, 2026",
     "url": "https://hai.stanford.edu/assets/files/ai_index_report_2026.pdf",
     "kind": "study",
     "era": null,
@@ -593,11 +593,11 @@
       "measuring",
       "testing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "peng-et-al",
-    "title": "Peng et al.",
+    "title": "Peng et al., arXiv 2023",
     "url": "https://arxiv.org/html/2302.06590v1",
     "kind": "study",
     "era": "older",
@@ -606,11 +606,11 @@
       "measuring",
       "xp-agile"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "harness",
-    "title": "Harness",
+    "title": "Raghavan (Harness), The impact of GitHub Copilot on developer productivity, 2023",
     "url": "https://www.harness.io/blog/the-impact-of-github-copilot-on-developer-productivity-a-case-study",
     "kind": "vendor",
     "era": "older",
@@ -619,11 +619,11 @@
       "measuring",
       "xp-agile"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "github-blog-copilot-code-quality",
-    "title": "GitHub blog (Copilot code quality)",
+    "title": "GitHub, Does GitHub Copilot improve code quality?, 2024",
     "url": "https://github.blog/news-insights/research/does-github-copilot-improve-code-quality-heres-what-the-data-says/",
     "kind": "vendor",
     "era": "older",
@@ -631,7 +631,7 @@
     "topics": [
       "measuring"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "imai-icse-2022-poster",
@@ -662,7 +662,7 @@
   },
   {
     "id": "meta-cto-post-via-reuters-and-ars-technica",
-    "title": "Meta CTO post via Reuters and Ars Technica",
+    "title": "Ars Technica, Meta's scrapped plans to go AI-native, 2026",
     "url": "https://arstechnica.com/ai/2026/08/metas-scrapped-plans-to-go-ai-native-included-slashing-teams-by-60-percent/",
     "kind": "telemetry",
     "era": null,
@@ -671,11 +671,11 @@
       "measuring",
       "xp-agile"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "guardian",
-    "title": "Guardian",
+    "title": "Skibba (The Guardian), Workers say they're drowning in workslop, 2026",
     "url": "https://www.theguardian.com/technology/2026/apr/14/ai-productivity-workplace-errors",
     "kind": "survey",
     "era": null,
@@ -684,11 +684,11 @@
     "topics": [
       "measuring"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "liebscher-et-al",
-    "title": "Liebscher et al.",
+    "title": "Liebscher et al., preprint 2026",
     "url": "https://drive.google.com/file/d/1FUIZr60LVLzGhIBw48orrJZhtqb6iV_t/view?usp=sharing",
     "kind": "survey",
     "era": null,
@@ -697,11 +697,11 @@
       "measuring",
       "reviewing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "cursor-telemetry-via-orosz",
-    "title": "Cursor telemetry via Orosz",
+    "title": "Orosz, Interesting AI coding stats from Cursor, 2026",
     "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-interesting-ai-coding-stats",
     "kind": "telemetry",
     "era": null,
@@ -711,11 +711,11 @@
       "reviewing",
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "posthog-newsletter",
-    "title": "PostHog newsletter",
+    "title": "Vanagas (PostHog), This post will save you tokens, 2026",
     "url": "https://newsletter.posthog.com/p/this-post-will-save-you-tokens",
     "kind": "vendor",
     "era": null,
@@ -725,11 +725,11 @@
       "prompting",
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "tabarsi-et-al",
-    "title": "Tabarsi et al.",
+    "title": "Tabarsi et al., Empirical Software Engineering 2026",
     "url": "https://link.springer.com/article/10.1007/s10664-026-10917-0",
     "kind": "study",
     "era": "older",
@@ -739,11 +739,11 @@
       "prompting",
       "reviewing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "orosz-roi-of-ai-spend",
-    "title": "Orosz, ROI of AI spend",
+    "title": "Orosz, What's the ROI of engineers' AI spending?, 2026",
     "url": "https://newsletter.pragmaticengineer.com/p/whats-the-roi-of-software-engineers",
     "kind": "vendor",
     "era": null,
@@ -752,11 +752,11 @@
       "measuring",
       "reviewing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "saga-neurips-2025",
-    "title": "SAGA, NeurIPS 2025",
+    "title": "Ma et al., NeurIPS 2025",
     "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/c8ec1867837f5cdaa9e61d40a8b8bb4a-Paper-Conference.pdf",
     "kind": "study",
     "era": null,
@@ -765,11 +765,11 @@
       "measuring",
       "testing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "verina-iclr-2026",
-    "title": "VERINA, ICLR 2026",
+    "title": "Ye et al., ICLR 2026",
     "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/41b8c80f9113b9f8e2e129447221682a-Paper-Conference.pdf",
     "kind": "benchmark",
     "era": "early-2025",
@@ -780,11 +780,11 @@
       "prompting",
       "xp-agile"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "iconiq-state-of-ai-2026",
-    "title": "ICONIQ State of AI 2026",
+    "title": "ICONIQ, State of AI, 2026",
     "url": "https://cdn.prod.website-files.com/65d0d38fc4ec8ce8a8921654/6979532decf89bd3df2163b0_ICONIQ_Analytics_Insights_2026_State_of_AI_Bi-Annual_Snapshot.pdf",
     "kind": "survey",
     "era": null,
@@ -792,11 +792,11 @@
     "topics": [
       "measuring"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "raicea-posthog",
-    "title": "Raicea, PostHog",
+    "title": "Raicea (PostHog), A beginner's guide to testing AI agents, 2026",
     "url": "https://posthog.com/blog/testing-ai-agents",
     "kind": "vendor",
     "era": null,
@@ -805,11 +805,11 @@
       "measuring",
       "testing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "anderson",
-    "title": "Anderson",
+    "title": "Anderson, Models and agents are outpacing their interfaces, 2026",
     "url": "https://pr0j3c7t0dd.substack.com/p/ai-in-september-2026-models-and-agents",
     "kind": "essay",
     "era": null,
@@ -817,11 +817,11 @@
     "topics": [
       "measuring"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "forbes",
-    "title": "Forbes",
+    "title": "Green (Forbes), AI costs more than the people it replaced, 2026",
     "url": "https://www.forbes.com/sites/jemmagreen/2026/07/02/ai-costs-more-than-the-people-it-replaced/",
     "kind": "practitioner",
     "era": null,
@@ -830,11 +830,11 @@
       "measuring",
       "looping"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "ludic",
-    "title": "Ludic",
+    "title": "Ludic, AI mania is eviscerating global decision-making, 2026",
     "url": "https://hermit-tech.com/blog/ai-mania-is-eviscerating-global-decisionmaking",
     "kind": "practitioner",
     "era": null,
@@ -843,11 +843,11 @@
       "measuring",
       "looping"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "chatterji-et-al-openai",
-    "title": "Chatterji et al. (OpenAI)",
+    "title": "Chatterji et al. (OpenAI), How organizations use AI, 2026",
     "url": "https://cdn.openai.com/pdf/how-organizations-use-chatgpt.pdf",
     "kind": "vendor",
     "era": null,
@@ -856,11 +856,11 @@
       "measuring",
       "looping"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "business-insider",
-    "title": "Business Insider",
+    "title": "Bharade (Business Insider), Uber's COO on justifying AI token spend, 2026",
     "url": "https://www.businessinsider.com/uber-coo-andrew-macdonald-ai-token-spending-harder-justify-2026-5",
     "kind": "practitioner",
     "era": null,
@@ -868,11 +868,11 @@
     "topics": [
       "measuring"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "ewerlof",
-    "title": "Ewerlof",
+    "title": "Ewerlöf, Coding is not solved, 2026",
     "url": "https://blog.alexewerlof.com/p/coding-is-not-solved",
     "kind": "essay",
     "era": null,
@@ -883,11 +883,11 @@
       "understanding",
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "honeycomb",
-    "title": "Honeycomb",
+    "title": "Majors (Honeycomb), AI norms and values part 3, 2026",
     "url": "https://www.honeycomb.io/blog/ai-norms-values-part-3-things-we-hold-true",
     "kind": "practitioner",
     "era": null,
@@ -896,11 +896,11 @@
       "measuring",
       "reviewing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "bean-strauss-singh-hbr",
-    "title": "Bean, Strauss & Singh, HBR",
+    "title": "Bean, Strauss & Singh (HBR), Performance management needs new metrics, 2026",
     "url": "https://hbr.org/2026/07/performance-management-needs-new-metrics-in-the-ai-era",
     "kind": "essay",
     "era": null,
@@ -908,11 +908,11 @@
     "topics": [
       "measuring"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "pinecoder",
-    "title": "pinecoder",
+    "title": "Pinecoder, My old job feels very distant now, 2026",
     "url": "https://www.pinecoder.dev/blog/2026-10-15/my-old-job-is-distant/",
     "kind": "practitioner",
     "era": null,
@@ -923,11 +923,11 @@
       "understanding",
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "gloaguen-et-al",
-    "title": "Gloaguen et al.",
+    "title": "Gloaguen et al., arXiv 2026",
     "url": "https://arxiv.org/abs/2602.11988",
     "kind": "benchmark",
     "era": null,
@@ -938,7 +938,7 @@
       "understanding",
       "xp-agile"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "lulla-et-al-icse-workshop-2026",
@@ -966,7 +966,7 @@
   },
   {
     "id": "paulsen",
-    "title": "Paulsen",
+    "title": "Paulsen, arXiv 2025",
     "url": "https://arxiv.org/abs/2509.21361",
     "kind": "study",
     "era": null,
@@ -975,11 +975,11 @@
     "topics": [
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "galster-et-al-aiware-26",
-    "title": "Galster et al., AIware '26",
+    "title": "Galster et al., AIware 2026",
     "url": "https://doi.org/10.1145/3805760.3814887",
     "kind": "study",
     "era": null,
@@ -987,11 +987,11 @@
     "topics": [
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "paltenghi-chandra-arxiv-260709900-aftervibe",
-    "title": "Paltenghi & Chandra, arXiv 2607.09900 (AfterVibe)",
+    "title": "Paltenghi & Chandra, arXiv 2026",
     "url": "https://arxiv.org/abs/2607.09900",
     "kind": "study",
     "era": null,
@@ -999,11 +999,11 @@
     "topics": [
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "stale",
-    "title": "STALE",
+    "title": "Chao et al., arXiv 2026",
     "url": "https://arxiv.org/abs/2605.06527",
     "kind": "benchmark",
     "era": null,
@@ -1012,11 +1012,11 @@
     "topics": [
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "rathje-et-al",
-    "title": "Rathje et al.",
+    "title": "Rathje et al., preprint 2026",
     "url": "https://osf.io/5k6r9/",
     "kind": "study",
     "era": null,
@@ -1027,11 +1027,11 @@
       "understanding",
       "measuring"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "anthropic-ai-native-sdlc-playbook",
-    "title": "Anthropic AI-native SDLC playbook",
+    "title": "Anthropic, The AI-native SDLC playbook, 2026",
     "url": "https://claude.com/blog/the-ai-native-sdlc-playbook",
     "kind": "vendor",
     "era": null,
@@ -1041,11 +1041,11 @@
       "reviewing",
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "augmented-coding-obstacles-selective-hearing",
-    "title": "Augmented coding obstacles: Selective Hearing",
+    "title": "Augmented Coding Patterns, Selective hearing obstacle",
     "url": "https://github.com/lexler/augmented-coding-patterns/tree/main/documents/obstacles",
     "kind": "practitioner",
     "era": null,
@@ -1053,11 +1053,11 @@
     "topics": [
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "dodell",
-    "title": "Dodell",
+    "title": "Odell, The great agent skills land grab, 2026",
     "url": "https://denodell.com/blog/the-great-agent-skills-land-grab",
     "kind": "essay",
     "era": null,
@@ -1065,11 +1065,11 @@
     "topics": [
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "langchain-anatomy-of-an-agent-harness",
-    "title": "LangChain, anatomy of an agent harness",
+    "title": "LangChain, The anatomy of an agent harness, 2026",
     "url": "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness",
     "kind": "vendor",
     "era": null,
@@ -1077,7 +1077,7 @@
     "topics": [
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "kassner-schutze-acl-2020",
@@ -1105,7 +1105,7 @@
   },
   {
     "id": "system-design-newsletter-spec-driven-development",
-    "title": "System Design newsletter, spec-driven development",
+    "title": "Kim (System Design Newsletter), How AI agents build enterprise software, 2026",
     "url": "https://newsletter.systemdesign.one/p/spec-driven-development-ai-agents",
     "kind": "vendor",
     "era": null,
@@ -1113,11 +1113,11 @@
     "topics": [
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "margalit-et-al",
-    "title": "Margalit et al.",
+    "title": "Margalit et al., arXiv 2026",
     "url": "https://arxiv.org/abs/2606.24535",
     "kind": "study",
     "era": null,
@@ -1127,11 +1127,11 @@
       "risks-security",
       "understanding"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "piskala",
-    "title": "Piskala",
+    "title": "Piskala, arXiv 2026",
     "url": "https://arxiv.org/html/2602.00180v1",
     "kind": "essay",
     "era": null,
@@ -1140,11 +1140,11 @@
     "topics": [
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "ewerlofs-pattern-catalogue",
-    "title": "Ewerlof's pattern catalogue",
+    "title": "Ewerlöf, AI systems engineering patterns, 2025",
     "url": "https://blog.alexewerlof.com/p/ai-systems-engineering-patterns",
     "kind": "essay",
     "era": null,
@@ -1152,11 +1152,11 @@
     "topics": [
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "kohler-nng-three-agent-context-roles",
-    "title": "Kohler, NN/g: three agent context roles",
+    "title": "Kohler (NN/g), The 3 roles of context for AI agents, 2026",
     "url": "https://www.nngroup.com/articles/3-agent-context-roles/",
     "kind": "study",
     "era": null,
@@ -1164,11 +1164,11 @@
     "topics": [
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "kohler-nng-big-ball-of-mud",
-    "title": "Kohler, NN/g: big ball of mud",
+    "title": "Kohler (NN/g), The new big ball of mud, 2026",
     "url": "https://www.nngroup.com/articles/big-ball-of-mud-ai/",
     "kind": "essay",
     "era": null,
@@ -1176,11 +1176,11 @@
     "topics": [
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "moran-gibbons-nng-vibe-architects",
-    "title": "Moran & Gibbons, NN/g: vibe architects",
+    "title": "Moran & Gibbons (NN/g), Vibe architects, 2026",
     "url": "https://www.nngroup.com/articles/vibe-architects/",
     "kind": "study",
     "era": null,
@@ -1188,11 +1188,11 @@
     "topics": [
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "foote-yoder-1997",
-    "title": "Foote & Yoder, 1997",
+    "title": "Foote & Yoder, Big ball of mud, 1997",
     "url": "https://www.laputan.org/mud/",
     "kind": "essay",
     "era": null,
@@ -1200,11 +1200,11 @@
     "topics": [
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "perez-nng-context-architecture",
-    "title": "Perez, NN/g: context architecture",
+    "title": "Perez (NN/g), Context architecture, 2026",
     "url": "https://www.nngroup.com/articles/context-architecture/",
     "kind": "essay",
     "era": null,
@@ -1212,11 +1212,11 @@
     "topics": [
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "neo-kim-and-gencay-claude-code-token-usage",
-    "title": "Neo Kim and Gencay, Claude Code token usage",
+    "title": "Kim & Gencay (System Design Newsletter), How to cut your Claude Code token usage, 2026",
     "url": "https://newsletter.systemdesign.one/p/claude-code-token-usage",
     "kind": "vendor",
     "era": null,
@@ -1224,11 +1224,11 @@
     "topics": [
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "fowler-2026-09-28",
-    "title": "Fowler, 2026-09-28",
+    "title": "Fowler, The spec can come later, 2026",
     "url": "https://aicoding.leaflet.pub/3mwlzitykzc27",
     "kind": "essay",
     "era": null,
@@ -1236,11 +1236,11 @@
     "topics": [
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "gonzalez-2026-03",
-    "title": "Gonzalez, 2026-03",
+    "title": "Gonzalez, A sufficiently detailed spec is code, 2026",
     "url": "https://haskellforall.com/2026/03/a-sufficiently-detailed-spec-is-code",
     "kind": "essay",
     "era": null,
@@ -1248,11 +1248,11 @@
     "topics": [
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "marin-perez-2026-05-20",
-    "title": "Marin-Perez, 2026-05-20",
+    "title": "Marin-Perez, The mythical well-defined project, 2026",
     "url": "https://www.cosotateam.com/post/the-mythical-well-defined-project",
     "kind": "essay",
     "era": null,
@@ -1260,11 +1260,11 @@
     "topics": [
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "boeckeler-three-spec-driven-development-tools",
-    "title": "Boeckeler, three spec-driven development tools",
+    "title": "Böckeler, Understanding spec-driven development, 2025",
     "url": "https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html",
     "kind": "practitioner",
     "era": null,
@@ -1272,11 +1272,11 @@
     "topics": [
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "lopopolo-openai-harness-engineering",
-    "title": "Lopopolo, OpenAI harness engineering",
+    "title": "Lopopolo (OpenAI), Harness engineering, 2026",
     "url": "https://openai.com/index/harness-engineering/",
     "kind": "vendor",
     "era": null,
@@ -1284,11 +1284,11 @@
     "topics": [
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "demirer-et-al-nber-w35275",
-    "title": "Demirer et al., NBER w35275",
+    "title": "Demirer et al., NBER 2026",
     "url": "https://www.nber.org/system/files/working_papers/w35275/w35275.pdf",
     "kind": "study",
     "era": null,
@@ -1298,11 +1298,11 @@
       "measuring",
       "xp-agile"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "faros-22k-devs",
-    "title": "Faros, 22k devs",
+    "title": "Faros, AI engineering report, 2026",
     "url": "https://www.faros.ai/blog/ai-acceleration-whiplash-takeaways",
     "kind": "vendor",
     "era": null,
@@ -1315,7 +1315,7 @@
       "looping",
       "testing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "perry-et-al-ccs-2023",
@@ -1335,7 +1335,7 @@
   },
   {
     "id": "osmani-agentic-code-review-coderabbit-data-and-multi-tool-st",
-    "title": "Osmani, Agentic code review (CodeRabbit data and multi-tool study)",
+    "title": "Osmani, Agentic code review, 2026",
     "url": "https://addyosmani.com/blog/agentic-code-review/",
     "kind": "vendor",
     "era": null,
@@ -1345,11 +1345,11 @@
       "risks-security",
       "measuring"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "he-et-al-via-ehsani-et-al",
-    "title": "He et al., via Ehsani et al.",
+    "title": "He et al., via Ehsani et al., arXiv 2026",
     "url": "https://arxiv.org/abs/2606.14796",
     "kind": "study",
     "era": null,
@@ -1360,11 +1360,11 @@
       "risks-security",
       "testing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "circleci-28-million-workflows",
-    "title": "CircleCI, 28 million workflows",
+    "title": "CircleCI, What 28 million workflows reveal, 2026",
     "url": "https://www.linkedin.com/pulse/what-28-million-workflows-reveal-ai-codings-biggest-risk-circleci-j9syc/",
     "kind": "vendor",
     "era": null,
@@ -1376,11 +1376,11 @@
       "looping",
       "testing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "orosz-what-is-happening-with-code-reviews",
-    "title": "Orosz, What is happening with code reviews",
+    "title": "Orosz, What is happening with code reviews?, 2026",
     "url": "https://newsletter.pragmaticengineer.com/p/what-is-happening-with-code-reviews",
     "kind": "practitioner",
     "era": null,
@@ -1390,11 +1390,11 @@
       "risks-security",
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "baltes-et-al",
-    "title": "Baltes et al.",
+    "title": "Baltes et al., arXiv 2026",
     "url": "https://arxiv.org/html/2604.16754v1",
     "kind": "study",
     "era": null,
@@ -1405,11 +1405,11 @@
       "measuring",
       "testing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "vicente-matute-via-lovett",
-    "title": "Vicente & Matute, via Lovett",
+    "title": "Vicente & Matute, via Lovett, arXiv 2026",
     "url": "https://arxiv.org/pdf/2607.29380",
     "kind": "study",
     "era": null,
@@ -1418,11 +1418,11 @@
       "reviewing",
       "understanding"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "orosz-the-pulse-concern-about-ai-review",
-    "title": "Orosz, The Pulse: concern about AI review",
+    "title": "Orosz, Concern about code review load, 2026",
     "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-new-trend-concern-about",
     "kind": "practitioner",
     "era": null,
@@ -1430,11 +1430,11 @@
     "topics": [
       "reviewing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "evil-martians-ten-anti-ai-slop-moves",
-    "title": "Evil Martians, Ten anti-AI-slop moves",
+    "title": "Mikhin & Turner (Evil Martians), 10 anti-AI-slop moves, 2026",
     "url": "https://evilmartians.com/chronicles/ten-anti-ai-slop-moves-for-frontend-projects-going-faster-than-humans-can-review",
     "kind": "practitioner",
     "era": null,
@@ -1443,11 +1443,11 @@
       "reviewing",
       "testing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "brasil-when-i-reject-ai-code-even-if-it-works",
-    "title": "Brasil, When I reject AI code even if it works",
+    "title": "Brasil, When I reject AI code even if it works, 2026",
     "url": "https://vinibrasil.com/when-i-reject-ai-code-even-if-it-works/",
     "kind": "essay",
     "era": null,
@@ -1456,11 +1456,11 @@
       "reviewing",
       "understanding"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "tanna-hand-write-commits",
-    "title": "Tanna, Hand-write commits",
+    "title": "Tanna, Why I still hand-write my commit messages, 2026",
     "url": "https://www.jvt.me/posts/2026/08/17/hand-write-commits/",
     "kind": "essay",
     "era": null,
@@ -1469,11 +1469,11 @@
       "reviewing",
       "understanding"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "lawson-you-can-just-choose-how-many-bugs-you-want",
-    "title": "Lawson, You can just choose how many bugs you want",
+    "title": "Lawson, You can just choose how many bugs you want now, 2026",
     "url": "https://nolanlawson.com/2026/08/16/you-can-just-choose-how-many-bugs-you-want-now/",
     "kind": "essay",
     "era": null,
@@ -1481,11 +1481,11 @@
     "topics": [
       "reviewing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "dan-luu-ai-coding",
-    "title": "Dan Luu, AI coding",
+    "title": "Luu, Notes on agentic coding, 2026",
     "url": "https://danluu.com/ai-coding/",
     "kind": "essay",
     "era": null,
@@ -1494,11 +1494,11 @@
       "reviewing",
       "testing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "tornhill-controlling-the-uncertainty-machine",
-    "title": "Tornhill, Controlling the uncertainty machine",
+    "title": "Tornhill, Controlling the uncertainty machine, 2026",
     "url": "https://adamtornhill.substack.com/p/controlling-the-uncertainty-machine",
     "kind": "practitioner",
     "era": null,
@@ -1507,11 +1507,11 @@
       "reviewing",
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "cervera-vibe-everything",
-    "title": "Cervera, Vibe everything",
+    "title": "Cervera, Vibe everything, 2026",
     "url": "https://www.acervera.com/blog/2026/09/vibe-everything-the-truth-nobody-wants-to-hear",
     "kind": "essay",
     "era": null,
@@ -1520,11 +1520,11 @@
       "reviewing",
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "ellens-the-system-is-on-the-other-side",
-    "title": "Ellens, The system is on the other side",
+    "title": "Ellens, The system is on the other side of the glass, 2026",
     "url": "https://engineeringforteams.substack.com/p/the-system-is-on-the-other-side-of",
     "kind": "essay",
     "era": null,
@@ -1534,11 +1534,11 @@
       "understanding",
       "testing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "astrogator-uiuc-and-ibm",
-    "title": "Astrogator (UIUC and IBM)",
+    "title": "Councilman et al., arXiv 2025",
     "url": "https://arxiv.org/pdf/2507.13290",
     "kind": "study",
     "era": null,
@@ -1547,11 +1547,11 @@
       "reviewing",
       "testing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "anthropic-and-theorem-formal-verification",
-    "title": "Anthropic and Theorem, formal verification",
+    "title": "Lucas et al. (Anthropic), Formal software verification with LLMs, 2026",
     "url": "https://www.anthropic.com/research/formal-verification",
     "kind": "vendor",
     "era": null,
@@ -1561,11 +1561,11 @@
       "testing",
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "openai-scaling-code-verification",
-    "title": "OpenAI, Scaling code verification",
+    "title": "Trebacz et al. (OpenAI), Verifying code at scale, 2025",
     "url": "https://alignment.openai.com/scaling-code-verification/",
     "kind": "vendor",
     "era": null,
@@ -1573,11 +1573,11 @@
     "topics": [
       "reviewing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "owasp-llm012025-prompt-injection",
-    "title": "OWASP LLM01:2025 Prompt Injection",
+    "title": "OWASP, LLM01 Prompt injection, 2025",
     "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
     "kind": "practitioner",
     "era": null,
@@ -1586,11 +1586,11 @@
       "risks-security",
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "role-confusion-icml-2026",
-    "title": "Role confusion, ICML 2026",
+    "title": "Ye, Cui & Hadfield-Menell, ICML 2026",
     "url": "https://role-confusion.github.io",
     "kind": "study",
     "era": null,
@@ -1599,11 +1599,11 @@
       "risks-security",
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "camel-debenedetti-et-al",
-    "title": "CaMeL, Debenedetti et al.",
+    "title": "Debenedetti et al., arXiv 2025",
     "url": "https://arxiv.org/abs/2503.18813",
     "kind": "benchmark",
     "era": "early-2025",
@@ -1612,11 +1612,11 @@
       "risks-security",
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "owasp-community-mcp-tool-poisoning",
-    "title": "OWASP community, MCP Tool Poisoning",
+    "title": "OWASP community, MCP tool poisoning",
     "url": "https://community.owasp.org/attacks/MCP_Tool_Poisoning",
     "kind": "practitioner",
     "era": null,
@@ -1624,11 +1624,11 @@
     "topics": [
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "mcptox-wang-et-al",
-    "title": "MCPTox, Wang et al.",
+    "title": "Wang et al., arXiv 2025",
     "url": "https://arxiv.org/html/2508.14925v1",
     "kind": "benchmark",
     "era": null,
@@ -1636,11 +1636,11 @@
     "topics": [
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "owasp-llm022025-sensitive-information-disclosure",
-    "title": "OWASP LLM02:2025 Sensitive Information Disclosure",
+    "title": "OWASP, LLM02 Sensitive information disclosure, 2025",
     "url": "https://genai.owasp.org/llmrisk/llm022025-sensitive-information-disclosure/",
     "kind": "practitioner",
     "era": null,
@@ -1648,11 +1648,11 @@
     "topics": [
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "mollick-opinionated-guide",
-    "title": "Mollick, opinionated guide",
+    "title": "Mollick, An opinionated guide to which AI to use, 2026",
     "url": "https://www.oneusefulthing.org/p/an-opinionated-guide-to-which-ai-b22",
     "kind": "essay",
     "era": null,
@@ -1660,11 +1660,11 @@
     "topics": [
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "owasp-llm062025-excessive-agency",
-    "title": "OWASP LLM06:2025 Excessive Agency",
+    "title": "OWASP, LLM06 Excessive agency, 2025",
     "url": "https://genai.owasp.org/llmrisk/llm062025-excessive-agency/",
     "kind": "practitioner",
     "era": null,
@@ -1672,11 +1672,11 @@
     "topics": [
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "owasp-llm072025-system-prompt-leakage",
-    "title": "OWASP LLM07:2025 System Prompt Leakage",
+    "title": "OWASP, LLM07 System prompt leakage, 2025",
     "url": "https://genai.owasp.org/llmrisk/llm072025-system-prompt-leakage/",
     "kind": "practitioner",
     "era": null,
@@ -1684,11 +1684,11 @@
     "topics": [
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "owasp-llm082025-vector-and-embedding-weaknesses",
-    "title": "OWASP LLM08:2025 Vector and Embedding Weaknesses",
+    "title": "OWASP, LLM08 Vector and embedding weaknesses, 2025",
     "url": "https://genai.owasp.org/llmrisk/llm082025-vector-and-embedding-weaknesses/",
     "kind": "practitioner",
     "era": null,
@@ -1696,11 +1696,11 @@
     "topics": [
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "owasp-llm042025-data-and-model-poisoning",
-    "title": "OWASP LLM04:2025 Data and Model Poisoning",
+    "title": "OWASP, LLM04 Data and model poisoning, 2025",
     "url": "https://genai.owasp.org/llmrisk/llm042025-data-and-model-poisoning/",
     "kind": "practitioner",
     "era": null,
@@ -1708,7 +1708,7 @@
     "topics": [
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "spracklen-et-al-usenix-security-2025",
@@ -1724,7 +1724,7 @@
   },
   {
     "id": "krishna-et-al-preprint",
-    "title": "Krishna et al., preprint",
+    "title": "Krishna et al., arXiv 2025",
     "url": "https://arxiv.org/html/2501.19012v1",
     "kind": "study",
     "era": "older",
@@ -1732,11 +1732,11 @@
     "topics": [
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "aikido-slopsquatting",
-    "title": "Aikido, slopsquatting",
+    "title": "Durnas (Aikido), What is slopsquatting?, 2026",
     "url": "https://www.aikido.dev/blog/slopsquatting-ai-package-hallucination-attacks",
     "kind": "vendor",
     "era": null,
@@ -1744,11 +1744,11 @@
     "topics": [
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "owasp-llm092025-misinformation",
-    "title": "OWASP LLM09:2025 Misinformation",
+    "title": "OWASP, LLM09 Misinformation, 2025",
     "url": "https://genai.owasp.org/llmrisk/llm092025-misinformation/",
     "kind": "practitioner",
     "era": null,
@@ -1758,11 +1758,11 @@
       "reviewing",
       "understanding"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "owasp-llm032025-supply-chain",
-    "title": "OWASP LLM03:2025 Supply Chain",
+    "title": "OWASP, LLM03 Supply chain, 2025",
     "url": "https://genai.owasp.org/llmrisk/llm032025-supply-chain/",
     "kind": "practitioner",
     "era": null,
@@ -1770,11 +1770,11 @@
     "topics": [
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "owasp-a032025-software-supply-chain-failures",
-    "title": "OWASP A03:2025 Software Supply Chain Failures",
+    "title": "OWASP, A03 Software supply chain failures, 2025",
     "url": "https://owasp.org/Top10/2025/A03_2025-Software_Supply_Chain_Failures/",
     "kind": "practitioner",
     "era": null,
@@ -1782,11 +1782,11 @@
     "topics": [
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "owasp-software-supply-chain-security-cheat-sheet",
-    "title": "OWASP Software Supply Chain Security cheat sheet",
+    "title": "OWASP, Software supply chain security cheat sheet",
     "url": "https://cheatsheetseries.owasp.org/cheatsheets/Software_Supply_Chain_Security_Cheat_Sheet.html",
     "kind": "practitioner",
     "era": null,
@@ -1794,11 +1794,11 @@
     "topics": [
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "owasp-llm052025-improper-output-handling",
-    "title": "OWASP LLM05:2025 Improper Output Handling",
+    "title": "OWASP, LLM05 Improper output handling, 2025",
     "url": "https://genai.owasp.org/llmrisk/llm052025-improper-output-handling/",
     "kind": "practitioner",
     "era": null,
@@ -1806,11 +1806,11 @@
     "topics": [
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "owasp-llm102025-unbounded-consumption",
-    "title": "OWASP LLM10:2025 Unbounded Consumption",
+    "title": "OWASP, LLM10 Unbounded consumption, 2025",
     "url": "https://genai.owasp.org/llmrisk/llm102025-unbounded-consumption/",
     "kind": "practitioner",
     "era": null,
@@ -1819,11 +1819,11 @@
       "risks-security",
       "measuring"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "nyt-anthropic-copyright-settlement",
-    "title": "NYT, Anthropic copyright settlement",
+    "title": "New York Times, Anthropic copyright settlement, 2025",
     "url": "https://www.nytimes.com/2025/09/05/technology/anthropic-settlement-copyright-ai.html",
     "kind": "essay",
     "era": null,
@@ -1831,11 +1831,11 @@
     "topics": [
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "aikido-safechain",
-    "title": "Aikido SafeChain",
+    "title": "Aikido, SafeChain",
     "url": "https://github.com/AikidoSec/safe-chain",
     "kind": "vendor",
     "era": null,
@@ -1843,7 +1843,7 @@
     "topics": [
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "geng-et-al-cmc-2026",
@@ -1859,7 +1859,7 @@
   },
   {
     "id": "times-of-israel-ai-flagged-cargo-cnn-relay",
-    "title": "Times of Israel, AI-flagged cargo (CNN relay)",
+    "title": "Times of Israel, AI-flagged cargo (relaying CNN), 2026",
     "url": "https://www.timesofisrael.com/us-nearly-raided-chinese-ship-after-ai-falsely-flagged-nuclear-cargo-for-iran-cnn/",
     "kind": "essay",
     "era": null,
@@ -1867,11 +1867,11 @@
     "topics": [
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "trending-topics-false-ai-intelligence-report-cnn-relay",
-    "title": "Trending Topics, false AI intelligence report (CNN relay)",
+    "title": "Trending Topics, False AI intelligence report (relaying CNN), 2026",
     "url": "https://www.trendingtopics.eu/false-ai-intelligence-report-nearly-triggered-a-u-s-china-military-clash/",
     "kind": "essay",
     "era": null,
@@ -1879,11 +1879,11 @@
     "topics": [
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "aws-php2shell-exploitation-in-madpot",
-    "title": "AWS, PHP2Shell exploitation in MadPot",
+    "title": "AWS, PHP2Shell exploitation before public disclosure, 2026",
     "url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/",
     "kind": "telemetry",
     "era": null,
@@ -1891,11 +1891,11 @@
     "topics": [
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "openai-coordinated-disclosure",
-    "title": "OpenAI, coordinated disclosure",
+    "title": "OpenAI, Coordinated disclosure of critical vulnerabilities, 2026",
     "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
     "kind": "vendor",
     "era": null,
@@ -1903,11 +1903,11 @@
     "topics": [
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "orosz-time-to-rethink-software",
-    "title": "Orosz, time to rethink software",
+    "title": "Orosz, Time to rethink software security, 2026",
     "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-time-to-rethink-software",
     "kind": "essay",
     "era": null,
@@ -1915,11 +1915,11 @@
     "topics": [
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "anthropic-using-llms-to-secure-source-code",
-    "title": "Anthropic, using LLMs to secure source code",
+    "title": "Yan & Dattani (Anthropic), Using LLMs to secure source code, 2026",
     "url": "https://claude.com/resources/articles/using-llms-to-secure-source-code",
     "kind": "vendor",
     "era": null,
@@ -1928,11 +1928,11 @@
       "risks-security",
       "testing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "github-changelog-security-validation-for-third-party-agents",
-    "title": "GitHub changelog, security validation for third-party agents",
+    "title": "GitHub, Security validation for third-party coding agents, 2026",
     "url": "https://github.blog/changelog/2026-06-09-security-validation-for-third-party-coding-agents/",
     "kind": "vendor",
     "era": null,
@@ -1941,7 +1941,7 @@
       "risks-security",
       "reviewing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "fucci-et-al-ieee-tse-2017",
@@ -1958,7 +1958,7 @@
   },
   {
     "id": "boeckeler-tdd-in-the-agent-loop",
-    "title": "Boeckeler, TDD in the agent loop",
+    "title": "Böckeler, TDD inside the agent loop, 2026",
     "url": "https://martinfowler.com/articles/exploring-gen-ai/tdd-in-the-agent-loop.html",
     "kind": "practitioner",
     "era": null,
@@ -1969,11 +1969,11 @@
       "xp-agile",
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "bdfinst-tdd-vs-non-tdd-report",
-    "title": "bdfinst, TDD vs non-TDD report",
+    "title": "bdfinst, TDD vs. non-TDD in agentic development, 2026",
     "url": "https://github.com/bdfinst/agentic-dev-team/blob/main/docs/experiments/tdd-vs-nontdd-report.md",
     "kind": "practitioner",
     "era": null,
@@ -1983,11 +1983,11 @@
       "xp-agile",
       "looping"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "alonso-tdad-preprint",
-    "title": "Alonso, TDAD preprint",
+    "title": "Alonso, arXiv 2026",
     "url": "https://arxiv.org/html/2603.17973v1",
     "kind": "study",
     "era": null,
@@ -1996,11 +1996,11 @@
       "testing",
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "swe-ci",
-    "title": "SWE-CI",
+    "title": "Chen et al., arXiv 2026",
     "url": "https://arxiv.org/abs/2603.03823",
     "kind": "benchmark",
     "era": null,
@@ -2012,11 +2012,11 @@
       "reviewing",
       "measuring"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "tornhill-practices-i-abandoned-with-agents",
-    "title": "Tornhill, Practices I abandoned with agents",
+    "title": "Tornhill, Practices I abandoned with agents, 2026",
     "url": "https://adamtornhill.substack.com/p/practices-i-abandoned-with-agents",
     "kind": "practitioner",
     "era": null,
@@ -2026,11 +2026,11 @@
       "reviewing",
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "vaccari-acceptance-tests-for-ai-assisted-development",
-    "title": "Vaccari, Acceptance tests for AI-assisted development",
+    "title": "Vaccari, Acceptance tests for AI-assisted development, 2025",
     "url": "https://matteo.vaccari.name/posts/acceptance-tests-for-ai-assisted-development/",
     "kind": "practitioner",
     "era": null,
@@ -2040,11 +2040,11 @@
       "xp-agile",
       "reviewing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "beck-on-pragmatic-engineer-tdd-ai-agents",
-    "title": "Beck on Pragmatic Engineer (TDD, AI agents)",
+    "title": "Beck, Pragmatic Engineer podcast 2025",
     "url": "https://newsletter.pragmaticengineer.com/p/tdd-ai-agents-and-coding-with-kent",
     "kind": "practitioner",
     "era": null,
@@ -2054,11 +2054,11 @@
       "xp-agile",
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "beck-augmented-coding-beyond-the-vibes",
-    "title": "Beck, Augmented coding: beyond the vibes",
+    "title": "Beck, Augmented coding: beyond the vibes, 2025",
     "url": "https://newsletter.kentbeck.com/p/augmented-coding-beyond-the-vibes",
     "kind": "practitioner",
     "era": null,
@@ -2067,7 +2067,7 @@
       "testing",
       "xp-agile"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "mock-et-al-xp-2024-workshop",
@@ -2085,7 +2085,7 @@
   },
   {
     "id": "alphaverus-icml-2025",
-    "title": "AlphaVerus, ICML 2025",
+    "title": "Aggarwal et al., ICML 2025",
     "url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/aggarwal25a/aggarwal25a.pdf",
     "kind": "study",
     "era": "older",
@@ -2095,11 +2095,11 @@
       "looping",
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "approved-scenarios-pattern",
-    "title": "Approved Scenarios pattern",
+    "title": "Ördög (Augmented Coding Patterns), Approved scenarios",
     "url": "https://lexler.github.io/augmented-coding-patterns/patterns/approved-scenarios/",
     "kind": "practitioner",
     "era": null,
@@ -2108,11 +2108,11 @@
       "testing",
       "reviewing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "ai-made-tools-tdd-with-ai",
-    "title": "AI Made Tools, TDD with AI",
+    "title": "AI Made Tools, Test-driven development with AI, 2026",
     "url": "https://www.aimadetools.com/blog/tdd-with-ai/",
     "kind": "essay",
     "era": null,
@@ -2120,11 +2120,11 @@
     "topics": [
       "testing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "shen-tamkin-anthropic-rct",
-    "title": "Shen & Tamkin, Anthropic RCT",
+    "title": "Shen & Tamkin, Anthropic 2026",
     "url": "https://www.anthropic.com/research/AI-assistance-coding-skills",
     "kind": "rct",
     "era": null,
@@ -2132,7 +2132,7 @@
     "topics": [
       "understanding"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "bastani-et-al-pnas-2025",
@@ -2148,7 +2148,7 @@
   },
   {
     "id": "kosmyna-et-al",
-    "title": "Kosmyna et al.",
+    "title": "Kosmyna et al., arXiv 2025",
     "url": "https://arxiv.org/pdf/2506.08872",
     "kind": "study",
     "era": "older",
@@ -2156,11 +2156,11 @@
     "topics": [
       "understanding"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "generation-effect-meta-analysis",
-    "title": "Generation-effect meta-analysis",
+    "title": "McCurdy et al., Psychonomic Bulletin & Review 2020",
     "url": "https://link.springer.com/content/pdf/10.3758/s13423-020-01762-3.pdf",
     "kind": "study",
     "era": null,
@@ -2168,11 +2168,11 @@
     "topics": [
       "understanding"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "fan-et-al",
-    "title": "Fan et al.",
+    "title": "Fan et al., International Journal of STEM Education 2025",
     "url": "https://link.springer.com/content/pdf/10.1186/s40594-025-00537-3.pdf",
     "kind": "study",
     "era": "older",
@@ -2181,11 +2181,11 @@
       "understanding",
       "xp-agile"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "brynjolfsson-et-al",
-    "title": "Brynjolfsson et al.",
+    "title": "Brynjolfsson et al., Stanford Digital Economy Lab 2026",
     "url": "https://digitaleconomy.stanford.edu/app/uploads/2026/08/Canaries_August2026.pdf",
     "kind": "study",
     "era": null,
@@ -2193,7 +2193,7 @@
     "topics": [
       "understanding"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "liu-christian-et-al-colm-2026",
@@ -2209,7 +2209,7 @@
   },
   {
     "id": "bainbridge-1983",
-    "title": "Bainbridge, 1983",
+    "title": "Bainbridge, Automatica 1983",
     "url": "https://ckrybus.com/static/papers/Bainbridge_1983_Automatica.pdf",
     "kind": "essay",
     "era": null,
@@ -2217,11 +2217,11 @@
     "topics": [
       "understanding"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "yu-et-al",
-    "title": "Yu et al.",
+    "title": "Yu et al., arXiv 2026",
     "url": "https://arxiv.org/abs/2603.10062",
     "kind": "essay",
     "era": null,
@@ -2229,11 +2229,11 @@
     "topics": [
       "understanding"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "spati-from-obsidian-to-enterprise-company-brain",
-    "title": "Spati, from Obsidian to enterprise company brain",
+    "title": "Spati, Obsidian vault to enterprise company brain, 2026",
     "url": "https://www.ssp.sh/blog/from-obsidian-to-enterprise-company-brain/",
     "kind": "practitioner",
     "era": null,
@@ -2241,11 +2241,11 @@
     "topics": [
       "understanding"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "storey-cognitive-debt",
-    "title": "Storey, cognitive debt",
+    "title": "Storey, Cognitive debt, 2026",
     "url": "https://margaretstorey.com/blog/2026/02/09/cognitive-debt/",
     "kind": "essay",
     "era": null,
@@ -2255,11 +2255,11 @@
       "reviewing",
       "looping"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "storey-cognitive-debt-revisited",
-    "title": "Storey, cognitive debt revisited",
+    "title": "Storey, What I'm hearing about cognitive debt, 2026",
     "url": "https://margaretstorey.com/blog/2026/02/18/cognitive-debt-revisited/",
     "kind": "essay",
     "era": null,
@@ -2267,11 +2267,11 @@
     "topics": [
       "understanding"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "litt",
-    "title": "Litt",
+    "title": "Litt, Understanding is the new bottleneck, 2026",
     "url": "https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck",
     "kind": "practitioner",
     "era": null,
@@ -2280,11 +2280,11 @@
       "understanding",
       "reviewing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "wursch",
-    "title": "Würsch",
+    "title": "Würsch, AI doesn't replace engineering discipline, 2026",
     "url": "https://www.linkedin.com/pulse/ai-doesnt-replace-engineering-discipline-rewards-michael-würsch-vxa6e/",
     "kind": "practitioner",
     "era": null,
@@ -2293,11 +2293,11 @@
       "understanding",
       "reviewing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "antirez",
-    "title": "antirez",
+    "title": "antirez, Writing system software: code comments, 2018",
     "url": "https://antirez.com/news/124",
     "kind": "practitioner",
     "era": null,
@@ -2305,11 +2305,11 @@
     "topics": [
       "understanding"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "goblindegook",
-    "title": "goblindegook",
+    "title": "goblindegook, The wastes of product engineering, 2023",
     "url": "https://goblindegook.com/2023/engineering-waste/",
     "kind": "practitioner",
     "era": null,
@@ -2318,11 +2318,11 @@
       "understanding",
       "xp-agile"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "james",
-    "title": "James",
+    "title": "James, How to go fast, 2019",
     "url": "https://quii.dev/How_to_go_fast",
     "kind": "practitioner",
     "era": null,
@@ -2331,11 +2331,11 @@
       "understanding",
       "xp-agile"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "ronacher",
-    "title": "Ronacher",
+    "title": "Ronacher, The tower keeps rising, 2026",
     "url": "https://lucumr.pocoo.org/2026/7/13/the-tower-keeps-rising/",
     "kind": "essay",
     "era": null,
@@ -2343,11 +2343,11 @@
     "topics": [
       "understanding"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "spati-nobody-knows-anything-anymore",
-    "title": "Spati, nobody knows anything anymore",
+    "title": "Spati, Nobody knows anything anymore, 2026",
     "url": "https://www.ssp.sh/brain/the-problem-is-not-the-ai-code-but-nobody-knows-anything-anymore/",
     "kind": "practitioner",
     "era": null,
@@ -2355,11 +2355,11 @@
     "topics": [
       "understanding"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "sahai",
-    "title": "Sahai",
+    "title": "Sahai, We're gonna need a lot more mathematicians, 2026",
     "url": "https://terrytao.wordpress.com/2026/09/24/were-gonna-need-a-lot-more-mathematicians/",
     "kind": "essay",
     "era": null,
@@ -2367,11 +2367,11 @@
     "topics": [
       "understanding"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "tablan-et-al",
-    "title": "Tablan et al.",
+    "title": "Tablan et al., arXiv 2025",
     "url": "https://arxiv.org/abs/2511.08301",
     "kind": "vendor",
     "era": null,
@@ -2379,11 +2379,11 @@
     "topics": [
       "understanding"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "stannard",
-    "title": "Stannard",
+    "title": "Stannard, Software hyper-delivery, 2026",
     "url": "https://x.com/Aaronontheweb/status/2073095820740603906",
     "kind": "practitioner",
     "era": null,
@@ -2392,11 +2392,11 @@
       "understanding",
       "reviewing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "karpathy-x-post",
-    "title": "Karpathy (X post)",
+    "title": "Karpathy, Making LLM outputs easier to understand (X post), 2026",
     "url": "https://x.com/karpathy/status/2105819303471976479",
     "kind": "practitioner",
     "era": null,
@@ -2404,11 +2404,11 @@
     "topics": [
       "understanding"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "teeni-katz-hhai-2026",
-    "title": "Teeni & Katz, HHAI 2026",
+    "title": "Te'eni & Katz, HHAI 2026",
     "url": "https://journals.sagepub.com/doi/epdf/10.3233/FAIA260505",
     "kind": "study",
     "era": null,
@@ -2417,11 +2417,11 @@
       "understanding",
       "prompting"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "rezazadeh-et-al",
-    "title": "Rezazadeh et al.",
+    "title": "Rezazadeh et al., arXiv 2025",
     "url": "https://arxiv.org/html/2505.18279v1",
     "kind": "study",
     "era": null,
@@ -2430,11 +2430,11 @@
       "understanding",
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "tiwari-gupta",
-    "title": "Tiwari & Gupta",
+    "title": "Tiwari & Gupta, Discover Artificial Intelligence 2026",
     "url": "https://link.springer.com/article/10.1007/s44163-026-00992-z",
     "kind": "study",
     "era": null,
@@ -2443,11 +2443,11 @@
       "understanding",
       "risks-security"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "letta",
-    "title": "Letta",
+    "title": "Letta, Benchmarking AI agent memory, 2026",
     "url": "https://www.letta.com/blog/benchmarking-ai-agent-memory",
     "kind": "vendor",
     "era": null,
@@ -2455,11 +2455,11 @@
     "topics": [
       "understanding"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "chhikara-et-al-mem0",
-    "title": "Chhikara et al. (Mem0)",
+    "title": "Chhikara et al. (Mem0), arXiv 2025",
     "url": "https://arxiv.org/html/2504.19413",
     "kind": "vendor",
     "era": null,
@@ -2467,11 +2467,11 @@
     "topics": [
       "understanding"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "atwood-rubber-duck-problem-solving",
-    "title": "Atwood, rubber duck problem solving",
+    "title": "Atwood, Rubber duck problem solving, 2012",
     "url": "https://blog.codinghorror.com/rubber-duck-problem-solving/",
     "kind": "essay",
     "era": null,
@@ -2480,11 +2480,11 @@
       "understanding",
       "reviewing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "kaya-feynman-technique",
-    "title": "Kaya, Feynman Technique",
+    "title": "Kaya, The Feynman technique, 2026",
     "url": "https://abakcus.com/articles/feynman-technique",
     "kind": "essay",
     "era": null,
@@ -2493,11 +2493,11 @@
       "understanding",
       "reviewing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "farnam-street-feynman-technique",
-    "title": "Farnam Street, Feynman Technique",
+    "title": "Parrish (Farnam Street), The Feynman technique, 2012",
     "url": "https://fs.blog/feynman-technique/",
     "kind": "essay",
     "era": null,
@@ -2506,11 +2506,11 @@
       "understanding",
       "reviewing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "feynman-lecture-excerpt",
-    "title": "Feynman lecture excerpt",
+    "title": "Feynman, Knowing versus understanding (lecture excerpt), 2012",
     "url": "https://youtube.com/watch?v=NM-zWTU7X-k",
     "kind": "essay",
     "era": null,
@@ -2519,11 +2519,11 @@
       "understanding",
       "reviewing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "horikawa-et-al-preprint",
-    "title": "Horikawa et al., preprint",
+    "title": "Horikawa et al., arXiv 2025",
     "url": "https://arxiv.org/pdf/2511.04824",
     "kind": "study",
     "era": null,
@@ -2531,11 +2531,11 @@
     "topics": [
       "xp-agile"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "saba-et-al",
-    "title": "Saba et al.",
+    "title": "Saba et al., Scientific Reports 2026",
     "url": "https://www.nature.com/articles/s41598-026-49590-0",
     "kind": "study",
     "era": null,
@@ -2543,11 +2543,11 @@
     "topics": [
       "xp-agile"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "lyu-et-al-preprint",
-    "title": "Lyu et al., preprint",
+    "title": "Lyu et al., arXiv 2025",
     "url": "https://arxiv.org/pdf/2505.08119",
     "kind": "study",
     "era": null,
@@ -2555,7 +2555,7 @@
     "topics": [
       "xp-agile"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "smith-asee-2026",
@@ -2571,7 +2571,7 @@
   },
   {
     "id": "james-the-weight-of-ai-on-engineers",
-    "title": "James, The weight of AI on engineers",
+    "title": "James, The weight of AI on engineers, 2026",
     "url": "https://quii.dev/The_weight_of_AI_on_engineers",
     "kind": "essay",
     "era": null,
@@ -2579,11 +2579,11 @@
     "topics": [
       "xp-agile"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "hbr-2026",
-    "title": "HBR (2026)",
+    "title": "Kenny & Pogrebna (HBR), AI is changing how customers choose your business, 2026",
     "url": "https://hbr.org/2026/07/ai-is-changing-how-customers-choose-your-business",
     "kind": "essay",
     "era": null,
@@ -2591,11 +2591,11 @@
     "topics": [
       "xp-agile"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "fowler-site-refactoring-economic-benefit",
-    "title": "Fowler site, refactoring economic benefit",
+    "title": "Edwards-Alexander, The economic benefit of refactoring, 2026",
     "url": "https://martinfowler.com/articles/exploring-gen-ai/refactoring-economic-benefit.html",
     "kind": "practitioner",
     "era": null,
@@ -2603,11 +2603,11 @@
     "topics": [
       "xp-agile"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "laforgia",
-    "title": "Laforgia",
+    "title": "Laforgia, The Agile Manifesto has lost relevance, 2026",
     "url": "https://www.linkedin.com/feed/update/urn:li:share:7497619401639235584/",
     "kind": "essay",
     "era": null,
@@ -2616,11 +2616,11 @@
       "xp-agile",
       "measuring"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "faler-the-illusion-of-velocity",
-    "title": "Faler, the illusion of velocity",
+    "title": "Faler, AI and the illusion of velocity, 2026",
     "url": "https://www.principalengineer.com/p/ai-and-the-illusion-of-velocity-fixing",
     "kind": "essay",
     "era": null,
@@ -2629,11 +2629,11 @@
       "xp-agile",
       "measuring"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "tornhill-compressed-cognition",
-    "title": "Tornhill, compressed cognition",
+    "title": "Tornhill, Compressed cognition, 2026",
     "url": "https://adamtornhill.substack.com/p/compressed-cognition-the-hidden-cost",
     "kind": "essay",
     "era": null,
@@ -2641,11 +2641,11 @@
     "topics": [
       "xp-agile"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "yegge-the-ai-vampire",
-    "title": "Yegge, The AI vampire",
+    "title": "Yegge, The AI vampire, 2026",
     "url": "https://steve-yegge.medium.com/the-ai-vampire-eda6e4f07163",
     "kind": "essay",
     "era": null,
@@ -2653,11 +2653,11 @@
     "topics": [
       "xp-agile"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "boag-smashing-magazine",
-    "title": "Boag, Smashing Magazine",
+    "title": "Boag (Smashing Magazine), Is your organization messing up AI adoption?, 2026",
     "url": "https://www.smashingmagazine.com/2026/10/is-your-organization-messing-up-ai-adoption/",
     "kind": "essay",
     "era": null,
@@ -2665,11 +2665,11 @@
     "topics": [
       "xp-agile"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "sun-bai-dredze-task-matters-findings-of-acl-2026",
-    "title": "Sun, Bai & Dredze, Task Matters (Findings of ACL 2026)",
+    "title": "Sun, Bai & Dredze, Findings of ACL 2026",
     "url": "https://aclanthology.org/2026.findings-acl.202/",
     "kind": "study",
     "era": null,
@@ -2678,21 +2678,21 @@
       "measuring",
       "testing"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "shojaee-et-al-the-illusion-of-thinking",
-    "title": "Shojaee et al., The Illusion of Thinking",
+    "title": "Shojaee et al. (Apple), arXiv 2025",
     "url": "https://arxiv.org/pdf/2506.06941",
     "kind": "study",
     "era": "early-2025",
     "finding": "Apple preprint, The Illusion of Thinking, on early-2025 models.",
     "topics": [],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "suprmind-ai-hallucination-rates",
-    "title": "Suprmind, AI hallucination rates",
+    "title": "Suprmind, AI hallucination rates, 2026",
     "url": "https://suprmind.ai/hub/ai-hallucination-rates-and-benchmarks/",
     "kind": "vendor",
     "era": null,
@@ -2700,11 +2700,11 @@
     "topics": [
       "measuring"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "pragmatic-engineer",
-    "title": "Orosz with Majors, The Pragmatic Engineer 2026",
+    "title": "Orosz with Majors, Stop being skeptical about AI for development, 2026",
     "url": "https://newsletter.pragmaticengineer.com/p/stop-being-skeptical-about-ai-for",
     "kind": "essay",
     "era": null,
@@ -2713,7 +2713,7 @@
     "topics": [
       "reviewing"
     ],
-    "updated": "2026-11-04T16:50:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "honeycomb-2",
@@ -2770,7 +2770,7 @@
   },
   {
     "id": "bache-agentic-ai-breaks-mob-programming",
-    "title": "Bache, Agentic AI breaks mob programming",
+    "title": "Bache, Agentic AI coding breaks mob programming, 2026",
     "url": "https://www.youtube.com/watch?v=ydAin2IWaQo",
     "kind": "practitioner",
     "era": null,
@@ -2781,11 +2781,11 @@
       "prompting",
       "understanding"
     ],
-    "updated": "2026-11-04T14:31:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "farley-the-industry-is-catching-up",
-    "title": "Farley, The industry is catching up",
+    "title": "Farley, The industry is catching up, 2026",
     "url": "https://www.youtube.com/watch?v=EkH_uoybj8k",
     "kind": "essay",
     "era": null,
@@ -2796,11 +2796,11 @@
       "prompting",
       "xp-agile"
     ],
-    "updated": "2026-11-04T14:31:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "grove-the-new-code",
-    "title": "Grove, The New Code",
+    "title": "Grove, The new code, 2025",
     "url": "https://www.riseos.com/blog/2025-06-15-the-new-code/",
     "kind": "essay",
     "era": null,
@@ -2810,7 +2810,7 @@
       "prompting",
       "testing"
     ],
-    "updated": "2026-11-04T14:31:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "boeckeler-tdd-comparisons-repository",
@@ -2828,7 +2828,7 @@
   },
   {
     "id": "bache-the-last-year-changed-everything-about-tdd",
-    "title": "Bache, The last year has changed everything about TDD",
+    "title": "Bache, The last year has changed everything I knew about TDD, 2026",
     "url": "https://coding-is-like-cooking.info/2026/09/the-last-year-has-changed-everything-i-knew-about-tdd-after-20-years/",
     "kind": "essay",
     "era": null,
@@ -2838,11 +2838,11 @@
       "testing",
       "xp-agile"
     ],
-    "updated": "2026-11-04T14:31:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "bache-it-doesnt-help-to-push-ai-into-a-crappy-process",
-    "title": "Bache, It doesn't help to push AI into a crappy process",
+    "title": "Bache, It doesn't help to push AI into a crappy process, 2026",
     "url": "https://coding-is-like-cooking.info/2026/04/it-doesnt-help-to-push-ai-into-a-crappy-process/",
     "kind": "essay",
     "era": null,
@@ -2853,11 +2853,11 @@
       "testing",
       "measuring"
     ],
-    "updated": "2026-11-04T14:31:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "bache-ordog-habit-hooks-interview",
-    "title": "Bache and Ördög, How to stop AI ruining your codebase",
+    "title": "Bache with Ördög, How to stop AI from ruining your codebase, 2026",
     "url": "https://coding-is-like-cooking.info/2026/08/how-to-stop-ai-from-ruining-your-codebase/",
     "kind": "practitioner",
     "era": null,
@@ -2867,11 +2867,11 @@
       "testing",
       "prompting"
     ],
-    "updated": "2026-11-04T14:31:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "suoniemi-prompt-vs-metric-eval",
-    "title": "Suoniemi, prompt-vs-metric-eval",
+    "title": "Suoniemi, prompt-vs-metric-eval repository",
     "url": "https://github.com/LiinaSuoniemi/prompt-vs-metric-eval",
     "kind": "study",
     "era": null,
@@ -2881,11 +2881,11 @@
       "testing",
       "prompting"
     ],
-    "updated": "2026-11-04T14:31:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "bache-selander-probity-interview",
-    "title": "Bache and Selander, The most important AI coding advice",
+    "title": "Bache with Selander, The most important AI coding advice you haven't heard, 2026",
     "url": "https://coding-is-like-cooking.info/2026/07/the-most-important-ai-coding-advice-you-havent-heard-yet/",
     "kind": "practitioner",
     "era": null,
@@ -2896,11 +2896,11 @@
       "prompting",
       "risks-security"
     ],
-    "updated": "2026-11-04T14:31:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   },
   {
     "id": "liao-agents-dont-need-memory",
-    "title": "Liao, Agents don't need memory",
+    "title": "Liao, Agents don't need memory, 2026",
     "url": "https://liao.gg/blog/agents-dont-need-memory",
     "kind": "vendor",
     "era": null,
@@ -2910,6 +2910,6 @@
       "understanding",
       "prompting"
     ],
-    "updated": "2026-11-04T14:31:00Z"
+    "updated": "2026-11-04T17:05:00Z"
   }
 ]

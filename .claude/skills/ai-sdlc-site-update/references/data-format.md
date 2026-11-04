@@ -80,8 +80,16 @@ all built from these files, so editing them is the whole job.
   company reporting on a product it sells; `practitioner` is a person, team or company reporting its own practice
   (a bank describing its own setup is practitioner); `essay` is opinion and news.
 - `era`: `older` for studies on models released before 2024-09, `early-2025` for Claude 3.5 or 3.7, else `null`.
-- `title`: author or publisher plus venue or year, the way other entries read ("Perry et al., CCS 2023"); for a
-  talk, speaker and event ("Speaker (Company), Event 2026"). Keep caveats out of the title.
+- `title`: one format for every entry, unique across the file. Keep caveats out of the title.
+  - A paper: authors, then venue and year: "Perry et al., CCS 2023", "Mathews & Nagappan, ASE 2024",
+    "Gloaguen et al., arXiv 2026". Add a well-known lab in brackets when it helps: "Becker et al. (METR), arXiv 2025".
+  - A talk or podcast: speaker, then event or show and year: "Abitbol (Revolut), AI Engineer NYC 2026".
+  - Anything else (posts, essays, reports, articles): author or publisher, a short title in sentence case, and the
+    year: "James, We learned this lesson already, 2026", "Lopopolo (OpenAI), Harness engineering, 2026",
+    "Green (Forbes), AI costs more than the people it replaced, 2026". Name the person when there is a byline, with
+    the company or outlet in brackets.
+  - The year is when the source was published, not when it was read. A living document (a repository, a pattern
+    catalog, a cheat sheet) has no year.
 - `caveat` (optional): what a reader should weigh, shown next to the entry: "preprint", "vendor self-report",
   "sells a course on this", "secondhand".
 - `topics`: the topics it bears on. The site also adds the topics of every item that cites it.
