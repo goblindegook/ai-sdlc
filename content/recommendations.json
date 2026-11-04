@@ -829,9 +829,10 @@
     ],
     "evidence": [
       "uber-on-pragmatic-engineer",
-      "orosz-roi-of-ai-spend"
+      "orosz-roi-of-ai-spend",
+      "abitbol-revolut-ai-engineer-nyc-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T14:31:00Z"
   },
   {
     "id": "write-context-files-by-hand-and-keep-them-short",
@@ -961,9 +962,11 @@
     ],
     "evidence": [
       "anthropic-ai-native-sdlc-playbook",
-      "augmented-coding-obstacles-selective-hearing"
+      "augmented-coding-obstacles-selective-hearing",
+      "bache-selander-probity-interview",
+      "bache-ordog-habit-hooks-interview"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T14:31:00Z"
   },
   {
     "id": "move-repeated-procedures-into-on-demand-skills",
@@ -2401,14 +2404,14 @@
   },
   {
     "id": "dont-have-an-agent-run-tdd-alone-on-a-clear-spec",
-    "title": "Agent-run TDD on a clear spec",
-    "ring": "avoid",
+    "title": "Compare agent-run TDD with spec tests on a clear spec",
+    "ring": "trial",
     "topics": [
       "testing",
       "looping",
       "xp-agile"
     ],
-    "summary": "When the spec is already clear, don't make an agent run red-green-refactor by itself; have it code against the spec tests and add tests after. Alone it burns several times the tokens for no quality gain, skips the failing step or writes tests that can't fail.",
+    "summary": "When the spec is already clear, compare an agent running red-green-refactor by itself with one coding against the spec tests and adding tests after. In the main tests the agent alone burned several times the tokens for no quality gain, but the test-first prompt had no test list and told the agent not to design up front, so the result is open.",
     "signals": [
       "Tokens or cost per task, TDD prompt vs test-after",
       "Agent TDD sessions with no failing test run before code",
@@ -2416,9 +2419,11 @@
     ],
     "evidence": [
       "boeckeler-tdd-in-the-agent-loop",
-      "bdfinst-tdd-vs-non-tdd-report"
+      "bdfinst-tdd-vs-non-tdd-report",
+      "bache-the-last-year-changed-everything-about-tdd",
+      "boeckeler-tdd-comparisons-repository"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T14:31:00Z"
   },
   {
     "id": "give-the-agent-test-impact-context-not-a-tdd-procedure",
@@ -2465,7 +2470,7 @@
     "topics": [
       "testing"
     ],
-    "summary": "Run 10 real tickets, some underspecified, through the agent with test-first and test-after prompts and compare. Test-first may help an agent pin down a vague requirement, but that is untested.",
+    "summary": "Run 10 real tickets, some underspecified, through the agent with test-first and test-after prompts and compare. Test-first may help an agent pin down a vague requirement, but that is untested. Put a test-list step and an up-front read of the spec into the test-first prompt, since the main test of agent TDD had neither.",
     "signals": [
       "Rework commits per ticket, test-first vs test-after",
       "Defects found after merge, by prompt style",
@@ -2474,9 +2479,11 @@
     "evidence": [
       "boeckeler-tdd-in-the-agent-loop",
       "bdfinst-tdd-vs-non-tdd-report",
-      "fucci-et-al-ieee-tse-2017"
+      "fucci-et-al-ieee-tse-2017",
+      "bache-the-last-year-changed-everything-about-tdd",
+      "boeckeler-tdd-comparisons-repository"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T14:31:00Z"
   },
   {
     "id": "compare-who-writes-acceptance-tests",
@@ -2493,9 +2500,10 @@
     ],
     "evidence": [
       "tornhill-practices-i-abandoned-with-agents",
-      "vaccari-acceptance-tests-for-ai-assisted-development"
+      "vaccari-acceptance-tests-for-ai-assisted-development",
+      "farley-the-industry-is-catching-up"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T14:31:00Z"
   },
   {
     "id": "compare-acceptance-level-and-unit-level-specs",
@@ -2594,9 +2602,10 @@
     ],
     "evidence": [
       "approved-scenarios-pattern",
-      "vaccari-acceptance-tests-for-ai-assisted-development"
+      "vaccari-acceptance-tests-for-ai-assisted-development",
+      "farley-the-industry-is-catching-up"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T14:31:00Z"
   },
   {
     "id": "add-fix-it-guidance-to-lint-messages",
@@ -2612,9 +2621,11 @@
       "Lint suppressions added in agent PRs"
     ],
     "evidence": [
-      "bockeler-sensors-for-coding-agents"
+      "bockeler-sensors-for-coding-agents",
+      "suoniemi-prompt-vs-metric-eval",
+      "bache-ordog-habit-hooks-interview"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T14:31:00Z"
   },
   {
     "id": "separate-test-writing-from-code-writing",
@@ -2869,9 +2880,10 @@
     ],
     "evidence": [
       "goblindegook",
-      "james"
+      "james",
+      "bache-agentic-ai-breaks-mob-programming"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T14:31:00Z"
   },
   {
     "id": "pair-juniors-with-seniors-on-agent-assisted-work",
@@ -3071,9 +3083,10 @@
     ],
     "evidence": [
       "letta",
-      "chhikara-et-al-mem0"
+      "chhikara-et-al-mem0",
+      "liao-agents-dont-need-memory"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T14:31:00Z"
   },
   {
     "id": "test-on-demand-explainers-against-reading-diffs",
@@ -3222,9 +3235,10 @@
       "Escaped defects in the trial context vs other contexts"
     ],
     "evidence": [
-      "vaccari-acceptance-tests-for-ai-assisted-development"
+      "vaccari-acceptance-tests-for-ai-assisted-development",
+      "farley-the-industry-is-catching-up"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T14:31:00Z"
   },
   {
     "id": "split-the-largest-files-with-human-chosen-refactorings",
@@ -3522,5 +3536,83 @@
       "saba-et-al"
     ],
     "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "write-a-test-list-before-the-first-test",
+    "title": "Write a test list before the first test",
+    "ring": "trial",
+    "topics": [
+      "testing",
+      "prompting"
+    ],
+    "summary": "Before the agent writes any test, list the tests the change needs from the spec and examples, and extend the list each loop. Without one, the agent treats the tests it happened to write as the whole spec and misses behaviour nobody listed.",
+    "signals": [
+      "Spec rules with no test that would fail if the rule broke",
+      "Bugs found in review for behaviour that was never listed",
+      "Agent sessions that start writing tests with no list in the task or PR"
+    ],
+    "evidence": [
+      "bache-the-last-year-changed-everything-about-tdd",
+      "boeckeler-tdd-comparisons-repository",
+      "bache-it-doesnt-help-to-push-ai-into-a-crappy-process"
+    ],
+    "updated": "2026-11-04T14:31:00Z"
+  },
+  {
+    "id": "write-prompts-silently-together-before-a-mob-sends-them",
+    "title": "Write prompts silently together before a mob sends them",
+    "ring": "trial",
+    "topics": [
+      "xp-agile",
+      "prompting"
+    ],
+    "summary": "In a team session around one agent, everyone writes a prompt alone in a shared document, then the group merges the best before sending. It stops the loudest voice steering and shows disagreement before the agent acts. Use it at the start of a task or when the team disagrees, not on every prompt.",
+    "signals": [
+      "Mob sessions where the first prompt was drafted in a shared document",
+      "Prompts rewritten after the first agent run, by drafting method",
+      "Sessions where the group still disagreed about direction afterwards"
+    ],
+    "evidence": [
+      "bache-agentic-ai-breaks-mob-programming"
+    ],
+    "updated": "2026-11-04T14:31:00Z"
+  },
+  {
+    "id": "name-the-prompting-patterns-in-a-short-retro",
+    "title": "Name the prompting patterns in a short retro",
+    "ring": "trial",
+    "topics": [
+      "xp-agile",
+      "understanding"
+    ],
+    "summary": "After a session with an agent, spend about 15 minutes away from the code asking what happened and naming the prompting and process patterns the team used. A shared vocabulary speeds learning, most of all for juniors.",
+    "signals": [
+      "Retro notes that name a pattern rather than describe an event",
+      "Sessions held with a retro, out of sessions held",
+      "Patterns juniors name in their own prompts"
+    ],
+    "evidence": [
+      "bache-agentic-ai-breaks-mob-programming"
+    ],
+    "updated": "2026-11-04T14:31:00Z"
+  },
+  {
+    "id": "compare-a-self-hosted-open-model-with-hosted-ones-on-your-own-tickets",
+    "title": "Compare a self-hosted open model with hosted ones on your own tickets",
+    "ring": "trial",
+    "topics": [
+      "looping",
+      "measuring"
+    ],
+    "summary": "Run the same ticket set through a self-hosted open model and a hosted one, counting hardware and staff, not only the API bill. One bank reports a far smaller bill and engineers who stopped rationing tokens, but gives no quality or all-in cost figures.",
+    "signals": [
+      "Cost per accepted change, all-in, self-hosted versus hosted",
+      "Accepted-change rate on the same tickets",
+      "Engineers who ration or avoid the model under a cap"
+    ],
+    "evidence": [
+      "abitbol-revolut-ai-engineer-nyc-2026"
+    ],
+    "updated": "2026-11-04T14:31:00Z"
   }
 ]

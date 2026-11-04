@@ -49,9 +49,10 @@
     "body": "DORA says partly; Faros telemetry says no outcome is protected.",
     "evidence": [
       "dora-2025",
-      "faros-22k-devs"
+      "faros-22k-devs",
+      "bache-it-doesnt-help-to-push-ai-into-a-crappy-process"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T14:31:00Z"
   },
   {
     "id": "is-maintenance-capability-improving",
@@ -88,13 +89,17 @@
       "testing",
       "xp-agile"
     ],
-    "body": "On MBPP, more supplied tests peaked at two and declined at three, but agents that designed up front did better. Spec-driven development may repeat the waterfall fallacy.",
+    "body": "More supplied tests peaked at two, and agents that designed up front did better, so spec-first may repeat the waterfall fallacy. Others argue the spec is the durable artifact and should be executable, and the agent-TDD study that found no gain told its agents not to design up front.",
     "evidence": [
       "mathews-nagappan-ase-2024",
       "boeckeler-tdd-in-the-agent-loop",
-      "james-2"
+      "james-2",
+      "grove-the-new-code",
+      "farley-the-industry-is-catching-up",
+      "boeckeler-tdd-comparisons-repository",
+      "bache-the-last-year-changed-everything-about-tdd"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-04T14:31:00Z"
   },
   {
     "id": "should-planning-prompts-be-looser-than-execution-prompts",
@@ -182,5 +187,19 @@
       "brynjolfsson-et-al"
     ],
     "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "can-agents-keep-their-own-project-memory-current",
+    "question": "Can agents keep their own project memory current?",
+    "topics": [
+      "understanding",
+      "prompting"
+    ],
+    "body": "The maker of a markdown memory tool says agents keep documentation current when the update is built into every task, yet admits he still trims it by hand. Other sources say agents don't clean up after themselves, and models handle stale facts poorly.",
+    "evidence": [
+      "liao-agents-dont-need-memory",
+      "stale"
+    ],
+    "updated": "2026-11-04T14:31:00Z"
   }
 ]
