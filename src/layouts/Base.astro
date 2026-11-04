@@ -74,10 +74,13 @@ const links = [
       </div>
     </footer>
     <script>
-      // The header wraps on narrow screens, so the filter bar sticks at the header's measured height.
+      // The filter bar sticks just under the header while the header is pinned (its height varies as the menu
+      // wraps), and at the very top on phones, where the header scrolls away.
       const head = document.querySelector<HTMLElement>('.site-head')!;
-      const sync = () => document.documentElement.style.setProperty('--head-h', `${head.offsetHeight}px`);
+      const sync = () => document.documentElement.style.setProperty(
+        '--head-h', getComputedStyle(head).position === 'sticky' ? `${head.offsetHeight}px` : '0px');
       new ResizeObserver(sync).observe(head);
+      matchMedia('(max-width: 680px)').addEventListener('change', sync); // pinned or not, from global.css
       sync();
     </script>
   </body>

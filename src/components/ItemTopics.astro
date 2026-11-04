@@ -1,9 +1,10 @@
 ---
-// Topics on an item. Each is a link that filters the current page to that topic.
+// Topics on an item. As links, each filters the current page to that topic. Inside an item's folded title they are
+// plain text: links inside the <summary> that opens the item would be controls nested in a control.
 import { topicLabel } from '../data/topics';
-interface Props { topics: string[]; inline?: boolean }
-const { topics, inline = false } = Astro.props;
+interface Props { topics: string[]; inline?: boolean; links?: boolean }
+const { topics, inline = false, links = true } = Astro.props;
 ---
-<span class:list={['topics', { inline }]}>
-  {topics.map((t) => <a href={`?topic=${t}`} data-topic-link={t}>{topicLabel(t)}</a>)}
+<span class:list={['topics', { inline, plain: !links }]}>
+  {topics.map((t) => (links ? <a href={`?topic=${t}`} data-topic-link={t}>{topicLabel(t)}</a> : <span>{topicLabel(t)}</span>))}
 </span>
