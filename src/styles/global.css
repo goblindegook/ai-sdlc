@@ -49,8 +49,9 @@ a:hover { text-decoration-thickness: 2px; }
 :focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
 
 h1, h2, h3, h4 { font-family: var(--head); font-stretch: 92%; line-height: 1.15; text-wrap: balance; }
-h1 { font-size: clamp(2rem, 4vw, 2.75rem); font-weight: 800; margin: 0 0 1rem; letter-spacing: -0.015em; }
-h2 { font-size: 1.5rem; font-weight: 700; margin: 3.5rem 0 0.75rem; }
+/* Display type: Archivo at its narrowest and heaviest, so titles can be large without taking over the page. */
+h1 { font-size: clamp(2.75rem, 1.5rem + 5vw, 5.75rem); font-weight: 800; font-stretch: 75%; line-height: 0.95; letter-spacing: -0.02em; margin: 0 0 1.25rem; }
+h2 { font-size: 2rem; font-weight: 800; font-stretch: 80%; line-height: 1; letter-spacing: -0.01em; margin: 3.5rem 0 0.75rem; }
 h3 { font-size: 1.125rem; font-weight: 700; margin: 0 0 0.25rem; }
 p { margin: 0 0 1rem; max-width: var(--measure); text-wrap: pretty; }
 
@@ -90,10 +91,14 @@ main.wrap { padding-block: clamp(2.5rem, 6vw, 4rem) 4rem; }
 .band-trial { background: var(--trial); }
 .band-avoid { background: var(--avoid); }
 .band-plain { background: var(--paper-2); color: var(--ink); }
-.band-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 1rem; padding: 0.75rem 1rem; margin: 3rem 0 0; }
-.band-head h2 { margin: 0; font-size: 1.6rem; color: inherit; }
-.band-head h2 .num { font-weight: 500; margin-left: 0.25rem; }
-.band-head p { margin: 0; font: 500 0.95rem/1.4 var(--text); color: inherit; }
+/* Section heads: a ring keeps its solid colour band, with the ring word set large on it. */
+.band-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 1.25rem; padding: 0.75rem 1rem 0.85rem; margin: 4.5rem 0 0; }
+.band-head h2 { margin: 0; font-size: clamp(3rem, 2rem + 4vw, 5rem); font-stretch: 75%; line-height: 0.9; color: inherit; }
+.band-head p { margin: 0; font: 500 1rem/1.4 var(--text); color: inherit; }
+.band-head + .ruled { margin-top: 1rem; } /* breathing room between the band and its first item */
+/* Plain groupings (no ring) stay below the rings: no fill, smaller word, a rule in ink. */
+.band-head.band-plain { background: none; padding-inline: 0; border-top: 3px solid var(--ink); }
+.band-head.band-plain h2 { font-size: clamp(2rem, 1.5rem + 2vw, 3rem); }
 
 /* jump links */
 .jump { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 1.25rem; margin: 0 0 1.5rem; font-size: 0.95rem; }
@@ -210,7 +215,7 @@ main.wrap { padding-block: clamp(2.5rem, 6vw, 4rem) 4rem; }
 .radar-row { display: grid; gap: 0.75rem; padding: 1rem 0; border-top: 1px solid var(--rule); }
 @media (min-width: 900px) { .radar-row { padding: 0; row-gap: 0; } .radar-topic { padding: 1rem 0; } }
 .radar-row:last-child { border-bottom: 1px solid var(--rule); }
-.radar-topic h3 { font-size: 1.15rem; margin: 0 0 0.25rem; }
+.radar-topic h3 { font-size: 1.6rem; font-weight: 800; font-stretch: 80%; line-height: 1; margin: 0 0 0.35rem; }
 .radar-topic h3 a { color: var(--ink); text-decoration: none; }
 .radar-topic h3 a:hover { text-decoration: underline; }
 .radar-topic p { margin: 0 0 0.25rem; }
@@ -218,7 +223,7 @@ main.wrap { padding-block: clamp(2.5rem, 6vw, 4rem) 4rem; }
 .radar-cell li { margin-bottom: 0.3rem; line-height: 1.35; }
 .radar-cell .meta { margin: 0; }
 .cell-label { display: block; font-size: 0.875rem; color: var(--muted); margin-bottom: 0.3rem; }
-.cell-label strong { margin-right: 0.4rem; }
+.cell-label strong { margin-right: 0.4rem; font: 800 1.35rem/1 var(--head); font-stretch: 75%; }
 @media (min-width: 640px) and (max-width: 899px) {
   .radar-row { grid-template-columns: 12rem minmax(0, 1fr); column-gap: 1.5rem; }
   .radar-topic { grid-row: span 2; }
@@ -226,8 +231,9 @@ main.wrap { padding-block: clamp(2.5rem, 6vw, 4rem) 4rem; }
 @media (min-width: 900px) {
   .radar-cols, .radar-row { grid-template-columns: 15rem minmax(0, 1fr) minmax(0, 1fr); column-gap: 2rem; }
   .radar-cols { display: grid; }
-  .radar-cols .band { padding: 0.45rem 0.85rem; font: 500 0.95rem/1.4 var(--text); }
-  .radar-cols .band strong { font: 700 1.15rem/1 var(--head); font-stretch: 92%; margin-right: 0.6rem; }
+  /* Column heads: the solid ring band, with the ring word set large on it. */
+  .radar-cols .band { padding: 0.6rem 0.85rem 0.75rem; font: 500 0.95rem/1.4 var(--text); }
+  .radar-cols .band strong { display: block; font: 800 clamp(2.5rem, 1rem + 2.5vw, 3.5rem)/0.9 var(--head); font-stretch: 75%; margin-bottom: 0.35rem; }
   .radar-row { display: grid; }
   .cell-label { display: none; }
 }
@@ -251,7 +257,8 @@ main.wrap { padding-block: clamp(2.5rem, 6vw, 4rem) 4rem; }
 }
 .diagram svg a { cursor: pointer; }
 .diagram svg a rect { transition: stroke-width 120ms ease-out; }
-.diagram svg .step-name { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
+/* Step names in the heading face, slightly condensed, at a modest size. */
+.diagram svg .step-name { font-family: var(--head); font-weight: 700; font-stretch: 85%; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
 .diagram svg a:hover .step-name, .diagram svg a:focus-visible .step-name { text-decoration-thickness: 2px; }
 .diagram svg a:hover rect, .diagram svg a:focus-visible rect { stroke: var(--link); stroke-width: 3; }
 .diagram svg a:focus { outline: none; }

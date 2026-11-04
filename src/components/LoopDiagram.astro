@@ -25,17 +25,17 @@ const TW = 200, TH = 58, cx = 170, top = (i: number) => 16 + i * 88;
     {steps.map((s) => (
       <a href={`${base}/recommendations/?topic=${s.topic}`}>
         <rect x={s.x - W / 2} y={y - H / 2} width={W} height={H} rx="3"
-          fill={s.agent ? 'var(--ink)' : 'var(--paper)'} stroke="var(--ink)" stroke-width={s.agent ? 0 : 1.25} />
-        <text class="step-name" x={s.x} y={y - 10} text-anchor="middle" font-weight="600" fill={s.agent ? 'var(--paper)' : 'var(--ink)'}>{s.name}</text>
-        <text x={s.x} y={y + 8} text-anchor="middle" font-size="11.5" fill={s.agent ? 'var(--paper)' : 'var(--muted)'}>{s.l1}</text>
-        <text x={s.x} y={y + 23} text-anchor="middle" font-size="11.5" fill={s.agent ? 'var(--paper)' : 'var(--muted)'}>{s.l2}</text>
+          fill={s.agent ? 'var(--ink)' : 'var(--paper)'} stroke="var(--ink)" stroke-width={s.agent ? 0 : 1.75} />
+        <text class="step-name" x={s.x} y={y - 9} text-anchor="middle" font-size="16" fill={s.agent ? 'var(--paper)' : 'var(--ink)'}>{s.name}</text>
+        <text x={s.x} y={y + 9} text-anchor="middle" font-size="11.5" fill={s.agent ? 'var(--paper)' : 'var(--muted)'}>{s.l1}</text>
+        <text x={s.x} y={y + 24} text-anchor="middle" font-size="11.5" fill={s.agent ? 'var(--paper)' : 'var(--muted)'}>{s.l2}</text>
       </a>
     ))}
     <text x="380" y="198" text-anchor="middle" font-size="11.5" fill="var(--muted)">production signals and customer feedback shape the next plan</text>
     <a href={`${base}/recommendations/?topic=understanding`}>
       <rect x="28" y="228" width="704" height="50" rx="3" fill="var(--paper-2)" stroke="var(--rule)" />
-      <text x="380" y="249" text-anchor="middle" font-weight="600" fill="var(--ink)">Shared understanding underneath every step</text>
-      <text x="380" y="267" text-anchor="middle" font-size="11.5" fill="var(--muted)">protect learning and hands-on practice</text>
+      <text class="step-name" x="380" y="250" text-anchor="middle" font-size="15" fill="var(--ink)">Shared understanding underneath every step</text>
+      <text x="380" y="268" text-anchor="middle" font-size="11.5" fill="var(--muted)">protect learning and hands-on practice</text>
     </a>
   </svg>
   <svg class="diagram-tall" viewBox="0 0 340 516" role="img" aria-labelledby="loop-title-tall" font-family="var(--text)" font-size="13">
@@ -55,15 +55,15 @@ const TW = 200, TH = 58, cx = 170, top = (i: number) => 16 + i * 88;
     {steps.map((s, i) => (
       <a href={`${base}/recommendations/?topic=${s.topic}`}>
         <rect x={cx - TW / 2} y={top(i)} width={TW} height={TH} rx="3"
-          fill={s.agent ? 'var(--ink)' : 'var(--paper)'} stroke="var(--ink)" stroke-width={s.agent ? 0 : 1.25} />
-        <text class="step-name" x={cx} y={top(i) + 22} text-anchor="middle" font-weight="600" fill={s.agent ? 'var(--paper)' : 'var(--ink)'}>{s.name}</text>
-        <text x={cx} y={top(i) + 40} text-anchor="middle" font-size="11.5" fill={s.agent ? 'var(--paper)' : 'var(--muted)'}>{s.l1} {s.l2}</text>
+          fill={s.agent ? 'var(--ink)' : 'var(--paper)'} stroke="var(--ink)" stroke-width={s.agent ? 0 : 1.75} />
+        <text class="step-name" x={cx} y={top(i) + 23} text-anchor="middle" font-size="16" fill={s.agent ? 'var(--paper)' : 'var(--ink)'}>{s.name}</text>
+        <text x={cx} y={top(i) + 41} text-anchor="middle" font-size="11.5" fill={s.agent ? 'var(--paper)' : 'var(--muted)'}>{s.l1} {s.l2}</text>
       </a>
     ))}
     <a href={`${base}/recommendations/?topic=understanding`}>
       <rect x="20" y="448" width="300" height="56" rx="3" fill="var(--paper-2)" stroke="var(--rule)" />
-      <text x={cx} y="471" text-anchor="middle" font-weight="600" fill="var(--ink)">Shared understanding under every step</text>
-      <text x={cx} y="489" text-anchor="middle" font-size="11.5" fill="var(--muted)">protect learning and hands-on practice</text>
+      <text class="step-name" x={cx} y="472" text-anchor="middle" font-size="15" fill="var(--ink)">Shared understanding under every step</text>
+      <text x={cx} y="490" text-anchor="middle" font-size="11.5" fill="var(--muted)">protect learning and hands-on practice</text>
     </a>
   </svg>
   <figcaption>
