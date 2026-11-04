@@ -1,0 +1,48 @@
+---
+import Base from '../layouts/Base.astro';
+import TagFilter from '../components/TagFilter.astro';
+import Section from '../components/Section.astro';
+import Item from '../components/Item.astro';
+import { evidence, KINDS, ERA, recById, challengeById, questionById } from '../data';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const used = evidence.filter((e) => e.tags.length);
+const groups = [
+  ...KINDS.map((k) => ({ slug: `kind-${k.slug}`, label: k.label, items: used.filter((e) => e.kind === k.slug) })),
+  { slug: 'kind-other', label: 'Other sources', items: evidence.filter((e) => !e.tags.length).sort((a, b) => a.title.localeCompare(b.title)) },
+].filter((g) => g.items.length);
+---
+<Base title="Evidence" description="Every source cited on this site, strongest evidence first.">
+  <h1>Evidence</h1>
+  <p>Every source cited on this site, strongest evidence first.</p>
+  <p class="meta">"Older models" marks studies whose models predate September 2024 (GPT-3.5, GPT-4, GPT-4o, Llama 3, Claude 3). "Early-2025 models" marks studies on Claude 3.5 or 3.7. Treat those findings as hypotheses to re-check, not settled results.</p>
+  <nav class="jump" aria-label="Sections"><span class="meta">Jump to</span>{groups.map((g) => <a href={`#${g.slug}`}>{g.label}</a>)}</nav>
+
+  <TagFilter noun="sources" />
+
+  {groups.map((g) => (
+    <Section id={g.slug} title={g.label}>
+      {g.items.map((e) => (
+        <Item id={e.id} title={e.title} tags={e.tags}>
+          <div class="rec-grid">
+            <div>
+              {(e.era || e.caveat) && <p class="meta">{e.era && <strong>{ERA[e.era] ?? e.era}</strong>}{e.era && e.caveat && ' · '}{e.caveat && <span class="caveat">{e.caveat[0].toUpperCase() + e.caveat.slice(1)}</span>}</p>}
+              {e.finding && <p>{e.finding}</p>}
+              <p><a href={e.url} rel="noopener">Read the original</a></p>
+            </div>
+            {(e.backs.length + e.cited.length + e.asked.length) > 0 && (
+              <div>
+                <h4 class="sub">Used in</h4>
+                <ul class="cites">
+                  {e.backs.map((id) => <li><a href={`${base}/recommendations/#${id}`}>{recById.get(id)!.title}</a> <span class="kind">recommendation</span></li>)}
+                  {e.cited.map((id) => <li><a href={`${base}/challenges/#${id}`}>{challengeById.get(id)!.title}</a> <span class="kind">challenge</span></li>)}
+                  {e.asked.map((id) => <li><a href={`${base}/questions/#${id}`}>{questionById.get(id)!.question}</a> <span class="kind">open question</span></li>)}
+                </ul>
+              </div>
+            )}
+          </div>
+        </Item>
+      ))}
+    </Section>
+  ))}
+</Base>

@@ -1,0 +1,9 @@
+---
+// Area tags on an item. Each is a link that filters the current page to that area.
+import { tagLabel } from '../data/tags';
+interface Props { tags: string[]; inline?: boolean }
+const { tags, inline = false } = Astro.props;
+---
+<span class:list={['tags', { inline }]}>
+  {tags.map((t) => <a href={`?tags=${t}`} data-tag-link={t}>{tagLabel(t)}</a>)}
+</span>

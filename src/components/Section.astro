@@ -1,0 +1,14 @@
+---
+// The one section used on every list page. A ring gets its colour band; any other grouping gets the neutral band.
+interface Props { id: string; title: string; note?: string; ring?: 'adopt' | 'trial' | 'avoid' }
+const { id, title, note, ring } = Astro.props;
+---
+<section data-group data-hide-empty id={id}>
+  <header class:list={['band-head', ring ? `band-${ring}` : 'band-plain']}>
+    <h2>{title}</h2>
+    {note && <p>{note}</p>}
+  </header>
+  <div class="ruled">
+    <slot />
+  </div>
+</section>

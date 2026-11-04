@@ -1,0 +1,200 @@
+[
+  {
+    "id": "does-the-test-first-asymmetry-survive-newer-models",
+    "question": "Does the test-first asymmetry survive newer models?",
+    "area": "testing",
+    "tags": [
+      "testing",
+      "xp-agile"
+    ],
+    "body": "The key studies are Python-only and predate 2025 frontier models; nobody has re-run TDD-Bench on current models. Vague requirements, where TDD is claimed to earn its keep as a thinking tool, are untested with agents.",
+    "evidence": [
+      "tdd-bench-verified-ibm"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "is-human-code-review-worth-its-cost",
+    "question": "Is human code review worth its cost?",
+    "area": "reviewing",
+    "tags": [
+      "reviewing"
+    ],
+    "body": "Majors calls review the least valuable part of what humans add and moves trust into tests and production. Honeycomb targets 25% auto-merged PRs at under 3% change failure rate, which can be checked in 2027.",
+    "evidence": [
+      "pragmatic-engineer",
+      "honeycomb-2"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "what-is-actually-scarce-verification-judgement-or-understand",
+    "question": "What is actually scarce: verification, judgement or understanding?",
+    "area": "understanding",
+    "tags": [
+      "understanding",
+      "reviewing"
+    ],
+    "body": "Fornasier and Litt disagree. Both are n=1 or opinion.",
+    "evidence": [
+      "fornasier-getting-out-of-the-loop",
+      "litt"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "do-strong-engineering-foundations-protect-you",
+    "question": "Do strong engineering foundations protect you?",
+    "area": "measuring",
+    "tags": [
+      "measuring",
+      "xp-agile"
+    ],
+    "body": "DORA says partly; Faros telemetry says no outcome is protected.",
+    "evidence": [
+      "dora-2025",
+      "faros-22k-devs"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "is-maintenance-capability-improving",
+    "question": "Is maintenance capability improving?",
+    "area": "measuring",
+    "tags": [
+      "measuring",
+      "looping"
+    ],
+    "body": "SWE-CI says fast; SlopCodeBench shows flat decay across model tiers.",
+    "evidence": [
+      "swe-ci",
+      "slopcodebench"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "do-context-files-help",
+    "question": "Do context files help?",
+    "area": "prompting",
+    "tags": [
+      "prompting"
+    ],
+    "body": "One study finds time savings; another finds no success gain and 20% more cost. Claude Code was the one agent that developer-written files did not improve.",
+    "evidence": [
+      "lulla-et-al-icse-workshop-2026",
+      "gloaguen-et-al"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "how-much-upfront-specification-is-right",
+    "question": "How much upfront specification is right?",
+    "area": "prompting",
+    "tags": [
+      "prompting",
+      "testing",
+      "xp-agile"
+    ],
+    "body": "On MBPP, more supplied tests peaked at two and declined at three, but agents that designed up front did better. Spec-driven development may repeat the waterfall fallacy.",
+    "evidence": [
+      "mathews-nagappan-ase-2024",
+      "boeckeler-tdd-in-the-agent-loop",
+      "james-2"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "should-planning-prompts-be-looser-than-execution-prompts",
+    "question": "Should planning prompts be looser than execution prompts?",
+    "area": "prompting",
+    "tags": [
+      "prompting"
+    ],
+    "body": "One practitioner argues for goals-only planning prompts and fully detailed execution prompts. Opinion with no data.",
+    "evidence": [
+      "emanuel-overprompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "fresh-context-each-loop-or-continued-context",
+    "question": "Fresh context each loop, or continued context?",
+    "area": "looping",
+    "tags": [
+      "looping"
+    ],
+    "body": "Ralph resets every iteration; one comparison found continuing did better per unit cost (n=1 task).",
+    "evidence": [
+      "dan-luu-pl-tokens"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "does-multi-agent-orchestration-scale-or-does-brookss-law-app",
+    "question": "Does multi-agent orchestration scale, or does Brooks's Law apply to agents?",
+    "area": "looping",
+    "tags": [
+      "looping",
+      "understanding"
+    ],
+    "body": "No controlled study yet.",
+    "evidence": [
+      "storey-cognitive-debt"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "is-skill-loss-reversible-and-how-do-we-measure-cognitive-deb",
+    "question": "Is skill loss reversible, and how do we measure cognitive debt?",
+    "area": "understanding",
+    "tags": [
+      "understanding"
+    ],
+    "body": "No accepted measure exists; comprehension gates are untested for durability.",
+    "evidence": [
+      "storey-cognitive-debt"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "can-partial-theory-be-enough",
+    "question": "Can partial theory be enough?",
+    "area": "understanding",
+    "tags": [
+      "understanding"
+    ],
+    "body": "Naur says a team's theory can't be revived from docs; Goedecke argues most engineers work fine on partial theory.",
+    "evidence": [
+      "goedecke"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "will-prompt-injection-ever-have-a-real-fix",
+    "question": "Will prompt injection ever have a real fix?",
+    "area": "risks-security",
+    "tags": [
+      "risks-security",
+      "reviewing"
+    ],
+    "body": "Guardrails that stop 95% of attacks are a failing grade by security standards. Should the writing agent ever approve its own PR, as Anthropic reportedly aims for?",
+    "evidence": [
+      "willison-the-lethal-trifecta",
+      "orosz-what-is-happening-with-code-reviews"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "how-do-juniors-become-seniors",
+    "question": "How do juniors become seniors?",
+    "area": "understanding",
+    "tags": [
+      "understanding"
+    ],
+    "body": "Entry-level hiring shrinks and questions go to the model rather than to colleagues.",
+    "evidence": [
+      "brynjolfsson-et-al"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  }
+]

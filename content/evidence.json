@@ -1,0 +1,3046 @@
+[
+  {
+    "id": "metr-rct-2025",
+    "title": "METR RCT (2025)",
+    "url": "https://arxiv.org/abs/2507.09089",
+    "kind": "rct",
+    "era": "early-2025",
+    "finding": "Experienced developers forecast they would be 24% faster with AI but were measured 19% slower (16 developers, 246 tasks on familiar repos, Claude 3.5/3.7).",
+    "tags": [
+      "looping",
+      "measuring",
+      "reviewing",
+      "understanding",
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "metr-time-horizons",
+    "title": "METR time horizons",
+    "url": "https://arxiv.org/abs/2503.14499",
+    "kind": "benchmark",
+    "era": "early-2025",
+    "finding": "Claude 3.7 handled tasks of about 50 minutes at 50% success, and the task length agents can do doubled every 3-7 months depending on the period measured.",
+    "tags": [
+      "looping",
+      "measuring"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "anthropic-internal-study",
+    "title": "Anthropic internal study",
+    "url": "https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic",
+    "kind": "vendor",
+    "era": null,
+    "finding": "Engineers fully delegate 0-20% of their work.",
+    "tags": [
+      "looping",
+      "understanding",
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "metr-survey",
+    "title": "METR survey",
+    "url": "https://metr.org/blog/2026-05-11-ai-usage-survey/",
+    "kind": "survey",
+    "era": null,
+    "caveat": "2026, n=349",
+    "finding": "Median value uplift was 1.4-2x against 3x speed, and every checkable 10x claim was overstated.",
+    "tags": [
+      "looping",
+      "measuring"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "dora-2025",
+    "title": "DORA 2025",
+    "url": "https://services.google.com/fh/files/misc/2025_state_of_ai_assisted_software_development.pdf",
+    "kind": "survey",
+    "era": null,
+    "finding": "Delivery instability rises with AI adoption, while small batches amplified product performance and reduced friction (survey of about 5,000).",
+    "tags": [
+      "looping",
+      "measuring",
+      "understanding",
+      "xp-agile",
+      "testing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "swe-milestone",
+    "title": "SWE-Milestone",
+    "url": "https://arxiv.org/abs/2603.13428",
+    "kind": "benchmark",
+    "era": null,
+    "caveat": "preprint",
+    "finding": "Scores fell from over 80% to at most 38% when tasks built on each other.",
+    "tags": [
+      "looping"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "mathews-nagappan-ase-2024",
+    "title": "Mathews & Nagappan, ASE 2024",
+    "url": "https://arxiv.org/pdf/2402.13521",
+    "kind": "benchmark",
+    "era": "older",
+    "finding": "Failed fixes piled up: no problem was solved on attempt 5 (GPT-4, Llama 3).",
+    "tags": [
+      "looping",
+      "prompting",
+      "testing",
+      "xp-agile",
+      "measuring"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "chen-et-al-self-debugging",
+    "title": "Chen et al., Self-Debugging",
+    "url": "https://arxiv.org/pdf/2304.05128v2",
+    "kind": "benchmark",
+    "era": "older",
+    "caveat": "preprint",
+    "finding": "The same debugging loop gained 2-3 points with no unit tests (text-to-SQL) and up to 12 points with them (C++ to Python, Codex 80.4% to 92.5%), a bare 'the code is wrong' message gained less than execution results wherever tests existed, and it matched baselines that drew 10 times more samples.",
+    "tags": [
+      "looping",
+      "testing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "madaan-et-al-self-refine",
+    "title": "Madaan et al., Self-Refine",
+    "url": "https://arxiv.org/html/2303.17651v2",
+    "kind": "benchmark",
+    "era": "older",
+    "caveat": "preprint",
+    "finding": "Self-feedback improved 7 unlike tasks by about 20% absolute on average, but on math ChatGPT judged 94% of its own answers 'everything looks good' and an outside wrong-answer signal added over 5 points; partly GPT-4-judged, no equal-cost baseline.",
+    "tags": [
+      "looping",
+      "testing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "shinn-et-al-reflexion",
+    "title": "Shinn et al., Reflexion",
+    "url": "https://arxiv.org/html/2303.11366v4",
+    "kind": "benchmark",
+    "era": "older",
+    "caveat": "preprint",
+    "finding": "With no tests, a reflection loop scored below no loop at all (0.52 vs 0.60), a small open model gained nothing (0.26 before and after), and no equal-cost baseline was reported.",
+    "tags": [
+      "looping",
+      "testing",
+      "prompting",
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "swe-agent-neurips-2024",
+    "title": "SWE-agent, NeurIPS 2024",
+    "url": "https://arxiv.org/abs/2405.15793",
+    "kind": "benchmark",
+    "era": "older",
+    "finding": "Failed runs cost twice as much as successful ones and more budget rarely rescued them, while collapsing old observations and adding a lint guardrail each lifted solve rate from 15% to 18% (GPT-4 Turbo).",
+    "tags": [
+      "looping",
+      "prompting",
+      "testing",
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "metr-research-update-2025-08",
+    "title": "METR research update (2025-08)",
+    "url": "https://metr.org/blog/2025-08-12-research-update-towards-reconciling-slowdown-with-time-horizons/",
+    "kind": "study",
+    "era": "early-2025",
+    "finding": "An agent passed 38% of maintainer test suites, but 0 of 15 reviewed PRs were mergeable, including 4 that passed every test (Claude 3.7).",
+    "tags": [
+      "looping",
+      "testing",
+      "measuring",
+      "reviewing",
+      "xp-agile",
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "uber-efficient-software-factory",
+    "title": "Uber efficient software factory",
+    "url": "https://www.uber.com/us/en/blog/efficient-software-factory/",
+    "kind": "telemetry",
+    "era": null,
+    "caveat": "vendor telemetry",
+    "finding": "Cost per session fell 52% with compaction, default effort levels, caching and spend nudges.",
+    "tags": [
+      "looping",
+      "measuring",
+      "prompting",
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "databricks-managing-ai-coding-costs",
+    "title": "Databricks, managing AI coding costs",
+    "url": "https://www.databricks.com/blog/managing-ai-coding-costs-scale",
+    "kind": "vendor",
+    "era": null,
+    "caveat": "vendor-internal",
+    "finding": "Routing cut task cost by over 30%.",
+    "tags": [
+      "looping",
+      "measuring",
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "willison-the-lethal-trifecta",
+    "title": "Willison, the lethal trifecta",
+    "url": "https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/",
+    "kind": "essay",
+    "era": null,
+    "finding": "About 15 vendor products whose agents combined private data, untrusted input and an outbound channel were exploited in 2023-2025.",
+    "tags": [
+      "looping",
+      "risks-security",
+      "reviewing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "loopsbench",
+    "title": "LoopsBench",
+    "url": "https://arxiv.org/abs/2608.00267",
+    "kind": "benchmark",
+    "era": null,
+    "caveat": "preprint",
+    "finding": "The best result on 112 long tasks was 25.0% resolved (Opus 4.7 in Claude Code with an outer continuation loop, 17.0% without), regressions occurred in all four loop profiles, and the same model (gpt-5.4) scored from 18.75% in Codex down to 7.14% in mini-swe-agent, with the Ralph loop at 7.84% against 24.11% for dynamic workflows; Microsoft authors, tasks built with Claude Code.",
+    "tags": [
+      "looping",
+      "testing",
+      "measuring"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "swe-gym-icml-2025",
+    "title": "SWE-Gym, ICML 2025",
+    "url": "https://arxiv.org/abs/2412.21139",
+    "kind": "benchmark",
+    "era": null,
+    "finding": "A verifier trained on agent runs raised SWE-bench Verified from 20.6% (one attempt) to 32.0% (best of 16), but the right patch was often produced and not picked (fine-tuned Qwen2.5-Coder-32B, late-2024 open model).",
+    "tags": [
+      "looping"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "swe-search-iclr-2025",
+    "title": "SWE-Search, ICLR 2025",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/a1e6783e4d739196cad3336f12d402bf-Paper-Conference.pdf",
+    "kind": "benchmark",
+    "era": "older",
+    "finding": "Tree search added 4.0 to 6.7 points on SWE-bench Lite at 5 to 14 times the cost but only 0.6 to 5.3 points at matched compute, and a value function picked the right solution 73% of the time against 84% for a debate between final candidates (GPT-4o, GPT-4o-mini, Llama 3.1 70B).",
+    "tags": [
+      "looping",
+      "testing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "jain-are-harnesses-worth-the-cost-martinfowlercom",
+    "title": "Jain, are harnesses worth the cost (martinfowler.com)",
+    "url": "https://martinfowler.com/articles/are-harnesses-worth-the-cost.html",
+    "kind": "vendor",
+    "era": null,
+    "finding": "On one Java service scored by 178 hidden acceptance tests, a test-feedback harness took a cost-optimised model from 3 of 10 to 10 of 10 accepted at 3.9 times the tokens, while a flagship model was 10 of 10 either way at 10.5 times the tokens with the harness; the author founded the company whose tool built the harness.",
+    "tags": [
+      "looping",
+      "testing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "gorman-agentic-horizons",
+    "title": "Gorman, agentic horizons",
+    "url": "https://codemanship.wordpress.com/2026/08/27/agentic-horizons-when-the-wheels-start-to-wobble/",
+    "kind": "essay",
+    "era": null,
+    "finding": "An illustrative model, not a measurement: at 90% confidence per decision, 100 unchecked decisions leave a 0.003% chance of being right.",
+    "tags": [
+      "looping"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "ralph-playbook",
+    "title": "Ralph playbook",
+    "url": "https://github.com/ghuntley/how-to-ralph-wiggum",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Permission-bypass flags leave the sandbox as the only boundary.",
+    "tags": [
+      "looping",
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "fortune-on-uber-ai-spending",
+    "title": "Fortune on Uber AI spending",
+    "url": "https://fortune.com/2026/05/26/uber-coo-ai-spending-tokens-claude-code/",
+    "kind": "essay",
+    "era": null,
+    "finding": "Uber used its whole 2026 AI-coding budget in four months after a usage leaderboard.",
+    "tags": [
+      "looping",
+      "risks-security",
+      "measuring"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "slopcodebench",
+    "title": "SlopCodeBench",
+    "url": "https://arxiv.org/html/2603.24755v1",
+    "kind": "benchmark",
+    "era": null,
+    "caveat": "preprint",
+    "finding": "Code quality decays as agents extend their own work, and quality-aware prompts change the starting point but not the rate.",
+    "tags": [
+      "looping",
+      "testing",
+      "xp-agile",
+      "reviewing",
+      "measuring"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "cooper-driving-in-gears",
+    "title": "Cooper, driving in gears",
+    "url": "https://ian-cooper.writeas.com/coding-agents-and-driving-in-gears",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Proposes stopping after each test when unsure, running several tasks when sure, and keeping auth and payments in low gear; untested.",
+    "tags": [
+      "looping",
+      "reviewing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "osmani-software-factories",
+    "title": "Osmani, software factories",
+    "url": "https://addyosmani.com/blog/software-factories/",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Heuristics that agents hold up for 3-10 steps and drift past 20, and that a loop earns unattended running with a cheap, frequent, hard-to-fake check.",
+    "tags": [
+      "looping"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "huntley-ralph",
+    "title": "Huntley, Ralph",
+    "url": "https://ghuntley.com/ralph/",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Advises resetting context every loop and using a single validation agent for cleaner signal.",
+    "tags": [
+      "looping",
+      "testing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "dan-luu-pl-tokens",
+    "title": "Dan Luu, PL tokens",
+    "url": "https://danluu.com/pl-tokens/",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Continuing context did better per unit cost than resetting (n=1 task).",
+    "tags": [
+      "looping",
+      "measuring",
+      "testing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "augmented-coding-patterns-catalog",
+    "title": "Augmented coding patterns catalog",
+    "url": "https://github.com/lexler/augmented-coding-patterns/tree/main/documents/patterns",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Catalog patterns Overnight Batch and Smart Plan, Cheap Execution propose running low-risk work overnight and having the strongest model plan while a cheaper one executes; no data.",
+    "tags": [
+      "looping",
+      "prompting",
+      "reviewing",
+      "risks-security",
+      "understanding",
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "anthropic-effective-harnesses-for-long-running-agents",
+    "title": "Anthropic, effective harnesses for long-running agents",
+    "url": "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents",
+    "kind": "vendor",
+    "era": null,
+    "finding": "Proposes a JSON feature list where only the passes field is editable to stop premature completion claims.",
+    "tags": [
+      "looping"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "humanlayer-software-factory-write-up",
+    "title": "HumanLayer, software factory write-up",
+    "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/wsff.md",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "A no-review factory was abandoned after about three unrecoverable failures (one company).",
+    "tags": [
+      "looping",
+      "reviewing",
+      "prompting",
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "bockeler-sensors-for-coding-agents",
+    "title": "Böckeler, sensors for coding agents",
+    "url": "https://martinfowler.com/articles/sensors-for-coding-agents.html",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Proposes sensors at four cadences: in-session, CI, scheduled and production.",
+    "tags": [
+      "looping",
+      "testing",
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "uber-on-pragmatic-engineer",
+    "title": "Uber on Pragmatic Engineer",
+    "url": "https://youtu.be/MDUYSMJmi8A",
+    "kind": "vendor",
+    "era": null,
+    "finding": "Uber bundles simple CI jobs into one command the agent runs before opening a PR, after CI jobs more than doubled in a year; self-report.",
+    "tags": [
+      "looping",
+      "measuring",
+      "prompting",
+      "reviewing",
+      "testing",
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "anthropic-solving-code-review-at-anthropic",
+    "title": "Anthropic, solving code review at Anthropic",
+    "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+    "kind": "vendor",
+    "era": null,
+    "finding": "The Claude Code team has the agent show test or build output, then a fresh-context subagent reviews the diff before any PR; the 'two to three times better' figure is one engineer's estimate.",
+    "tags": [
+      "looping",
+      "reviewing",
+      "understanding",
+      "testing",
+      "risks-security",
+      "measuring"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "fornasier-getting-out-of-the-loop",
+    "title": "Fornasier, getting out of the loop",
+    "url": "https://github.com/patforna/getting-out-of-the-loop",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "The bottleneck moves to task definition (n=1).",
+    "tags": [
+      "looping",
+      "measuring",
+      "understanding",
+      "reviewing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "zechner-slowing-down",
+    "title": "Zechner, slowing down",
+    "url": "https://mariozechner.at/posts/2026-03-25-thoughts-on-slowing-the-fuck-down/",
+    "kind": "essay",
+    "era": null,
+    "finding": "Removing the human bottleneck removes the pain signal.",
+    "tags": [
+      "looping",
+      "xp-agile",
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "karpathy-on-dwarkesh-2025-10",
+    "title": "Karpathy on Dwarkesh (2025-10)",
+    "url": "https://www.dwarkesh.com/p/andrej-karpathy",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Agents were not net useful for novel, precisely arranged code, pushing standard patterns, defensive bloat and deprecated APIs, but helped with boilerplate and a tested port to an unfamiliar language (n=1).",
+    "tags": [
+      "looping",
+      "prompting",
+      "measuring",
+      "testing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "anthropic-the-advisor-strategy",
+    "title": "Anthropic, the advisor strategy",
+    "url": "https://claude.com/blog/the-advisor-strategy",
+    "kind": "vendor",
+    "era": null,
+    "finding": "A cheap model consulting a strong advisor gained 2.7 points on SWE-bench Multilingual at 11.9% less cost per task.",
+    "tags": [
+      "looping"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "emanuel-overprompting",
+    "title": "Emanuel, overprompting",
+    "url": "https://www.jeffreyemanuel.com/writing/overprompting",
+    "kind": "essay",
+    "era": null,
+    "finding": "Uses a plan-then-execute split but insists on an overpowered executor; opinion.",
+    "tags": [
+      "looping",
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "morris-humans-and-agents",
+    "title": "Morris, humans and agents",
+    "url": "https://martinfowler.com/articles/exploring-gen-ai/humans-and-agents.html",
+    "kind": "essay",
+    "era": null,
+    "finding": "Humans work 'on the loop', changing the specs, checks and guidance that steer the agent rather than the artefact when results are wrong; conceptual, no data.",
+    "tags": [
+      "looping"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "boeckeler-local-models-for-coding",
+    "title": "Boeckeler, local models for coding",
+    "url": "https://martinfowler.com/articles/exploring-gen-ai/local-models-for-coding-experiences.html",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "A locally run 35B mixture-of-experts model handled scripts and small well-specified changes but fell apart on complex logic, and one task failed 5 of 7 automated reruns on one machine (two tasks, one evaluator).",
+    "tags": [
+      "looping"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "posthog-scheduled-agents",
+    "title": "PostHog, scheduled agents",
+    "url": "https://newsletter.posthog.com/p/scheduled-agents",
+    "kind": "vendor",
+    "era": null,
+    "finding": "A flaky-test agent checking every 3 hours filed 72 reports since July, 11 of which (about 15%) led to merged fixes, while agent-sent tool-feedback reports ran to a few thousand, too many to read; vendor self-report.",
+    "tags": [
+      "looping"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "bean-et-al-neurips-2025",
+    "title": "Bean et al., NeurIPS 2025",
+    "url": "https://arxiv.org/abs/2511.04703",
+    "kind": "study",
+    "era": null,
+    "finding": "Of 445 LLM benchmarks, 16.0% used any statistical test or uncertainty estimate to compare models, 53.4% gave evidence that they measure what they claim, and under 10% used complete real-world tasks.",
+    "tags": [
+      "measuring"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "swe-bench",
+    "title": "SWE-Bench+",
+    "url": "https://arxiv.org/abs/2410.06992",
+    "kind": "benchmark",
+    "era": "older",
+    "finding": "31.1% of passed SWE-bench patches were suspicious because the tests were weak (reported secondhand via TDD-Bench Verified).",
+    "tags": [
+      "measuring",
+      "testing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "tdd-bench-verified-ibm",
+    "title": "TDD-Bench Verified (IBM)",
+    "url": "https://arxiv.org/pdf/2412.02883",
+    "kind": "benchmark",
+    "era": "older",
+    "finding": "Cited for weak graders: it relays the SWE-Bench+ figure, and the same row reports that 44 of 500 (8.8%) SWE-bench Verified golden tests weren't fail-to-pass or covered no changed lines.",
+    "tags": [
+      "measuring",
+      "testing",
+      "prompting",
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "stanford-ai-index-2026",
+    "title": "Stanford AI Index 2026",
+    "url": "https://hai.stanford.edu/assets/files/ai_index_report_2026.pdf",
+    "kind": "study",
+    "era": null,
+    "finding": "Secondary synthesis: invalid benchmark questions ranged from 2% (MMLU Math) to 42% (GSM8K).",
+    "tags": [
+      "measuring",
+      "testing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "singh-kocyigit-et-al",
+    "title": "Singh, Kocyigit et al.",
+    "url": "https://arxiv.org/abs/2411.03923",
+    "kind": "study",
+    "era": "older",
+    "finding": "Across 13 benchmarks and 7 models, contamination may inflate scores more than model releases report, and common detection settings (n-grams longer than 8, dropping rare matches) miss much of it.",
+    "tags": [
+      "measuring"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "metr-time-horizon-11",
+    "title": "METR Time Horizon 1.1",
+    "url": "https://metr.org/blog/2026-1-29-time-horizon-1-1/",
+    "kind": "benchmark",
+    "era": null,
+    "finding": "A revised task suite raised GPT-5's time horizon from 138 to 214 minutes (+55%) and cut GPT-4's by 35-57%; only 5 of 31 long tasks have real human timings, and the since-2024 doubling time is restated as 108.9 days, with 88.6 days on the new suite.",
+    "tags": [
+      "measuring"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "peng-et-al",
+    "title": "Peng et al.",
+    "url": "https://arxiv.org/html/2302.06590v1",
+    "kind": "study",
+    "era": "older",
+    "finding": "Developers were 55.8% faster on one greenfield task, counting only the 35 of 95 who finished; GitHub and Microsoft authors.",
+    "tags": [
+      "measuring",
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "harness",
+    "title": "Harness",
+    "url": "https://www.harness.io/blog/the-impact-of-github-copilot-on-developer-productivity-a-case-study",
+    "kind": "vendor",
+    "era": "older",
+    "finding": "A before/after study (n=50) by a vendor of engineering metrics found 10.6% more PRs with Copilot, with no quality data.",
+    "tags": [
+      "measuring",
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "github-blog-copilot-code-quality",
+    "title": "GitHub blog (Copilot code quality)",
+    "url": "https://github.blog/news-insights/research/does-github-copilot-improve-code-quality-heres-what-the-data-says/",
+    "kind": "vendor",
+    "era": "older",
+    "finding": "Unsigned vendor post with no paper: 13.6% more lines per readability error with Copilot, reviewed only by the 25 developers whose code passed every test.",
+    "tags": [
+      "measuring"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "imai-icse-2022-poster",
+    "title": "Imai, ICSE 2022 poster",
+    "url": "https://dl.acm.org/doi/epdf/10.1145/3510454.3522684",
+    "kind": "study",
+    "era": "older",
+    "finding": "A 20-person student poster (abstract only) found lower quality with Copilot pairing.",
+    "tags": [
+      "measuring",
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "moradi-dakhel-et-al",
+    "title": "Moradi Dakhel et al.",
+    "url": "https://arxiv.org/html/2206.15331v2",
+    "kind": "study",
+    "era": "older",
+    "finding": "Students' correct ratio beat Copilot's on 5 course tasks.",
+    "tags": [
+      "measuring"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "pearce-et-al-ieee-sp-2022",
+    "title": "Pearce et al., IEEE S&P 2022",
+    "url": "https://arxiv.org/html/2108.09293v3",
+    "kind": "study",
+    "era": "older",
+    "finding": "About 40% of completions for risky scenarios were vulnerable.",
+    "tags": [
+      "measuring",
+      "risks-security",
+      "reviewing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "meta-cto-post-via-reuters-and-ars-technica",
+    "title": "Meta CTO post via Reuters and Ars Technica",
+    "url": "https://arstechnica.com/ai/2026/08/metas-scrapped-plans-to-go-ai-native-included-slashing-teams-by-60-percent/",
+    "kind": "telemetry",
+    "era": null,
+    "finding": "Per an internal CTO post reported secondhand, code changes at Meta rose 220% while user-facing feature changes rose 36%.",
+    "tags": [
+      "measuring",
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "guardian",
+    "title": "Guardian",
+    "url": "https://www.theguardian.com/technology/2026/apr/14/ai-productivity-workplace-errors",
+    "kind": "survey",
+    "era": null,
+    "caveat": "WSJ survey; Liebscher press account",
+    "finding": "Reports secondhand a WSJ survey of 5,000 in which 92% of executives say AI makes them more productive and 40% of non-managers say it saves no time; its account of the Liebscher study gives 1,150 workers and 40% exposure, a discrepancy the doc calls unexplained.",
+    "tags": [
+      "measuring"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "liebscher-et-al",
+    "title": "Liebscher et al.",
+    "url": "https://drive.google.com/file/d/1FUIZr60LVLzGhIBw48orrJZhtqb6iV_t/view?usp=sharing",
+    "kind": "survey",
+    "era": null,
+    "finding": "In a self-report preprint (n=962, BetterUp and Stanford authors), 52.7% said they had sent AI work they judged low quality; 38% received some in the last month and spent 3.3-3.4 hours a month on it; 36% then wanted to avoid that colleague.",
+    "tags": [
+      "measuring",
+      "reviewing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "cursor-telemetry-via-orosz",
+    "title": "Cursor telemetry via Orosz",
+    "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-interesting-ai-coding-stats",
+    "kind": "telemetry",
+    "era": null,
+    "finding": "One model cost about 2x another per agent request but tied per accepted line; Orosz notes Cursor gains if its own model looks cheap.",
+    "tags": [
+      "measuring",
+      "reviewing",
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "posthog-newsletter",
+    "title": "PostHog newsletter",
+    "url": "https://newsletter.posthog.com/p/this-post-will-save-you-tokens",
+    "kind": "vendor",
+    "era": null,
+    "finding": "With no methodology given, a daily bill doubled ($5k to $10k) while cost per run fell ($1.80 to $1.40), and a cheaper model was 20% cheaper in one test, not the 2.5x its list price suggests, because it took 1.7x the turns.",
+    "tags": [
+      "measuring",
+      "prompting",
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "mazloomzadeh-morovati-khomh",
+    "title": "Mazloomzadeh, Morovati & Khomh",
+    "url": "https://arxiv.org/abs/2607.21832",
+    "kind": "study",
+    "era": null,
+    "finding": "Of 9,428 agentic PRs in 489 Python repositories, model-adjusted merge probability ranged from Claude 84.3% to Devin 43.0%, the Claude-Codex gap was not significant (p=0.178) and raw counts reverse it; merge shows reviewers accepted the change, not that it was correct.",
+    "tags": [
+      "measuring",
+      "reviewing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "tabarsi-et-al",
+    "title": "Tabarsi et al.",
+    "url": "https://link.springer.com/article/10.1007/s10664-026-10917-0",
+    "kind": "study",
+    "era": "older",
+    "finding": "Of 16 early adopters interviewed, 14 reported less mundane work and 13 saved time, yet 8 discarded most generated code and 15 modified code before using it.",
+    "tags": [
+      "measuring",
+      "prompting",
+      "reviewing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "orosz-roi-of-ai-spend",
+    "title": "Orosz, ROI of AI spend",
+    "url": "https://newsletter.pragmaticengineer.com/p/whats-the-roi-of-software-engineers",
+    "kind": "vendor",
+    "era": null,
+    "finding": "Vendor data shows weekly PRs up 113% and monthly PRs up 127% year on year among CodeRabbit users; interviews across 27 companies found spend from under $300 to $3,000+ per developer per month and PR change from flat to 5-10x, with one company's PR size tripling while count stayed flat.",
+    "tags": [
+      "measuring",
+      "reviewing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "saga-neurips-2025",
+    "title": "SAGA, NeurIPS 2025",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/c8ec1867837f5cdaa9e61d40a8b8bb4a-Paper-Conference.pdf",
+    "kind": "study",
+    "era": null,
+    "finding": "Solutions that passed LiveCodeBench's private tests failed on LeetCode 20% (medium) and 40% (hard) of the time.",
+    "tags": [
+      "measuring",
+      "testing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "verina-iclr-2026",
+    "title": "VERINA, ICLR 2026",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/41b8c80f9113b9f8e2e129447221682a-Paper-Conference.pdf",
+    "kind": "benchmark",
+    "era": "early-2025",
+    "finding": "Almost all code failures in this Lean 4 benchmark were compile errors (o3: 25.8 of 27.4 points), so its code score mostly measures writing Lean that compiles.",
+    "tags": [
+      "measuring",
+      "testing",
+      "prompting",
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "iconiq-state-of-ai-2026",
+    "title": "ICONIQ State of AI 2026",
+    "url": "https://cdn.prod.website-files.com/65d0d38fc4ec8ce8a8921654/6979532decf89bd3df2163b0_ICONIQ_Analytics_Insights_2026_State_of_AI_Bi-Annual_Snapshot.pdf",
+    "kind": "survey",
+    "era": null,
+    "finding": "Executives report about 31% time savings from coding assistance (executive self-report, n=247).",
+    "tags": [
+      "measuring"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "raicea-posthog",
+    "title": "Raicea, PostHog",
+    "url": "https://posthog.com/blog/testing-ai-agents",
+    "kind": "vendor",
+    "era": null,
+    "finding": "Claims boolean LLM judges with concrete examples are reliable enough, with no agreement data, and recommends observing, curating failures into evals, sampling 5-10% of traffic and reviewing traces weekly.",
+    "tags": [
+      "measuring",
+      "testing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "anderson",
+    "title": "Anderson",
+    "url": "https://pr0j3c7t0dd.substack.com/p/ai-in-september-2026-models-and-agents",
+    "kind": "essay",
+    "era": null,
+    "finding": "Newsletter forecast with no data: steering people to cheaper models can raise retries and human correction and erase the saving.",
+    "tags": [
+      "measuring"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "forbes",
+    "title": "Forbes",
+    "url": "https://www.forbes.com/sites/jemmagreen/2026/07/02/ai-costs-more-than-the-people-it-replaced/",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Reports secondhand that Amazon withdrew an internal usage leaderboard after staff gamed it.",
+    "tags": [
+      "measuring",
+      "looping"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "ludic",
+    "title": "Ludic",
+    "url": "https://hermit-tech.com/blog/ai-mania-is-eviscerating-global-decisionmaking",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Anonymous testimony that engineers under quotas ran self-prompting loops and none was caught.",
+    "tags": [
+      "measuring",
+      "looping"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "chatterji-et-al-openai",
+    "title": "Chatterji et al. (OpenAI)",
+    "url": "https://cdn.openai.com/pdf/how-organizations-use-chatgpt.pdf",
+    "kind": "vendor",
+    "era": null,
+    "finding": "OpenAI's own working paper on ChatGPT Enterprise says message volume measures intensity, not economic importance.",
+    "tags": [
+      "measuring",
+      "looping"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "business-insider",
+    "title": "Business Insider",
+    "url": "https://www.businessinsider.com/uber-coo-andrew-macdonald-ai-token-spending-harder-justify-2026-5",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Reports that Duolingo dropped AI usage from performance reviews.",
+    "tags": [
+      "measuring"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "ewerlof",
+    "title": "Ewerlof",
+    "url": "https://blog.alexewerlof.com/p/coding-is-not-solved",
+    "kind": "essay",
+    "era": null,
+    "finding": "Essay by a critic of AI mandates, anecdotes only: token usage as a productivity proxy is a vanity metric.",
+    "tags": [
+      "measuring",
+      "reviewing",
+      "understanding",
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "honeycomb",
+    "title": "Honeycomb",
+    "url": "https://www.honeycomb.io/blog/ai-norms-values-part-3-things-we-hold-true",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "A CTO describes an unmeasured company policy: say what an artifact is, why you send it and how much review you want.",
+    "tags": [
+      "measuring",
+      "reviewing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "bean-strauss-singh-hbr",
+    "title": "Bean, Strauss & Singh, HBR",
+    "url": "https://hbr.org/2026/07/performance-management-needs-new-metrics-in-the-ai-era",
+    "kind": "essay",
+    "era": null,
+    "finding": "Prescriptive: keep separate scorecards for human, agent and combined system.",
+    "tags": [
+      "measuring"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "pinecoder",
+    "title": "pinecoder",
+    "url": "https://www.pinecoder.dev/blog/2026-10-15/my-old-job-is-distant/",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "One engineer reports about 3x merged PRs after a model upgrade, with method and baseline not shown (personal essay, n=1).",
+    "tags": [
+      "measuring",
+      "reviewing",
+      "understanding",
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "gloaguen-et-al",
+    "title": "Gloaguen et al.",
+    "url": "https://arxiv.org/abs/2602.11988",
+    "kind": "benchmark",
+    "era": null,
+    "caveat": "preprint",
+    "finding": "LLM-generated context files lowered success slightly and raised cost 20-23%, hand-written ones gave +2.4% over no file (p=0.21) with cost up to 19%, repo overviews did not help agents find files, and tools named in a context file were used 1.6 times per task against under 0.01 otherwise, with reasoning tokens up 10-22% (GPT-5.x and Sonnet 4.5).",
+    "tags": [
+      "prompting",
+      "understanding",
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "lulla-et-al-icse-workshop-2026",
+    "title": "Lulla et al., ICSE workshop 2026",
+    "url": "https://arxiv.org/abs/2601.20404",
+    "kind": "study",
+    "era": null,
+    "finding": "A short AGENTS.md cut median time 28.6% and output tokens 16.6% with gpt-5.2-codex; correctness was not measured.",
+    "tags": [
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "shim-et-al-iclr-2026",
+    "title": "Shim et al., ICLR 2026",
+    "url": "https://arxiv.org/abs/2509.21865",
+    "kind": "study",
+    "era": "older",
+    "finding": "Performance peaked well below full context, so more context can be worse (GPT-4o, Qwen 2.5).",
+    "tags": [
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "paulsen",
+    "title": "Paulsen",
+    "url": "https://arxiv.org/abs/2509.21361",
+    "kind": "study",
+    "era": null,
+    "caveat": "single-author preprint",
+    "finding": "Retrieval degraded with length: most models degraded severely by 1,000 tokens.",
+    "tags": [
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "galster-et-al-aiware-26",
+    "title": "Galster et al., AIware '26",
+    "url": "https://doi.org/10.1145/3805760.3814887",
+    "kind": "study",
+    "era": null,
+    "finding": "In 2,853 engineered GitHub repositories, 90.6% had a context file (CLAUDE.md in 45.9% and AGENTS.md in 39.5% of those), skills and subagents were rare and mostly static text, and 301 of 497 context-file pointer pairs pointed from CLAUDE.md to AGENTS.md; this measures adoption, not benefit.",
+    "tags": [
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "paltenghi-chandra-arxiv-260709900-aftervibe",
+    "title": "Paltenghi & Chandra, arXiv 2607.09900 (AfterVibe)",
+    "url": "https://arxiv.org/abs/2607.09900",
+    "kind": "study",
+    "era": null,
+    "finding": "A spec recovered from a finished session let a fresh agent rebuild the change at a mean 5.06 of 6 on 72 internal Meta tasks (5.74 after up to three refinement rounds) against 4.23 for the developer's own change description, with specs about 5.7 times shorter than the diff; LLM graders, internal data.",
+    "tags": [
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "stale",
+    "title": "STALE",
+    "url": "https://arxiv.org/abs/2605.06527",
+    "kind": "benchmark",
+    "era": null,
+    "caveat": "preprint",
+    "finding": "The best model scored 55.2% on acting on updated facts.",
+    "tags": [
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "rathje-et-al",
+    "title": "Rathje et al.",
+    "url": "https://osf.io/5k6r9/",
+    "kind": "study",
+    "era": null,
+    "caveat": "preprint, n=7,227",
+    "finding": "Users rated sycophantic bots as more objective, and 72% of real ChatGPT turns were as agreeable as the sycophantic condition.",
+    "tags": [
+      "prompting",
+      "understanding",
+      "measuring"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "anthropic-ai-native-sdlc-playbook",
+    "title": "Anthropic AI-native SDLC playbook",
+    "url": "https://claude.com/blog/the-ai-native-sdlc-playbook",
+    "kind": "vendor",
+    "era": null,
+    "finding": "Advises planning before code and committing the plan, and says a skill makes violations rare while a hook makes them close to impossible; untested.",
+    "tags": [
+      "prompting",
+      "reviewing",
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "augmented-coding-obstacles-selective-hearing",
+    "title": "Augmented coding obstacles: Selective Hearing",
+    "url": "https://github.com/lexler/augmented-coding-patterns/tree/main/documents/obstacles",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Rules that fight the model's training silently revert.",
+    "tags": [
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "dodell",
+    "title": "Dodell",
+    "url": "https://denodell.com/blog/the-great-agent-skills-land-grab",
+    "kind": "essay",
+    "era": null,
+    "finding": "Skills should carry novel information or code.",
+    "tags": [
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "langchain-anatomy-of-an-agent-harness",
+    "title": "LangChain, anatomy of an agent harness",
+    "url": "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness",
+    "kind": "vendor",
+    "era": null,
+    "finding": "Load skill bodies only when they are used.",
+    "tags": [
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "kassner-schutze-acl-2020",
+    "title": "Kassner & Schütze, ACL 2020",
+    "url": "https://aclanthology.org/2020.acl-main.698/",
+    "kind": "study",
+    "era": "older",
+    "finding": "Negations prime the concept they ask the model to avoid (BERT).",
+    "tags": [
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "min-et-al-emnlp-2022",
+    "title": "Min et al., EMNLP 2022",
+    "url": "https://aclanthology.org/2022.emnlp-main.759/",
+    "kind": "study",
+    "era": "older",
+    "finding": "Format and coverage of few-shot examples matter more than correct labels (GPT-3 era).",
+    "tags": [
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "system-design-newsletter-spec-driven-development",
+    "title": "System Design newsletter, spec-driven development",
+    "url": "https://newsletter.systemdesign.one/p/spec-driven-development-ai-agents",
+    "kind": "vendor",
+    "era": null,
+    "finding": "Advises splitting unknowns from assumptions in specs; vendor-sponsored, no data.",
+    "tags": [
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "margalit-et-al",
+    "title": "Margalit et al.",
+    "url": "https://arxiv.org/abs/2606.24535",
+    "kind": "study",
+    "era": null,
+    "finding": "An automated contradiction detector superseded 90 of 90 admitted conflicting facts in one service.",
+    "tags": [
+      "prompting",
+      "risks-security",
+      "understanding"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "piskala",
+    "title": "Piskala",
+    "url": "https://arxiv.org/html/2602.00180v1",
+    "kind": "essay",
+    "era": null,
+    "caveat": "preprint guide",
+    "finding": "Keep the spec in sync with code through tests for long-lived systems, use the least rigour that removes ambiguity, and skip specs for exploratory work; no data, and its 'up to 50%' error cut is secondhand and unverified.",
+    "tags": [
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "ewerlofs-pattern-catalogue",
+    "title": "Ewerlof's pattern catalogue",
+    "url": "https://blog.alexewerlof.com/p/ai-systems-engineering-patterns",
+    "kind": "essay",
+    "era": null,
+    "finding": "Proposes loading the whole working set into context instead of retrieving chunks (CAG) for full recall; no data, partly drafted with Gemini.",
+    "tags": [
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "kohler-nng-three-agent-context-roles",
+    "title": "Kohler, NN/g: three agent context roles",
+    "url": "https://www.nngroup.com/articles/3-agent-context-roles/",
+    "kind": "study",
+    "era": null,
+    "finding": "A qualitative study with Claude power users proposes asking whether each context item is global (rarely changes), local (one task) or ambient (raw streams).",
+    "tags": [
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "kohler-nng-big-ball-of-mud",
+    "title": "Kohler, NN/g: big ball of mud",
+    "url": "https://www.nngroup.com/articles/big-ball-of-mud-ai/",
+    "kind": "essay",
+    "era": null,
+    "finding": "Without sorting context by role, nontechnical builders' agent systems grow as big balls of mud.",
+    "tags": [
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "moran-gibbons-nng-vibe-architects",
+    "title": "Moran & Gibbons, NN/g: vibe architects",
+    "url": "https://www.nngroup.com/articles/vibe-architects/",
+    "kind": "study",
+    "era": null,
+    "finding": "The sample behind the big-ball-of-mud observation is 7 people.",
+    "tags": [
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "foote-yoder-1997",
+    "title": "Foote & Yoder, 1997",
+    "url": "https://www.laputan.org/mud/",
+    "kind": "essay",
+    "era": null,
+    "finding": "Origin of the term 'big ball of mud', which the authors call a pattern, not an antipattern.",
+    "tags": [
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "perez-nng-context-architecture",
+    "title": "Perez, NN/g: context architecture",
+    "url": "https://www.nngroup.com/articles/context-architecture/",
+    "kind": "essay",
+    "era": null,
+    "finding": "Position paper arguing for information architecture for context; argued, not measured.",
+    "tags": [
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "neo-kim-and-gencay-claude-code-token-usage",
+    "title": "Neo Kim and Gencay, Claude Code token usage",
+    "url": "https://newsletter.systemdesign.one/p/claude-code-token-usage",
+    "kind": "vendor",
+    "era": null,
+    "finding": "Advises starting a new conversation when compaction fires every few messages or earlier rules are forgotten, carrying over a short hand-off summary and keeping standing rules in CLAUDE.md; sponsored, no data.",
+    "tags": [
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "fowler-2026-09-28",
+    "title": "Fowler, 2026-09-28",
+    "url": "https://aicoding.leaflet.pub/3mwlzitykzc27",
+    "kind": "essay",
+    "era": null,
+    "finding": "Argues for hacking until something works, recovering a spec from the session and regenerating to see what the spec kept; a first spec is always wrong and regenerating a bug keeps the bug.",
+    "tags": [
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "gonzalez-2026-03",
+    "title": "Gonzalez, 2026-03",
+    "url": "https://haskellforall.com/2026/03/a-sufficiently-detailed-spec-is-code",
+    "kind": "essay",
+    "era": null,
+    "finding": "A spec detailed enough to generate software is thinly veiled code, so specs are not cheaper than code; its evidence is one author, one spec, one Claude Code run.",
+    "tags": [
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "marin-perez-2026-05-20",
+    "title": "Marin-Perez, 2026-05-20",
+    "url": "https://www.cosotateam.com/post/the-mythical-well-defined-project",
+    "kind": "essay",
+    "era": null,
+    "finding": "Most projects are well defined but poorly specified, so agents can run free only where any decent output will do; no data, author sells consultancy and training.",
+    "tags": [
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "boeckeler-three-spec-driven-development-tools",
+    "title": "Boeckeler, three spec-driven development tools",
+    "url": "https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "A spec tool turned a small bug into 4 user stories and 16 acceptance criteria, and reviewing many verbose spec files was worse than reviewing code (one evaluator, 2025).",
+    "tags": [
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "lopopolo-openai-harness-engineering",
+    "title": "Lopopolo, OpenAI harness engineering",
+    "url": "https://openai.com/index/harness-engineering/",
+    "kind": "vendor",
+    "era": null,
+    "finding": "One big instruction file failed, so the team kept a short AGENTS.md as a table of contents over structured docs and enforced rules with custom linters; unmeasured, output figures are self-estimates.",
+    "tags": [
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "demirer-et-al-nber-w35275",
+    "title": "Demirer et al., NBER w35275",
+    "url": "https://www.nber.org/system/files/working_papers/w35275/w35275.pdf",
+    "kind": "study",
+    "era": null,
+    "finding": "Across 100,000+ developers, AI tools raised lines of code 17.3x and releases only 1.3x; calibrated on this data, unlimited code generation would lift releases only about 10% (a calibration, not an estimate).",
+    "tags": [
+      "reviewing",
+      "measuring",
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "faros-22k-devs",
+    "title": "Faros, 22k devs",
+    "url": "https://www.faros.ai/blog/ai-acceleration-whiplash-takeaways",
+    "kind": "vendor",
+    "era": null,
+    "finding": "Correlational vendor data shows median review time up 441%, incidents per PR up 243% and unreviewed merges up 31%.",
+    "tags": [
+      "reviewing",
+      "measuring",
+      "risks-security",
+      "xp-agile",
+      "looping",
+      "testing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "perry-et-al-ccs-2023",
+    "title": "Perry et al., CCS 2023",
+    "url": "https://arxiv.org/abs/2211.03622",
+    "kind": "study",
+    "era": "older",
+    "finding": "AI-assisted participants (n=47) wrote less secure code on 4 of 5 security tasks and were more likely to believe it was secure.",
+    "tags": [
+      "reviewing",
+      "risks-security",
+      "testing",
+      "understanding",
+      "measuring"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "osmani-agentic-code-review-coderabbit-data-and-multi-tool-st",
+    "title": "Osmani, Agentic code review (CodeRabbit data and multi-tool study)",
+    "url": "https://addyosmani.com/blog/agentic-code-review/",
+    "kind": "vendor",
+    "era": null,
+    "finding": "Relays CodeRabbit data on 470 PRs (Dec 2025) showing 1.7x more issues and 1.5-2x more security issues in AI PRs, and an unnamed study where 93.4% of flagged locations across 146 PRs came from exactly one of four tools (secondhand).",
+    "tags": [
+      "reviewing",
+      "risks-security",
+      "measuring"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "he-et-al-via-ehsani-et-al",
+    "title": "He et al., via Ehsani et al.",
+    "url": "https://arxiv.org/abs/2606.14796",
+    "kind": "study",
+    "era": null,
+    "finding": "After Cursor adoption, static-analysis warnings rose 30% and complexity 41% (secondhand).",
+    "tags": [
+      "reviewing",
+      "measuring",
+      "risks-security",
+      "testing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "gitclear-153m-lines",
+    "title": "GitClear, 153M lines",
+    "url": "https://www.gitclear.com/coding_on_copilot_data_shows_ais_downward_pressure_on_code_quality",
+    "kind": "vendor",
+    "era": "older",
+    "finding": "Short-term churn and copy/paste are rising, with churn projected to double vs 2021 (Copilot, 2020-2023).",
+    "tags": [
+      "reviewing",
+      "measuring"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "circleci-28-million-workflows",
+    "title": "CircleCI, 28 million workflows",
+    "url": "https://www.linkedin.com/pulse/what-28-million-workflows-reveal-ai-codings-biggest-risk-circleci-j9syc/",
+    "kind": "vendor",
+    "era": null,
+    "finding": "Main-branch success fell to 70.8%, a five-year low (no methodology given).",
+    "tags": [
+      "reviewing",
+      "measuring",
+      "xp-agile",
+      "looping",
+      "testing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "intercom-2x-nine-months-later",
+    "title": "Intercom, 2x nine months later",
+    "url": "https://ideas.fin.ai/p/2x-nine-months-later",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "One disciplined team reported 3x merged PRs per person and a defect backlog down 54% (company self-report).",
+    "tags": [
+      "reviewing",
+      "measuring"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "orosz-what-is-happening-with-code-reviews",
+    "title": "Orosz, What is happening with code reviews",
+    "url": "https://newsletter.pragmaticengineer.com/p/what-is-happening-with-code-reviews",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "GitHub PR volume rose about 5x in three years, and a 5-person team routing risky changes to humans and the rest to AI review went from 80 to 154 PRs per week (self-reported).",
+    "tags": [
+      "reviewing",
+      "risks-security",
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "baltes-et-al",
+    "title": "Baltes et al.",
+    "url": "https://arxiv.org/html/2604.16754v1",
+    "kind": "study",
+    "era": null,
+    "finding": "One team handled 30 PRs a day across six reviewers.",
+    "tags": [
+      "reviewing",
+      "risks-security",
+      "measuring",
+      "testing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "vicente-matute-via-lovett",
+    "title": "Vicente & Matute, via Lovett",
+    "url": "https://arxiv.org/pdf/2607.29380",
+    "kind": "study",
+    "era": null,
+    "finding": "80.7% of participants spotted a flawed AI recommendation and followed it anyway.",
+    "tags": [
+      "reviewing",
+      "understanding"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "orosz-the-pulse-concern-about-ai-review",
+    "title": "Orosz, The Pulse: concern about AI review",
+    "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-new-trend-concern-about",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Uber filters AI review comments by confidence and merges duplicates.",
+    "tags": [
+      "reviewing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "evil-martians-ten-anti-ai-slop-moves",
+    "title": "Evil Martians, Ten anti-AI-slop moves",
+    "url": "https://evilmartians.com/chronicles/ten-anti-ai-slop-moves-for-frontend-projects-going-faster-than-humans-can-review",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Recommends phasing deterministic gates: baseline, then warnings on changed files, then blocking.",
+    "tags": [
+      "reviewing",
+      "testing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "brasil-when-i-reject-ai-code-even-if-it-works",
+    "title": "Brasil, When I reject AI code even if it works",
+    "url": "https://vinibrasil.com/when-i-reject-ai-code-even-if-it-works/",
+    "kind": "essay",
+    "era": null,
+    "finding": "Rejects green code the author cannot explain.",
+    "tags": [
+      "reviewing",
+      "understanding"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "tanna-hand-write-commits",
+    "title": "Tanna, Hand-write commits",
+    "url": "https://www.jvt.me/posts/2026/08/17/hand-write-commits/",
+    "kind": "essay",
+    "era": null,
+    "finding": "Advocates hand-writing commit messages.",
+    "tags": [
+      "reviewing",
+      "understanding"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "lawson-you-can-just-choose-how-many-bugs-you-want",
+    "title": "Lawson, You can just choose how many bugs you want",
+    "url": "https://nolanlawson.com/2026/08/16/you-can-just-choose-how-many-bugs-you-want-now/",
+    "kind": "essay",
+    "era": null,
+    "finding": "Without a simplification pass, each bug gets its own patch.",
+    "tags": [
+      "reviewing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "dan-luu-ai-coding",
+    "title": "Dan Luu, AI coding",
+    "url": "https://danluu.com/ai-coding/",
+    "kind": "essay",
+    "era": null,
+    "finding": "Proposes QA and fuzzing instead of default diff review.",
+    "tags": [
+      "reviewing",
+      "testing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "tornhill-controlling-the-uncertainty-machine",
+    "title": "Tornhill, Controlling the uncertainty machine",
+    "url": "https://adamtornhill.substack.com/p/controlling-the-uncertainty-machine",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Bug fixes get light inspection and novel features deeper structural review, never full line-by-line reading; each review finding becomes an agent skill (his company sells code-health tooling).",
+    "tags": [
+      "reviewing",
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "cervera-vibe-everything",
+    "title": "Cervera, Vibe everything",
+    "url": "https://www.acervera.com/blog/2026/09/vibe-everything-the-truth-nobody-wants-to-hear",
+    "kind": "essay",
+    "era": null,
+    "finding": "A human in the loop whose only acceptable answer is approval is there to take the blame, without the knowledge, time or authority to stop a failure (opinion, no data).",
+    "tags": [
+      "reviewing",
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "ellens-the-system-is-on-the-other-side",
+    "title": "Ellens, The system is on the other side",
+    "url": "https://engineeringforteams.substack.com/p/the-system-is-on-the-other-side-of",
+    "kind": "essay",
+    "era": null,
+    "finding": "Generated tests and AI reviewers each add an interpretation between the engineer and the running system, and AI quality gates turn those interpretations into decisions (no data).",
+    "tags": [
+      "reviewing",
+      "understanding",
+      "testing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "astrogator-uiuc-and-ibm",
+    "title": "Astrogator (UIUC and IBM)",
+    "url": "https://arxiv.org/pdf/2507.13290",
+    "kind": "study",
+    "era": null,
+    "finding": "With a user-confirmed formal query and a verifier, 82.9% of correct Ansible programs were accepted and 92.4% of wrong ones rejected, but 68 of 70 wrong accepts traced to queries that left details open, and the human review step was never run (authors' own 21 tasks).",
+    "tags": [
+      "reviewing",
+      "testing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "anthropic-and-theorem-formal-verification",
+    "title": "Anthropic and Theorem, formal verification",
+    "url": "https://www.anthropic.com/research/formal-verification",
+    "kind": "vendor",
+    "era": null,
+    "finding": "Claude proved 239 OSS-Fuzz entry points crash-free with specs from existing fuzz harnesses, yet one harness asserted less than the post claims.",
+    "tags": [
+      "reviewing",
+      "testing",
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "openai-scaling-code-verification",
+    "title": "OpenAI, Scaling code verification",
+    "url": "https://alignment.openai.com/scaling-code-verification/",
+    "kind": "vendor",
+    "era": null,
+    "finding": "OpenAI says its Codex reviewer caught more critical issues with fewer false alarms once given repository access and execution, that 52.7% of its comments led to a code change across over 100k PRs a day, and that recall fell faster on model-written code (figures not reproduced).",
+    "tags": [
+      "reviewing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "owasp-llm012025-prompt-injection",
+    "title": "OWASP LLM01:2025 Prompt Injection",
+    "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "OWASP says it is unclear if there are fool-proof methods of prevention; RAG and fine-tuning don't fully mitigate it, and detecting injected text is an open problem.",
+    "tags": [
+      "risks-security",
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "owasp-top-10-for-llm-applications-2025",
+    "title": "OWASP Top 10 for LLM Applications 2025",
+    "url": "https://genai.owasp.org/llm-top-10/",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "The risk list each row of the tab is mapped to (LLM01 to LLM10).",
+    "tags": [
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "role-confusion-icml-2026",
+    "title": "Role confusion, ICML 2026",
+    "url": "https://role-confusion.github.io",
+    "kind": "study",
+    "era": null,
+    "finding": "Models judge who is speaking by writing style, not role tags; forged reasoning raised attack success from about 0% to 60%.",
+    "tags": [
+      "risks-security",
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "camel-debenedetti-et-al",
+    "title": "CaMeL, Debenedetti et al.",
+    "url": "https://arxiv.org/abs/2503.18813",
+    "kind": "benchmark",
+    "era": "early-2025",
+    "finding": "Isolating untrusted data from planning and checking each tool call against a policy blocked nearly all AgentDojo attacks, solving 77% of tasks vs 84% undefended at about 2.8x the tokens; spotlighting alone cut Claude 3.5 Sonnet's successful attacks from 44 to 5 of 949, with no guarantee and no adaptive attack tested (preprint, Google authors who also built the benchmark).",
+    "tags": [
+      "risks-security",
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "owasp-community-mcp-tool-poisoning",
+    "title": "OWASP community, MCP Tool Poisoning",
+    "url": "https://community.owasp.org/attacks/MCP_Tool_Poisoning",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "A malicious MCP server's tool responses carry instructions the agent follows; tools are reviewed at connect time but responses are trusted at runtime (no incidence data).",
+    "tags": [
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "mcptox-wang-et-al",
+    "title": "MCPTox, Wang et al.",
+    "url": "https://arxiv.org/html/2508.14925v1",
+    "kind": "benchmark",
+    "era": null,
+    "finding": "Poisoned tool descriptions succeeded on 36.5% of test cases on average and up to 72.8% across 20 model settings, with refusals under 3%; reasoning mode raised attack success (Qwen3 32B: 58.5% vs 23.7%). Measures susceptibility, not real-world incidence, and tested no defences.",
+    "tags": [
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "owasp-llm022025-sensitive-information-disclosure",
+    "title": "OWASP LLM02:2025 Sensitive Information Disclosure",
+    "url": "https://genai.owasp.org/llmrisk/llm022025-sensitive-information-disclosure/",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "The OWASP category the tab maps the lethal trifecta and credential exposure to.",
+    "tags": [
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "mollick-opinionated-guide",
+    "title": "Mollick, opinionated guide",
+    "url": "https://www.oneusefulthing.org/p/an-opinionated-guide-to-which-ai-b22",
+    "kind": "essay",
+    "era": null,
+    "finding": "Approve anything that sends, spends or deletes.",
+    "tags": [
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "owasp-llm062025-excessive-agency",
+    "title": "OWASP LLM06:2025 Excessive Agency",
+    "url": "https://genai.owasp.org/llmrisk/llm062025-excessive-agency/",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Root causes are excessive functionality, permissions and autonomy; logging and rate limits limit damage but don't prevent it.",
+    "tags": [
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "owasp-llm072025-system-prompt-leakage",
+    "title": "OWASP LLM07:2025 System Prompt Leakage",
+    "url": "https://genai.owasp.org/llmrisk/llm072025-system-prompt-leakage/",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "System prompts should be treated as extractable.",
+    "tags": [
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "owasp-llm082025-vector-and-embedding-weaknesses",
+    "title": "OWASP LLM08:2025 Vector and Embedding Weaknesses",
+    "url": "https://genai.owasp.org/llmrisk/llm082025-vector-and-embedding-weaknesses/",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Embeddings can be inverted to recover text, shared stores leak across permission boundaries, and indexed documents can carry hidden instructions.",
+    "tags": [
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "owasp-llm042025-data-and-model-poisoning",
+    "title": "OWASP LLM04:2025 Data and Model Poisoning",
+    "url": "https://genai.owasp.org/llmrisk/llm042025-data-and-model-poisoning/",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Tampered models, LoRA adapters and poisoned data; backdoors can lie dormant.",
+    "tags": [
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "spracklen-et-al-usenix-security-2025",
+    "title": "Spracklen et al., USENIX Security 2025",
+    "url": "https://arxiv.org/abs/2406.10279",
+    "kind": "study",
+    "era": "older",
+    "finding": "At least 5.2% of packages suggested by commercial models and 21.7% by open-source models didn't exist, about 45% of fake names recurred every time, and checking names against the registry is 'the illusion of verification' once an attacker registers the name.",
+    "tags": [
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "krishna-et-al-preprint",
+    "title": "Krishna et al., preprint",
+    "url": "https://arxiv.org/html/2501.19012v1",
+    "kind": "study",
+    "era": "older",
+    "finding": "Across 11 code models, package hallucination ranged from 0.22% to 46.15% per model and language (5.42% for GPT-4o); larger, higher-scoring models invented fewer packages, a directional result driven partly by two outliers (three of four authors at NVIDIA, whose model scored best).",
+    "tags": [
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "aikido-slopsquatting",
+    "title": "Aikido, slopsquatting",
+    "url": "https://www.aikido.dev/blog/slopsquatting-ai-package-hallucination-attacks",
+    "kind": "vendor",
+    "era": null,
+    "finding": "A squatted fake package name got 30,000+ downloads in three months (Lasso), and one spread to 237 repos through LLM-generated agent skills.",
+    "tags": [
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "owasp-llm092025-misinformation",
+    "title": "OWASP LLM09:2025 Misinformation",
+    "url": "https://genai.owasp.org/llmrisk/llm092025-misinformation/",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "The OWASP category, including overreliance, that the tab maps slopsquatting, insecure code and skill loss to.",
+    "tags": [
+      "risks-security",
+      "reviewing",
+      "understanding"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "owasp-llm032025-supply-chain",
+    "title": "OWASP LLM03:2025 Supply Chain",
+    "url": "https://genai.owasp.org/llmrisk/llm032025-supply-chain/",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Covers tampered models and packages; vendors can change terms to train on customer data.",
+    "tags": [
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "owasp-a032025-software-supply-chain-failures",
+    "title": "OWASP A03:2025 Software Supply Chain Failures",
+    "url": "https://owasp.org/Top10/2025/A03_2025-Software_Supply_Chain_Failures/",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "The web Top 10 category the tab cites for agent-picked dependencies.",
+    "tags": [
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "owasp-software-supply-chain-security-cheat-sheet",
+    "title": "OWASP Software Supply Chain Security cheat sheet",
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/Software_Supply_Chain_Security_Cheat_Sheet.html",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Recommends SBOMs, signed sources, pinned registries and egress controls on fetches.",
+    "tags": [
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "owasp-llm052025-improper-output-handling",
+    "title": "OWASP LLM05:2025 Improper Output Handling",
+    "url": "https://genai.owasp.org/llmrisk/llm052025-improper-output-handling/",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Model output is passed to shells, SQL or browsers without validation; a coding agent's shell tool does this by design.",
+    "tags": [
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "owasp-llm102025-unbounded-consumption",
+    "title": "OWASP LLM10:2025 Unbounded Consumption",
+    "url": "https://genai.owasp.org/llmrisk/llm102025-unbounded-consumption/",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Pay-per-use pricing can be exploited; OWASP favours rate limits, quotas, timeouts and iteration caps.",
+    "tags": [
+      "risks-security",
+      "measuring"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "nyt-anthropic-copyright-settlement",
+    "title": "NYT, Anthropic copyright settlement",
+    "url": "https://www.nytimes.com/2025/09/05/technology/anthropic-settlement-copyright-ai.html",
+    "kind": "essay",
+    "era": null,
+    "finding": "Anthropic agreed a $1.5B copyright settlement.",
+    "tags": [
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "aikido-safechain",
+    "title": "Aikido SafeChain",
+    "url": "https://github.com/AikidoSec/safe-chain",
+    "kind": "vendor",
+    "era": null,
+    "finding": "A wrapper around npm, npx, yarn and pnpm that checks installs against a malware feed.",
+    "tags": [
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "geng-et-al-cmc-2026",
+    "title": "Geng et al., CMC 2026",
+    "url": "https://www.techscience.com/cmc/v87n1/66084/html",
+    "kind": "study",
+    "era": null,
+    "finding": "A review of 128 studies claims an input filter plus output validation plus model-level defences brings attack success under 5%, but the section it points to reports no measurement.",
+    "tags": [
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "times-of-israel-ai-flagged-cargo-cnn-relay",
+    "title": "Times of Israel, AI-flagged cargo (CNN relay)",
+    "url": "https://www.timesofisrael.com/us-nearly-raided-chinese-ship-after-ai-falsely-flagged-nuclear-cargo-for-iran-cnn/",
+    "kind": "essay",
+    "era": null,
+    "finding": "Relays a CNN exclusive that an intelligence report partly produced with AI nearly led to an armed boarding of a ship; unnamed sources, no official confirmation.",
+    "tags": [
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "trending-topics-false-ai-intelligence-report-cnn-relay",
+    "title": "Trending Topics, false AI intelligence report (CNN relay)",
+    "url": "https://www.trendingtopics.eu/false-ai-intelligence-report-nearly-triggered-a-u-s-china-military-clash/",
+    "kind": "essay",
+    "era": null,
+    "finding": "Relays the same CNN exclusive about an AI-assisted intelligence report and a near-miss ship boarding; unnamed sources, no official confirmation.",
+    "tags": [
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "aws-php2shell-exploitation-in-madpot",
+    "title": "AWS, PHP2Shell exploitation in MadPot",
+    "url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/",
+    "kind": "telemetry",
+    "era": null,
+    "finding": "Honeypot telemetry saw a PHP2Shell exploit attempt 4 days before disclosure, proof-of-concept exploits about 12 hours before the embargo lifted, and several actors within hours of the patch (AWS sells detection and WAF products).",
+    "tags": [
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "openai-coordinated-disclosure",
+    "title": "OpenAI, coordinated disclosure",
+    "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
+    "kind": "vendor",
+    "era": null,
+    "finding": "Says its model found the flaws before attackers, 'to our knowledge'; the AWS telemetry undercuts that head start.",
+    "tags": [
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "orosz-time-to-rethink-software",
+    "title": "Orosz, time to rethink software",
+    "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-time-to-rethink-software",
+    "kind": "essay",
+    "era": null,
+    "finding": "Infers that AI drives faster exploitation and the October 2026 incident cluster (opinion with incident relays).",
+    "tags": [
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "anthropic-using-llms-to-secure-source-code",
+    "title": "Anthropic, using LLMs to secure source code",
+    "url": "https://claude.com/resources/articles/using-llms-to-secure-source-code",
+    "kind": "vendor",
+    "era": null,
+    "finding": "Anthropic's scanning had disclosed 1,596 vulnerabilities, 97 known patched, as of 2026-05-22; one team's 40% false-positive rate came from findings with working proofs of concept that owners judged outside their threat model.",
+    "tags": [
+      "risks-security",
+      "testing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "github-changelog-security-validation-for-third-party-agents",
+    "title": "GitHub changelog, security validation for third-party agents",
+    "url": "https://github.blog/changelog/2026-06-09-security-validation-for-third-party-coding-agents/",
+    "kind": "vendor",
+    "era": null,
+    "finding": "GitHub runs CodeQL, advisory-database checks on new dependencies and secret scanning on third-party agent code by default, and claims hundreds of leaks and vulnerabilities prevented, unquantified.",
+    "tags": [
+      "risks-security",
+      "reviewing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "fucci-et-al-ieee-tse-2017",
+    "title": "Fucci et al., IEEE TSE 2017",
+    "url": "https://arxiv.org/abs/1611.05994",
+    "kind": "study",
+    "era": null,
+    "finding": "In a pre-LLM study of 39 professionals, test order made no significant difference while shorter, steadier cycles went with better quality and productivity, up to 14% better quality going from 50-minute to 8-minute cycles (small-to-medium effects, adjusted R2 about 0.1).",
+    "tags": [
+      "testing",
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "agha-et-al-vawkum-trans-comput-sci-2023",
+    "title": "Agha et al., VAWKUM Trans. Comput. Sci. 2023",
+    "url": "https://doi.org/10.21015/vtcs.v11i1.1494",
+    "kind": "study",
+    "era": null,
+    "finding": "A low-rigour review of 22 pre-LLM studies calls TDD broadly positive for coverage, quality and productivity, but reports no effect sizes, does not include Fucci et al., and disagrees with it in direction.",
+    "tags": [
+      "testing",
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "boeckeler-tdd-in-the-agent-loop",
+    "title": "Boeckeler, TDD in the agent loop",
+    "url": "https://martinfowler.com/articles/exploring-gen-ai/tdd-in-the-agent-loop.html",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "An agent (Sonnet 4.6) running TDD alone on a clear spec reached the same correctness and mutation score at 3x to 8.5x the tokens, and in every TDD run skipped RED, over-implemented or wrote tautological tests (5 batches, LLM judge, small experiment).",
+    "tags": [
+      "testing",
+      "looping",
+      "xp-agile",
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "bdfinst-tdd-vs-non-tdd-report",
+    "title": "bdfinst, TDD vs non-TDD report",
+    "url": "https://github.com/bdfinst/agentic-dev-team/blob/main/docs/experiments/tdd-vs-nontdd-report.md",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Across 18 tasks, measured cost showed a 'cost advantage of test-after' of -9%, -55% and -8% by task size, baseline not stated.",
+    "tags": [
+      "testing",
+      "xp-agile",
+      "looping"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "alonso-tdad-preprint",
+    "title": "Alonso, TDAD preprint",
+    "url": "https://arxiv.org/html/2603.17973v1",
+    "kind": "study",
+    "era": null,
+    "finding": "On SWE-bench Verified with Qwen3-Coder 30B, a static test-impact map plus a short skill cut test-level regressions 70% (6.08% to 1.82%), while a procedural TDD prompt with no impact context raised them to 9.94%; single author, 100-125 instances, provisional.",
+    "tags": [
+      "testing",
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "sevenhuijsen-et-al-nesy-2025",
+    "title": "Sevenhuijsen et al., NeSy 2025",
+    "url": "https://raw.githubusercontent.com/mlresearch/v284/main/assets/sevenhuijsen25a/sevenhuijsen25a.pdf",
+    "kind": "study",
+    "era": null,
+    "finding": "Ten LLMs wrote C for three safety-critical Scania modules; Frama-C verified 540, 59 and 46 of 800 programs per module, and of 281 verified programs checked against 11 project coding rules about 124 passed all of them.",
+    "tags": [
+      "testing",
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "swe-ci",
+    "title": "SWE-CI",
+    "url": "https://arxiv.org/abs/2603.03823",
+    "kind": "benchmark",
+    "era": null,
+    "finding": "Most models avoided regressions under 25% of the time.",
+    "tags": [
+      "testing",
+      "xp-agile",
+      "looping",
+      "reviewing",
+      "measuring"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "tornhill-practices-i-abandoned-with-agents",
+    "title": "Tornhill, Practices I abandoned with agents",
+    "url": "https://adamtornhill.substack.com/p/practices-i-abandoned-with-agents",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Testimony that agent-drafted, human-reviewed end-to-end tests are where the bulk of agentic gains came from, and that agents deleted tests or changed them to match wrong code.",
+    "tags": [
+      "testing",
+      "reviewing",
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "vaccari-acceptance-tests-for-ai-assisted-development",
+    "title": "Vaccari, Acceptance tests for AI-assisted development",
+    "url": "https://matteo.vaccari.name/posts/acceptance-tests-for-ai-assisted-development/",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Recommends acceptance tests through in-memory adapters, converging independently on the approved-scenarios idea.",
+    "tags": [
+      "testing",
+      "xp-agile",
+      "reviewing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "beck-on-pragmatic-engineer-tdd-ai-agents",
+    "title": "Beck on Pragmatic Engineer (TDD, AI agents)",
+    "url": "https://newsletter.pragmaticengineer.com/p/tdd-ai-agents-and-coding-with-kent",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Calls TDD a 'superpower' against agent regressions, reports agents deleting or changing tests, and recalls a Facebook feature where TDD was a waste of time because the bugs that hurt were cross-subsystem (anecdote).",
+    "tags": [
+      "testing",
+      "xp-agile",
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "beck-augmented-coding-beyond-the-vibes",
+    "title": "Beck, Augmented coding: beyond the vibes",
+    "url": "https://newsletter.kentbeck.com/p/augmented-coding-beyond-the-vibes",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Human-enforced TDD with an agent took two failed attempts to calibrate.",
+    "tags": [
+      "testing",
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "mock-et-al-xp-2024-workshop",
+    "title": "Mock et al., XP 2024 workshop",
+    "url": "https://arxiv.org/html/2405.10849v1",
+    "kind": "study",
+    "era": "older",
+    "finding": "A chat model in a TDD loop edited an expected value instead of fixing the bug (5 participants, one case).",
+    "tags": [
+      "testing",
+      "xp-agile",
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "alphaverus-icml-2025",
+    "title": "AlphaVerus, ICML 2025",
+    "url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/aggarwal25a/aggarwal25a.pdf",
+    "kind": "study",
+    "era": "older",
+    "finding": "Without critique filters, assume(false) spread to every output of a prover-graded translation loop.",
+    "tags": [
+      "testing",
+      "looping",
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "approved-scenarios-pattern",
+    "title": "Approved Scenarios pattern",
+    "url": "https://lexler.github.io/augmented-coding-patterns/patterns/approved-scenarios/",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Proposes approved scenarios and constrained test DSLs as hard-to-fake test formats.",
+    "tags": [
+      "testing",
+      "reviewing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "ai-made-tools-tdd-with-ai",
+    "title": "AI Made Tools, TDD with AI",
+    "url": "https://www.aimadetools.com/blog/tdd-with-ai/",
+    "kind": "essay",
+    "era": null,
+    "finding": "Proposes a human writes plain-language test intent, AI expands it into test code, a human implements the production code and AI only refactors after (unbylined, low confidence).",
+    "tags": [
+      "testing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "shen-tamkin-anthropic-rct",
+    "title": "Shen & Tamkin, Anthropic RCT",
+    "url": "https://www.anthropic.com/research/AI-assistance-coding-skills",
+    "kind": "rct",
+    "era": null,
+    "finding": "In a vendor RCT (n=52, unreplicated), AI help gave quiz scores of 50% vs 67% (d=0.74), the biggest gap in debugging and no significant speed gain; in exploratory subgroups of 2 to 7 people, conceptual questions scored 65% or more and delegating under 40%.",
+    "tags": [
+      "understanding"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "bastani-et-al-pnas-2025",
+    "title": "Bastani et al., PNAS 2025",
+    "url": "https://www.pnas.org/doi/10.1073/pnas.2422633122",
+    "kind": "study",
+    "era": "older",
+    "finding": "Among about 1,000 students, unrestricted GPT lowered exam scores by 17%, while a hint-only tutor showed no exam penalty.",
+    "tags": [
+      "understanding"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "kosmyna-et-al",
+    "title": "Kosmyna et al.",
+    "url": "https://arxiv.org/pdf/2506.08872",
+    "kind": "study",
+    "era": "older",
+    "finding": "In a preprint (n=54), 83% of LLM users couldn't quote their own essay minutes later, and writers who started without AI showed higher brain connectivity once they used it than the AI-first group ever reached.",
+    "tags": [
+      "understanding"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "prather-et-al-icer-2024",
+    "title": "Prather et al., ICER 2024",
+    "url": "https://dl.acm.org/doi/10.1145/3632620.3671116",
+    "kind": "study",
+    "era": "older",
+    "finding": "9 of 10 struggling novices reached a \"solution\" they didn't understand, losing the \"I'm stuck\" signal.",
+    "tags": [
+      "understanding"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "pnas-nexus-n10462",
+    "title": "PNAS Nexus, n=10,462",
+    "url": "https://doi.org/10.1093/pnasnexus/pgaf316",
+    "kind": "study",
+    "era": null,
+    "finding": "LLM summaries made thinking shallower and more uniform (similarity of advice 0.07 to 0.22), and blind readers rated the advice less helpful.",
+    "tags": [
+      "understanding"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "generation-effect-meta-analysis",
+    "title": "Generation-effect meta-analysis",
+    "url": "https://link.springer.com/content/pdf/10.3758/s13423-020-01762-3.pdf",
+    "kind": "study",
+    "era": null,
+    "finding": "Across 310 experiments, people recalled about 10 points more of what they generated themselves; general psychology, not AI-specific.",
+    "tags": [
+      "understanding"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "lee-et-al-chi-2025",
+    "title": "Lee et al., CHI 2025",
+    "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2025/01/lee_2025_ai_critical_thinking_survey.pdf",
+    "kind": "survey",
+    "era": "older",
+    "finding": "Across 319 knowledge workers (self-report), more trust in AI correlated with less critical thinking.",
+    "tags": [
+      "understanding"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "fan-et-al",
+    "title": "Fan et al.",
+    "url": "https://link.springer.com/content/pdf/10.1186/s40594-025-00537-3.pdf",
+    "kind": "study",
+    "era": "older",
+    "finding": "Among 234 students (self-report scales), human pairs scored significantly higher on collaboration and social presence than AI-assisted pairs or solo students.",
+    "tags": [
+      "understanding",
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "brynjolfsson-et-al",
+    "title": "Brynjolfsson et al.",
+    "url": "https://digitaleconomy.stanford.edu/app/uploads/2026/08/Canaries_August2026.pdf",
+    "kind": "study",
+    "era": null,
+    "finding": "In a descriptive working paper, early-career jobs (ages 22-25) in AI-exposed roles were 19% below trend.",
+    "tags": [
+      "understanding"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "liu-christian-et-al-colm-2026",
+    "title": "Liu, Christian et al., COLM 2026",
+    "url": "https://arxiv.org/pdf/2604.04721",
+    "kind": "study",
+    "era": null,
+    "finding": "Across three experiments with 1,058 online participants, after 11 to 12 problems with a GPT-5 sidebar people tested without it solved fewer problems (d from -0.20 to -0.45) and skipped more in two of three, with the cost sitting with people who asked for direct answers; fractions and reading comprehension, not coding, and no durability data.",
+    "tags": [
+      "understanding"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "naur-1985",
+    "title": "Naur, 1985",
+    "url": "https://pages.cs.wisc.edu/~remzi/Naur.pdf",
+    "kind": "essay",
+    "era": null,
+    "finding": "Essay with case observations arguing that teams, not documents, hold a program's theory.",
+    "tags": [
+      "understanding"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "bainbridge-1983",
+    "title": "Bainbridge, 1983",
+    "url": "https://ckrybus.com/static/papers/Bainbridge_1983_Automatica.pdf",
+    "kind": "essay",
+    "era": null,
+    "finding": "Automation research prescribes regular manual control to keep operator skills; it comes from industrial automation, not LLMs.",
+    "tags": [
+      "understanding"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "yu-et-al",
+    "title": "Yu et al.",
+    "url": "https://arxiv.org/abs/2603.10062",
+    "kind": "essay",
+    "era": null,
+    "finding": "A position paper names the gap of when one agent's memory write must become visible to another, but measures nothing.",
+    "tags": [
+      "understanding"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "spati-from-obsidian-to-enterprise-company-brain",
+    "title": "Spati, from Obsidian to enterprise company brain",
+    "url": "https://www.ssp.sh/blog/from-obsidian-to-enterprise-company-brain/",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "A blog with a demo, unmeasured, describes a design that blocks a conflicting memory write until a human decides.",
+    "tags": [
+      "understanding"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "storey-cognitive-debt",
+    "title": "Storey, cognitive debt",
+    "url": "https://margaretstorey.com/blog/2026/02/09/cognitive-debt/",
+    "kind": "essay",
+    "era": null,
+    "finding": "Argues at least one human should fully understand each AI change, and that teams should record why, not what.",
+    "tags": [
+      "understanding",
+      "reviewing",
+      "looping"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "storey-cognitive-debt-revisited",
+    "title": "Storey, cognitive debt revisited",
+    "url": "https://margaretstorey.com/blog/2026/02/18/cognitive-debt-revisited/",
+    "kind": "essay",
+    "era": null,
+    "finding": "Argues docs are not sufficient if they are not living artifacts.",
+    "tags": [
+      "understanding"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "litt",
+    "title": "Litt",
+    "url": "https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Proposes a 5-question quiz on a change before shipping it.",
+    "tags": [
+      "understanding",
+      "reviewing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "wursch",
+    "title": "Würsch",
+    "url": "https://www.linkedin.com/pulse/ai-doesnt-replace-engineering-discipline-rewards-michael-würsch-vxa6e/",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Proposes a comprehension commit gate for juniors.",
+    "tags": [
+      "understanding",
+      "reviewing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "antirez",
+    "title": "antirez",
+    "url": "https://antirez.com/news/124",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Cited for writing the message yourself as the ownership check.",
+    "tags": [
+      "understanding"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "goblindegook",
+    "title": "goblindegook",
+    "url": "https://goblindegook.com/2023/engineering-waste/",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Argues pairing keeps intent in at least two heads.",
+    "tags": [
+      "understanding",
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "james",
+    "title": "James",
+    "url": "https://quii.dev/How_to_go_fast",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Argues pairing keeps intent in at least two heads.",
+    "tags": [
+      "understanding",
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "ronacher",
+    "title": "Ronacher",
+    "url": "https://lucumr.pocoo.org/2026/7/13/the-tower-keeps-rising/",
+    "kind": "essay",
+    "era": null,
+    "finding": "Argues agents remove the friction that synchronised people.",
+    "tags": [
+      "understanding"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "spati-nobody-knows-anything-anymore",
+    "title": "Spati, nobody knows anything anymore",
+    "url": "https://www.ssp.sh/brain/the-problem-is-not-the-ai-code-but-nobody-knows-anything-anymore/",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "A growing note built on one anonymous account argues the bigger risk is whole teams no longer knowing the architecture or why choices were made.",
+    "tags": [
+      "understanding"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "sahai",
+    "title": "Sahai",
+    "url": "https://terrytao.wordpress.com/2026/09/24/were-gonna-need-a-lot-more-mathematicians/",
+    "kind": "essay",
+    "era": null,
+    "finding": "Essay with a hypothetical example, arguing for more funding of the author's own field: at society scale, understanding must sit outside whoever proposes the system.",
+    "tags": [
+      "understanding"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "tablan-et-al",
+    "title": "Tablan et al.",
+    "url": "https://arxiv.org/abs/2511.08301",
+    "kind": "vendor",
+    "era": null,
+    "finding": "In a vendor preprint, a shared memory raised LLM-judged code quality most for small models, 4.23 to 4.89 on a 5-point scale; the memory was seeded from the benchmark's own reference answers and no execution tests were reported.",
+    "tags": [
+      "understanding"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "stannard",
+    "title": "Stannard",
+    "url": "https://x.com/Aaronontheweb/status/2073095820740603906",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "On one bug fix (n=1), reading the diff, running the tests and questioning the agent was judging, not understanding; only re-implementing the fix gave understanding.",
+    "tags": [
+      "understanding",
+      "reviewing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "karpathy-x-post",
+    "title": "Karpathy (X post)",
+    "url": "https://x.com/karpathy/status/2105819303471976479",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Claims, without evidence, that a ladder of output formats from controlled English to diagrams, HTML pages and explainer videos makes oversight easier; the author is a former AI-education founder, an interest the post does not disclose.",
+    "tags": [
+      "understanding"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "teeni-katz-hhai-2026",
+    "title": "Teeni & Katz, HHAI 2026",
+    "url": "https://journals.sagepub.com/doi/epdf/10.3233/FAIA260505",
+    "kind": "study",
+    "era": null,
+    "finding": "In one developer's four months with Claude Code (163 episodes), decisions had to be re-explained every session and agreed rules decayed as conversations grew; it builds theory and gives no prevalence.",
+    "tags": [
+      "understanding",
+      "prompting"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "rezazadeh-et-al",
+    "title": "Rezazadeh et al.",
+    "url": "https://arxiv.org/html/2505.18279v1",
+    "kind": "study",
+    "era": null,
+    "finding": "In a simulation of provenance-gated shared memory, accuracy went 0.27, then 0.61 after grants, then 0.37 after revocations; the paper has no proof of policy adherence, no attack test, and nothing on stale or conflicting entries.",
+    "tags": [
+      "understanding",
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "tiwari-gupta",
+    "title": "Tiwari & Gupta",
+    "url": "https://link.springer.com/article/10.1007/s44163-026-00992-z",
+    "kind": "study",
+    "era": null,
+    "finding": "A 2026 review says the provenance-gated memory approach ensures privacy, though the primary paper shows simulation only.",
+    "tags": [
+      "understanding",
+      "risks-security"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "letta",
+    "title": "Letta",
+    "url": "https://www.letta.com/blog/benchmarking-ai-agent-memory",
+    "kind": "vendor",
+    "era": null,
+    "finding": "Letta says an agent using a plain filesystem scored 74.0% on the LoCoMo chat-recall benchmark with GPT-4o mini, against 68.5% reported for Mem0's graph variant.",
+    "tags": [
+      "understanding"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "chhikara-et-al-mem0",
+    "title": "Chhikara et al. (Mem0)",
+    "url": "https://arxiv.org/html/2504.19413",
+    "kind": "vendor",
+    "era": null,
+    "finding": "Mem0's own preprint scores full context at 72.90 and Mem0 at 66.88 on a judge metric; the benchmark tests conversation recall, not coding.",
+    "tags": [
+      "understanding"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "atwood-rubber-duck-problem-solving",
+    "title": "Atwood, rubber duck problem solving",
+    "url": "https://blog.codinghorror.com/rubber-duck-problem-solving/",
+    "kind": "essay",
+    "era": null,
+    "finding": "A 2012 essay with anecdotes argues explaining to a listener that cannot answer finds the gap.",
+    "tags": [
+      "understanding",
+      "reviewing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "kaya-feynman-technique",
+    "title": "Kaya, Feynman Technique",
+    "url": "https://abakcus.com/articles/feynman-technique",
+    "kind": "essay",
+    "era": null,
+    "finding": "Popular guide with no cited studies to writing a plain-words explanation for a novice.",
+    "tags": [
+      "understanding",
+      "reviewing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "farnam-street-feynman-technique",
+    "title": "Farnam Street, Feynman Technique",
+    "url": "https://fs.blog/feynman-technique/",
+    "kind": "essay",
+    "era": null,
+    "finding": "Popular guide with no cited studies to writing a plain-words explanation for a novice; its steps differ from other guides.",
+    "tags": [
+      "understanding",
+      "reviewing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "feynman-lecture-excerpt",
+    "title": "Feynman lecture excerpt",
+    "url": "https://youtube.com/watch?v=NM-zWTU7X-k",
+    "kind": "essay",
+    "era": null,
+    "finding": "Physics, not code: two equivalent descriptions suggest different next changes, so being able to propose a change is a sharper test of understanding.",
+    "tags": [
+      "understanding",
+      "reviewing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "beck-trust-factory",
+    "title": "Beck, Trust Factory",
+    "url": "https://newsletter.kentbeck.com/p/trust-factory",
+    "kind": "essay",
+    "era": null,
+    "finding": "Frames the aim of AI-assisted development as building trust as fast as we build code.",
+    "tags": [
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "horikawa-et-al-preprint",
+    "title": "Horikawa et al., preprint",
+    "url": "https://arxiv.org/pdf/2511.04824",
+    "kind": "study",
+    "era": null,
+    "finding": "Across 14,998 agentic commits (89.3% Codex-authored), low-level refactors were 35.8% vs a 24.4% human baseline and architectural refactors 43.0% vs 54.9%; design-smell counts showed no practically meaningful change (Cohen's d about -0.03).",
+    "tags": [
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "saba-et-al",
+    "title": "Saba et al.",
+    "url": "https://www.nature.com/articles/s41598-026-49590-0",
+    "kind": "study",
+    "era": null,
+    "finding": "A smaller, low-rigor comparison of refactoring tools on isolated snippets found wide model-to-model variance, with no human check on correctness.",
+    "tags": [
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "lyu-et-al-preprint",
+    "title": "Lyu et al., preprint",
+    "url": "https://arxiv.org/pdf/2505.08119",
+    "kind": "study",
+    "era": null,
+    "finding": "In a 39-student, one-semester study, solo-AI was the worst of three conditions and human-plus-AI scored highest, directly disagreeing with Fan et al.",
+    "tags": [
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "smith-asee-2026",
+    "title": "Smith, ASEE 2026",
+    "url": "https://www.aipairprogramming.org/wp-content/uploads/2026/06/ASEE-2026-Pair-Programming-with-AI.pdf",
+    "kind": "study",
+    "era": null,
+    "finding": "A 10-study review found, corroborated across 2 studies, that after AI-paired programming students were more likely to believe they had a complete solution and no longer needed to learn to program.",
+    "tags": [
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "james-the-weight-of-ai-on-engineers",
+    "title": "James, The weight of AI on engineers",
+    "url": "https://quii.dev/The_weight_of_AI_on_engineers",
+    "kind": "essay",
+    "era": null,
+    "finding": "Pairing with an agent is closer to reading someone's diff; freed time should go left of dev, to users and stakeholders.",
+    "tags": [
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "hbr-2026",
+    "title": "HBR (2026)",
+    "url": "https://hbr.org/2026/07/ai-is-changing-how-customers-choose-your-business",
+    "kind": "essay",
+    "era": null,
+    "finding": "Describes cohort releases within a week.",
+    "tags": [
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "fowler-site-refactoring-economic-benefit",
+    "title": "Fowler site, refactoring economic benefit",
+    "url": "https://martinfowler.com/articles/exploring-gen-ai/refactoring-economic-benefit.html",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "Splitting a large file cut tokens per change 83%; the agent couldn't choose refactorings unaided (n=1).",
+    "tags": [
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "laforgia",
+    "title": "Laforgia",
+    "url": "https://www.linkedin.com/feed/update/urn:li:share:7497619401639235584/",
+    "kind": "essay",
+    "era": null,
+    "finding": "When building is cheap, deciding what not to build is the skill.",
+    "tags": [
+      "xp-agile",
+      "measuring"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "faler-the-illusion-of-velocity",
+    "title": "Faler, the illusion of velocity",
+    "url": "https://www.principalengineer.com/p/ai-and-the-illusion-of-velocity-fixing",
+    "kind": "essay",
+    "era": null,
+    "finding": "Overproduction is Lean's worst waste.",
+    "tags": [
+      "xp-agile",
+      "measuring"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "tornhill-compressed-cognition",
+    "title": "Tornhill, compressed cognition",
+    "url": "https://adamtornhill.substack.com/p/compressed-cognition-the-hidden-cost",
+    "kind": "essay",
+    "era": null,
+    "finding": "Agents compress a day of decisions into one session.",
+    "tags": [
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "yegge-the-ai-vampire",
+    "title": "Yegge, The AI vampire",
+    "url": "https://steve-yegge.medium.com/the-ai-vampire-eda6e4f07163",
+    "kind": "essay",
+    "era": null,
+    "finding": "Argues for 3-4 hour workdays with agents.",
+    "tags": [
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "boag-smashing-magazine",
+    "title": "Boag, Smashing Magazine",
+    "url": "https://www.smashingmagazine.com/2026/10/is-your-organization-messing-up-ai-adoption/",
+    "kind": "essay",
+    "era": null,
+    "finding": "Opinion, no data, about knowledge work in general (the author sells AI training): treat AI adoption as change management, start with enthusiasts, make failure safe, replace pages of rules with a few principles, and learn from shadow AI instead of banning it.",
+    "tags": [
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "sun-bai-dredze-task-matters-findings-of-acl-2026",
+    "title": "Sun, Bai & Dredze, Task Matters (Findings of ACL 2026)",
+    "url": "https://aclanthology.org/2026.findings-acl.202/",
+    "kind": "study",
+    "era": null,
+    "finding": "Peer-reviewed study showing that knowledge requirements shape LLM responses to context-memory conflict; not tested on code.",
+    "tags": [
+      "measuring",
+      "testing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "shojaee-et-al-the-illusion-of-thinking",
+    "title": "Shojaee et al., The Illusion of Thinking",
+    "url": "https://arxiv.org/pdf/2506.06941",
+    "kind": "study",
+    "era": "early-2025",
+    "finding": "Apple preprint, The Illusion of Thinking, on early-2025 models.",
+    "tags": [],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "wang-et-al-ai-agentic-programming-a-survey",
+    "title": "Wang et al., AI Agentic Programming: A Survey",
+    "url": "https://arxiv.org/abs/2508.11126",
+    "kind": "study",
+    "era": null,
+    "finding": "Secondary literature survey used for vocabulary only; two descriptions of other systems conflict with their primary papers and journal acceptance is not established.",
+    "tags": [],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "packer-et-al-memgpt",
+    "title": "Packer et al., MemGPT",
+    "url": "https://arxiv.org/html/2310.08560",
+    "kind": "study",
+    "era": "older",
+    "finding": "2023 preprint on agent memory with author-built datasets and single runs, on older models; read for background, no row.",
+    "tags": [],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "google-cloud-how-tdd-amplifies-ai-success",
+    "title": "Google Cloud, How TDD Amplifies AI Success",
+    "url": "https://cloud.google.com/discover/how-test-driven-development-amplifies-ai-success",
+    "kind": "vendor",
+    "era": null,
+    "finding": "Unbylined vendor page that restates DORA 2025 under a TDD framing and is not itself a TDD study.",
+    "tags": [],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "suprmind-ai-hallucination-rates",
+    "title": "Suprmind, AI hallucination rates",
+    "url": "https://suprmind.ai/hub/ai-hallucination-rates-and-benchmarks/",
+    "kind": "vendor",
+    "era": null,
+    "finding": "Vendor aggregator of AI hallucination rates, secondhand.",
+    "tags": [
+      "measuring"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "blair-reflections-on-neuralese",
+    "title": "Blair, Reflections on Neuralese",
+    "url": "https://www.lesswrong.com/posts/qehggwKRMEyWqvjZG/reflections-on-neuralese",
+    "kind": "essay",
+    "era": null,
+    "finding": "",
+    "tags": [],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "doernenburg-ccmenu-quality",
+    "title": "Doernenburg, CCMenu quality",
+    "url": "https://martinfowler.com/articles/exploring-gen-ai/ccmenu-quality.html",
+    "kind": "practitioner",
+    "era": null,
+    "finding": "One developer's anecdote about agent-added technical debt, labelled by the author as not a study; read, no row.",
+    "tags": [],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "thompson-i-know-why-the-mathematicians-weep",
+    "title": "Thompson, I Know Why the Mathematicians Weep",
+    "url": "https://www.derekthompson.org/p/i-know-why-the-mathematicians-weep",
+    "kind": "essay",
+    "era": null,
+    "finding": "Opinion on mathematics, free preview only; read, no row.",
+    "tags": [],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "hickey-ai-is-not-a-tool",
+    "title": "Hickey, \"AI\" is Not a Tool",
+    "url": "https://www.linkedin.com/pulse/ai-tool-rich-hickey-kjl8e/",
+    "kind": "essay",
+    "era": null,
+    "finding": "Opinion essay with no data arguing AI is not a tool; read, no row.",
+    "tags": [],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "huahai-ai-is-a-tool-using-it-well-takes-skill",
+    "title": "Huahai, AI Is a Tool. Using It Well Takes Skill.",
+    "url": "https://yyhh.org/blog/2026/10/ai-is-a-tool/",
+    "kind": "essay",
+    "era": null,
+    "finding": "Opinion essay replying to Hickey with no data; read, no row.",
+    "tags": [],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "pragmatic-engineer",
+    "title": "Pragmatic Engineer",
+    "url": "https://newsletter.pragmaticengineer.com/p/stop-being-skeptical-about-ai-for",
+    "kind": "uncatalogued",
+    "era": null,
+    "finding": "",
+    "tags": [
+      "reviewing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "honeycomb-2",
+    "title": "Honeycomb",
+    "url": "https://www.honeycomb.io/blog/ai-norms-values-part-2-ai-honeycomb-engineering",
+    "kind": "uncatalogued",
+    "era": null,
+    "finding": "",
+    "tags": [
+      "reviewing"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "james-2",
+    "title": "James",
+    "url": "https://quii.dev/We_learned_this_lesson_already",
+    "kind": "uncatalogued",
+    "era": null,
+    "finding": "",
+    "tags": [
+      "prompting",
+      "testing",
+      "xp-agile"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  },
+  {
+    "id": "goedecke",
+    "title": "Goedecke",
+    "url": "https://www.seangoedecke.com/in-defense-of-not-understanding-your-codebase/",
+    "kind": "uncatalogued",
+    "era": null,
+    "finding": "",
+    "tags": [
+      "understanding"
+    ],
+    "updated": "2026-11-03T17:17:00Z"
+  }
+]

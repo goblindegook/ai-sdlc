@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "prompting",
+    "label": "Prompting",
+    "blurb": "Context files, lean context, tests as the spec",
+    "why": [
+      "Tests written by people make agent code correct more often.",
+      "Agents follow context-file rules, and every rule adds cost."
+    ]
+  },
+  {
+    "slug": "looping",
+    "label": "Looping",
+    "blurb": "Capped retries, small context, when a green loop isn't done",
+    "why": [
+      "Passing tests don't make an agent's change ready to merge.",
+      "Long-running agent loops break work that was already finished."
+    ]
+  },
+  {
+    "slug": "testing",
+    "label": "Testing",
+    "blurb": "Whether test-first still holds, for humans and agents",
+    "why": [
+      "Agents told to work test-first skip the failing test or write tests that can't fail.",
+      "Tests from the same source as the code pass wrong code."
+    ]
+  },
+  {
+    "slug": "risks-security",
+    "label": "Risks and security",
+    "blurb": "Security and other risks, mapped to the OWASP LLM Top 10",
+    "why": [
+      "An agent with private data, untrusted input and a way to send data out gets exploited.",
+      "People using AI write less secure code and trust it more."
+    ]
+  },
+  {
+    "slug": "reviewing",
+    "label": "Reviewing",
+    "blurb": "Why human review stays, and what makes it cheaper",
+    "why": [
+      "Agents produce changes faster than teams can review and release them.",
+      "Review time and incidents rise as AI use grows."
+    ]
+  },
+  {
+    "slug": "measuring",
+    "label": "Measuring",
+    "blurb": "How to tell whether AI helps, and how far to trust benchmarks, surveys and vendor numbers",
+    "why": [
+      "People feel faster with AI even when timing shows them slower.",
+      "Activity numbers like PR counts rise while delivery outcomes fall."
+    ]
+  },
+  {
+    "slug": "understanding",
+    "label": "Understanding",
+    "blurb": "Learning, cognitive debt, shared agent context",
+    "why": [
+      "Nobody can be accountable for code they don't understand.",
+      "Shared agent memory leaks, goes stale and hides contradictions."
+    ]
+  },
+  {
+    "slug": "xp-agile",
+    "label": "XP and Agile",
+    "blurb": "Which XP practices to keep, adapt or trial",
+    "why": [
+      "Small batches help, and delivery gets less stable as AI use grows.",
+      "AI produces more software, not more value."
+    ]
+  }
+]

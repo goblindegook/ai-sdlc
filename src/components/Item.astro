@@ -1,0 +1,14 @@
+---
+// The one list item used on every list page: folds to its title and area tags, opens to the body.
+// The title is a heading so screen readers can jump between items; `level` follows the page's outline.
+import ItemTags from './ItemTags.astro';
+interface Props { id: string; title: string; tags: string[]; level?: 2 | 3 }
+const { id, title, tags, level = 3 } = Astro.props;
+const H = `h${level}`;
+---
+<details id={id} data-item data-tags={tags.join(' ')} class="item fold">
+  <summary><H class="item-title">{title}</H> <ItemTags tags={tags} inline /></summary>
+  <div class="item-body">
+    <slot />
+  </div>
+</details>
