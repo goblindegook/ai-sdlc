@@ -21,6 +21,8 @@ const links = [
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title === 'Overview' ? 'AI-Augmented Software Development' : `${title} · AI-Augmented Software Development`}</title>
     <meta name="description" content={description} />
+    <link rel="sitemap" href={`${base}/sitemap-index.xml`} />
+    {import.meta.env.PROD && <script is:inline src={`${base}/registerSW.js`}></script>}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

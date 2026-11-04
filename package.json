@@ -8,6 +8,8 @@
     "preview": "astro preview"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
+    "@vite-pwa/astro": "^2.0.0",
     "astro": "^7.4.4"
   }
 }
