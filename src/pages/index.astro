@@ -1,25 +1,45 @@
 ---
 import Base from '../layouts/Base.astro';
 import LoopDiagram from '../components/LoopDiagram.astro';
-import { TAGS } from '../data/tags';
-import { recs, RINGS } from '../data';
+import { TOPICS } from '../data/topics';
+import { recs, recById, mainTopic, RINGS } from '../data';
+import { STEPS } from '../data/workflow';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-// Each recommendation sits under the area that raised it, so the radar lists it once.
-const rows = TAGS.map((t) => ({
+// Each recommendation sits under the topic that raised it, so the radar lists it once.
+const rows = TOPICS.map((t) => ({
   ...t,
-  adopt: recs.filter((r) => r.area === t.slug && r.ring === 'adopt'),
-  avoid: recs.filter((r) => r.area === t.slug && r.ring === 'avoid'),
+  adopt: recs.filter((r) => mainTopic(r) === t.slug && r.ring === 'adopt'),
+  avoid: recs.filter((r) => mainTopic(r) === t.slug && r.ring === 'avoid'),
 }));
 const rule = (slug: string) => RINGS.find((r) => r.slug === slug)!.rule;
 const rec = (id: string) => `${base}/recommendations/#${id}`;
+
+// The workflow list names recommendations by id; a missing one fails the build rather than dropping out silently.
+const withRecs = (s: { recs: string[] }) => ({
+  ...s, items: s.recs.map((id) => recById.get(id) ?? (() => { throw new Error(`workflow: missing recommendation ${id}`); })()),
+});
+const workflow = STEPS.map(withRecs);
 ---
 <Base title="Overview">
   <section class="radar" aria-labelledby="radar-title">
     <div class="radar-head">
-      <h1 id="radar-title">Overview</h1>
+      <h1 id="radar-title">How to work with AI coding agents</h1>
     </div>
+    <p class="radar-intro">
+      Practices for building software with AI coding agents, each backed by <a href={`${base}/evidence/`}>evidence</a>.{' '}
+      <a href={`${base}/recommendations/#trial`}>Trials</a> are ideas worth testing that the data doesn't back yet.
+    </p>
     <LoopDiagram />
+    <ol class="workflow" aria-label="Recommended practice at each step">
+      {workflow.map((s) => (
+        <li class="workflow-step">
+          <p class="workflow-name"><a href={`${base}/recommendations/?topic=${s.topic}`}>{s.name}</a></p>
+          <ul>{s.items.map((x) => <li><a href={rec(x.id)}>{x.title}</a></li>)}</ul>
+        </li>
+      ))}
+    </ol>
+    <h2 class="radar-title">By topic</h2>
     <div class="radar-grid" role="list">
       <div class="radar-cols" aria-hidden="true">
         <span></span>
@@ -28,12 +48,12 @@ const rec = (id: string) => `${base}/recommendations/#${id}`;
       </div>
       {rows.map((r) => (
         <div class="radar-row" role="listitem">
-          <div class="radar-area">
-            <h2><a href={`${base}/recommendations/?tags=${r.slug}`}>{r.label}</a></h2>
+          <div class="radar-topic">
+            <h3><a href={`${base}/recommendations/?topic=${r.slug}`}>{r.label}</a></h3>
             <p class="meta">{r.blurb}</p>
             <p class="meta">
-              <a href={`${base}/recommendations/?tags=${r.slug}#trial`}>Trials</a> ·{' '}
-              <a href={`${base}/challenges/?tags=${r.slug}`}>Challenges</a>
+              <a href={`${base}/recommendations/?topic=${r.slug}#trial`}>Trials</a> ·{' '}
+              <a href={`${base}/challenges/?topic=${r.slug}`}>Challenges</a>
             </p>
             <details class="radar-why fold">
               <summary>Why</summary>

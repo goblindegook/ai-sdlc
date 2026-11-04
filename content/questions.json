@@ -2,8 +2,7 @@
   {
     "id": "does-the-test-first-asymmetry-survive-newer-models",
     "question": "Does the test-first asymmetry survive newer models?",
-    "area": "testing",
-    "tags": [
+    "topics": [
       "testing",
       "xp-agile"
     ],
@@ -16,8 +15,7 @@
   {
     "id": "is-human-code-review-worth-its-cost",
     "question": "Is human code review worth its cost?",
-    "area": "reviewing",
-    "tags": [
+    "topics": [
       "reviewing"
     ],
     "body": "Majors calls review the least valuable part of what humans add and moves trust into tests and production. Honeycomb targets 25% auto-merged PRs at under 3% change failure rate, which can be checked in 2027.",
@@ -30,8 +28,7 @@
   {
     "id": "what-is-actually-scarce-verification-judgement-or-understand",
     "question": "What is actually scarce: verification, judgement or understanding?",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding",
       "reviewing"
     ],
@@ -45,8 +42,7 @@
   {
     "id": "do-strong-engineering-foundations-protect-you",
     "question": "Do strong engineering foundations protect you?",
-    "area": "measuring",
-    "tags": [
+    "topics": [
       "measuring",
       "xp-agile"
     ],
@@ -60,8 +56,7 @@
   {
     "id": "is-maintenance-capability-improving",
     "question": "Is maintenance capability improving?",
-    "area": "measuring",
-    "tags": [
+    "topics": [
       "measuring",
       "looping"
     ],
@@ -75,8 +70,7 @@
   {
     "id": "do-context-files-help",
     "question": "Do context files help?",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "body": "One study finds time savings; another finds no success gain and 20% more cost. Claude Code was the one agent that developer-written files did not improve.",
@@ -89,8 +83,7 @@
   {
     "id": "how-much-upfront-specification-is-right",
     "question": "How much upfront specification is right?",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting",
       "testing",
       "xp-agile"
@@ -106,8 +99,7 @@
   {
     "id": "should-planning-prompts-be-looser-than-execution-prompts",
     "question": "Should planning prompts be looser than execution prompts?",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "body": "One practitioner argues for goals-only planning prompts and fully detailed execution prompts. Opinion with no data.",
@@ -119,8 +111,7 @@
   {
     "id": "fresh-context-each-loop-or-continued-context",
     "question": "Fresh context each loop, or continued context?",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping"
     ],
     "body": "Ralph resets every iteration; one comparison found continuing did better per unit cost (n=1 task).",
@@ -132,8 +123,7 @@
   {
     "id": "does-multi-agent-orchestration-scale-or-does-brookss-law-app",
     "question": "Does multi-agent orchestration scale, or does Brooks's Law apply to agents?",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping",
       "understanding"
     ],
@@ -146,8 +136,7 @@
   {
     "id": "is-skill-loss-reversible-and-how-do-we-measure-cognitive-deb",
     "question": "Is skill loss reversible, and how do we measure cognitive debt?",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding"
     ],
     "body": "No accepted measure exists; comprehension gates are untested for durability.",
@@ -159,8 +148,7 @@
   {
     "id": "can-partial-theory-be-enough",
     "question": "Can partial theory be enough?",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding"
     ],
     "body": "Naur says a team's theory can't be revived from docs; Goedecke argues most engineers work fine on partial theory.",
@@ -172,8 +160,7 @@
   {
     "id": "will-prompt-injection-ever-have-a-real-fix",
     "question": "Will prompt injection ever have a real fix?",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security",
       "reviewing"
     ],
@@ -187,8 +174,7 @@
   {
     "id": "how-do-juniors-become-seniors",
     "question": "How do juniors become seniors?",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding"
     ],
     "body": "Entry-level hiring shrinks and questions go to the model rather than to colleagues.",

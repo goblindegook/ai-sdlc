@@ -2,8 +2,7 @@
   {
     "id": "code-erodes-as-agents-build-on-their-own-work",
     "title": "Code erodes as agents build on their own work",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping"
     ],
     "summary": "Each agent change on top of earlier agent changes adds a little duplication and complexity. Better prompts set a better starting point but don't stop the slide; only refactoring and review do.",
@@ -15,8 +14,7 @@
   {
     "id": "you-cant-tell-from-a-task-how-well-the-agent-will-do",
     "title": "You can't tell from a task how well the agent will do",
-    "area": "measuring",
-    "tags": [
+    "topics": [
       "measuring"
     ],
     "summary": "Agents fail on tasks unlike what they were trained on, not on tasks that look hard. A task that seems easy can fail and a hard one succeed, so judge from real results on your work.",
@@ -28,8 +26,7 @@
   {
     "id": "every-line-in-the-context-file-costs-money",
     "title": "Every line in the context file costs money",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "Agents do follow context-file instructions, which means each mention of a tool or step gets acted on, every task. Extra instructions raise spend even when they don't help the task.",
@@ -41,8 +38,7 @@
   {
     "id": "agents-act-on-outdated-facts",
     "title": "Agents act on outdated facts",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "When a fact changes, agents often keep using the old version from memory or context files. Updated decisions need to replace, not sit beside, the old ones.",
@@ -54,8 +50,7 @@
   {
     "id": "agreeable-answers-mislead-without-being-wrong",
     "title": "Agreeable answers mislead without being wrong",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "Assistants tend to agree with the person asking and pick facts that support them. Each statement can be true while the overall picture is skewed, and people rate these answers as more objective.",
@@ -67,8 +62,7 @@
   {
     "id": "review-load-lands-on-senior-engineers",
     "title": "Review load lands on senior engineers",
-    "area": "reviewing",
-    "tags": [
+    "topics": [
       "reviewing"
     ],
     "summary": "PR volume has grown several times over while reviewer numbers haven't. The extra review falls on the few people trusted to approve, who become the bottleneck.",
@@ -81,8 +75,7 @@
   {
     "id": "people-follow-ai-advice-they-know-is-wrong",
     "title": "People follow AI advice they know is wrong",
-    "area": "reviewing",
-    "tags": [
+    "topics": [
       "reviewing",
       "understanding"
     ],
@@ -95,8 +88,7 @@
   {
     "id": "nobody-knows-how-often-agents-leak-secrets",
     "title": "Nobody knows how often agents leak secrets",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security"
     ],
     "summary": "The risk of agents exposing credentials is clear from how they work, but there are no measured leak rates. Plan for it as you would any likely risk: keep secrets out of reach. (OWASP LLM02, LLM07)",
@@ -109,8 +101,7 @@
   {
     "id": "prompt-injection-has-no-proven-fix",
     "title": "Prompt injection has no proven fix",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security"
     ],
     "summary": "The one architecture shown to block most injection attacks has only been tested by its own authors, who say the problem isn't solved. Limit what an agent can do rather than hoping it can't be tricked. (OWASP LLM01)",
@@ -122,8 +113,7 @@
   {
     "id": "test-loops-fix-the-code-not-a-misread-requirement",
     "title": "Test loops fix the code, not a misread requirement",
-    "area": "testing",
-    "tags": [
+    "topics": [
       "testing",
       "looping"
     ],
@@ -136,8 +126,7 @@
   {
     "id": "supervising-agents-needs-the-skills-agents-erode",
     "title": "Supervising agents needs the skills agents erode",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding"
     ],
     "summary": "Checking agent code well takes hands-on coding skill, and relying on agents can wear that skill down. Without deliberate practice, a team loses the ability to review what it ships.",
@@ -149,8 +138,7 @@
   {
     "id": "juniors-ask-the-model-instead-of-colleagues",
     "title": "Juniors ask the model instead of colleagues",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding"
     ],
     "summary": "Most of a junior engineer's questions now go to an assistant rather than a teammate. The quick answer replaces the conversation where they would have learned how the team actually works.",
@@ -162,8 +150,7 @@
   {
     "id": "shared-agent-memory-behaves-like-a-shared-database",
     "title": "Shared agent memory behaves like a shared database",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding",
       "risks-security"
     ],
@@ -178,8 +165,7 @@
   {
     "id": "pairing-with-ai-isnt-the-same-as-pairing-with-a-person",
     "title": "Pairing with AI isn't the same as pairing with a person",
-    "area": "xp-agile",
-    "tags": [
+    "topics": [
       "xp-agile"
     ],
     "summary": "Results on pairing with an assistant disagree, and some show lower quality than a human pair. It also skips the knowledge sharing that pairing exists for.",

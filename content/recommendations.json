@@ -3,8 +3,7 @@
     "id": "stop-after-about-3-failed-fixes-then-reset-or-escalate",
     "title": "Stop after about 3 failed fixes, then reset or escalate",
     "ring": "adopt",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping",
       "testing"
     ],
@@ -24,8 +23,7 @@
     "id": "loop-only-against-a-check-the-machine-runs",
     "title": "Loop only against a check the machine runs",
     "ring": "adopt",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping",
       "testing"
     ],
@@ -46,8 +44,7 @@
     "id": "dont-loop-on-self-critique-alone",
     "title": "Loops driven by self-critique alone",
     "ring": "avoid",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping"
     ],
     "summary": "Don't let an agent improve its work by reviewing itself with no outside check. It tends to approve its own wrong answers; give it a test or a linter to loop against instead.",
@@ -65,8 +62,7 @@
     "id": "keep-each-agents-context-small",
     "title": "Keep each agent's context small",
     "ring": "adopt",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping"
     ],
     "summary": "Keep each agent's working context short: clear or compact old steps, and split long tasks across fresh sessions. Agents work better when old observations stop crowding the context.",
@@ -84,8 +80,7 @@
     "id": "work-in-small-batches-with-strong-version-control",
     "title": "Work in small batches with strong version control",
     "ring": "adopt",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping",
       "xp-agile",
       "testing"
@@ -108,8 +103,7 @@
     "id": "sandbox-anything-unattended",
     "title": "Sandbox anything unattended",
     "ring": "adopt",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping",
       "risks-security"
     ],
@@ -128,8 +122,7 @@
     "id": "manage-cost-with-visibility-and-friction",
     "title": "Manage cost with visibility and friction",
     "ring": "trial",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping"
     ],
     "summary": "Make agent spend visible per team and per task, set sensible default effort levels, and nudge before large spends. Route simple tasks to cheaper models, but check that results hold up.",
@@ -148,8 +141,7 @@
     "id": "set-review-cadence-by-certainty-and-blast-radius",
     "title": "Set review cadence by certainty and blast radius",
     "ring": "trial",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping",
       "reviewing"
     ],
@@ -167,8 +159,7 @@
     "id": "log-steps-to-the-first-human-correction",
     "title": "Log steps to the first human correction",
     "ring": "trial",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping"
     ],
     "summary": "Record how many steps agents take before a person has to correct them. This shows how long you can leave an agent alone on your codebase.",
@@ -185,8 +176,7 @@
     "id": "compare-fresh-and-continued-context-per-iteration",
     "title": "Compare fresh and continued context per iteration",
     "ring": "trial",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping"
     ],
     "summary": "Test whether your loops do better starting fresh each iteration or continuing the same session. Run the same backlog items both ways.",
@@ -205,8 +195,7 @@
     "id": "run-low-risk-tickets-unattended-overnight",
     "title": "Run low-risk tickets unattended overnight",
     "ring": "trial",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping"
     ],
     "summary": "Batch a few low-risk tickets for agents to work on unattended, gated by checks that are cheap, run often and are hard to fake. Review the results the next morning.",
@@ -224,8 +213,7 @@
     "id": "keep-a-machine-readable-done-list",
     "title": "Keep a machine-readable done list",
     "ring": "trial",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping"
     ],
     "summary": "For a feature spread across sessions, keep a list of steps where only a passing check can mark a step done. It stops the agent from declaring the feature finished early.",
@@ -242,8 +230,7 @@
     "id": "align-on-product-architecture-and-design-before-code",
     "title": "Align on product, architecture and design before code",
     "ring": "trial",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping"
     ],
     "summary": "Agree on what to build, the architecture and the design with a person before agents write code. Try it on a few features and skip it on comparable ones.",
@@ -260,8 +247,7 @@
     "id": "run-checks-inside-the-agent-session",
     "title": "Run checks inside the agent session",
     "ring": "trial",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping",
       "testing"
     ],
@@ -282,8 +268,7 @@
     "id": "time-track-agent-work-by-phase",
     "title": "Time-track agent work by phase",
     "ring": "trial",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping"
     ],
     "summary": "For a month, log how agent work time splits between defining the task, waiting, reviewing and fixing up. It shows where the real bottleneck moved.",
@@ -302,8 +287,7 @@
     "id": "track-agent-outcomes-on-novel-versus-boilerplate-work",
     "title": "Track agent outcomes on novel versus boilerplate work",
     "ring": "trial",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping"
     ],
     "summary": "Tag tickets as boilerplate, port or novel and track how agent work turns out for each. Agents tend to help most on repetitive work and least on new design.",
@@ -322,8 +306,7 @@
     "id": "add-a-minimum-effort-floor-to-an-agents-exit-condition",
     "title": "Add a minimum-effort floor to an agent's exit condition",
     "ring": "trial",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping"
     ],
     "summary": "Require an agent to spend a minimum time or number of steps before it can give up on a task. Try it on one agent for two weeks.",
@@ -338,8 +321,7 @@
     "id": "compare-a-capped-retry-loop-with-a-stronger-model-at-equal-c",
     "title": "Compare a capped retry loop with a stronger model at equal cost",
     "ring": "trial",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping",
       "testing"
     ],
@@ -358,8 +340,7 @@
     "id": "let-a-cheaper-model-execute-a-strong-models-plan",
     "title": "Let a cheaper model execute a strong model's plan",
     "ring": "trial",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping"
     ],
     "summary": "Have a strong model write and a person approve the plan, then let a cheaper model carry it out. Compare with a strong model doing both on comparable tickets.",
@@ -379,8 +360,7 @@
     "id": "keep-a-growing-regression-list-in-long-running-loops",
     "title": "Keep a growing regression list in long-running loops",
     "ring": "trial",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping",
       "testing"
     ],
@@ -398,8 +378,7 @@
     "id": "pick-among-several-agent-attempts",
     "title": "Pick among several agent attempts",
     "ring": "trial",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping"
     ],
     "summary": "On a few tickets, run several agent attempts and pick the best using test results and one reviewer. Check whether the gain is worth the extra spend.",
@@ -417,8 +396,7 @@
     "id": "run-a-strong-models-checks-once-as-a-final-gate",
     "title": "Run a strong model's checks once as a final gate",
     "ring": "trial",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping",
       "testing"
     ],
@@ -436,8 +414,7 @@
     "id": "fix-the-harness-before-the-code",
     "title": "Fix the harness before the code",
     "ring": "trial",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping"
     ],
     "summary": "When an agent gets something wrong, first change the spec, check or guidance that let it through, then fix the code. Try it for a month.",
@@ -454,8 +431,7 @@
     "id": "try-a-local-mid-size-model-on-small-pre-planned-tasks",
     "title": "Try a local mid-size model on small pre-planned tasks",
     "ring": "trial",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping"
     ],
     "summary": "Try a model running on your own hardware for small, well-specified changes and scripts. Compare with the hosted model on the same tickets and tests.",
@@ -472,8 +448,7 @@
     "id": "have-scheduled-agents-file-reports-not-prs",
     "title": "Have scheduled agents file reports, not PRs",
     "ring": "trial",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping"
     ],
     "summary": "Let scheduled agents file short reports, such as one per newly flaky test, instead of opening PRs. Keep the volume low enough that people read them.",
@@ -491,8 +466,7 @@
     "id": "measure-time-to-an-accepted-change-not-lines-or-prs",
     "title": "Measure time to an accepted change, not lines or PRs",
     "ring": "adopt",
-    "area": "measuring",
-    "tags": [
+    "topics": [
       "measuring",
       "xp-agile"
     ],
@@ -515,8 +489,7 @@
     "id": "time-real-tasks-instead-of-trusting-forecasts-or-surveys",
     "title": "Time real tasks instead of trusting forecasts or surveys",
     "ring": "adopt",
-    "area": "measuring",
-    "tags": [
+    "topics": [
       "measuring"
     ],
     "summary": "Judge whether agents speed the team up by timing real tasks, not by forecasts or surveys. Predictions of speedup are often wrong even in direction, and self-reports shift with how you ask and who answers.",
@@ -537,8 +510,7 @@
     "id": "grade-agents-on-tests-they-never-saw",
     "title": "Grade agents on tests they never saw",
     "ring": "adopt",
-    "area": "measuring",
-    "tags": [
+    "topics": [
       "measuring",
       "testing"
     ],
@@ -559,8 +531,7 @@
     "id": "normalise-cost-by-accepted-output",
     "title": "Normalise cost by accepted output",
     "ring": "trial",
-    "area": "measuring",
-    "tags": [
+    "topics": [
       "measuring"
     ],
     "summary": "Try tracking cost per accepted change, not per request or the total bill, on one team for a quarter. A tool that looks cheaper per request can cost more per result.",
@@ -580,8 +551,7 @@
     "id": "dont-rank-people-by-ai-usage",
     "title": "Ranking people by AI usage",
     "ring": "avoid",
-    "area": "measuring",
-    "tags": [
+    "topics": [
       "measuring",
       "looping"
     ],
@@ -603,8 +573,7 @@
     "id": "randomise-real-tickets-to-test-speed-gains",
     "title": "Randomise real tickets to test speed gains",
     "ring": "trial",
-    "area": "measuring",
-    "tags": [
+    "topics": [
       "measuring"
     ],
     "summary": "Randomly assign about 30 real tickets to AI-allowed or not, and record each developer's time forecast before they start. Self-reported time savings are unreliable, so compare forecasts with what was actually timed.",
@@ -622,8 +591,7 @@
     "id": "report-confidence-intervals-on-model-comparisons",
     "title": "Report confidence intervals on model comparisons",
     "ring": "trial",
-    "area": "measuring",
-    "tags": [
+    "topics": [
       "measuring"
     ],
     "summary": "For the next two model comparisons, report the paired difference on the same tasks with a confidence interval, not just which scored higher. A small score gap between models is often read as a real difference when it isn't.",
@@ -640,8 +608,7 @@
     "id": "check-llm-judges-against-human-labels",
     "title": "Check LLM judges against human labels",
     "ring": "trial",
-    "area": "measuring",
-    "tags": [
+    "topics": [
       "measuring",
       "testing"
     ],
@@ -660,8 +627,7 @@
     "id": "run-a-production-trace-review-loop",
     "title": "Run a production-trace review loop",
     "ring": "trial",
-    "area": "measuring",
-    "tags": [
+    "topics": [
       "measuring",
       "testing"
     ],
@@ -680,8 +646,7 @@
     "id": "test-whether-a-hidden-test-set-changes-agent-behaviour",
     "title": "Test whether a hidden test set changes agent behaviour",
     "ring": "trial",
-    "area": "measuring",
-    "tags": [
+    "topics": [
       "measuring",
       "testing"
     ],
@@ -699,8 +664,7 @@
     "id": "rerun-past-tickets-before-each-model-upgrade",
     "title": "Rerun past tickets before each model upgrade",
     "ring": "trial",
-    "area": "measuring",
-    "tags": [
+    "topics": [
       "measuring"
     ],
     "summary": "Before each model upgrade, rerun a fixed set of past tickets on the old and new model and compare cost as well as results. A newer model is not always better, and it can cost more.",
@@ -719,8 +683,7 @@
     "id": "show-cost-per-merged-change-next-to-total-spend",
     "title": "Show cost per merged change next to total spend",
     "ring": "trial",
-    "area": "measuring",
-    "tags": [
+    "topics": [
       "measuring"
     ],
     "summary": "For a quarter, put cost per merged change, including review and correction time, next to total spend on one dashboard. Read cost per run rather than the bill, and keep the view if it changes a decision.",
@@ -740,8 +703,7 @@
     "id": "compare-token-spend-with-merged-output-before-setting-usage-",
     "title": "Compare token spend with merged output before setting usage targets",
     "ring": "trial",
-    "area": "measuring",
-    "tags": [
+    "topics": [
       "measuring"
     ],
     "summary": "Before setting any usage target, compare each team's token spend with its merged changes for a quarter, without publishing a ranking. Usage leaderboards get gamed, and spend may not track output.",
@@ -761,8 +723,7 @@
     "id": "declare-effort-and-wanted-review-on-ai-drafted-artifacts",
     "title": "Declare effort and wanted review on AI-drafted artifacts",
     "ring": "trial",
-    "area": "measuring",
-    "tags": [
+    "topics": [
       "measuring",
       "reviewing"
     ],
@@ -782,8 +743,7 @@
     "id": "name-ai-enabled-deliverables-in-advance",
     "title": "Name AI-enabled deliverables in advance",
     "ring": "trial",
-    "area": "measuring",
-    "tags": [
+    "topics": [
       "measuring"
     ],
     "summary": "At the start of a quarter, list the deliverables you would only attempt with AI, then check at the end which shipped and are in use. Some gains show up as extra scope, not speed.",
@@ -801,8 +761,7 @@
     "id": "count-abandoned-and-rewritten-agent-changes",
     "title": "Count abandoned and rewritten agent changes",
     "ring": "trial",
-    "area": "measuring",
-    "tags": [
+    "topics": [
       "measuring",
       "reviewing"
     ],
@@ -821,8 +780,7 @@
     "id": "cross-score-agents-on-task-sets-each-one-built",
     "title": "Cross-score agents on task sets each one built",
     "ring": "trial",
-    "area": "measuring",
-    "tags": [
+    "topics": [
       "measuring",
       "looping"
     ],
@@ -840,8 +798,7 @@
     "id": "track-feature-cycle-time-by-pr-type",
     "title": "Track feature cycle time by PR type",
     "ring": "trial",
-    "area": "measuring",
-    "tags": [
+    "topics": [
       "measuring"
     ],
     "summary": "For a quarter, have an agent tag a quarter of PRs by type and compute doc-to-launch cycle time for features next to PR count. PR count misleads: PRs can get much bigger while their number stays flat.",
@@ -861,8 +818,7 @@
     "id": "compare-spend-tiers-with-quick-approval-against-hard-caps",
     "title": "Compare spend tiers with quick approval against hard caps",
     "ring": "trial",
-    "area": "measuring",
-    "tags": [
+    "topics": [
       "measuring"
     ],
     "summary": "For a quarter, put one team on spend tiers with quick manager approval and per-session spend shown, and another on a hard cap. Hard caps are common but easy to get around.",
@@ -881,8 +837,7 @@
     "id": "write-context-files-by-hand-and-keep-them-short",
     "title": "Write context files by hand and keep them short",
     "ring": "adopt",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "Write the repo's context file yourself and keep it short: build commands, conventions and the few rules the agent keeps breaking. A short file saves time and tokens; a long one mostly adds cost.",
@@ -901,8 +856,7 @@
     "id": "dont-let-an-llm-generate-context-files",
     "title": "LLM-generated context files",
     "ring": "avoid",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "Don't let the agent write its own context file. Generated files restate what the agent can already read, so they raise cost without making tasks succeed more often.",
@@ -920,8 +874,7 @@
     "id": "keep-context-lean",
     "title": "Keep context lean",
     "ring": "adopt",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "Give the agent only what the task needs: the relevant files, not the whole repo or every doc. Agents miss facts more often as context grows.",
@@ -940,8 +893,7 @@
     "id": "trim-tools-and-what-they-return",
     "title": "Trim tools and what they return",
     "ring": "adopt",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting",
       "risks-security"
     ],
@@ -962,8 +914,7 @@
     "id": "dont-give-the-agent-tools-shaped-for-people",
     "title": "Tools shaped for people, not agents",
     "ring": "avoid",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "Don't hand the agent tools built for human navigation, like paged search or whole-file viewers. Agents do better with narrow tools that return a small, relevant slice.",
@@ -981,8 +932,7 @@
     "id": "commit-a-plan-before-code",
     "title": "Commit a plan before code",
     "ring": "trial",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "Have the agent write a plan, review it, and commit it before any code. Try it on comparable tickets for a month against prompting straight to code.",
@@ -1001,8 +951,7 @@
     "id": "enforce-the-most-violated-rules-with-hooks",
     "title": "Enforce the most-violated rules with hooks",
     "ring": "trial",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "Take the three rules agents break most and enforce them with hooks or checks instead of context-file text. Try it in some repos and compare with repos that rely on the file alone.",
@@ -1020,8 +969,7 @@
     "id": "move-repeated-procedures-into-on-demand-skills",
     "title": "Move repeated procedures into on-demand skills",
     "ring": "trial",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "Move a procedure the agent repeats, like a release checklist, out of the always-loaded context file and into a skill that loads only when needed. Try it in half the repos.",
@@ -1039,8 +987,7 @@
     "id": "add-a-focused-commit-or-review-subagent",
     "title": "Add a focused commit or review subagent",
     "ring": "trial",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting",
       "reviewing"
     ],
@@ -1059,8 +1006,7 @@
     "id": "rephrase-negative-rules-positively",
     "title": "Rephrase negative rules positively",
     "ring": "trial",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "Rewrite \"don't do X\" rules in the context file as \"do Y\". Try it on five rules and compare how often they are broken before and after.",
@@ -1076,8 +1022,7 @@
     "id": "prefer-diverse-few-shot-examples-over-perfect-labels",
     "title": "Prefer diverse few-shot examples over perfect labels",
     "ring": "trial",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "When a prompt uses examples, cover the range of real cases rather than polishing a few. Compare example sets on one recurring generation task.",
@@ -1094,8 +1039,7 @@
     "id": "split-unknowns-from-assumptions-in-specs",
     "title": "Split unknowns from assumptions in specs",
     "ring": "trial",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "Add a section to the spec template that separates what is unknown from what is assumed, so the agent doesn't build on a guess. Use it on the next five features.",
@@ -1112,8 +1056,7 @@
     "id": "groom-memory-files-monthly",
     "title": "Groom memory files monthly",
     "ring": "trial",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "Once a month, have a person prune the context and memory files: remove stale rules and resolve contradictions. Agents don't clean up their own memory.",
@@ -1132,8 +1075,7 @@
     "id": "add-a-candour-ground-rule",
     "title": "Add a candour ground rule",
     "ring": "trial",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "Tell the agent to say plainly when a request is flawed instead of just doing it. Test it with a handful of deliberately flawed requests, with and without the rule.",
@@ -1150,8 +1092,7 @@
     "id": "try-autocomplete-before-agents-for-novel-code",
     "title": "Try autocomplete before agents for novel code",
     "ring": "trial",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "For genuinely new code, try writing it with autocomplete before handing it to an agent; it can be faster to show intent in code than in prose. Alternate both for a month on novel modules.",
@@ -1169,8 +1110,7 @@
     "id": "have-agents-write-scripts-for-deterministic-work",
     "title": "Have agents write scripts for deterministic work",
     "ring": "trial",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "For counting, parsing or format conversion, have the agent write a script once and run the script, instead of asking the agent to do it each time. Scripts give the same answer every run.",
@@ -1187,8 +1127,7 @@
     "id": "match-spec-rigour-to-how-long-the-system-lives",
     "title": "Match spec rigour to how long the system lives",
     "ring": "trial",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "Keep specs checked in CI for systems that will live for years, and use the lightest spec that removes ambiguity for short-lived ones. Try both on comparable features.",
@@ -1206,8 +1145,7 @@
     "id": "compare-whole-module-context-with-retrieval",
     "title": "Compare whole-module context with retrieval",
     "ring": "trial",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "Test whether loading a whole module into context beats letting the agent search for what it needs. Ask the same set of questions about one repo both ways.",
@@ -1226,8 +1164,7 @@
     "id": "keep-one-agentsmd-and-point-other-tool-files-at-it",
     "title": "Keep one AGENTS.md and point other tool files at it",
     "ring": "trial",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "Keep one context file, AGENTS.md, and make other tools' files point to it rather than copying rules into each. Compare a repo set up this way with one keeping copies in sync by hand.",
@@ -1244,8 +1181,7 @@
     "id": "sort-context-into-global-local-and-ambient",
     "title": "Sort context into global, local and ambient",
     "ring": "trial",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "Label context by scope: global rules for every repo, local rules for one repo, and ambient reference material. Review the global set monthly with one team.",
@@ -1266,8 +1202,7 @@
     "id": "restart-the-session-when-output-degrades",
     "title": "Restart the session when output degrades",
     "ring": "trial",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "When a session keeps getting worse after a few corrections, start a new one with a short summary of the goal and constraints instead of continuing.",
@@ -1287,8 +1222,7 @@
     "id": "recover-the-spec-after-the-first-working-version",
     "title": "Recover the spec after the first working version",
     "ring": "trial",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "Try building a first working version, then writing the spec from it, instead of writing the spec first. Compare both on comparable features.",
@@ -1306,8 +1240,7 @@
     "id": "measure-how-much-of-an-agent-spec-is-code",
     "title": "Measure how much of an agent spec is code",
     "ring": "trial",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "Check how much of a detailed agent spec is really pseudocode or formulas. If most of it is, writing the code may be cheaper than writing the spec.",
@@ -1324,8 +1257,7 @@
     "id": "grant-agent-autonomy-only-on-loosely-defined-work",
     "title": "Grant agent autonomy only on loosely defined work",
     "ring": "trial",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "Let agents run with little supervision only where any reasonable result is fine, and supervise closely where the result must match exact requirements. Tag the next tickets and compare.",
@@ -1342,8 +1274,7 @@
     "id": "scale-the-spec-workflow-to-the-size-of-the-problem",
     "title": "Scale the spec workflow to the size of the problem",
     "ring": "trial",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "Use a one-paragraph brief for small fixes and a written spec only for features. Heavy spec tools turn small bugs into long documents that take longer to review than the code.",
@@ -1360,8 +1291,7 @@
     "id": "make-the-context-file-a-short-index-over-a-docs-directory",
     "title": "Make the context file a short index over a docs directory",
     "ring": "trial",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "Replace one long context file with a short index that points to topic files in a docs folder, plus linters for the rules that matter. Compare for a month.",
@@ -1378,8 +1308,7 @@
     "id": "ground-agents-in-a-company-context-graph",
     "title": "Ground agents in a company context graph",
     "ring": "trial",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "Give agents a searchable map of who owns which services, recent PRs and incidents, instead of only repo files. Test it on ownership and incident questions.",
@@ -1396,8 +1325,7 @@
     "id": "call-clis-from-skills-instead-of-mcp-tool-lists",
     "title": "Call CLIs from skills instead of MCP tool lists",
     "ring": "trial",
-    "area": "prompting",
-    "tags": [
+    "topics": [
       "prompting"
     ],
     "summary": "Where an MCP server loads many tool descriptions into every session, have skills call the equivalent command-line tool instead. Compare on a few recurring tasks.",
@@ -1414,8 +1342,7 @@
     "id": "keep-an-accountable-human-review-on-ai-changes",
     "title": "Keep an accountable human review on AI changes",
     "ring": "adopt",
-    "area": "reviewing",
-    "tags": [
+    "topics": [
       "reviewing"
     ],
     "summary": "Have a named human review and own every AI change before it merges. Agents generate code faster than it can safely ship, and changes that pass every test often still need fixing.",
@@ -1435,8 +1362,7 @@
     "id": "route-review-by-blast-radius",
     "title": "Route review by blast radius",
     "ring": "trial",
-    "area": "reviewing",
-    "tags": [
+    "topics": [
       "reviewing",
       "risks-security"
     ],
@@ -1457,8 +1383,7 @@
     "id": "add-an-intake-gate-to-the-agent-pr-template",
     "title": "Add an intake gate to the agent PR template",
     "ring": "trial",
-    "area": "reviewing",
-    "tags": [
+    "topics": [
       "reviewing"
     ],
     "summary": "In one repo, make the agent PR template require purpose, a size limit, test output and proof the change ran before review starts.",
@@ -1476,8 +1401,7 @@
     "id": "slice-big-agent-branches-for-review",
     "title": "Slice big agent branches for review",
     "ring": "trial",
-    "area": "reviewing",
-    "tags": [
+    "topics": [
       "reviewing"
     ],
     "summary": "Require agent branches over 400 lines to be split into stacked PRs of about 200 lines, each with one purpose. Small single-purpose PRs are easier to review properly.",
@@ -1495,8 +1419,7 @@
     "id": "review-plans-instead-of-diffs",
     "title": "Review plans instead of diffs",
     "ring": "trial",
-    "area": "reviewing",
-    "tags": [
+    "topics": [
       "reviewing",
       "prompting"
     ],
@@ -1515,8 +1438,7 @@
     "id": "run-two-ai-reviewers-in-parallel",
     "title": "Run two AI reviewers in parallel",
     "ring": "trial",
-    "area": "reviewing",
-    "tags": [
+    "topics": [
       "reviewing"
     ],
     "summary": "Run two AI reviewers side by side on the same PRs for a month. Different AI reviewers tend to flag different problems, with little overlap.",
@@ -1533,8 +1455,7 @@
     "id": "show-only-high-confidence-ai-review-comments",
     "title": "Show only high-confidence AI review comments",
     "ring": "trial",
-    "area": "reviewing",
-    "tags": [
+    "topics": [
       "reviewing"
     ],
     "summary": "For a month, show reviewers only high-confidence AI review comments, with duplicates merged. A flood of low-value comments trains people to approve without reading.",
@@ -1551,8 +1472,7 @@
     "id": "phase-in-deterministic-gates",
     "title": "Phase in deterministic gates",
     "ring": "trial",
-    "area": "reviewing",
-    "tags": [
+    "topics": [
       "reviewing"
     ],
     "summary": "In one repo, phase in boundary and duplicate-code rules: record a baseline, then warn on changed files, then block.",
@@ -1570,8 +1490,7 @@
     "id": "write-a-review-policy",
     "title": "Write a review policy",
     "ring": "trial",
-    "area": "reviewing",
-    "tags": [
+    "topics": [
       "reviewing"
     ],
     "summary": "In one repo, adopt a REVIEW.md that sets review passes, severity levels and a cap on nits, and bars the writing agent from approving its own work.",
@@ -1589,8 +1508,7 @@
     "id": "set-explicit-rejection-criteria",
     "title": "Set explicit rejection criteria",
     "ring": "trial",
-    "area": "reviewing",
-    "tags": [
+    "topics": [
       "reviewing",
       "understanding"
     ],
@@ -1610,8 +1528,7 @@
     "id": "add-a-simplification-pass-before-review",
     "title": "Add a simplification pass before review",
     "ring": "trial",
-    "area": "reviewing",
-    "tags": [
+    "topics": [
       "reviewing"
     ],
     "summary": "In one repo, add an agent pass that asks \"can this be simpler?\" before human review. Without it, each bug tends to get its own patch.",
@@ -1628,8 +1545,7 @@
     "id": "try-qa-instead-of-line-by-line-review-on-an-internal-tool",
     "title": "Try QA instead of line-by-line review on an internal tool",
     "ring": "trial",
-    "area": "reviewing",
-    "tags": [
+    "topics": [
       "reviewing",
       "testing"
     ],
@@ -1647,8 +1563,7 @@
     "id": "match-review-depth-to-task-uncertainty",
     "title": "Match review depth to task uncertainty",
     "ring": "trial",
-    "area": "reviewing",
-    "tags": [
+    "topics": [
       "reviewing"
     ],
     "summary": "For a month, tag agent PRs as low or high uncertainty at planning: light inspection for bug fixes, deeper structural review for novel features.",
@@ -1666,8 +1581,7 @@
     "id": "turn-repeated-review-findings-into-agent-skills",
     "title": "Turn repeated review findings into agent skills",
     "ring": "trial",
-    "area": "reviewing",
-    "tags": [
+    "topics": [
       "reviewing",
       "prompting"
     ],
@@ -1685,8 +1599,7 @@
     "id": "set-how-much-agent-code-is-read-by-risk-tolerance",
     "title": "Set how much agent code is read by risk tolerance",
     "ring": "trial",
-    "area": "reviewing",
-    "tags": [
+    "topics": [
       "reviewing",
       "understanding",
       "risks-security"
@@ -1706,8 +1619,7 @@
     "id": "give-reviewers-time-and-authority-to-reject",
     "title": "Give reviewers time and authority to reject",
     "ring": "trial",
-    "area": "reviewing",
-    "tags": [
+    "topics": [
       "reviewing"
     ],
     "summary": "For a quarter, give reviewers of agent PRs a stated time budget and explicit authority to reject, and compare with a team that has neither. A reviewer who can only approve is there to take the blame.",
@@ -1725,8 +1637,7 @@
     "id": "check-ai-approved-prs-by-running-them",
     "title": "Check AI-approved PRs by running them",
     "ring": "trial",
-    "area": "reviewing",
-    "tags": [
+    "topics": [
       "reviewing",
       "testing"
     ],
@@ -1744,8 +1655,7 @@
     "id": "cap-ai-review-at-three-rounds",
     "title": "Cap AI review at three rounds",
     "ring": "trial",
-    "area": "reviewing",
-    "tags": [
+    "topics": [
       "reviewing",
       "looping"
     ],
@@ -1763,8 +1673,7 @@
     "id": "score-the-ai-reviewer-on-past-incidents",
     "title": "Score the AI reviewer on past incidents",
     "ring": "trial",
-    "area": "reviewing",
-    "tags": [
+    "topics": [
       "reviewing",
       "measuring"
     ],
@@ -1782,8 +1691,7 @@
     "id": "review-a-checked-spec-instead-of-the-code",
     "title": "Review a checked spec instead of the code",
     "ring": "trial",
-    "area": "reviewing",
-    "tags": [
+    "topics": [
       "reviewing",
       "testing"
     ],
@@ -1803,8 +1711,7 @@
     "id": "give-the-ai-reviewer-repo-access-and-test-execution",
     "title": "Give the AI reviewer repo access and test execution",
     "ring": "trial",
-    "area": "reviewing",
-    "tags": [
+    "topics": [
       "reviewing"
     ],
     "summary": "On the same 30 PRs, run the AI reviewer with only the diff and with repository access plus test execution, and compare. A reviewer that sees the whole repo and runs code may catch more with fewer false alarms.",
@@ -1822,8 +1729,7 @@
     "id": "enforce-access-and-approvals-outside-the-model",
     "title": "Enforce access and approvals outside the model",
     "ring": "adopt",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security"
     ],
     "summary": "Keep credentials in code, validate output formats in code, and check every tool call against a policy instead of trusting prompt instructions. A prompt can be talked out of a rule; a policy check can't. (OWASP LLM01, LLM06)",
@@ -1843,8 +1749,7 @@
     "id": "remove-one-leg-of-the-lethal-trifecta",
     "title": "Remove one leg of the lethal trifecta",
     "ring": "adopt",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security"
     ],
     "summary": "Don't let one agent hold private data, untrusted content and a way to send data out at the same time, and require approval for anything that sends, spends or deletes. Approval limits the damage but doesn't remove the weakness. (OWASP LLM01, LLM02)",
@@ -1863,8 +1768,7 @@
     "id": "verify-a-packages-publisher-and-registration-date",
     "title": "Verify a package's publisher and registration date",
     "ring": "adopt",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security"
     ],
     "summary": "Treat agent installs as privileged: pin with hashes, scan the full dependency tree, and require human approval plus a publisher and registration-date check for any new package. Agents suggest packages that don't exist, and attackers register those names. (OWASP LLM09, LLM03)",
@@ -1886,8 +1790,7 @@
     "id": "give-security-sensitive-changes-a-human-review",
     "title": "Give security-sensitive changes a human review",
     "ring": "adopt",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security",
       "reviewing"
     ],
@@ -1909,8 +1812,7 @@
     "id": "keep-people-hands-on",
     "title": "Keep people hands-on",
     "ring": "adopt",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security",
       "understanding"
     ],
@@ -1928,8 +1830,7 @@
     "id": "grant-agents-the-fewest-tools-and-the-minimum-scopes",
     "title": "Grant agents the fewest tools and the minimum scopes",
     "ring": "adopt",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security"
     ],
     "summary": "Give agents only the tools they need, avoid open-ended shell and fetch where possible, run tools with the user's minimum scopes, and authorise in downstream systems. Let agents act up to the production gate, never through it. (OWASP LLM06)",
@@ -1949,8 +1850,7 @@
     "id": "deny-secrets-to-agents-and-force-the-sandbox",
     "title": "Deny secrets to agents and force the sandbox",
     "ring": "adopt",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security"
     ],
     "summary": "Block agent access to .env* and secrets/**, force the sandbox with a domain allowlist, and use short-lived scoped CI credentials and secret scanning. Never put credentials or controls in CLAUDE.md, rules or skills, since agents can be made to reveal them. (OWASP LLM02, LLM07)",
@@ -1971,8 +1871,7 @@
     "id": "allowlist-mcp-servers-and-enforce-access-at-the-tool-layer",
     "title": "Allowlist MCP servers and enforce access at the tool layer",
     "ring": "adopt",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security"
     ],
     "summary": "Allow only approved MCP servers, keep privileged tools apart from external ones, require fixed-schema responses, and confirm sensitive actions outside the model. A poisoned tool description can steer an agent, and models rarely refuse it. (OWASP LLM01, LLM06)",
@@ -1992,8 +1891,7 @@
     "id": "enforce-scope-on-every-read-path-of-shared-agent-memory",
     "title": "Enforce scope on every read path of shared agent memory",
     "ring": "adopt",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security"
     ],
     "summary": "Check access scope on direct fetches by ID, not just search; run contradiction checks before any duplicate filter; and record writer and source for every memory entry. Otherwise direct reads leak across scopes and corrections get dropped as duplicates. (OWASP LLM08, LLM04)",
@@ -2011,8 +1909,7 @@
     "id": "inventory-sign-and-pin-models-and-packages",
     "title": "Inventory, sign and pin models and packages",
     "ring": "adopt",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security"
     ],
     "summary": "Keep a software and AI bill of materials, use signed sources and pinned registries, restrict network egress on fetches, and never load untrusted model files. (OWASP LLM03, LLM04)",
@@ -2033,8 +1930,7 @@
     "id": "treat-agent-output-as-untrusted-input",
     "title": "Treat agent output as untrusted input",
     "ring": "adopt",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security"
     ],
     "summary": "Run agent commands in a sandbox, review agent diffs as you would an untrusted contributor's, run SAST on them, and block remote images in rendered output. An agent's shell tool runs model output directly, by design. (OWASP LLM05)",
@@ -2052,8 +1948,7 @@
     "id": "partition-retrieval-stores-and-make-retrieval-permission-awa",
     "title": "Partition retrieval stores and make retrieval permission-aware",
     "ring": "adopt",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security"
     ],
     "summary": "Split retrieval stores by tenant or team, make retrieval check the user's permissions, and validate sources before indexing them. Shared stores leak across permission boundaries, and embeddings can be turned back into text. (OWASP LLM08)",
@@ -2070,8 +1965,7 @@
     "id": "set-rate-limits-quotas-timeouts-and-iteration-caps",
     "title": "Set rate limits, quotas, timeouts and iteration caps",
     "ring": "adopt",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security",
       "measuring"
     ],
@@ -2093,8 +1987,7 @@
     "id": "sign-a-data-processing-agreement-before-tools-see-company-da",
     "title": "Sign a data processing agreement before tools see company data",
     "ring": "adopt",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security"
     ],
     "summary": "Sign a data processing agreement before any AI tool sees company data, and review it again whenever the supplier changes its terms. Vendors can change terms to train on customer data. (OWASP LLM03)",
@@ -2112,8 +2005,7 @@
     "id": "dont-rely-on-delimiting-untrusted-content",
     "title": "Delimiting untrusted content as the defence",
     "ring": "avoid",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security",
       "prompting"
     ],
@@ -2133,8 +2025,7 @@
     "id": "dont-treat-a-stronger-model-as-a-security-control",
     "title": "A stronger model as a security control",
     "ring": "avoid",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security"
     ],
     "summary": "Don't drop or loosen a security control because you upgraded the model. A model that is better at one risk can be worse at another, so rerun your security tests after every upgrade.",
@@ -2152,8 +2043,7 @@
     "id": "track-defects-and-rework-to-catch-quality-erosion",
     "title": "Track defects and rework to catch quality erosion",
     "ring": "trial",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security",
       "measuring",
       "testing",
@@ -2177,8 +2067,7 @@
     "id": "red-team-our-agents-with-seeded-injections",
     "title": "Red-team our agents with seeded injections",
     "ring": "trial",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security"
     ],
     "summary": "Have an authorised red team plant injections, in a sandbox, in test issues and docs our agents read. A guardrail that stops most attacks still fails, because an attacker only needs one to work. (OWASP LLM01)",
@@ -2195,8 +2084,7 @@
     "id": "test-the-harness-against-a-poisoned-mcp-server",
     "title": "Test the harness against a poisoned MCP server",
     "ring": "trial",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security"
     ],
     "summary": "Have an authorised red team run a deliberately poisoned test MCP server in a sandbox, alongside file and HTTP tools. This checks whether tool-layer enforcement holds when injected text gets through. (OWASP LLM01, LLM06)",
@@ -2213,8 +2101,7 @@
     "id": "log-and-flag-every-package-agents-add",
     "title": "Log and flag every package agents add",
     "ring": "trial",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security"
     ],
     "summary": "Try logging every package an agent adds and flagging names that don't exist, were registered recently, or have unknown publishers. Published rates of invented package names are out of date, so measure your own. (OWASP LLM09, LLM03)",
@@ -2231,8 +2118,7 @@
     "id": "intercept-package-installs-against-a-malware-feed",
     "title": "Intercept package installs against a malware feed",
     "ring": "trial",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security"
     ],
     "summary": "Wrap npm, npx, yarn and pnpm so every install is checked against a malware feed. Try it in one team's agent and CI environments for a month. (OWASP LLM03)",
@@ -2250,8 +2136,7 @@
     "id": "compare-defects-by-provenance",
     "title": "Compare defects by provenance",
     "ring": "trial",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security",
       "measuring"
     ],
@@ -2272,8 +2157,7 @@
     "id": "tier-agent-autonomy-by-alert-severity",
     "title": "Tier agent autonomy by alert severity",
     "ring": "trial",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security"
     ],
     "summary": "Run a read-only diagnosis agent on alerts in a non-production environment, with any fix arriving only as a human-approved draft PR. Tiering autonomy by alert severity is a proposal with no data behind it. (OWASP LLM06)",
@@ -2291,8 +2175,7 @@
     "id": "run-scheduled-ai-security-scans-on-one-service",
     "title": "Run scheduled AI security scans on one service",
     "ring": "trial",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security"
     ],
     "summary": "Run scheduled AI security scans on one service for a month and triage every finding. Claims that these scans give validated, confidence-rated findings come only from the vendor.",
@@ -2307,8 +2190,7 @@
     "id": "separate-planning-from-untrusted-data-in-one-agent",
     "title": "Separate planning from untrusted data in one agent",
     "ring": "trial",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security"
     ],
     "summary": "On one internal agent that reads tickets or web pages, keep the planner from ever seeing tool output and add policies for its send, spend and delete tools. This blocks most injections but the agent completes fewer tasks. (OWASP LLM01)",
@@ -2326,8 +2208,7 @@
     "id": "compare-a-layered-filter-stack-with-tool-layer-enforcement",
     "title": "Compare a layered filter stack with tool-layer enforcement",
     "ring": "trial",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security"
     ],
     "summary": "Have an authorised red team run the same seeded injections, in a sandbox, against layered input and output filters and against tool-layer enforcement. The claim that layered filters stop nearly all attacks has no measurement behind it. (OWASP LLM01)",
@@ -2344,8 +2225,7 @@
     "id": "name-a-checker-before-agent-output-drives-a-decision",
     "title": "Name a checker before agent output drives a decision",
     "ring": "trial",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security"
     ],
     "summary": "Trace 5 agent-written summaries or reports that fed a decision last month and note who checked each before anyone acted. Plausible machine output can drive action before a qualified person questions it; this is opinion, not data.",
@@ -2364,8 +2244,7 @@
     "id": "measure-patch-to-deploy-time-in-hours",
     "title": "Measure patch-to-deploy time in hours",
     "ring": "trial",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security"
     ],
     "summary": "For one quarter, log the hours from each upstream critical security fix to our deploy, for direct and transitive dependencies, against a target agreed beforehand. Attackers can start exploiting a flaw within hours of its patch.",
@@ -2384,8 +2263,7 @@
     "id": "give-ai-vulnerability-scans-a-written-threat-model",
     "title": "Give AI vulnerability scans a written threat model",
     "ring": "trial",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security"
     ],
     "summary": "Scan one service twice, with and without a one-page threat model in the prompt, and have owners triage both lists blind. Many false positives are working issues owners consider outside their threat model, which a proof-of-concept check can't filter.",
@@ -2402,8 +2280,7 @@
     "id": "log-what-platform-security-checks-catch-on-agent-prs",
     "title": "Log what platform security checks catch on agent PRs",
     "ring": "trial",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security",
       "reviewing"
     ],
@@ -2422,8 +2299,7 @@
     "id": "keep-a-human-upstream-of-what-tests-assert",
     "title": "Keep a human upstream of what tests assert",
     "ring": "adopt",
-    "area": "testing",
-    "tags": [
+    "topics": [
       "testing",
       "prompting",
       "xp-agile"
@@ -2447,8 +2323,7 @@
     "id": "work-in-short-steady-test-and-code-cycles",
     "title": "Work in short, steady test-and-code cycles",
     "ring": "adopt",
-    "area": "testing",
-    "tags": [
+    "topics": [
       "testing",
       "xp-agile"
     ],
@@ -2467,8 +2342,7 @@
     "id": "give-the-model-few-distinct-tests",
     "title": "Give the model few, distinct tests",
     "ring": "adopt",
-    "area": "testing",
-    "tags": [
+    "topics": [
       "testing",
       "prompting"
     ],
@@ -2487,8 +2361,7 @@
     "id": "dont-read-coverage-as-quality-for-ai-written-tests",
     "title": "Reading coverage as quality for AI-written tests",
     "ring": "avoid",
-    "area": "testing",
-    "tags": [
+    "topics": [
       "testing",
       "measuring"
     ],
@@ -2508,8 +2381,7 @@
     "id": "dont-treat-passing-tests-as-mergeable",
     "title": "Treating a passing suite or a green loop as done",
     "ring": "avoid",
-    "area": "testing",
-    "tags": [
+    "topics": [
       "testing",
       "reviewing",
       "looping"
@@ -2531,8 +2403,7 @@
     "id": "dont-have-an-agent-run-tdd-alone-on-a-clear-spec",
     "title": "Agent-run TDD on a clear spec",
     "ring": "avoid",
-    "area": "testing",
-    "tags": [
+    "topics": [
       "testing",
       "looping",
       "xp-agile"
@@ -2553,8 +2424,7 @@
     "id": "give-the-agent-test-impact-context-not-a-tdd-procedure",
     "title": "Give the agent test-impact context, not a TDD procedure",
     "ring": "trial",
-    "area": "testing",
-    "tags": [
+    "topics": [
       "testing",
       "prompting"
     ],
@@ -2573,8 +2443,7 @@
     "id": "re-test-the-supplied-tests-benefit-on-current-models",
     "title": "Re-test the supplied-tests benefit on current models",
     "ring": "trial",
-    "area": "testing",
-    "tags": [
+    "topics": [
       "testing"
     ],
     "summary": "Run 20 of your own tasks through your current agent with and without human-written tests, and compare. Check that supplying tests still helps before building the workflow around it.",
@@ -2593,8 +2462,7 @@
     "id": "try-agent-tdd-on-real-vague-tickets",
     "title": "Try agent TDD on real, vague tickets",
     "ring": "trial",
-    "area": "testing",
-    "tags": [
+    "topics": [
       "testing"
     ],
     "summary": "Run 10 real tickets, some underspecified, through the agent with test-first and test-after prompts and compare. Test-first may help an agent pin down a vague requirement, but that is untested.",
@@ -2614,8 +2482,7 @@
     "id": "compare-who-writes-acceptance-tests",
     "title": "Compare who writes acceptance tests",
     "ring": "trial",
-    "area": "testing",
-    "tags": [
+    "topics": [
       "testing",
       "reviewing"
     ],
@@ -2634,8 +2501,7 @@
     "id": "compare-acceptance-level-and-unit-level-specs",
     "title": "Compare acceptance-level and unit-level specs",
     "ring": "trial",
-    "area": "testing",
-    "tags": [
+    "topics": [
       "testing"
     ],
     "summary": "For a quarter, specify comparable features either as human-approved acceptance tests or as unit-level tests, with the same agent setup. Practitioners favour acceptance tests as agent specs, but only unit-level specs have been checked.",
@@ -2655,8 +2521,7 @@
     "id": "try-human-enforced-tdd-on-one-critical-module",
     "title": "Try human-enforced TDD on one critical module",
     "ring": "trial",
-    "area": "testing",
-    "tags": [
+    "topics": [
       "testing",
       "xp-agile"
     ],
@@ -2676,8 +2541,7 @@
     "id": "run-diff-scoped-mutation-testing-as-a-ci-warning",
     "title": "Run diff-scoped mutation testing as a CI warning",
     "ring": "trial",
-    "area": "testing",
-    "tags": [
+    "topics": [
       "testing"
     ],
     "summary": "For a quarter, run mutation testing on just the changed code in CI as a warning, with no pass threshold at first. Code with full coverage can still let injected bugs survive.",
@@ -2696,8 +2560,7 @@
     "id": "flag-weakened-tests-in-agent-prs",
     "title": "Flag weakened tests in agent PRs",
     "ring": "trial",
-    "area": "testing",
-    "tags": [
+    "topics": [
       "testing",
       "risks-security"
     ],
@@ -2719,8 +2582,7 @@
     "id": "try-hard-to-fake-test-formats-in-one-module",
     "title": "Try hard-to-fake test formats in one module",
     "ring": "trial",
-    "area": "testing",
-    "tags": [
+    "topics": [
       "testing",
       "reviewing"
     ],
@@ -2740,8 +2602,7 @@
     "id": "add-fix-it-guidance-to-lint-messages",
     "title": "Add fix-it guidance to lint messages",
     "ring": "trial",
-    "area": "testing",
-    "tags": [
+    "topics": [
       "testing",
       "prompting"
     ],
@@ -2759,8 +2620,7 @@
     "id": "separate-test-writing-from-code-writing",
     "title": "Separate test-writing from code-writing",
     "ring": "trial",
-    "area": "testing",
-    "tags": [
+    "topics": [
       "testing"
     ],
     "summary": "On one feature, have a human write test intent, the agent expand it into tests, a human write the production code and the agent only refactor after. When AI writes both tests and code, each just confirms the other.",
@@ -2777,8 +2637,7 @@
     "id": "attach-evidence-of-what-ran-to-green-results",
     "title": "Attach evidence of what ran to green results",
     "ring": "trial",
-    "area": "testing",
-    "tags": [
+    "topics": [
       "testing",
       "reviewing"
     ],
@@ -2796,8 +2655,7 @@
     "id": "have-a-second-model-in-a-fresh-context-write-tests",
     "title": "Have a second model in a fresh context write tests",
     "ring": "trial",
-    "area": "testing",
-    "tags": [
+    "topics": [
       "testing"
     ],
     "summary": "For one month, have a second model in a fresh context write tests for agent PRs from the ticket alone, and seed known bugs into each change. Tests from a single source share blind spots, so a second source catches more.",
@@ -2815,8 +2673,7 @@
     "id": "ask-the-ai-dont-delegate-to-it-while-building-a-skill",
     "title": "Ask the AI, don't delegate to it, while building a skill",
     "ring": "adopt",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding"
     ],
     "summary": "While someone is learning a skill, have them ask the AI conceptual questions instead of handing it the work. People who delegate, or ask for direct answers, do worse later when working without AI.",
@@ -2835,8 +2692,7 @@
     "id": "give-hints-not-answers-in-learning-tools",
     "title": "Give hints, not answers, in learning tools",
     "ring": "adopt",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding"
     ],
     "summary": "Set up learning and onboarding tools to give hints, not full answers. Unrestricted answers lower what people can do on their own; hint-only help doesn't.",
@@ -2853,8 +2709,7 @@
     "id": "do-unaided-work-first-then-bring-in-ai",
     "title": "Do unaided work first, then bring in AI",
     "ring": "adopt",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding"
     ],
     "summary": "Have people draft or solve a problem unaided first, then bring in AI. People who start with AI remember less of their own work and engage less once AI is added.",
@@ -2871,8 +2726,7 @@
     "id": "keep-people-hands-on-with-ai-off-sessions",
     "title": "Keep people hands-on with AI-off sessions",
     "ring": "trial",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding"
     ],
     "summary": "Have volunteers take one AI-off session per sprint for six months. Regular manual practice keeps skills sharp in other automated fields, but it is untested for coding agents.",
@@ -2890,8 +2744,7 @@
     "id": "dont-judge-learning-by-self-report",
     "title": "Judging learning by self-report",
     "ring": "avoid",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding",
       "measuring"
     ],
@@ -2910,8 +2763,7 @@
     "id": "dont-read-confidence-in-ai-assisted-code-as-security",
     "title": "Reading confidence in AI-assisted code as security",
     "ring": "avoid",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding",
       "risks-security",
       "testing"
@@ -2930,8 +2782,7 @@
     "id": "name-one-human-who-can-explain-each-agent-pr",
     "title": "Name one human who can explain each agent PR",
     "ring": "trial",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding",
       "reviewing"
     ],
@@ -2951,8 +2802,7 @@
     "id": "quiz-authors-on-agent-diffs",
     "title": "Quiz authors on agent diffs",
     "ring": "trial",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding",
       "reviewing"
     ],
@@ -2971,8 +2821,7 @@
     "id": "hand-write-commit-messages-and-why-comments",
     "title": "Hand-write commit messages and why-comments",
     "ring": "trial",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding"
     ],
     "summary": "Have one team hand-write commit messages and why-comments on agent changes for a quarter. Writing it yourself is a check that you understand the change, and people remember what they produce.",
@@ -2991,8 +2840,7 @@
     "id": "keep-an-adr-per-agent-built-feature",
     "title": "Keep an ADR per agent-built feature",
     "ring": "trial",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding"
     ],
     "summary": "For two quarters, write a short ADR for each agent-built feature, point to it from surprising code, and review the ADRs quarterly. Docs only help while they stay current.",
@@ -3010,8 +2858,7 @@
     "id": "compare-mobbing-with-an-agent-against-solo-work-plus-review",
     "title": "Compare mobbing with an agent against solo work plus review",
     "ring": "trial",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding",
       "xp-agile"
     ],
@@ -3030,8 +2877,7 @@
     "id": "pair-juniors-with-seniors-on-agent-assisted-work",
     "title": "Pair juniors with seniors on agent-assisted work",
     "ring": "trial",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding",
       "xp-agile"
     ],
@@ -3050,8 +2896,7 @@
     "id": "run-a-quarterly-explain-this-service-check",
     "title": "Run a quarterly \"explain this service\" check",
     "ring": "trial",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding"
     ],
     "summary": "For two quarters, ask each team to explain the architecture and key decisions behind each of its services. Agents remove the friction that kept people in sync, so whole teams can lose track of why the system is built the way it is.",
@@ -3070,8 +2915,7 @@
     "id": "audit-shared-agent-context-with-planted-probes",
     "title": "Audit shared agent context with planted probes",
     "ring": "trial",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding",
       "risks-security"
     ],
@@ -3090,8 +2934,7 @@
     "id": "pilot-a-shared-what-worked-memory-against-a-baseline",
     "title": "Pilot a shared \"what worked\" memory against a baseline",
     "ring": "trial",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding"
     ],
     "summary": "For a month, pilot a shared \"what worked\" memory on held-out tasks with execution tests, against a documentation-only baseline. Count harmful retrievals as well as helpful ones; reported gains come from model-judged results, not tests.",
@@ -3108,8 +2951,7 @@
     "id": "compare-a-human-review-queue-with-newest-write-wins-for-memo",
     "title": "Compare a human review queue with newest-write-wins for memory conflicts",
     "ring": "trial",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding"
     ],
     "summary": "For a month, have one team route contradicting memory writes to a human review queue while another lets the newest write win and keeps the history. Nobody has compared the two.",
@@ -3127,8 +2969,7 @@
     "id": "re-implement-business-critical-agent-fixes-by-hand",
     "title": "Re-implement business-critical agent fixes by hand",
     "ring": "trial",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding",
       "reviewing"
     ],
@@ -3146,8 +2987,7 @@
     "id": "test-whether-diagrams-or-generated-pages-help-understanding",
     "title": "Test whether diagrams or generated pages help understanding",
     "ring": "trial",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding"
     ],
     "summary": "For one feature have the agent explain its change as plain text, for another as a diagram or generated page, then quiz the reviewers. Richer formats may ease oversight, but people remember what they produce more than what they read.",
@@ -3165,8 +3005,7 @@
     "id": "write-a-handoff-note-at-each-session-boundary",
     "title": "Write a handoff note at each session boundary",
     "ring": "trial",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding",
       "prompting"
     ],
@@ -3185,8 +3024,7 @@
     "id": "use-a-read-only-agent-to-build-incident-timelines",
     "title": "Use a read-only agent to build incident timelines",
     "ring": "trial",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding"
     ],
     "summary": "Give a read-only agent the exported deployments, alerts, flag changes and PRs for one past incident, and have owners check each timeline entry and flagged runbook gap. Use agents to gather evidence, not to fix production; the idea is untested.",
@@ -3203,8 +3041,7 @@
     "id": "show-shared-memory-only-when-every-source-behind-it-is-reada",
     "title": "Show shared memory only when every source behind it is readable",
     "ring": "trial",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding",
       "risks-security"
     ],
@@ -3223,8 +3060,7 @@
     "id": "compare-a-file-based-memory-with-a-memory-service",
     "title": "Compare a file-based memory with a memory service",
     "ring": "trial",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding"
     ],
     "summary": "On about 20 repeated questions about past decisions in one repository, compare a markdown-in-git memory file with a memory service. Published comparisons conflict and don't test coding work.",
@@ -3243,8 +3079,7 @@
     "id": "test-on-demand-explainers-against-reading-diffs",
     "title": "Test on-demand explainers against reading diffs",
     "ring": "trial",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding",
       "reviewing"
     ],
@@ -3262,8 +3097,7 @@
     "id": "explain-a-change-in-plain-words-before-approving-it",
     "title": "Explain a change in plain words before approving it",
     "ring": "trial",
-    "area": "understanding",
-    "tags": [
+    "topics": [
       "understanding",
       "reviewing"
     ],
@@ -3285,8 +3119,7 @@
     "id": "keep-user-focus",
     "title": "Keep user focus",
     "ring": "adopt",
-    "area": "xp-agile",
-    "tags": [
+    "topics": [
       "xp-agile"
     ],
     "summary": "Tie agent work to a specific user need and check usage after release. Without that focus, agents help a team ship more software but not more value.",
@@ -3305,8 +3138,7 @@
     "id": "enforce-standards-with-checks-not-documents",
     "title": "Enforce standards with checks, not documents",
     "ring": "adopt",
-    "area": "xp-agile",
-    "tags": [
+    "topics": [
       "xp-agile",
       "prompting"
     ],
@@ -3325,8 +3157,7 @@
     "id": "have-the-agent-restate-the-plan-and-object-before-coding",
     "title": "Have the agent restate the plan and object before coding",
     "ring": "trial",
-    "area": "xp-agile",
-    "tags": [
+    "topics": [
       "xp-agile"
     ],
     "summary": "Before coding, have the agent restate the plan and raise objections, and review that the way you'd review someone's diff. Try it for two weeks.",
@@ -3344,8 +3175,7 @@
     "id": "spend-freed-time-with-users",
     "title": "Spend freed time with users",
     "ring": "trial",
-    "area": "xp-agile",
-    "tags": [
+    "topics": [
       "xp-agile"
     ],
     "summary": "Spend time agents free up before development starts, with users and stakeholders. Try giving 10% of team time to customer sessions for a quarter.",
@@ -3363,8 +3193,7 @@
     "id": "prototype-requests-cheaply-for-a-user-cohort",
     "title": "Prototype requests cheaply for a user cohort",
     "ring": "trial",
-    "area": "xp-agile",
-    "tags": [
+    "topics": [
       "xp-agile"
     ],
     "summary": "Use rough mockups, throwaway prototypes and week-long releases to a user cohort to get customer feedback faster. Try prototyping 3 feature requests for a cohort, within a week each.",
@@ -3383,8 +3212,7 @@
     "id": "try-acceptance-tests-as-the-main-guardrail",
     "title": "Try acceptance tests as the main guardrail",
     "ring": "trial",
-    "area": "xp-agile",
-    "tags": [
+    "topics": [
       "xp-agile",
       "testing"
     ],
@@ -3402,8 +3230,7 @@
     "id": "split-the-largest-files-with-human-chosen-refactorings",
     "title": "Split the largest files with human-chosen refactorings",
     "ring": "trial",
-    "area": "xp-agile",
-    "tags": [
+    "topics": [
       "xp-agile"
     ],
     "summary": "As a trial, have a person choose how to split the largest files in one service, then let the agent do the refactoring. Smaller files make agent changes cheaper, but agents don't choose good splits on their own.",
@@ -3420,8 +3247,7 @@
     "id": "track-features-shipped-vs-used",
     "title": "Track features shipped vs used",
     "ring": "trial",
-    "area": "xp-agile",
-    "tags": [
+    "topics": [
       "xp-agile",
       "measuring"
     ],
@@ -3440,8 +3266,7 @@
     "id": "spike-throwaway-designs-before-committing",
     "title": "Spike throwaway designs before committing",
     "ring": "trial",
-    "area": "xp-agile",
-    "tags": [
+    "topics": [
       "xp-agile"
     ],
     "summary": "Try building throwaway spikes for the next 2 uncertain designs before committing to one. When code is cheap to regenerate, it is also cheap to delete.",
@@ -3459,8 +3284,7 @@
     "id": "steer-agents-with-named-methods-and-a-system-metaphor",
     "title": "Steer agents with named methods and a system metaphor",
     "ring": "trial",
-    "area": "xp-agile",
-    "tags": [
+    "topics": [
       "xp-agile",
       "prompting"
     ],
@@ -3478,8 +3302,7 @@
     "id": "cap-agent-heavy-work-per-day",
     "title": "Cap agent-heavy work per day",
     "ring": "trial",
-    "area": "xp-agile",
-    "tags": [
+    "topics": [
       "xp-agile"
     ],
     "summary": "Let volunteers cap agent-heavy work at 3 hours a day for a month. Agents pack a day's worth of decisions into a single session.",
@@ -3497,8 +3320,7 @@
     "id": "try-flags-and-staged-rollout-in-place-of-unit-tests-on-one-s",
     "title": "Try flags and staged rollout in place of unit tests on one service",
     "ring": "trial",
-    "area": "xp-agile",
-    "tags": [
+    "topics": [
       "xp-agile",
       "testing"
     ],
@@ -3517,8 +3339,7 @@
     "id": "compare-solo-ai-human-pair-with-ai-and-human-only-pairing",
     "title": "Compare solo-AI, human-pair-with-AI and human-only pairing",
     "ring": "trial",
-    "area": "xp-agile",
-    "tags": [
+    "topics": [
       "xp-agile"
     ],
     "summary": "For one sprint, have one team try solo work with an AI partner, human pairs with AI, and human-only pairs. Whether an AI partner can stand in for a human one is unsettled.",
@@ -3538,8 +3359,7 @@
     "id": "lead-ai-rollout-with-enthusiasts-and-a-few-principles",
     "title": "Lead AI rollout with enthusiasts and a few principles",
     "ring": "trial",
-    "area": "xp-agile",
-    "tags": [
+    "topics": [
       "xp-agile"
     ],
     "summary": "Treat AI adoption as change management: let enthusiasts lead, protect learning time, and give a few principles instead of pages of rules. This is untested opinion; try it for 8 weeks against a team given only licences and the standard policy.",
@@ -3557,8 +3377,7 @@
     "id": "routing-retry-loops-to-cheap-models-unchecked",
     "title": "Routing retry loops to cheap models unchecked",
     "ring": "avoid",
-    "area": "looping",
-    "tags": [
+    "topics": [
       "looping"
     ],
     "summary": "Don't move a retry loop to a cheaper model just to save money without checking the results. Small models often gain nothing from retrying, so the loop's benefit quietly disappears.",
@@ -3576,8 +3395,7 @@
     "id": "choosing-tools-by-public-leaderboard-rankings",
     "title": "Choosing tools by public leaderboard rankings",
     "ring": "avoid",
-    "area": "measuring",
-    "tags": [
+    "topics": [
       "measuring",
       "testing"
     ],
@@ -3596,8 +3414,7 @@
     "id": "trusting-an-ai-grader-you-havent-checked",
     "title": "Trusting an AI grader you haven't checked",
     "ring": "avoid",
-    "area": "measuring",
-    "tags": [
+    "topics": [
       "measuring",
       "testing"
     ],
@@ -3617,8 +3434,7 @@
     "id": "deciding-on-vendor-reported-figures",
     "title": "Deciding on vendor-reported figures",
     "ring": "avoid",
-    "area": "measuring",
-    "tags": [
+    "topics": [
       "measuring"
     ],
     "summary": "Don't base a tooling decision on numbers from the tool's maker. Ask what was measured, on which tasks and by whom, then check on your own work.",
@@ -3637,8 +3453,7 @@
     "id": "letting-agents-commit-without-review",
     "title": "Letting agents commit without review",
     "ring": "avoid",
-    "area": "reviewing",
-    "tags": [
+    "topics": [
       "reviewing"
     ],
     "summary": "Don't let agent changes reach the main branch without a person reading them. Teams drift into it as trust grows, often without anyone deciding to.",
@@ -3656,8 +3471,7 @@
     "id": "installing-third-party-mcp-servers-unreviewed",
     "title": "Installing third-party MCP servers unreviewed",
     "ring": "avoid",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security"
     ],
     "summary": "Don't connect agents to MCP servers nobody has reviewed. Tool descriptions can carry hidden instructions that steer the agent, and you can't tell from outside which servers do. (OWASP LLM01, LLM06)",
@@ -3674,8 +3488,7 @@
     "id": "accepting-new-dependencies-an-agent-adds-unchecked",
     "title": "Accepting new dependencies an agent adds unchecked",
     "ring": "avoid",
-    "area": "risks-security",
-    "tags": [
+    "topics": [
       "risks-security"
     ],
     "summary": "Don't merge a dependency an agent added without checking it exists, who publishes it and how old it is. Agents sometimes name packages that don't exist, and attackers register those names. (OWASP LLM03, LLM09)",
@@ -3694,8 +3507,7 @@
     "id": "leaving-structural-refactoring-to-agents",
     "title": "Leaving structural refactoring to agents",
     "ring": "avoid",
-    "area": "xp-agile",
-    "tags": [
+    "topics": [
       "xp-agile"
     ],
     "summary": "Don't expect agents to restructure code on their own. They rename and tidy but rarely change the structure, so a person has to choose the refactoring and let the agent carry it out.",

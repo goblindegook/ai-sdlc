@@ -61,13 +61,13 @@ If nothing qualifies, tell the owner in one line and stop.
 
 ### 2. Read the site as it is now
 
-Before proposing anything, look at what the site already says in the areas you will touch:
+Before proposing anything, look at what the site already says in the topics you will touch:
 
 ```bash
-python3 -I <skill>/scripts/site_titles.py --area testing --full
+python3 -I <skill>/scripts/site_titles.py --topic testing --full
 ```
 
-It prints every recommendation (with its ring), challenge and open question with id, area, tags, `updated`, and
+It prints every recommendation (with its ring), challenge and open question with id, topic, topics, `updated`, and
 (with `--full`) signals and cited evidence. A new finding usually strengthens or contradicts something already
 there; citing it from the existing item is better than a near-duplicate new item.
 
@@ -94,7 +94,7 @@ The owner has been specific about how the site reads. These come from their corr
   those belong in the evidence `finding`. A number is fine when it is a threshold a team applies ("about 3
   attempts").
 - **Where cost goes.** The cost of running agents in a loop belongs in Looping; cost per outcome, spend policy and
-  budgets in Measuring; cost overruns as a risk in Risks and security. Tag the other areas it touches.
+  budgets in Measuring; cost overruns as a risk in Risks and security. Add the other topics it touches.
 - **Signals are team metrics.** Each "Watch for" signal is something a team can count or look at in its own repo,
   CI, PRs, tickets, incidents, agent logs or spend, without running a study. "Points gained per loop with and
   without tests" is the kind of signal the owner rejected; "Tasks the agent called done that fail CI on first
@@ -110,7 +110,7 @@ The owner has been specific about how the site reads. These come from their corr
 
 ### 4. Ask before writing
 
-Show the owner one compact proposal, grouped by area, before touching any file:
+Show the owner one compact proposal, grouped by topic, before touching any file:
 
 ```
 <Area>
@@ -137,17 +137,17 @@ python3 -I <skill>/scripts/check_wording.py
 python3 -I <skill>/scripts/check_site.py
 ```
 
-The build fails on a missing evidence id, an unknown area or a duplicate id. `check_wording.py` flags
+The build fails on a missing evidence id, an unknown topic or a duplicate id. `check_wording.py` flags
 study-specific wording in recommendations and challenges; `check_site.py` checks links both ways, that only the
 Evidence page links out, and that no page shows counts or mentions the wiki. Fix what they report by rewording,
 not by loosening the checks.
 
 Look at one changed item in the browser (the dev server, `npx astro dev`, or the built page) to confirm it shows
-under the right ring and area with its evidence linked.
+under the right ring and topic with its evidence linked.
 
 ### 6. Record and report
 
 - The `updated` times you set are the record: the footer date and the next run's starting point both come from
   them, so there is nothing else to update.
-- Tell the owner in a few lines: what was added or extended per area, ring changes they approved, anything left
+- Tell the owner in a few lines: what was added or extended per topic, ring changes they approved, anything left
   out and why, gaps noticed. Nothing is committed unless they ask.

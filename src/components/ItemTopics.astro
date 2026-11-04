@@ -1,0 +1,9 @@
+---
+// Topics on an item. Each is a link that filters the current page to that topic.
+import { topicLabel } from '../data/topics';
+interface Props { topics: string[]; inline?: boolean }
+const { topics, inline = false } = Astro.props;
+---
+<span class:list={['topics', { inline }]}>
+  {topics.map((t) => <a href={`?topic=${t}`} data-topic-link={t}>{topicLabel(t)}</a>)}
+</span>

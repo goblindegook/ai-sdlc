@@ -10,15 +10,15 @@ all built from these files, so editing them is the whole job.
 | `content/challenges.json` | Hard problems with no "stop doing this" answer |
 | `content/questions.json` | Open questions where sources disagree |
 | `content/evidence.json` | Every source the site cites, once each |
-| `content/areas.json` | The eight areas, in site order, with each area's two "Why" lines on the overview |
+| `content/topics.json` | The eight topics, in site order, with each topic's two "Why" lines on the overview |
 
 ## Every item
 
 - `id`: lowercase words joined by hyphens, made from the title (`keep-context-lean`). It is the item's anchor in
   links, so never change the id of an existing item; changing its title is fine. New ids must be unique across all
   files.
-- `area`: the area it belongs to (its place on the overview and in sort order). `tags`: every area it bears on,
-  including `area`. Area slugs, in site order: `prompting`, `looping`, `testing`, `risks-security`, `reviewing`,
+- `topics`: every topic it bears on, at least one. The first is the one it sits under on the overview and in sort
+  order. Topic slugs, in site order: `prompting`, `looping`, `testing`, `risks-security`, `reviewing`,
   `measuring`, `understanding`, `xp-agile`.
 - `updated`: UTC time of the last change to this item, ISO format (`2026-11-04T11:31:00Z`). Set it on every item
   you add or change, and leave it alone on items you don't touch. It records what changed when, the footer date is
@@ -32,8 +32,7 @@ all built from these files, so editing them is the whole job.
   "id": "short-imperative-title",
   "title": "Short imperative title",
   "ring": "trial",
-  "area": "testing",
-  "tags": ["testing", "xp-agile"],
+  "topics": ["testing", "xp-agile"],
   "summary": "What to do in your own team, then why in one plain sentence. No study names or figures.",
   "signals": ["Something the team can count in its repo, CI, PRs or spend", "Another one"],
   "evidence": ["author-venue-year"],
@@ -50,14 +49,14 @@ all built from these files, so editing them is the whole job.
 ## challenges.json
 
 ```json
-{ "id": "...", "title": "...", "area": "testing", "tags": ["testing"],
+{ "id": "...", "title": "...", "topics": ["testing"],
   "summary": "What goes wrong and what it costs a team, in plain words.", "evidence": ["..."], "updated": "..." }
 ```
 
 ## questions.json
 
 ```json
-{ "id": "...", "question": "Does X hold on current models?", "area": "testing", "tags": ["testing"],
+{ "id": "...", "question": "Does X hold on current models?", "topics": ["testing"],
   "body": "One or two sentences on what the sources disagree about.", "evidence": ["...", "..."], "updated": "..." }
 ```
 
@@ -72,7 +71,7 @@ all built from these files, so editing them is the whole job.
   "era": null,
   "caveat": "preprint",
   "finding": "One sentence on what the source found or claims, with its own numbers if it has any.",
-  "tags": ["testing"],
+  "topics": ["testing"],
   "updated": "2026-11-04T11:31:00Z"
 }
 ```
@@ -88,8 +87,8 @@ all built from these files, so editing them is the whole job.
   talk, speaker and event ("Speaker (Company), Event 2026"). Keep caveats out of the title.
 - `caveat` (optional): what a reader should weigh, shown next to the entry: "preprint", "vendor self-report",
   "sells a course on this", "secondhand".
-- `tags`: the areas it bears on. The site also adds the areas of every item that cites it.
+- `topics`: the topics it bears on. The site also adds the topics of every item that cites it.
 
-## areas.json
+## topics.json
 
-Change an area's `why` lines only when the owner approved it; keep two short, plain sentences per area.
+Change a topic's `why` lines only when the owner approved it; keep two short, plain sentences per topic.

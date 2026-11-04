@@ -1,7 +1,7 @@
 """Print what the site holds now, straight from content/*.json: every recommendation (with its ring), challenge and
-open question, with id, area and tags, plus (with --full) signals and cited evidence titles.
+open question, with id, topic and topics, plus (with --full) signals and cited evidence titles.
 
-Usage: python3 -I site_titles.py [--site PATH] [--area SLUG] [--full]
+Usage: python3 -I site_titles.py [--site PATH] [--topic SLUG] [--full]
 Read-only.
 """
 import argparse, json
@@ -13,7 +13,7 @@ SITE = Path(__file__).resolve().parents[4]
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--site", default=str(SITE))
-    ap.add_argument("--area")
+    ap.add_argument("--topic")
     ap.add_argument("--full", action="store_true")
     a = ap.parse_args()
     c = Path(a.site) / "content"
@@ -22,10 +22,10 @@ def main():
     for name, title in [("recommendations", "title"), ("challenges", "title"), ("questions", "question")]:
         print(f"# {name}")
         for x in load(name):
-            if a.area and a.area not in x["tags"]:
+            if a.topic and a.topic not in x["topics"]:
                 continue
             ring = f"[{x['ring']}] " if "ring" in x else ""
-            print(f"- {ring}{x[title]}   id={x['id']} area={x['area']} tags={','.join(x['tags'])} updated={x['updated']}")
+            print(f"- {ring}{x[title]}   id={x['id']} topic={x['topic']} topics={','.join(x['topics'])} updated={x['updated']}")
             if a.full:
                 for s in x.get("signals", []):
                     print(f"    watch: {s}")

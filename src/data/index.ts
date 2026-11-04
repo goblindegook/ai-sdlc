@@ -1,20 +1,23 @@
 // The site's content is content/*.json: one file per kind of item, every item written exactly as the site shows
 // it, each with an `updated` time. This module only links items together (evidence "Used in" lists) and checks
 // that every reference resolves, so a bad edit fails the build instead of shipping a broken link.
-import { TAGS, type Tag } from './tags';
+import { TOPICS, type Topic } from './topics';
 import recsJson from '../../content/recommendations.json';
 import challengesJson from '../../content/challenges.json';
 import questionsJson from '../../content/questions.json';
 import evidenceJson from '../../content/evidence.json';
 
 export type Ring = 'adopt' | 'trial' | 'avoid';
-interface Item { id: string; area: Tag; tags: Tag[]; evidence: string[]; updated: string }
+// `topics` lists every topic an item bears on. The first is the one it sits under on the Overview and sorts by.
+interface Item { id: string; topics: Topic[]; evidence: string[]; updated: string }
+export const mainTopic = (x: { topics: Topic[] }) => x.topics[0];
+export const topicOrder = (x: { topics: Topic[] }) => TOPICS.findIndex((t) => t.slug === mainTopic(x));
 export interface Rec extends Item { title: string; ring: Ring; summary: string; signals: string[] }
 export interface Challenge extends Item { title: string; summary: string }
 export interface Question extends Item { question: string; body: string }
 export interface Evidence {
   id: string; title: string; url: string; kind: string; era: string | null; caveat?: string;
-  finding: string; tags: Tag[]; updated: string;
+  finding: string; topics: Topic[]; updated: string;
   backs: string[]; cited: string[]; asked: string[];
 }
 
@@ -24,25 +27,25 @@ export const questions = questionsJson as Question[];
 export const evidence = (evidenceJson as Omit<Evidence, 'backs' | 'cited' | 'asked'>[]).map((e) => ({ ...e, backs: [], cited: [], asked: [] })) as Evidence[];
 export const evidenceById = new Map(evidence.map((e) => [e.id, e]));
 
-const areas = new Set(TAGS.map((t) => t.slug));
+const topics = new Set(TOPICS.map((t) => t.slug));
 const ids = new Set<string>();
 for (const [kind, list] of [['recommendation', recs], ['challenge', challenges], ['question', questions], ['evidence', evidence]] as const) {
-  for (const x of list as { id: string; area?: Tag; tags: Tag[]; updated: string }[]) {
+  for (const x of list as { id: string; topics: Topic[]; updated: string }[]) {
     if (ids.has(x.id)) throw new Error(`duplicate id: ${x.id}`);
     ids.add(x.id);
-    if (x.area !== undefined && !areas.has(x.area)) throw new Error(`${kind} ${x.id}: unknown area ${x.area}`);
-    for (const t of x.tags) if (!areas.has(t)) throw new Error(`${kind} ${x.id}: unknown tag ${t}`);
+    if (kind !== 'evidence' && !x.topics.length) throw new Error(`${kind} ${x.id}: needs at least one topic`);
+    for (const t of x.topics) if (!topics.has(t)) throw new Error(`${kind} ${x.id}: unknown topic ${t}`);
     if (Number.isNaN(Date.parse(x.updated))) throw new Error(`${kind} ${x.id}: bad updated time ${x.updated}`);
   }
 }
 
-// Evidence lists what uses it, and shows under every area that cites it.
+// Evidence lists what uses it, and shows under every topic that cites it.
 const link = (users: Item[], field: 'backs' | 'cited' | 'asked') => {
   for (const u of users) for (const id of u.evidence) {
     const ev = evidenceById.get(id);
     if (!ev) throw new Error(`${u.id} cites missing evidence ${id}`);
     ev[field].push(u.id);
-    ev.tags = [...new Set([...ev.tags, ...u.tags])];
+    ev.topics = [...new Set([...ev.topics, ...u.topics])];
   }
 };
 link(recs, 'backs');
@@ -74,4 +77,4 @@ export const KINDS: { slug: string; label: string }[] = [
   { slug: 'uncatalogued', label: 'Other cited pages' },
 ];
 
-export const ERA: Record<string, string> = { older: 'Older models', 'early-2025': 'Early-2025 models' };
+export const ERA: Record<string, string> = { older: 'Pre-2025 models', 'early-2025': 'Early-2025 models' };

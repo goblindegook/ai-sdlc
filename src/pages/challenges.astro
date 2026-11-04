@@ -1,22 +1,21 @@
 ---
 import Base from '../layouts/Base.astro';
-import TagFilter from '../components/TagFilter.astro';
+import TopicFilter from '../components/TopicFilter.astro';
 import Item from '../components/Item.astro';
 import EvidenceList from '../components/EvidenceList.astro';
-import { TAGS } from '../data/tags';
-import { challenges } from '../data';
+import { challenges, topicOrder } from '../data';
 
-const items = [...challenges].sort((a, b) => TAGS.findIndex((t) => t.slug === a.area) - TAGS.findIndex((t) => t.slug === b.area));
+const items = [...challenges].sort((a, b) => topicOrder(a) - topicOrder(b));
 ---
 <Base title="Challenges" description="Problems that remain even when the recommendations are followed.">
   <h1>Challenges</h1>
   <p>Problems that remain even when the recommendations are followed.</p>
 
-  <TagFilter noun="challenges" />
+  <TopicFilter noun="challenges" />
 
   <div class="ruled">
     {items.map((c) => (
-      <Item id={c.id} title={c.title} tags={c.tags} level={2}>
+      <Item id={c.id} title={c.title} topics={c.topics} level={2}>
         <div class="rec-grid">
           <p>{c.summary}</p>
           <EvidenceList ids={c.evidence} />

@@ -51,5 +51,12 @@ const links = [
         </p>
       </div>
     </footer>
+    <script>
+      // The header wraps on narrow screens, so the filter bar sticks at the header's measured height.
+      const head = document.querySelector<HTMLElement>('.site-head')!;
+      const sync = () => document.documentElement.style.setProperty('--head-h', `${head.offsetHeight}px`);
+      new ResizeObserver(sync).observe(head);
+      sync();
+    </script>
   </body>
 </html>
