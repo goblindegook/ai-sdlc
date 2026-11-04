@@ -32,7 +32,7 @@ def main():
             if anchor not in ids[target]:
                 fails.append(f"{k}: broken link to /{target}/#{anchor}")
         if k != "evidence":
-            ext = [u for u in re.findall(r'href="(https?://[^"]+)"', h) if "fonts.g" not in u]
+            ext = re.findall(r'<a\b[^>]*\bhref="(https?://[^"]+)"', h)  # links a reader follows, not <link> tags
             if ext:
                 fails.append(f"{k}: {len(ext)} external links (only Evidence may link out), e.g. {ext[0]}")
         text = visible(h)

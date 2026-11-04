@@ -1,6 +1,18 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import { AstroPWAIntegration as AstroPWA } from '@vite-pwa/astro';
+import { readFileSync, readdirSync } from 'node:fs';
+
+// Sitemap lastmod: when any content item last changed, the same date as the footer's "Updated".
+const content = new URL('./content/', import.meta.url);
+const lastmod = new Date(
+  readdirSync(content)
+    .flatMap((f) => [JSON.parse(readFileSync(new URL(f, content), 'utf8'))].flat())
+    .map((x) => x.updated)
+    .filter(Boolean)
+    .sort()
+    .at(-1),
+);
 
 // Served from GitHub Pages as a project site: https://goblindegook.github.io/ai-sdlc/
 export default defineConfig({
@@ -8,7 +20,7 @@ export default defineConfig({
   base: '/ai-sdlc',
   trailingSlash: 'always',
   integrations: [
-    sitemap(),
+    sitemap({ lastmod }),
     AstroPWA({
       registerType: 'autoUpdate',
       manifest: false,

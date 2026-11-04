@@ -6,6 +6,9 @@ interface Props { title: string; description?: string }
 const { title, description = 'Evidence-linked practices for building software with AI coding agents.' } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const path = Astro.url.pathname.replace(base, '').replace(/\/$/, '') || '/';
+const site = 'AI-Augmented Software Development';
+const fullTitle = title === 'Overview' ? site : `${title} · ${site}`;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const links = [
   ['/', 'Overview'],
   ['/recommendations', 'Recommendations'],
@@ -19,8 +22,16 @@ const links = [
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title === 'Overview' ? 'AI-Augmented Software Development' : `${title} · AI-Augmented Software Development`}</title>
+    <title>{fullTitle}</title>
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={site} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content="en" />
+    <meta name="twitter:card" content="summary" />
     <link rel="sitemap" href={`${base}/sitemap-index.xml`} />
     {import.meta.env.PROD && <script is:inline src={`${base}/registerSW.js`}></script>}
     {import.meta.env.PROD && (
