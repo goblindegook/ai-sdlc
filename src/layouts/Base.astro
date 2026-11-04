@@ -23,6 +23,15 @@ const links = [
     <meta name="description" content={description} />
     <link rel="sitemap" href={`${base}/sitemap-index.xml`} />
     {import.meta.env.PROD && <script is:inline src={`${base}/registerSW.js`}></script>}
+    {import.meta.env.PROD && (
+      <script is:inline>
+        // Pages are served from the precache, so a deploy shows only once the new service worker has cached it and
+        // taken over. Reload then. Skipped on a first visit (no worker yet), where the page is already fresh.
+        if (navigator.serviceWorker?.controller) {
+          navigator.serviceWorker.addEventListener('controllerchange', () => location.reload(), { once: true });
+        }
+      </script>
+    )}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
