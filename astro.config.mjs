@@ -15,6 +15,7 @@ export default defineConfig({
       generateSW: {
         navigateFallback: null, // every page is precached
         globPatterns: ['**/*.{html,css,js,svg,png,ico,woff2,json}'],
+        globIgnores: ['google*.html'],
         runtimeCaching: [
           { urlPattern: /^https:\/\/fonts\.googleapis\.com\//, handler: 'StaleWhileRevalidate', options: { cacheName: 'google-fonts-css' } },
           { urlPattern: /^https:\/\/fonts\.gstatic\.com\//, handler: 'CacheFirst', options: { cacheName: 'google-fonts-files', expiration: { maxEntries: 30 }, cacheableResponse: { statuses: [0, 200] } } },
