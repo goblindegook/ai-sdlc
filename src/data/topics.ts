@@ -1,4 +1,4 @@
-// The eight practice topics, in site order. Defined in content/topics.json.
+// The nine practice topics, in site order. Defined in content/topics.json.
 import topics from '../../content/topics.json';
 
 export const TOPICS = topics as { slug: string; label: string; blurb: string; why: string[] }[];

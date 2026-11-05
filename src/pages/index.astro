@@ -47,7 +47,7 @@ const rec = (id: string) => `${base}/${recPage(recById.get(id)!)}/#${id}`;
           </div>
           <div class="radar-cell cell-adopt">
             <span class="cell-label"><strong class="ring ring-adopt">Adopt</strong> {rule('adopt')}</span>
-            {r.adopt.length ? <ul>{r.adopt.map((x) => <li><a href={rec(x.id)}>{x.title}</a></li>)}</ul> : <p class="meta">Nothing measured yet.</p>}
+            {r.adopt.length ? <ul>{r.adopt.map((x) => <li><a href={rec(x.id)}>{x.title}</a></li>)}</ul> : <p class="meta">None found.</p>}
           </div>
           <div class="radar-cell cell-avoid">
             <span class="cell-label"><strong class="ring ring-avoid">Avoid</strong> {rule('avoid')}</span>

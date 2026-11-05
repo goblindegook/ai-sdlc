@@ -3,8 +3,8 @@ name: ai-sdlc-site-update
 description: >-
   Update the AI-Augmented Software Development site (the Astro site in the repository that holds this skill) with AI
   software development material ingested into the Obsidian wiki since the site's last update: new source notes,
-  concept pages and syntheses about coding agents, prompting, agent loops, testing, review, security, measuring,
-  learning and XP practice. Finds what changed, drafts practical recommendations, trials, challenges and
+  concept pages and syntheses about coding agents, specifications and prompting, agent loops, testing, review, security, measuring,
+  learning, delivery and teamwork practice. Finds what changed, drafts practical recommendations, trials, challenges and
   evidence in the site's style, gets the owner's approval, edits the site's content files, then builds and checks it. Use
   this whenever the owner asks to update, refresh or sync the AI dev site, the aisd site or the best-practices
   site from the wiki, to "pull in the latest ingests", or asks what new wiki research should go on the site, even
@@ -45,9 +45,9 @@ follow from one of the ingests, so group your reading by ingest. Skip `synthesis
 Practices.md` (it mirrors the doc the site was first built from, so its changes come from ingests you will see
 directly) and `Learnings Review` pages (they are about the vault, not the topic).
 
-Keep only notes about AI-assisted software development: prompting and context files, agent loops, testing and
+Keep only notes about AI-assisted software development: specifications, prompting and context files, agent loops, testing and
 TDD, code review, LLM and agent security, cost of coding agents, shared agent memory, measuring productivity and
-benchmark validity, learning and understanding, XP and Agile practice with agents. The hint column is loose (the
+benchmark validity, learning and understanding, delivery practice with agents, teamwork around agents (pairing, mobbing, handoffs, juniors). The hint column is loose (the
 wiki tags most notes "ai"), so decide by reading each candidate's summary, then the full note for the ones that
 qualify. Prefer the source note for what was found; concept and synthesis notes help you see how it connects
 and whether the vault found conflicts. A source the site already cites (its URL is on the Evidence page) only
@@ -96,7 +96,7 @@ The owner has been specific about how the site reads. These come from their corr
   those belong in the evidence `finding`. A number is fine when it is a threshold a team applies ("about 3
   attempts").
 - **Where cost goes.** The cost of running agents in a loop belongs in Looping; cost per outcome, spend policy and
-  budgets in Measuring; cost overruns as a risk in Risks and security. Add the other topics it touches.
+  budgets in Measuring; cost overruns as a risk in Security. Add the other topics it touches.
 - **Signals are team metrics.** Each "Watch for" signal is something a team can count or look at in its own repo,
   CI, PRs, tickets, incidents, agent logs or spend, without running a study. "Points gained per loop with and
   without tests" is the kind of signal the owner rejected; "Tasks the agent called done that fail CI on first
@@ -151,6 +151,7 @@ under the right ring and topic with its evidence linked.
 ### 6. Record and report
 
 - The `updated` times you set are the record: the footer date and the next run's starting point both come from
-  them, so there is nothing else to update.
+  them, so there is nothing else to update. Reorganising topics (renames, reassignments) is not an update: leave
+  those items' `updated` alone.
 - Tell the owner in a few lines: what was added or extended per topic, ring changes they approved, anything left
   out and why, gaps noticed. Nothing is committed unless they ask.

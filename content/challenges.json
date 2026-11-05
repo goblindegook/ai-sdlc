@@ -29,7 +29,7 @@
     "id": "every-line-in-the-context-file-costs-money",
     "title": "Every line in the context file costs money",
     "topics": [
-      "prompting"
+      "specification"
     ],
     "summary": "Agents do follow context-file instructions, which means each mention of a tool or step gets acted on, every task. Extra instructions raise spend even when they don't help, and whether context files help at all is disputed: one source finds time saved, another no gain in success.",
     "evidence": [
@@ -42,7 +42,7 @@
     "id": "agents-act-on-outdated-facts",
     "title": "Agents act on outdated facts",
     "topics": [
-      "prompting",
+      "specification",
       "understanding"
     ],
     "summary": "When a fact changes, agents often keep using the old version from memory or context files. Updated decisions need to replace, not sit beside, the old ones. Building the update into every task may keep notes current, but even its advocates still trim them by hand.",
@@ -56,7 +56,7 @@
     "id": "agreeable-answers-mislead-without-being-wrong",
     "title": "Agreeable answers mislead without being wrong",
     "topics": [
-      "prompting"
+      "specification"
     ],
     "summary": "Assistants tend to agree with the person asking and pick facts that support them. Each statement can be true while the overall picture is skewed, and people rate these answers as more objective.",
     "evidence": [
@@ -68,7 +68,8 @@
     "id": "review-load-lands-on-senior-engineers",
     "title": "Review load lands on senior engineers",
     "topics": [
-      "reviewing"
+      "reviewing",
+      "teamwork"
     ],
     "summary": "PR volume has grown several times over while reviewer numbers haven't, so the extra review falls on the few people trusted to approve. Some teams move trust into tests and production checks and auto-merge part of their changes instead; whether that holds up isn't known yet.",
     "evidence": [
@@ -96,7 +97,7 @@
     "id": "nobody-knows-how-often-agents-leak-secrets",
     "title": "Nobody knows how often agents leak secrets",
     "topics": [
-      "risks-security"
+      "security"
     ],
     "summary": "The risk of agents exposing credentials is clear from how they work, but there are no measured leak rates. Plan for it as you would any likely risk: keep secrets out of reach. (OWASP LLM02, LLM07)",
     "evidence": [
@@ -109,7 +110,7 @@
     "id": "prompt-injection-has-no-proven-fix",
     "title": "Prompt injection has no proven fix",
     "topics": [
-      "risks-security",
+      "security",
       "reviewing"
     ],
     "summary": "The one architecture shown to block most injection attacks has only been tested by its own authors, who say the problem isn't solved, and a guardrail that stops most attacks still fails by security standards. Limit what an agent can do rather than hoping it can't be tricked; whether an agent should ever approve its own change is still open. (OWASP LLM01)",
@@ -150,6 +151,7 @@
     "id": "juniors-ask-the-model-instead-of-colleagues",
     "title": "Juniors ask the model instead of colleagues",
     "topics": [
+      "teamwork",
       "understanding"
     ],
     "summary": "Most of a junior engineer's questions now go to an assistant rather than a teammate, and entry-level hiring is shrinking. The quick answer replaces the conversation where they would have learned how the team works, and nobody yet knows how juniors will grow into seniors.",
@@ -164,7 +166,7 @@
     "title": "Shared agent memory behaves like a shared database",
     "topics": [
       "understanding",
-      "risks-security"
+      "security"
     ],
     "summary": "Team context files, skills and memory stores can leak data, go stale, hide contradictions and lose track of who wrote what. Nobody has settled how conflicting writes should be handled.",
     "evidence": [
@@ -178,7 +180,7 @@
     "id": "pairing-with-ai-isnt-the-same-as-pairing-with-a-person",
     "title": "Pairing with AI isn't the same as pairing with a person",
     "topics": [
-      "xp-agile"
+      "teamwork"
     ],
     "summary": "Results on pairing with an assistant disagree, and some show lower quality than a human pair. It also skips the knowledge sharing that pairing exists for.",
     "evidence": [
@@ -195,7 +197,7 @@
     "title": "Test-first results may not hold on current models",
     "topics": [
       "testing",
-      "xp-agile"
+      "delivery"
     ],
     "summary": "The evidence that writing tests first helps agents comes from one language and from models that predate current ones, and nobody has re-checked it. Vague requirements, where test-first is said to help most as a way of thinking, haven't been tried with agents.",
     "evidence": [
@@ -222,7 +224,7 @@
     "title": "Strong engineering foundations may not protect you",
     "topics": [
       "measuring",
-      "xp-agile"
+      "delivery"
     ],
     "summary": "One industry survey says good practices partly shield teams from AI's downsides; telemetry across many companies finds no outcome protected. Don't assume a mature process makes agent adoption safe; watch your own delivery numbers.",
     "evidence": [
@@ -236,9 +238,9 @@
     "id": "nobody-knows-how-much-to-specify-up-front",
     "title": "Nobody knows how much to specify up front",
     "topics": [
-      "prompting",
+      "specification",
       "testing",
-      "xp-agile"
+      "delivery"
     ],
     "summary": "Giving agents more tests up front helped only to a point, and agents that designed before coding did better, so heavy spec-first work risks repeating waterfall. Others argue the spec is the lasting artifact and should be executable; the evidence doesn't settle it.",
     "evidence": [
@@ -256,7 +258,7 @@
     "id": "planning-and-execution-prompts-may-need-different-detail",
     "title": "Planning and execution prompts may need different detail",
     "topics": [
-      "prompting"
+      "specification"
     ],
     "summary": "One practitioner argues for goals-only planning prompts and fully detailed execution prompts. It is an opinion nobody has tested.",
     "evidence": [

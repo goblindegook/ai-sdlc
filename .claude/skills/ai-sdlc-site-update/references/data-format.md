@@ -9,7 +9,7 @@ all built from these files, so editing them is the whole job.
 | `content/recommendations.json` | Adopt, Avoid and Trial items (Trials show on their own page) |
 | `content/challenges.json` | Hard problems with no "stop doing this" answer, and open questions where sources disagree |
 | `content/evidence.json` | Every source the site cites, once each |
-| `content/topics.json` | The eight topics, in site order, with each topic's two "Why" lines on the overview |
+| `content/topics.json` | The nine topics, in site order, with each topic's two "Why" lines on the overview |
 
 ## Every item
 
@@ -17,11 +17,13 @@ all built from these files, so editing them is the whole job.
   links, so never change the id of an existing item; changing its title is fine. New ids must be unique across all
   files.
 - `topics`: every topic it bears on, at least one. The first is the one it sits under on the overview and in sort
-  order. Topic slugs, in site order: `prompting`, `looping`, `testing`, `risks-security`, `reviewing`,
-  `measuring`, `understanding`, `xp-agile`.
+  order. Topic slugs, in site order: `specification`, `looping`, `testing`, `security`, `reviewing`, `delivery`,
+  `measuring`, `understanding`, `teamwork`.
 - `updated`: UTC time of the last change to this item, ISO format (`2026-11-04T11:31:00Z`). Set it on every item
   you add or change, and leave it alone on items you don't touch. It records what changed when, the footer date is
-  the latest one, and the skill's next run starts from the latest one.
+  the latest one, and the skill's next run starts from the latest one. Only a change a reader would see in the
+  item's own text, ring, evidence or signals counts. Renaming, reordering or reassigning topics does not: leave
+  `updated` alone, or the next run starts later than the last real update and skips wiki notes ingested in between.
 - `evidence`: ids from `content/evidence.json`. The build fails if one doesn't exist.
 
 ## recommendations.json
@@ -31,7 +33,7 @@ all built from these files, so editing them is the whole job.
   "id": "short-imperative-title",
   "title": "Short imperative title",
   "ring": "trial",
-  "topics": ["testing", "xp-agile"],
+  "topics": ["testing", "delivery"],
   "summary": "What to do in your own team, then why in one plain sentence. No study names or figures.",
   "signals": ["Something the team can count in its repo, CI, PRs or spend", "Another one"],
   "evidence": ["author-venue-year"],

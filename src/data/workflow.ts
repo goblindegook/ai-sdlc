@@ -6,9 +6,9 @@ export interface Step {
 }
 
 export const STEPS: Step[] = [
-  { name: 'Plan', l1: 'human intent,', l2: 'a checkable goal', topic: 'prompting' },
+  { name: 'Plan', l1: 'human intent,', l2: 'a checkable goal', topic: 'specification' },
   { name: 'Tests', l1: 'human-owned,', l2: 'they are the spec', topic: 'testing' },
   { name: 'Agent loop', l1: 'small steps,', l2: 'capped retries', topic: 'looping', agent: true },
   { name: 'Review', l1: 'an accountable', l2: 'human owner', topic: 'reviewing' },
-  { name: 'Ship', l1: 'small batches,', l2: 'rollback ready', topic: 'xp-agile' },
+  { name: 'Ship', l1: 'small batches,', l2: 'rollback ready', topic: 'delivery' },
 ];

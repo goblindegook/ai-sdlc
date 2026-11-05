@@ -1,7 +1,7 @@
 [
   {
-    "slug": "prompting",
-    "label": "Prompting",
+    "slug": "specification",
+    "label": "Specification",
     "blurb": "Context files, lean context, tests as the spec",
     "why": [
       "Tests written by people make agent code correct more often.",
@@ -27,8 +27,8 @@
     ]
   },
   {
-    "slug": "risks-security",
-    "label": "Risks and security",
+    "slug": "security",
+    "label": "Security",
     "blurb": "Security and other risks, mapped to the OWASP LLM Top 10",
     "why": [
       "An agent with private data, untrusted input and a way to send data out gets exploited.",
@@ -42,6 +42,15 @@
     "why": [
       "Agents produce changes faster than teams can review and release them.",
       "Review time and incidents rise as AI use grows."
+    ]
+  },
+  {
+    "slug": "delivery",
+    "label": "Delivery",
+    "blurb": "Small batches, refactoring, staged rollout, and keeping users in view",
+    "why": [
+      "Small batches help, and delivery gets less stable as AI use grows.",
+      "AI produces more software, not more value."
     ]
   },
   {
@@ -63,12 +72,12 @@
     ]
   },
   {
-    "slug": "xp-agile",
-    "label": "XP and Agile",
-    "blurb": "Which XP practices to keep, adapt or trial",
+    "slug": "teamwork",
+    "label": "Teamwork",
+    "blurb": "Pairing, mobbing, handoffs, juniors and who carries the review load",
     "why": [
-      "Small batches help, and delivery gets less stable as AI use grows.",
-      "AI produces more software, not more value."
+      "Juniors ask the model instead of colleagues, so the know-how people pass on by working together thins out.",
+      "Review load lands on a few senior engineers as agent PRs multiply."
     ]
   }
 ]
