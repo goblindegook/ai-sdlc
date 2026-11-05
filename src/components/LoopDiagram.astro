@@ -1,6 +1,6 @@
 ---
 // Redrawn from the source doc's "how the practices fit together" figure. Colours follow the page tokens.
-import { STEPS } from '../data/workflow';
+import { STEPS, CROSS } from '../data/workflow';
 const W = 128, H = 72, y = 118;
 const steps = STEPS.map((s, i) => ({ ...s, x: 92 + 144 * i }));
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -8,9 +8,9 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const TW = 200, TH = 58, cx = 170, top = (i: number) => 16 + i * 88;
 ---
 <figure class="diagram">
-  <svg class="diagram-wide" viewBox="0 50 760 250" role="img" aria-labelledby="loop-title loop-desc" font-family="var(--text)" font-size="13">
+  <svg class="diagram-wide" viewBox="0 50 760 346" role="img" aria-labelledby="loop-title loop-desc" font-family="var(--text)" font-size="13">
     <title id="loop-title">Humans own intent and checks; agents loop inside the gates</title>
-    <desc id="loop-desc">Five steps left to right: Plan, Tests, Agent loop, Review, Ship. Only the agent loop is automated and repeats until a machine check passes. Production signals feed the next plan. Shared understanding sits underneath every step.</desc>
+    <desc id="loop-desc">Five steps left to right: Plan, Tests, Agent loop, Review, Ship. Only the agent loop is automated and repeats until a machine check passes. Production signals feed the next plan. Four concerns cut across every step: understanding, security, measuring and teamwork.</desc>
     <defs>
       <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M0 0L10 5L0 10z" fill="var(--muted)" />
@@ -32,13 +32,15 @@ const TW = 200, TH = 58, cx = 170, top = (i: number) => 16 + i * 88;
       </a>
     ))}
     <text x="380" y="198" text-anchor="middle" font-size="11.5" fill="var(--muted)">production signals and customer feedback shape the next plan</text>
-    <a href={`${base}/recommendations/?topic=understanding`}>
-      <rect x="28" y="228" width="704" height="50" rx="3" fill="var(--paper-2)" stroke="var(--rule)" />
-      <text class="step-name" x="380" y="250" text-anchor="middle" font-size="15" fill="var(--ink)">Shared understanding underneath every step</text>
-      <text x="380" y="268" text-anchor="middle" font-size="11.5" fill="var(--muted)">protect learning and hands-on practice</text>
-    </a>
+    {CROSS.map((c, i) => (
+      <a href={`${base}/recommendations/?topic=${c.topic}`}>
+        <rect x="28" y={228 + i * 40} width="704" height="34" rx="3" fill="var(--paper-2)" stroke="var(--rule)" />
+        <text class="step-name" x="48" y={250 + i * 40} font-size="15" fill="var(--ink)">{c.name}</text>
+        <text x="200" y={250 + i * 40} font-size="12.5" fill="var(--muted)">{c.desc}</text>
+      </a>
+    ))}
   </svg>
-  <svg class="diagram-tall" viewBox="0 0 340 516" role="img" aria-labelledby="loop-title-tall" font-family="var(--text)" font-size="13">
+  <svg class="diagram-tall" viewBox="0 0 340 690" role="img" aria-labelledby="loop-title-tall" font-family="var(--text)" font-size="13">
     <title id="loop-title-tall">Humans own intent and checks; agents loop inside the gates</title>
     <defs>
       <marker id="arr-tall" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
@@ -60,11 +62,13 @@ const TW = 200, TH = 58, cx = 170, top = (i: number) => 16 + i * 88;
         <text x={cx} y={top(i) + 41} text-anchor="middle" font-size="11.5" fill={s.agent ? 'var(--paper)' : 'var(--muted)'}>{s.l1} {s.l2}</text>
       </a>
     ))}
-    <a href={`${base}/recommendations/?topic=understanding`}>
-      <rect x="20" y="448" width="300" height="56" rx="3" fill="var(--paper-2)" stroke="var(--rule)" />
-      <text class="step-name" x={cx} y="472" text-anchor="middle" font-size="15" fill="var(--ink)">Shared understanding under every step</text>
-      <text x={cx} y="490" text-anchor="middle" font-size="11.5" fill="var(--muted)">protect learning and hands-on practice</text>
-    </a>
+    {CROSS.map((c, i) => (
+      <a href={`${base}/recommendations/?topic=${c.topic}`}>
+        <rect x="20" y={452 + i * 58} width="300" height="50" rx="3" fill="var(--paper-2)" stroke="var(--rule)" />
+        <text class="step-name" x={cx} y={474 + i * 58} text-anchor="middle" font-size="15" fill="var(--ink)">{c.name}</text>
+        <text x={cx} y={491 + i * 58} text-anchor="middle" font-size="11" fill="var(--muted)">{c.desc}</text>
+      </a>
+    ))}
   </svg>
   <figcaption>
     Only the agent loop (filled) runs without a person; every other step needs human judgement.

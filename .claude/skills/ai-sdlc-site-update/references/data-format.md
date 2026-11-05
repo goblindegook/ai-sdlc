@@ -17,7 +17,7 @@ all built from these files, so editing them is the whole job.
   links, so never change the id of an existing item; changing its title is fine. New ids must be unique across all
   files.
 - `topics`: every topic it bears on, at least one. The first is the one it sits under on the overview and in sort
-  order. Topic slugs, in site order: `specification`, `looping`, `testing`, `security`, `reviewing`, `delivery`,
+  order. Topic slugs, in site order: `specification`, `testing`, `looping`, `reviewing`, `delivery`, `security`,
   `measuring`, `understanding`, `teamwork`.
 - `updated`: UTC time of the last change to this item, ISO format (`2026-11-04T11:31:00Z`). Set it on every item
   you add or change, and leave it alone on items you don't touch. It records what changed when, the footer date is

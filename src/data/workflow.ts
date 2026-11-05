@@ -12,3 +12,11 @@ export const STEPS: Step[] = [
   { name: 'Review', l1: 'an accountable', l2: 'human owner', topic: 'reviewing' },
   { name: 'Ship', l1: 'small batches,', l2: 'rollback ready', topic: 'delivery' },
 ];
+
+// Concerns that span the whole flow, drawn as full-width bars stacked under the five steps.
+export const CROSS: { name: string; desc: string; topic: string }[] = [
+  { name: 'Security', desc: 'treat input as untrusted, grant least privilege', topic: 'security' },
+  { name: 'Measuring', desc: 'judge outcomes, not activity counts', topic: 'measuring' },
+  { name: 'Understanding', desc: 'protect learning and hands-on practice', topic: 'understanding' },
+  { name: 'Teamwork', desc: 'pair, hand off and share the review load', topic: 'teamwork' },
+];

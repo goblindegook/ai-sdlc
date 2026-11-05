@@ -9,15 +9,6 @@
     ]
   },
   {
-    "slug": "looping",
-    "label": "Looping",
-    "blurb": "Capped retries, small context, when a green loop isn't done",
-    "why": [
-      "Passing tests don't make an agent's change ready to merge.",
-      "Long-running agent loops break work that was already finished."
-    ]
-  },
-  {
     "slug": "testing",
     "label": "Testing",
     "blurb": "Whether test-first still holds, for humans and agents",
@@ -27,12 +18,12 @@
     ]
   },
   {
-    "slug": "security",
-    "label": "Security",
-    "blurb": "Security and other risks, mapped to the OWASP LLM Top 10",
+    "slug": "looping",
+    "label": "Looping",
+    "blurb": "Capped retries, small context, when a green loop isn't done",
     "why": [
-      "An agent with private data, untrusted input and a way to send data out gets exploited.",
-      "People using AI write less secure code and trust it more."
+      "Passing tests don't make an agent's change ready to merge.",
+      "Long-running agent loops break work that was already finished."
     ]
   },
   {
@@ -51,6 +42,15 @@
     "why": [
       "Small batches help, and delivery gets less stable as AI use grows.",
       "AI produces more software, not more value."
+    ]
+  },
+  {
+    "slug": "security",
+    "label": "Security",
+    "blurb": "Security and other risks, mapped to the OWASP LLM Top 10",
+    "why": [
+      "An agent with private data, untrusted input and a way to send data out gets exploited.",
+      "People using AI write less secure code and trust it more."
     ]
   },
   {
