@@ -182,15 +182,16 @@
     "topics": [
       "teamwork"
     ],
-    "summary": "Results on pairing with an assistant disagree, and some show lower quality than a human pair. It also skips the knowledge sharing that pairing exists for.",
+    "summary": "Results on pairing with an assistant disagree, and some show lower quality than a human pair. It also skips the knowledge sharing that pairing exists for. With a human partner, more knowledge changes hands and more of it is questioned; alone with an assistant, more is accepted on trust.",
     "evidence": [
       "fan-et-al",
       "lyu-et-al-preprint",
       "imai-icse-2022-poster",
       "smith-asee-2026",
-      "bache-agentic-ai-breaks-mob-programming"
+      "bache-agentic-ai-breaks-mob-programming",
+      "welter-et-al-ase-2025"
     ],
-    "updated": "2026-11-04T14:31:00Z"
+    "updated": "2026-11-06T15:45:00Z"
   },
   {
     "id": "test-first-results-may-not-hold-on-current-models",
@@ -201,9 +202,11 @@
     ],
     "summary": "The evidence that writing tests first helps agents comes from one language and from models that predate current ones, and nobody has re-checked it. Vague requirements, where test-first is said to help most as a way of thinking, haven't been tried with agents.",
     "evidence": [
-      "tdd-bench-verified-ibm"
+      "tdd-bench-verified-ibm",
+      "mock-russo-emse-2026",
+      "pancher-et-al-xp-2025"
     ],
-    "updated": "2026-11-04T15:43:00Z"
+    "updated": "2026-11-06T15:45:00Z"
   },
   {
     "id": "nobody-agrees-what-the-human-bottleneck-is-now",
@@ -302,5 +305,21 @@
       "goedecke"
     ],
     "updated": "2026-11-04T15:43:00Z"
+  },
+  {
+    "id": "no-automated-check-tells-you-an-assertion-is-right",
+    "title": "No automated check tells you an assertion is right",
+    "topics": [
+      "testing",
+      "measuring"
+    ],
+    "summary": "Coverage and mutation testing show whether code runs and whether a change would be noticed, but not whether the expected values are right, and model-written tests assert whatever the model expects the code to do. Some sources recommend mutation testing as a check on AI-written tests; another finds it barely tells good suites from bad ones on AI-written code.",
+    "evidence": [
+      "hamidi-et-al-arxiv-2026",
+      "haroon-et-al-arxiv-2026",
+      "bockeler-sensors-for-coding-agents",
+      "evil-martians-ten-anti-ai-slop-moves"
+    ],
+    "updated": "2026-11-06T15:45:00Z"
   }
 ]

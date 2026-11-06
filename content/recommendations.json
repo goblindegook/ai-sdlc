@@ -15,9 +15,10 @@
     ],
     "evidence": [
       "mathews-nagappan-ase-2024",
-      "swe-agent-neurips-2024"
+      "swe-agent-neurips-2024",
+      "pancher-et-al-xp-2025"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-06T15:45:00Z"
   },
   {
     "id": "loop-only-against-a-check-the-machine-runs",
@@ -95,9 +96,11 @@
       "dora-2025",
       "swe-ci",
       "circleci-28-million-workflows",
-      "faros-22k-devs"
+      "faros-22k-devs",
+      "robbes-et-al-tosem-2026",
+      "milanese-et-al-arxiv-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-06T15:45:00Z"
   },
   {
     "id": "sandbox-anything-unattended",
@@ -638,9 +641,11 @@
       "Incidents on the feature that neither review nor evals caught"
     ],
     "evidence": [
-      "raicea-posthog"
+      "raicea-posthog",
+      "newton-king-opentelemetry-2026",
+      "liu-solomon-opentelemetry-2025"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-06T15:45:00Z"
   },
   {
     "id": "test-whether-a-hidden-test-set-changes-agent-behaviour",
@@ -2320,9 +2325,11 @@
       "tdd-bench-verified-ibm",
       "shinn-et-al-reflexion",
       "verina-iclr-2026",
-      "metr-research-update-2025-08"
+      "metr-research-update-2025-08",
+      "hamidi-et-al-arxiv-2026",
+      "haroon-et-al-arxiv-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-06T15:45:00Z"
   },
   {
     "id": "work-in-short-steady-test-and-code-cycles",
@@ -2339,9 +2346,10 @@
       "Tasks where spec tests arrived only after the agent wrote code"
     ],
     "evidence": [
-      "fucci-et-al-ieee-tse-2017"
+      "fucci-et-al-ieee-tse-2017",
+      "pancher-et-al-xp-2025"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-06T15:45:00Z"
   },
   {
     "id": "give-the-model-few-distinct-tests",
@@ -2378,9 +2386,10 @@
     ],
     "evidence": [
       "tdd-bench-verified-ibm",
-      "mathews-nagappan-ase-2024"
+      "mathews-nagappan-ase-2024",
+      "hamidi-et-al-arxiv-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-06T15:45:00Z"
   },
   {
     "id": "dont-treat-passing-tests-as-mergeable",
@@ -2636,15 +2645,16 @@
     "topics": [
       "testing"
     ],
-    "summary": "On one feature, have a human write test intent, the agent expand it into tests, a human write the production code and the agent only refactor after. When AI writes both tests and code, each just confirms the other.",
+    "summary": "On one feature, have a human write test intent, the agent expand it into tests, a human write the production code and the agent only refactor after. When AI writes both tests and code, each just confirms the other. People writing the tests and a model writing the code has also turned out no more correct than people working alone, so check the split earns its cost.",
     "signals": [
       "Escaped defects on the split feature vs comparable AI-writes-both features",
       "Time to merge, split flow vs normal flow"
     ],
     "evidence": [
-      "ai-made-tools-tdd-with-ai"
+      "ai-made-tools-tdd-with-ai",
+      "mock-russo-emse-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-06T15:45:00Z"
   },
   {
     "id": "attach-evidence-of-what-ran-to-green-results",
@@ -3369,9 +3379,10 @@
     "evidence": [
       "fan-et-al",
       "lyu-et-al-preprint",
-      "imai-icse-2022-poster"
+      "imai-icse-2022-poster",
+      "welter-et-al-ase-2025"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-06T15:45:00Z"
   },
   {
     "id": "lead-ai-rollout-with-enthusiasts-and-a-few-principles",
@@ -3559,9 +3570,11 @@
     "evidence": [
       "bache-the-last-year-changed-everything-about-tdd",
       "boeckeler-tdd-comparisons-repository",
-      "bache-it-doesnt-help-to-push-ai-into-a-crappy-process"
+      "bache-it-doesnt-help-to-push-ai-into-a-crappy-process",
+      "tufano-et-al-specops-2026",
+      "shi-kristensson-tochi-2026"
     ],
-    "updated": "2026-11-04T14:31:00Z"
+    "updated": "2026-11-06T15:45:00Z"
   },
   {
     "id": "write-prompts-silently-together-before-a-mob-sends-them",
@@ -3619,5 +3632,134 @@
       "abitbol-revolut-ai-engineer-nyc-2026"
     ],
     "updated": "2026-11-04T14:31:00Z"
+  },
+  {
+    "id": "have-the-agent-write-the-contract-before-the-tests",
+    "title": "Have the agent write the contract before the tests",
+    "ring": "trial",
+    "topics": [
+      "testing",
+      "specification"
+    ],
+    "summary": "Before an agent writes tests, have it list each function's preconditions, results and errors, mark which ones existing tests cover, then write tests for the gaps. Tests written this way catch more real bugs, and the misses sit where the list left something out.",
+    "signals": [
+      "Bugs found after merge in behaviour the list never named",
+      "List items with no test that checks them",
+      "Tokens per task with and without the list step"
+    ],
+    "evidence": [
+      "tufano-et-al-specops-2026"
+    ],
+    "updated": "2026-11-06T15:45:00Z"
+  },
+  {
+    "id": "ask-agents-to-update-affected-tests-not-only-add-new-ones",
+    "title": "Ask agents to update affected tests, not only add new ones",
+    "ring": "trial",
+    "topics": [
+      "testing",
+      "delivery"
+    ],
+    "summary": "When an agent changes behaviour, have it find and update the tests that cover it before it adds new ones. Agents tend to add tests and leave existing ones alone, so the maintenance falls to people.",
+    "signals": [
+      "Agent PRs that change covered code without touching its tests",
+      "Tests skipped or deleted later because they went stale after agent changes"
+    ],
+    "evidence": [
+      "milanese-et-al-arxiv-2026"
+    ],
+    "updated": "2026-11-06T15:45:00Z"
+  },
+  {
+    "id": "state-when-to-mock-in-the-agents-context-file",
+    "title": "State when to mock in the agent's context file",
+    "ring": "trial",
+    "topics": [
+      "testing",
+      "specification"
+    ],
+    "summary": "Write down what may be mocked and what must stay real, and check whether agent tests follow it. Evidence disagrees on whether agents mock more than people, and nobody has checked that such guidance works.",
+    "signals": [
+      "Mocks added per test PR, agent versus human, in your repo",
+      "Agent tests that mock something the file says to use for real"
+    ],
+    "evidence": [
+      "hora-robbes-msr-2026",
+      "milanese-et-al-arxiv-2026"
+    ],
+    "updated": "2026-11-06T15:45:00Z"
+  },
+  {
+    "id": "keep-a-prompt-regression-suite-for-llm-features",
+    "title": "Keep a prompt regression suite for LLM features",
+    "ring": "trial",
+    "topics": [
+      "testing",
+      "measuring"
+    ],
+    "summary": "Keep a set of fixed prompts with the answers you expect and rerun it on every model or prompt change. Teams building on LLMs test their tools and plumbing but almost never the prompts, so a model update can change behaviour silently.",
+    "signals": [
+      "Prompts in the product with no test that runs them",
+      "Behaviour changes users report after a model update"
+    ],
+    "evidence": [
+      "hasan-et-al-arxiv-2025"
+    ],
+    "updated": "2026-11-06T15:45:00Z"
+  },
+  {
+    "id": "ask-the-ai-for-one-new-test-idea-at-a-time",
+    "title": "Ask the AI for one new test idea at a time",
+    "ring": "trial",
+    "topics": [
+      "testing",
+      "understanding"
+    ],
+    "summary": "Have the assistant propose one test case at a time that differs from those you have, and accept or reject each, instead of asking for a list. People tend to take the first batch they get and stop looking.",
+    "signals": [
+      "Edge cases added in review that the AI's suggestions missed",
+      "Bugs found after merge in behaviour no test covered"
+    ],
+    "evidence": [
+      "shi-kristensson-tochi-2026",
+      "ardic-et-al-emse-2026"
+    ],
+    "updated": "2026-11-06T15:45:00Z"
+  },
+  {
+    "id": "compare-agent-and-human-work-inside-each-repository",
+    "title": "Compare agent and human work inside each repository",
+    "ring": "trial",
+    "topics": [
+      "measuring"
+    ],
+    "summary": "When you compare AI-assisted and human changes, compare them repo by repo, not pooled across the organisation. Which projects use agents can hide or reverse the real difference.",
+    "signals": [
+      "Agent-versus-human metrics reported only org-wide",
+      "Repos where the gap points the other way from the org-wide figure"
+    ],
+    "evidence": [
+      "milanese-et-al-arxiv-2026"
+    ],
+    "updated": "2026-11-06T15:45:00Z"
+  },
+  {
+    "id": "export-agent-telemetry-to-your-own-tracing-backend",
+    "title": "Export agent telemetry to your own tracing backend",
+    "ring": "trial",
+    "topics": [
+      "measuring",
+      "looping"
+    ],
+    "summary": "Turn on OpenTelemetry export in your coding assistants and LLM features so token use, latency and tool calls land in the tools you already use. Keep prompt content capture off unless you need it.",
+    "signals": [
+      "Agent sessions with token and tool-call traces recorded",
+      "Spend per merged change from traces versus from invoices"
+    ],
+    "evidence": [
+      "newton-king-opentelemetry-2026",
+      "liu-solomon-opentelemetry-2025"
+    ],
+    "updated": "2026-11-06T15:45:00Z"
   }
 ]

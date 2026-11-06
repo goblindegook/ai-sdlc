@@ -2914,5 +2914,198 @@
       "specification"
     ],
     "updated": "2026-11-04T17:05:00Z"
+  },
+  {
+    "id": "tufano-et-al-specops-2026",
+    "title": "Tufano et al. (Google), SpecOps 2026",
+    "url": "https://arxiv.org/pdf/2608.17177",
+    "kind": "study",
+    "era": null,
+    "caveat": "workshop paper; one company, one model family",
+    "finding": "An agent that first wrote each unit's pre- and post-conditions caught 63.2% of 90 historical bugs within five runs against 53.4% for a plain test-writing agent (p=0.035, not significant at one or two runs), for 38% more tokens; most misses were conditions the spec left out.",
+    "topics": [
+      "testing",
+      "specification"
+    ],
+    "updated": "2026-11-06T15:45:00Z"
+  },
+  {
+    "id": "milanese-et-al-arxiv-2026",
+    "title": "Milanese et al., arXiv 2026",
+    "url": "https://arxiv.org/pdf/2610.35297",
+    "kind": "study",
+    "era": null,
+    "caveat": "preprint; Java only",
+    "finding": "Within the same 391 Java repositories, agent PRs changed tests more often than human PRs (55.0% vs 45.8%), added tests more and modified or deleted existing tests less; pooled across repositories the gap vanished or reversed, and added test methods looked alike, mocks included.",
+    "topics": [
+      "testing",
+      "measuring",
+      "delivery"
+    ],
+    "updated": "2026-11-06T15:45:00Z"
+  },
+  {
+    "id": "hora-robbes-msr-2026",
+    "title": "Hora & Robbes, MSR 2026",
+    "url": "https://arxiv.org/pdf/2602.00409",
+    "kind": "study",
+    "era": null,
+    "finding": "Across 2,168 repositories with agent configuration files, 36% of agent test commits added a mock against 26% of other test commits (small effect); many CLAUDE.md files mention tests but few say how to mock.",
+    "topics": [
+      "testing",
+      "specification"
+    ],
+    "updated": "2026-11-06T15:45:00Z"
+  },
+  {
+    "id": "hasan-et-al-arxiv-2025",
+    "title": "Hasan et al., arXiv 2025",
+    "url": "https://arxiv.org/pdf/2509.19185",
+    "kind": "study",
+    "era": null,
+    "caveat": "preprint; unit-test files only",
+    "finding": "In 39 open-source agent frameworks and 439 agent applications, tests target tools and workflows; the model gets under 5% of tests, prompts about 1%, and LLM-judge checks appear in about 1% of application tests.",
+    "topics": [
+      "testing",
+      "measuring"
+    ],
+    "updated": "2026-11-06T15:45:00Z"
+  },
+  {
+    "id": "shi-kristensson-tochi-2026",
+    "title": "Shi & Kristensson, ACM TOCHI 2026",
+    "url": "https://dl.acm.org/doi/10.1145/3817601",
+    "kind": "study",
+    "era": "older",
+    "caveat": "students, short lab tasks",
+    "finding": "Students brainstorming tests with a chatbot took the first 8-10 suggestions and stopped, with no gain over web search; a system that proposed one new test at a time from the editor's context, accepted or rejected each time, raised branch coverage of the combined human and AI tests by about a third.",
+    "topics": [
+      "testing",
+      "understanding"
+    ],
+    "updated": "2026-11-06T15:45:00Z"
+  },
+  {
+    "id": "ardic-et-al-emse-2026",
+    "title": "Ardic et al., Empirical Software Engineering 2026",
+    "url": "https://link.springer.com/article/10.1007/s10664-026-10898-0",
+    "kind": "study",
+    "era": "older",
+    "caveat": "12 students",
+    "finding": "Students writing unit tests with ChatGPT split the work by who supplies the test idea and who writes the code; heavy delegators used one-shot prompts and had to fix wrong expected values by hand, and students reported lower quality, trust and ownership of generated tests.",
+    "topics": [
+      "testing",
+      "understanding"
+    ],
+    "updated": "2026-11-06T15:45:00Z"
+  },
+  {
+    "id": "hamidi-et-al-arxiv-2026",
+    "title": "Hamidi et al., arXiv 2026",
+    "url": "https://arxiv.org/pdf/2609.09315",
+    "kind": "study",
+    "era": null,
+    "caveat": "preprint",
+    "finding": "LLM-written suites at full statement, branch or mutation adequacy triggered about a third of 6,066 hard bugs in LLM-written code but their assertions flagged only 1-2%; the three criteria barely differed, and assertions rewritten from the task description lifted detection by about 7 points.",
+    "topics": [
+      "testing",
+      "measuring"
+    ],
+    "updated": "2026-11-06T15:45:00Z"
+  },
+  {
+    "id": "haroon-et-al-arxiv-2026",
+    "title": "Haroon et al., arXiv 2026",
+    "url": "https://arxiv.org/pdf/2603.23443",
+    "kind": "study",
+    "era": null,
+    "caveat": "preprint; no control condition",
+    "finding": "After one-line behaviour changes to small programs, about 99% of regenerated tests that failed still asserted what the unchanged program did, and pass rates also fell after behaviour-preserving edits.",
+    "topics": [
+      "testing"
+    ],
+    "updated": "2026-11-06T15:45:00Z"
+  },
+  {
+    "id": "pancher-et-al-xp-2025",
+    "title": "Pancher et al., XP 2025",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-94544-1_10",
+    "kind": "study",
+    "era": "older",
+    "caveat": "students; same task done twice",
+    "finding": "Students' own TDD code passed every reference test in 15 of 35 submissions against 12 when redone with ChatGPT; small iterative prompts and fixing by hand when the model stalled went with success, pasting the whole spec and refusing to touch the model's code with failure.",
+    "topics": [
+      "testing",
+      "looping"
+    ],
+    "updated": "2026-11-06T15:45:00Z"
+  },
+  {
+    "id": "mock-russo-emse-2026",
+    "title": "Mock & Russo, Empirical Software Engineering 2026",
+    "url": "https://link.springer.com/article/10.1007/s10664-026-10950-z",
+    "kind": "study",
+    "era": "older",
+    "caveat": "16 participants; newer models only in the agent arm",
+    "finding": "With people writing tests and GPT-3.5 writing code, TDD code was no more correct than people working alone (60.8% vs 62.0% of baseline tests); an agent platform on newer models was most correct and fastest but added code no spec asked for, which tests covered less.",
+    "topics": [
+      "testing",
+      "delivery"
+    ],
+    "updated": "2026-11-06T15:45:00Z"
+  },
+  {
+    "id": "robbes-et-al-tosem-2026",
+    "title": "Robbes et al., ACM TOSEM 2026",
+    "url": "https://dl.acm.org/doi/10.1145/3822180",
+    "kind": "study",
+    "era": null,
+    "finding": "Coding-agent traces appeared in 22.20% (conservative) to 28.66% (high estimate) of 128,018 active GitHub repositories by February 2026; agent-assisted commits had a median of 31 added lines against 11 for human commits.",
+    "topics": [
+      "delivery",
+      "measuring"
+    ],
+    "updated": "2026-11-06T15:45:00Z"
+  },
+  {
+    "id": "newton-king-opentelemetry-2026",
+    "title": "Newton-King (Microsoft), Inside the LLM call, 2026",
+    "url": "https://opentelemetry.io/blog/2026/genai-observability/",
+    "kind": "practitioner",
+    "era": null,
+    "caveat": "tutorial from the standard's own project",
+    "finding": "Shows coding assistants exporting OpenTelemetry traces with model, token counts, latency and tool calls; prompt content is captured only when switched on.",
+    "topics": [
+      "measuring",
+      "looping"
+    ],
+    "updated": "2026-11-06T15:45:00Z"
+  },
+  {
+    "id": "liu-solomon-opentelemetry-2025",
+    "title": "Liu (IBM) & Solomon (Google), AI agent observability, 2025",
+    "url": "https://opentelemetry.io/blog/2025/ai-agent-observability/",
+    "kind": "practitioner",
+    "era": null,
+    "caveat": "standards roadmap",
+    "finding": "Describes OpenTelemetry's draft conventions for agent telemetry and argues traces should feed evaluation as well as monitoring.",
+    "topics": [
+      "measuring"
+    ],
+    "updated": "2026-11-06T15:45:00Z"
+  },
+  {
+    "id": "welter-et-al-ase-2025",
+    "title": "Welter et al., ASE 2025",
+    "url": "https://www.se.cs.uni-saarland.de/publications/docs/WSD+.pdf",
+    "kind": "study",
+    "era": "older",
+    "caveat": "19 students; completion-only assistant",
+    "finding": "Human pairs had about twice as many knowledge-transfer exchanges as people working alone with an assistant, over more topics; alone with the assistant, 28% of knowledge was accepted on trust against 12% in pairs.",
+    "topics": [
+      "teamwork",
+      "understanding"
+    ],
+    "updated": "2026-11-06T15:45:00Z"
   }
 ]
