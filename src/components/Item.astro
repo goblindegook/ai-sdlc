@@ -3,12 +3,14 @@
 // The title is a heading so screen readers can jump between items; `level` follows the page's outline.
 // Topics show as plain text in the folded title and move into the body, as links that filter, once it opens.
 import ItemTopics from './ItemTopics.astro';
-interface Props { id: string; title: string; topics: string[]; level?: 2 | 3 }
-const { id, title, topics, level = 3 } = Astro.props;
+// A recommendation passes its `ring`: the item gets that ring's colour rule, and the ring word is read out for
+// screen readers, so colour is never the only signal.
+interface Props { id: string; title: string; topics: string[]; level?: 2 | 3; ring?: 'adopt' | 'trial' | 'avoid' }
+const { id, title, topics, level = 3, ring } = Astro.props;
 const H = `h${level}`;
 ---
-<details id={id} data-item data-topics={topics.join(' ')} class="item fold">
-  <summary><H class="item-title">{title}</H> <ItemTopics topics={topics} inline links={false} /></summary>
+<details id={id} data-item data-topics={topics.join(' ')} data-ring={ring} class="item fold">
+  <summary><H class="item-title">{ring && <span class="visually-hidden">{ring}: </span>}{title}</H> <ItemTopics topics={topics} inline links={false} /></summary>
   <div class="item-body">
     <ItemTopics topics={topics} />
     <slot />

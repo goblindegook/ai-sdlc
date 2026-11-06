@@ -43,7 +43,7 @@
   },
   {
     "id": "dont-loop-on-self-critique-alone",
-    "title": "Loops driven by self-critique alone",
+    "title": "Don't loop on self-critique alone",
     "ring": "avoid",
     "topics": [
       "looping"
@@ -552,7 +552,7 @@
   },
   {
     "id": "dont-rank-people-by-ai-usage",
-    "title": "Ranking people by AI usage",
+    "title": "Don't rank people by AI usage",
     "ring": "avoid",
     "topics": [
       "measuring",
@@ -861,7 +861,7 @@
   },
   {
     "id": "dont-let-an-llm-generate-context-files",
-    "title": "LLM-generated context files",
+    "title": "Don't let an LLM generate your context files",
     "ring": "avoid",
     "topics": [
       "specification"
@@ -919,7 +919,7 @@
   },
   {
     "id": "dont-give-the-agent-tools-shaped-for-people",
-    "title": "Tools shaped for people, not agents",
+    "title": "Don't give agents tools shaped for people",
     "ring": "avoid",
     "topics": [
       "specification"
@@ -2013,7 +2013,7 @@
   },
   {
     "id": "dont-rely-on-delimiting-untrusted-content",
-    "title": "Delimiting untrusted content as the defence",
+    "title": "Don't rely on delimiting untrusted content as the defence",
     "ring": "avoid",
     "topics": [
       "security",
@@ -2033,7 +2033,7 @@
   },
   {
     "id": "dont-treat-a-stronger-model-as-a-security-control",
-    "title": "A stronger model as a security control",
+    "title": "Don't treat a stronger model as a security control",
     "ring": "avoid",
     "topics": [
       "security"
@@ -2372,7 +2372,7 @@
   },
   {
     "id": "dont-read-coverage-as-quality-for-ai-written-tests",
-    "title": "Reading coverage as quality for AI-written tests",
+    "title": "Don't read coverage as quality for AI-written tests",
     "ring": "avoid",
     "topics": [
       "testing",
@@ -2393,7 +2393,7 @@
   },
   {
     "id": "dont-treat-passing-tests-as-mergeable",
-    "title": "Treating a passing suite or a green loop as done",
+    "title": "Don't treat a passing suite or a green loop as done",
     "ring": "avoid",
     "topics": [
       "testing",
@@ -2765,7 +2765,7 @@
   },
   {
     "id": "dont-judge-learning-by-self-report",
-    "title": "Judging learning by self-report",
+    "title": "Don't judge learning by self-report",
     "ring": "avoid",
     "topics": [
       "understanding",
@@ -2784,7 +2784,7 @@
   },
   {
     "id": "dont-read-confidence-in-ai-assisted-code-as-security",
-    "title": "Reading confidence in AI-assisted code as security",
+    "title": "Don't read confidence in AI-assisted code as security",
     "ring": "avoid",
     "topics": [
       "understanding",
@@ -3405,7 +3405,7 @@
   },
   {
     "id": "routing-retry-loops-to-cheap-models-unchecked",
-    "title": "Routing retry loops to cheap models unchecked",
+    "title": "Don't route retry loops to cheap models unchecked",
     "ring": "avoid",
     "topics": [
       "looping"
@@ -3423,7 +3423,7 @@
   },
   {
     "id": "choosing-tools-by-public-leaderboard-rankings",
-    "title": "Choosing tools by public leaderboard rankings",
+    "title": "Don't choose tools by public leaderboard rankings",
     "ring": "avoid",
     "topics": [
       "measuring",
@@ -3442,7 +3442,7 @@
   },
   {
     "id": "trusting-an-ai-grader-you-havent-checked",
-    "title": "Trusting an AI grader you haven't checked",
+    "title": "Don't trust an AI grader you haven't checked",
     "ring": "avoid",
     "topics": [
       "measuring",
@@ -3462,7 +3462,7 @@
   },
   {
     "id": "deciding-on-vendor-reported-figures",
-    "title": "Deciding on vendor-reported figures",
+    "title": "Don't decide on vendor-reported figures",
     "ring": "avoid",
     "topics": [
       "measuring"
@@ -3481,7 +3481,7 @@
   },
   {
     "id": "letting-agents-commit-without-review",
-    "title": "Letting agents commit without review",
+    "title": "Don't let agents commit without review",
     "ring": "avoid",
     "topics": [
       "reviewing"
@@ -3499,7 +3499,7 @@
   },
   {
     "id": "installing-third-party-mcp-servers-unreviewed",
-    "title": "Installing third-party MCP servers unreviewed",
+    "title": "Don't install third-party MCP servers unreviewed",
     "ring": "avoid",
     "topics": [
       "security"
@@ -3516,7 +3516,7 @@
   },
   {
     "id": "accepting-new-dependencies-an-agent-adds-unchecked",
-    "title": "Accepting new dependencies an agent adds unchecked",
+    "title": "Don't accept new dependencies an agent adds unchecked",
     "ring": "avoid",
     "topics": [
       "security"
@@ -3535,7 +3535,7 @@
   },
   {
     "id": "leaving-structural-refactoring-to-agents",
-    "title": "Leaving structural refactoring to agents",
+    "title": "Don't leave structural refactoring to agents",
     "ring": "avoid",
     "topics": [
       "delivery"

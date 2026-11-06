@@ -6,7 +6,7 @@ import type { Rec } from '../data';
 interface Props { rec: Rec; level?: 2 | 3 }
 const { rec: r, level } = Astro.props;
 ---
-<Item id={r.id} title={r.title} topics={r.topics} level={level}>
+<Item id={r.id} title={r.title} topics={r.topics} level={level} ring={r.ring}>
   <div class="rec-grid">
     <div>
       <p>{r.summary}</p>
