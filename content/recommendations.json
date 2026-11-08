@@ -426,9 +426,10 @@
       "Time spent changing checks and guidance"
     ],
     "evidence": [
-      "morris-humans-and-agents"
+      "morris-humans-and-agents",
+      "laycock-thoughtworks-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-08T16:55:00Z"
   },
   {
     "id": "try-a-local-mid-size-model-on-small-pre-planned-tasks",
@@ -1076,9 +1077,10 @@
     ],
     "evidence": [
       "augmented-coding-patterns-catalog",
-      "margalit-et-al"
+      "margalit-et-al",
+      "anthropic-components-of-agent-memory-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-08T16:55:00Z"
   },
   {
     "id": "add-a-candour-ground-rule",
@@ -1620,9 +1622,10 @@
     ],
     "evidence": [
       "ewerlof",
-      "pinecoder"
+      "pinecoder",
+      "kunal-resisting-cognitive-surrender-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-08T16:55:00Z"
   },
   {
     "id": "give-reviewers-time-and-authority-to-reject",
@@ -3761,5 +3764,174 @@
       "liu-solomon-opentelemetry-2025"
     ],
     "updated": "2026-11-06T15:45:00Z"
+  },
+  {
+    "id": "check-memory-notes-against-session-logs",
+    "title": "Check memory notes against session logs",
+    "ring": "trial",
+    "topics": [
+      "specification",
+      "understanding"
+    ],
+    "summary": "Monthly, have an agent compare each memory note with the session logs it came from and propose corrections; a person approves them. Notes written mid-task can be wrong from the start, and agents then trust them.",
+    "signals": [
+      "Notes corrected per pass",
+      "Agent mistakes traced to a wrong note",
+      "Minutes a person spends approving corrections"
+    ],
+    "evidence": [
+      "anthropic-components-of-agent-memory-2026"
+    ],
+    "updated": "2026-11-08T16:55:00Z"
+  },
+  {
+    "id": "keep-search-beside-a-linked-knowledge-base",
+    "title": "Keep search beside a linked knowledge base",
+    "ring": "trial",
+    "topics": [
+      "specification"
+    ],
+    "summary": "If agents maintain a knowledge base of linked pages, keep search over the raw documents beside it. The knowledge base helps most on questions that span several documents, and it can grow larger than what it summarises.",
+    "signals": [
+      "Questions answered from the knowledge base versus from search",
+      "Knowledge base size against the size of its sources",
+      "Stale pages found per month"
+    ],
+    "evidence": [
+      "anthropic-components-of-agent-memory-2026"
+    ],
+    "updated": "2026-11-08T16:55:00Z"
+  },
+  {
+    "id": "give-each-agent-its-own-page-in-shared-notes",
+    "title": "Give each agent its own page in shared notes",
+    "ring": "trial",
+    "topics": [
+      "specification",
+      "looping"
+    ],
+    "summary": "When several agents write notes at once, give each its own page instead of one shared table. One writer per page kept facts that a shared page lost.",
+    "signals": [
+      "Facts lost after parallel runs, checked against a list",
+      "Merge conflicts on shared notes"
+    ],
+    "evidence": [
+      "anthropic-components-of-agent-memory-2026",
+      "edwards-alexander-accidental-blackboard-2026"
+    ],
+    "updated": "2026-11-08T16:55:00Z"
+  },
+  {
+    "id": "coordinate-parallel-agents-through-numbered-plans",
+    "title": "Coordinate parallel agents through numbered plans",
+    "ring": "trial",
+    "topics": [
+      "looping",
+      "teamwork"
+    ],
+    "summary": "Give parallel agents one spec with numbered sections and keep each agent's plan in the repo against those numbers, so others can see what is claimed and done. Keep plan updates off the main pipeline if they overload CI.",
+    "signals": [
+      "Colliding or duplicated work between agents",
+      "CI runs triggered by plan-only commits",
+      "Plan lines marked done but not merged"
+    ],
+    "evidence": [
+      "edwards-alexander-accidental-blackboard-2026"
+    ],
+    "updated": "2026-11-08T16:55:00Z"
+  },
+  {
+    "id": "show-the-agents-reasoning-beside-the-diff",
+    "title": "Show the agent's reasoning beside the diff",
+    "ring": "trial",
+    "topics": [
+      "reviewing",
+      "understanding"
+    ],
+    "summary": "For big agent changes, review a view with the diff, the agent's note on why it made each change, and a column for your own comments. Small stacked changes read faster than one large one.",
+    "signals": [
+      "Review comments asking why a change was made",
+      "Time to approve",
+      "Changes nobody could explain later"
+    ],
+    "evidence": [
+      "kunal-resisting-cognitive-surrender-2026"
+    ],
+    "updated": "2026-11-08T16:55:00Z"
+  },
+  {
+    "id": "count-repeated-blind-approvals-in-agent-sessions",
+    "title": "Count repeated blind approvals in agent sessions",
+    "ring": "trial",
+    "topics": [
+      "understanding",
+      "reviewing"
+    ],
+    "summary": "When you find yourself approving prompt after prompt, either hand the task over with a real check or stop and look at what the agent is deciding.",
+    "signals": [
+      "Sessions with long runs of approvals and no edit or question",
+      "Defects traced to such sessions"
+    ],
+    "evidence": [
+      "kunal-resisting-cognitive-surrender-2026"
+    ],
+    "updated": "2026-11-08T16:55:00Z"
+  },
+  {
+    "id": "ask-why-a-change-exists-before-judging-how",
+    "title": "Ask why a change exists before judging how",
+    "ring": "trial",
+    "topics": [
+      "reviewing",
+      "teamwork"
+    ],
+    "summary": "In review, first answer why the change exists and whether it is the approach the reviewer would take, at whatever size fits. Leave style and small mistakes to linters and tests.",
+    "signals": [
+      "PRs approved with no stated reason for the change",
+      "Reviews that only discuss style",
+      "Changes reverted as unwanted"
+    ],
+    "evidence": [
+      "griffith-code-review-2026"
+    ],
+    "updated": "2026-11-08T16:55:00Z"
+  },
+  {
+    "id": "count-how-long-main-stays-red-when-agents-push",
+    "title": "Count how long main stays red when agents push",
+    "ring": "trial",
+    "topics": [
+      "delivery",
+      "testing"
+    ],
+    "summary": "Track red time on the main branch. A build that is often red teaches people to ignore it, so a real failure gets lost and a green build stops reassuring.",
+    "signals": [
+      "Hours per week main is red",
+      "Red builds merged over",
+      "Red builds with no owner"
+    ],
+    "evidence": [
+      "laycock-thoughtworks-2026"
+    ],
+    "updated": "2026-11-08T16:55:00Z"
+  },
+  {
+    "id": "try-an-agent-built-fix-for-your-slowest-tool",
+    "title": "Try an agent-built fix for your slowest tool",
+    "ring": "trial",
+    "topics": [
+      "delivery",
+      "measuring"
+    ],
+    "summary": "Give an agent a day to build a faster or tailored replacement for the tool your team complains about most, tested against that tool's own tests. Keep it only if your numbers improve.",
+    "signals": [
+      "Build or test wall time before and after",
+      "Hours of agent and person time",
+      "Defects traced to the replacement"
+    ],
+    "evidence": [
+      "luu-more-ambitious-software-2026"
+    ],
+    "updated": "2026-11-08T16:55:00Z"
   }
 ]

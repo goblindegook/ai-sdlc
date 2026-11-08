@@ -42,7 +42,7 @@ python3 -I <skill>/scripts/wiki_changes.py --wiki <vault>   # or omit --wiki whe
 It starts from the site's last update, the latest `updated` time on any item in `<site>/content/`, and prints
 the ingest log lines since then, then every source, concept and synthesis note changed since then, with title, tags, summary and source URL. Most concept and synthesis changes
 follow from one of the ingests, so group your reading by ingest. Skip `synthesis/Research: AI-Assisted Software Development Best
-Practices.md` (it mirrors the doc the site was first built from, so its changes come from ingests you will see
+Practices.md` (it is the vault's own copy of this research, so its changes come from ingests you will see
 directly) and `Learnings Review` pages (they are about the vault, not the topic).
 
 Keep only notes about AI-assisted software development: specifications, prompting and context files, agent loops, testing and

@@ -3107,5 +3107,104 @@
       "understanding"
     ],
     "updated": "2026-11-06T15:45:00Z"
+  },
+  {
+    "id": "anthropic-components-of-agent-memory-2026",
+    "title": "Anthropic, The components of agent memory, 2026",
+    "url": "https://www.anthropic.com/research/components-of-agent-memory",
+    "kind": "vendor",
+    "era": null,
+    "caveat": "vendor's own product concept, single runs, small question sets",
+    "finding": "A second pass that checked memory notes against session logs corrected a wrong note and changed one run's outcome; a linked knowledge base beat search alone only when search was kept beside it (61% against 53% of graded criteria, on its own 48%), and one grew larger than its source documents; several agents writing one shared page lost 16 of 57 facts until each had its own page; telling models to record only failures cut their memory gains.",
+    "topics": [
+      "specification",
+      "understanding"
+    ],
+    "updated": "2026-11-08T16:55:00Z"
+  },
+  {
+    "id": "laycock-thoughtworks-2026",
+    "title": "Laycock (Thoughtworks), Why are good developers so wary of agentic development?, 2026",
+    "url": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
+    "kind": "practitioner",
+    "era": null,
+    "caveat": "one internal exercise, participants' own estimates",
+    "finding": "In a week where agents wrote all the code, participants estimated about two thirds of their time went on the whiteboard and one third on the harness, yet the build was often red; the author argues that built is not the same as working in production.",
+    "topics": [
+      "delivery",
+      "understanding",
+      "testing"
+    ],
+    "updated": "2026-11-08T16:55:00Z"
+  },
+  {
+    "id": "edwards-alexander-accidental-blackboard-2026",
+    "title": "Edwards-Alexander (Thoughtworks), An accidental blackboard, 2026",
+    "url": "https://martinfowler.com/articles/exploring-gen-ai/an-accidental-blackboard.html",
+    "kind": "practitioner",
+    "era": null,
+    "caveat": "one exercise, accidental and not reproduced",
+    "finding": "With agents sharing a numbered spec and keeping plans in the repo, they began using the plans to claim work and hand off notes; frequent pushes overloaded CI so the team backed off, and the author wants the channel kept outside source control.",
+    "topics": [
+      "looping",
+      "teamwork"
+    ],
+    "updated": "2026-11-08T16:55:00Z"
+  },
+  {
+    "id": "van-den-berg-mythical-man-month-2026",
+    "title": "van den Berg, The Mythical Man-Month in the age of AI, 2026",
+    "url": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
+    "kind": "essay",
+    "era": null,
+    "caveat": "short opinion post, no data",
+    "finding": "Argues Brooks's Law still holds with agents: sequential work stays sequential, the overhead moves to defining done and stitching work together, and more agents on unclear requirements give the wrong answer faster.",
+    "topics": [
+      "looping",
+      "teamwork"
+    ],
+    "updated": "2026-11-08T16:55:00Z"
+  },
+  {
+    "id": "luu-more-ambitious-software-2026",
+    "title": "Luu, We should be more ambitious with the software we build, 2026",
+    "url": "https://danluu.com/ambitious/",
+    "kind": "practitioner",
+    "era": null,
+    "caveat": "self-reported, low-review post",
+    "finding": "Reports building a tunable regex engine, a faster ripgrep fork and a Rust build speed-up in low single-digit hours each, and argues people skip such projects out of a pre-agent cost model; includes Kreinin's rebuttal that most people lack pass/fail checks and should aim smaller.",
+    "topics": [
+      "delivery",
+      "understanding"
+    ],
+    "updated": "2026-11-08T16:55:00Z"
+  },
+  {
+    "id": "kunal-resisting-cognitive-surrender-2026",
+    "title": "Kunal, Resisting cognitive surrender, 2026",
+    "url": "https://knlb.dev/essays/surrender",
+    "kind": "practitioner",
+    "era": null,
+    "caveat": "one practitioner's experience",
+    "finding": "Reports that relying on agents made his systems more complex and his understanding of them thinner, and sets a per-project limit on what to hand over, with held-out validation, observability, shadow traffic and fast reverts for work he does delegate.",
+    "topics": [
+      "understanding",
+      "reviewing"
+    ],
+    "updated": "2026-11-08T16:55:00Z"
+  },
+  {
+    "id": "griffith-code-review-2026",
+    "title": "Griffith, Do we need code review anymore in 2026?, 2026",
+    "url": "https://www.dylangriffith.net/post/code/do-we-need-code-review-2026/",
+    "kind": "essay",
+    "era": null,
+    "caveat": "opinion, no data",
+    "finding": "Argues review's lasting value is the shared question of why a change exists, with knowledge flowing both ways, and that the real debate is whether people still need teams.",
+    "topics": [
+      "reviewing",
+      "teamwork"
+    ],
+    "updated": "2026-11-08T16:55:00Z"
   }
 ]

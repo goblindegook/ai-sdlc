@@ -45,12 +45,13 @@
       "specification",
       "understanding"
     ],
-    "summary": "When a fact changes, agents often keep using the old version from memory or context files. Updated decisions need to replace, not sit beside, the old ones. Building the update into every task may keep notes current, but even its advocates still trim them by hand.",
+    "summary": "When a fact changes, agents often keep using the old version from memory or context files. Updated decisions need to replace, not sit beside, the old ones. Building the update into every task may keep notes current, but even its advocates still trim them by hand. A second pass that checks notes against session logs fixed a wrong note in one vendor test, but nobody has compared it with writing notes as you go.",
     "evidence": [
       "stale",
-      "liao-agents-dont-need-memory"
+      "liao-agents-dont-need-memory",
+      "anthropic-components-of-agent-memory-2026"
     ],
-    "updated": "2026-11-04T15:43:00Z"
+    "updated": "2026-11-08T16:55:00Z"
   },
   {
     "id": "agreeable-answers-mislead-without-being-wrong",
@@ -215,12 +216,15 @@
       "understanding",
       "reviewing"
     ],
-    "summary": "With agents writing the code, practitioners disagree on whether verification, judgement or understanding becomes the constraint. Each position rests on one person's experience or opinion.",
+    "summary": "With agents writing the code, practitioners disagree on whether verification, judgement, understanding or shared agreement on why a change exists becomes the constraint. Each position rests on one person's experience or opinion.",
     "evidence": [
       "fornasier-getting-out-of-the-loop",
-      "litt"
+      "litt",
+      "griffith-code-review-2026",
+      "kunal-resisting-cognitive-surrender-2026",
+      "laycock-thoughtworks-2026"
     ],
-    "updated": "2026-11-04T15:43:00Z"
+    "updated": "2026-11-08T16:55:00Z"
   },
   {
     "id": "strong-engineering-foundations-may-not-protect-you",
@@ -288,11 +292,13 @@
       "looping",
       "understanding"
     ],
-    "summary": "Adding agents may run into the same coordination cost as adding people to a late project (Brooks's Law). No controlled comparison exists yet.",
+    "summary": "Adding agents may run into the same coordination cost as adding people to a late project (Brooks's Law), and more agents on unclear requirements may only give the wrong answer faster. One team saw agents coordinate through shared plans, at the cost of CI load. No controlled comparison exists yet.",
     "evidence": [
-      "storey-cognitive-debt"
+      "storey-cognitive-debt",
+      "van-den-berg-mythical-man-month-2026",
+      "edwards-alexander-accidental-blackboard-2026"
     ],
-    "updated": "2026-11-04T15:43:00Z"
+    "updated": "2026-11-08T16:55:00Z"
   },
   {
     "id": "its-unclear-how-much-of-a-system-a-team-must-understand",
@@ -321,5 +327,32 @@
       "evil-martians-ten-anti-ai-slop-moves"
     ],
     "updated": "2026-11-06T15:45:00Z"
+  },
+  {
+    "id": "a-constantly-red-build-stops-meaning-anything",
+    "title": "A constantly red build stops meaning anything",
+    "topics": [
+      "delivery",
+      "testing"
+    ],
+    "summary": "When agents push often, the build can sit red; people stop reading it, so a real failure gets lost and a green build stops reassuring. Teams are also moving from stories to epics, and nobody has shown a pipeline that takes that batch size at speed.",
+    "evidence": [
+      "laycock-thoughtworks-2026"
+    ],
+    "updated": "2026-11-08T16:55:00Z"
+  },
+  {
+    "id": "nobody-agrees-how-ambitious-to-be-with-agent-built-software",
+    "title": "Nobody agrees how ambitious to be with agent-built software",
+    "topics": [
+      "delivery",
+      "understanding"
+    ],
+    "summary": "Some practitioners say agents make far larger builds worth attempting; others say most teams lack clear pass/fail checks and can't reason about large black boxes, so should aim smaller. Both say the checks decide. Neither side has numbers.",
+    "evidence": [
+      "luu-more-ambitious-software-2026",
+      "kunal-resisting-cognitive-surrender-2026"
+    ],
+    "updated": "2026-11-08T16:55:00Z"
   }
 ]
