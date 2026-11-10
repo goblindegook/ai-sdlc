@@ -145,8 +145,8 @@ Evidence page links out, that no page shows counts or mentions the wiki, and tha
 by something (delete an uncited entry from `evidence.json`). Fix what they report by rewording,
 not by loosening the checks.
 
-Look at one changed item in the browser (the dev server, `npx astro dev`, or the built page) to confirm it shows
-under the right ring and topic with its evidence linked.
+The build and the two checks are the verification. Don't start the dev server or open the site in a browser to
+check new content (the owner's rule); `check_site.py` already confirms the links both ways.
 
 ### 6. Record and report
 
