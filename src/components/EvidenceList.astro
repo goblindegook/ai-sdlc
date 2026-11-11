@@ -2,8 +2,10 @@
 // The one way the site cites sources: links to the source's entry on the Evidence page.
 // Only the Evidence page links out to the original.
 import { evidenceById } from '../data';
-interface Props { ids: string[] }
-const { ids } = Astro.props;
+// `level` is the sub-heading's level: one below the item title it sits in, so the outline never skips a level.
+interface Props { ids: string[]; level?: 3 | 4 }
+const { ids, level = 4 } = Astro.props;
+const H = `h${level}`;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const KIND: Record<string, string> = {
   rct: 'RCT', study: 'study', benchmark: 'benchmark', telemetry: 'telemetry', survey: 'survey',
@@ -11,7 +13,7 @@ const KIND: Record<string, string> = {
 };
 ---
 <div class="evidence-list">
-  <h4 class="sub">Evidence</h4>
+  <H class="sub">Evidence</H>
   {ids.length ? (
     <ul class="cites">
       {ids.map((id) => {
