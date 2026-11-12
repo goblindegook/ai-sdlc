@@ -3283,5 +3283,60 @@
       "security"
     ],
     "updated": "2026-11-12T00:54:00Z"
+  },
+  {
+    "id": "liu-et-al-aishelljack-2026",
+    "title": "Liu et al. (AIShellJack), arXiv 2026",
+    "url": "https://arxiv.org/abs/2509.22040",
+    "kind": "study",
+    "era": null,
+    "caveat": "preprint, auto-run assumed, May 2025 tool versions, one run per test",
+    "finding": "A poisoned coding rule file made Cursor and GitHub Copilot with auto-run execute attacker-intended commands in up to 84% of cases (41% to 83% by editor and model on one scenario); how the developer worded the task made little difference, while how the payload was framed decided success.",
+    "topics": [
+      "security",
+      "specification"
+    ],
+    "updated": "2026-11-12T01:31:00Z"
+  },
+  {
+    "id": "zhu-et-al-emnlp-2026",
+    "title": "Zhu et al., EMNLP 2026",
+    "url": "https://aclanthology.org/2026.emnlp-main.932.pdf",
+    "kind": "study",
+    "era": null,
+    "caveat": "exfiltration only, no human-approval modes, one run per cell",
+    "finding": "In 1,920 runs in poisoned repositories, a planted secret reached an attacker server in 45.5% of runs when the agent was asked to run tests and 8.6% when asked to fix a bug; agents warned least on the test task; security rules raised warnings but not the share of attacks that failed; Claude Code with Sonnet 4.6 was the most resistant of four agent-model setups.",
+    "topics": [
+      "security",
+      "testing"
+    ],
+    "updated": "2026-11-12T01:31:00Z"
+  },
+  {
+    "id": "chen-et-al-securevibebench-2026",
+    "title": "Chen et al. (SecureVibeBench), arXiv 2026",
+    "url": "https://arxiv.org/abs/2509.22097",
+    "kind": "benchmark",
+    "era": null,
+    "caveat": "preprint, 105 C/C++ memory-safety tasks, static-analysis false alarms near 50%",
+    "finding": "On 105 real C/C++ tasks the best of 13 agent-model combinations produced 23.8% patches that were both correct and secure; in most combinations over half of correct patches still carried a security issue; two CLI agents ranked top on correctness but not on secure correctness.",
+    "topics": [
+      "security",
+      "measuring"
+    ],
+    "updated": "2026-11-12T01:31:00Z"
+  },
+  {
+    "id": "inspect-evals-ipi-coding-agent-2026",
+    "title": "UK AISI Inspect Evals, ipi_coding_agent, 2026",
+    "url": "https://ukgovernmentbeis.github.io/inspect_evals/evals/ipi_coding_agent/",
+    "kind": "benchmark",
+    "era": null,
+    "caveat": "45 samples, community-contributed, results table predates a scorer fix",
+    "finding": "On 35 injected bug-fixing tasks, injection resistance ranged from 68.6% to 97.1% across five models, newer models resisted more, and explicit detection of an injection happened about once in 140 injected samples.",
+    "topics": [
+      "security"
+    ],
+    "updated": "2026-11-12T01:31:00Z"
   }
 ]

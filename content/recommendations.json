@@ -856,9 +856,10 @@
     ],
     "evidence": [
       "lulla-et-al-icse-workshop-2026",
-      "gloaguen-et-al"
+      "gloaguen-et-al",
+      "liu-et-al-aishelljack-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-12T01:31:00Z"
   },
   {
     "id": "dont-let-an-llm-generate-context-files",
@@ -1754,9 +1755,10 @@
     "evidence": [
       "owasp-llm012025-prompt-injection",
       "camel-debenedetti-et-al",
-      "role-confusion-icml-2026"
+      "role-confusion-icml-2026",
+      "zhu-et-al-emnlp-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-12T01:31:00Z"
   },
   {
     "id": "remove-one-leg-of-the-lethal-trifecta",
@@ -1953,9 +1955,10 @@
       "Remote images loaded in rendered agent output"
     ],
     "evidence": [
-      "owasp-llm052025-improper-output-handling"
+      "owasp-llm052025-improper-output-handling",
+      "chen-et-al-securevibebench-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-12T01:31:00Z"
   },
   {
     "id": "partition-retrieval-stores-and-make-retrieval-permission-awa",
@@ -2048,9 +2051,11 @@
     ],
     "evidence": [
       "krishna-et-al-preprint",
-      "mcptox-wang-et-al"
+      "mcptox-wang-et-al",
+      "zhu-et-al-emnlp-2026",
+      "chen-et-al-securevibebench-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-12T01:31:00Z"
   },
   {
     "id": "track-defects-and-rework-to-catch-quality-erosion",
@@ -3953,5 +3958,63 @@
       "microsoft-edge-agentic-browsing-2026"
     ],
     "updated": "2026-11-12T00:54:00Z"
+  },
+  {
+    "id": "read-test-and-setup-files-before-an-agent-runs-them",
+    "title": "Read test and setup files before an agent runs them",
+    "ring": "trial",
+    "topics": [
+      "security",
+      "testing"
+    ],
+    "summary": "Before an agent runs a cloned or updated repository's tests or setup scripts, read those files, or run them in a sandbox with no secrets. Agents warned least when asked to run tests, which was also the worst case for attacks.",
+    "signals": [
+      "Agent test or setup runs on repos whose test or config files changed since a person read them",
+      "Secrets reachable from the test environment",
+      "Third-party repo runs outside a sandbox"
+    ],
+    "evidence": [
+      "zhu-et-al-emnlp-2026"
+    ],
+    "updated": "2026-11-12T01:31:00Z"
+  },
+  {
+    "id": "review-rules-skills-and-context-files-from-outside-the-team",
+    "title": "Review rules, skills and context files that come from outside the team",
+    "ring": "trial",
+    "topics": [
+      "security",
+      "specification"
+    ],
+    "summary": "Treat imported or auto-updated rule, skill and context files as code that can steer an agent with shell access: read them before use and again when they change.",
+    "signals": [
+      "Rule, skill or context files in use that nobody on the team wrote",
+      "Changes to those files merged without review",
+      "Files pulled from public collections"
+    ],
+    "evidence": [
+      "liu-et-al-aishelljack-2026",
+      "zhu-et-al-emnlp-2026"
+    ],
+    "updated": "2026-11-12T01:31:00Z"
+  },
+  {
+    "id": "replay-past-vulnerabilities-as-tests-on-agent-patches",
+    "title": "Replay past vulnerabilities as tests on agent patches",
+    "ring": "trial",
+    "topics": [
+      "security",
+      "testing"
+    ],
+    "summary": "Keep a failing-before, passing-after test for each vulnerability you have fixed, and run them on agent patches in that area. A patch can pass the whole suite and still bring an old weakness back.",
+    "signals": [
+      "Fixed vulnerabilities with a replayable test",
+      "Agent patches that reintroduce a fixed vulnerability",
+      "Patches passing CI that get security findings later"
+    ],
+    "evidence": [
+      "chen-et-al-securevibebench-2026"
+    ],
+    "updated": "2026-11-12T01:31:00Z"
   }
 ]

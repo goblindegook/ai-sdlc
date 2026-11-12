@@ -100,12 +100,14 @@
     "topics": [
       "security"
     ],
-    "summary": "The risk of agents exposing credentials is clear from how they work, but there are no measured leak rates. Plan for it as you would any likely risk: keep secrets out of reach. (OWASP LLM02, LLM07)",
+    "summary": "Leak rates are measured only under planted attacks, not in everyday use. Plan for it as a likely risk; keep secrets out of reach. (OWASP LLM02, LLM07)",
     "evidence": [
       "ralph-playbook",
-      "anthropic-ai-native-sdlc-playbook"
+      "anthropic-ai-native-sdlc-playbook",
+      "zhu-et-al-emnlp-2026",
+      "liu-et-al-aishelljack-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-12T01:31:00Z"
   },
   {
     "id": "prompt-injection-has-no-proven-fix",
@@ -114,13 +116,16 @@
       "security",
       "reviewing"
     ],
-    "summary": "The one architecture shown to block most injection attacks has only been tested by its own authors, who say the problem isn't solved, and a guardrail that stops most attacks still fails by security standards. Limit what an agent can do rather than hoping it can't be tricked; whether an agent should ever approve its own change is still open. (OWASP LLM01)",
+    "summary": "The one architecture shown to block most injection attacks has only been tested by its own authors, who say the problem isn't solved, and a guardrail that stops most attacks still fails by security standards. Limit what an agent can do rather than hoping it can't be tricked; whether an agent should ever approve its own change is still open. (OWASP LLM01) In tests on coding agents with no approval step, injected instructions were acted on in a large share of runs, and agents rarely said they had noticed one.",
     "evidence": [
       "camel-debenedetti-et-al",
       "willison-the-lethal-trifecta",
-      "orosz-what-is-happening-with-code-reviews"
+      "orosz-what-is-happening-with-code-reviews",
+      "liu-et-al-aishelljack-2026",
+      "zhu-et-al-emnlp-2026",
+      "inspect-evals-ipi-coding-agent-2026"
     ],
-    "updated": "2026-11-04T15:43:00Z"
+    "updated": "2026-11-12T01:31:00Z"
   },
   {
     "id": "test-loops-fix-the-code-not-a-misread-requirement",
