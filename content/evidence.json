@@ -1396,17 +1396,18 @@
   {
     "id": "baltes-et-al",
     "title": "Baltes et al., arXiv 2026",
-    "url": "https://arxiv.org/html/2604.16754v1",
+    "url": "https://arxiv.org/abs/2603.27249",
     "kind": "study",
     "era": null,
-    "finding": "One team handled 30 PRs a day across six reviewers.",
+    "finding": "Developers who use the phrase \"AI slop\" mostly describe review burden, authors who cannot explain their code, and incentives that reward volume (1,154 Reddit and Hacker News posts); one commenter's team got 30 PRs a day across six reviewers.",
     "topics": [
       "reviewing",
       "security",
       "measuring",
       "testing"
     ],
-    "updated": "2026-11-04T17:05:00Z"
+    "updated": "2026-11-12T16:36:00Z",
+    "caveat": "selected on the phrase \"AI slop\"; discussion, not measurement"
   },
   {
     "id": "vicente-matute-via-lovett",
@@ -3338,5 +3339,46 @@
       "security"
     ],
     "updated": "2026-11-12T01:31:00Z"
+  },
+  {
+    "id": "beck-earn-and-learn-2026",
+    "title": "Beck, Earn and learn, 2026",
+    "url": "https://newsletter.kentbeck.com/p/earn-and-learn",
+    "kind": "practitioner",
+    "era": null,
+    "caveat": "opinion, no data",
+    "finding": "Spec-driven development in the write-the-whole-spec-first style assumes software is finished once it does what the spec says; software that keeps earning needs as much investment in what can be implemented next as in new features, alternating the two.",
+    "topics": [
+      "specification",
+      "delivery"
+    ],
+    "updated": "2026-11-12T16:36:00Z"
+  },
+  {
+    "id": "apiiro-agents-leaking-secrets-2026",
+    "title": "Apiiro, Coding agents are leaking your secrets to GitHub, 2026",
+    "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+    "kind": "study",
+    "era": null,
+    "caveat": "vendor research, not reproduced",
+    "finding": "A scan of public GitHub found a real secret in about 1 in 100 saved approval files of one coding agent (1,122 of 104,185), because approving \"don't ask again\" stores the whole command, password included; two common secret scanners together missed 215 of those 1,122 files.",
+    "topics": [
+      "security"
+    ],
+    "updated": "2026-11-12T16:36:00Z"
+  },
+  {
+    "id": "stenberg-end-of-the-curl-bug-bounty-2026",
+    "title": "Stenberg (curl), The end of the curl bug-bounty, 2026",
+    "url": "https://daniel.haxx.se/blog/2026/01/26/the-end-of-the-curl-bug-bounty/",
+    "kind": "practitioner",
+    "era": null,
+    "caveat": "one project's own account",
+    "finding": "curl ended its bug bounty after the share of reports confirmed as vulnerabilities fell from above 15% to below 5% amid AI slop reports; the maintainer says pull requests are not the problem because tests and scanners sort them.",
+    "topics": [
+      "reviewing",
+      "security"
+    ],
+    "updated": "2026-11-12T16:36:00Z"
   }
 ]

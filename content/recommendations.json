@@ -721,9 +721,10 @@
       "forbes",
       "ludic",
       "business-insider",
-      "ewerlof"
+      "ewerlof",
+      "baltes-et-al"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-12T16:36:00Z"
   },
   {
     "id": "declare-effort-and-wanted-review-on-ai-drafted-artifacts",
@@ -1149,9 +1150,10 @@
       "Defects found after release"
     ],
     "evidence": [
-      "piskala"
+      "piskala",
+      "beck-earn-and-learn-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-12T16:36:00Z"
   },
   {
     "id": "compare-whole-module-context-with-retrieval",
@@ -1878,9 +1880,10 @@
       "ralph-playbook",
       "anthropic-ai-native-sdlc-playbook",
       "owasp-llm022025-sensitive-information-disclosure",
-      "owasp-llm072025-system-prompt-leakage"
+      "owasp-llm072025-system-prompt-leakage",
+      "apiiro-agents-leaking-secrets-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-12T16:36:00Z"
   },
   {
     "id": "allowlist-mcp-servers-and-enforce-access-at-the-tool-layer",
@@ -4016,5 +4019,77 @@
       "chen-et-al-securevibebench-2026"
     ],
     "updated": "2026-11-12T01:31:00Z"
+  },
+  {
+    "id": "alternate-feature-work-with-a-tidying-step",
+    "title": "Alternate feature work with a tidying step",
+    "ring": "trial",
+    "topics": [
+      "delivery"
+    ],
+    "summary": "For a quarter on one service, follow each feature change with a person-chosen tidying change before the next feature starts. Agents don't manage what can be changed next, and a system that keeps earning has to stay changeable.",
+    "signals": [
+      "Agent tasks in a module that need several retries, trend over the quarter",
+      "Days to deliver the next change in the same module",
+      "Files or modules growing release after release"
+    ],
+    "evidence": [
+      "beck-earn-and-learn-2026"
+    ],
+    "updated": "2026-11-12T16:36:00Z"
+  },
+  {
+    "id": "approve-command-patterns-never-commands-with-secrets-in-them",
+    "title": "Approve command patterns, never commands with secrets in them",
+    "ring": "trial",
+    "topics": [
+      "security"
+    ],
+    "summary": "When an agent offers to remember an approval, approve a pattern or a variable reference such as $DB_URL, never a command with a password in it, and keep the agent's settings folder out of version control. A remembered approval is a plain file that gets committed and copied.",
+    "signals": [
+      "Saved approval rules that contain passwords, tokens or connection strings",
+      "Agent settings files tracked in git or found in history",
+      "Credentials rotated after an agent session"
+    ],
+    "evidence": [
+      "apiiro-agents-leaking-secrets-2026"
+    ],
+    "updated": "2026-11-12T16:36:00Z"
+  },
+  {
+    "id": "scan-agent-folders-and-notes-for-secrets-including-passwords-in-commands",
+    "title": "Scan agent folders and notes for secrets, passwords in commands included",
+    "ring": "trial",
+    "topics": [
+      "security"
+    ],
+    "summary": "Add agent settings, transcripts, memory and handoff notes to pre-commit and CI secret scanning, with a rule for passwords typed into commands, and scan history too. Scanners tuned to key formats let those pass.",
+    "signals": [
+      "Secrets found in agent folders, transcripts and notes per month",
+      "Findings only a custom rule caught",
+      "Agent files committed in the last quarter"
+    ],
+    "evidence": [
+      "apiiro-agents-leaking-secrets-2026"
+    ],
+    "updated": "2026-11-12T16:36:00Z"
+  },
+  {
+    "id": "cap-agent-pr-size-and-have-authors-self-review-first",
+    "title": "Cap agent PR size and have authors self-review first",
+    "ring": "trial",
+    "topics": [
+      "reviewing"
+    ],
+    "summary": "For a quarter on one team, set a PR size cap and have authors review their own agent PR before anyone else does. Reviewers say large generated PRs go unread and the cost lands on them, not the author.",
+    "signals": [
+      "Agent PRs over the size cap",
+      "Time from PR opened to first review",
+      "Review comments per PR, self-reviewed vs not"
+    ],
+    "evidence": [
+      "baltes-et-al"
+    ],
+    "updated": "2026-11-12T16:36:00Z"
   }
 ]
