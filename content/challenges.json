@@ -354,5 +354,20 @@
       "kunal-resisting-cognitive-surrender-2026"
     ],
     "updated": "2026-11-08T16:55:00Z"
+  },
+  {
+    "id": "apps-cant-tell-an-agent-from-the-person-it-acts-for",
+    "title": "Apps can't tell an agent from the person it acts for",
+    "topics": [
+      "security"
+    ],
+    "summary": "When an agent works inside someone's session, the app's permissions and audit log see only the person. A rule like 'the agent may read but not delete' can't be enforced there, and actions can't be traced back to the agent. Drafts exist that name the agent or flag risky actions, but none yet links the agent to the person and narrows its access.",
+    "evidence": [
+      "token-security-agent-broke-our-security-rules-2026",
+      "w3c-webmcp-draft",
+      "meunier-major-ietf-web-bot-auth-2026",
+      "w3c-agentic-web-wg-charter-2026"
+    ],
+    "updated": "2026-11-12T00:54:00Z"
   }
 ]

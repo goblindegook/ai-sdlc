@@ -3206,5 +3206,82 @@
       "teamwork"
     ],
     "updated": "2026-11-08T16:55:00Z"
+  },
+  {
+    "id": "token-security-agent-broke-our-security-rules-2026",
+    "title": "Token Security (The Hacker News), We built an agent that broke all of our security rules, 2026",
+    "url": "https://thehackernews.com/2026/11/we-built-agent-that-broke-all-of-our.html",
+    "kind": "vendor",
+    "era": null,
+    "caveat": "vendor-supplied, sells agent identity security",
+    "finding": "A browser agent inside a user's signed-in session has the user's full access, and the app cannot tell its actions from the user's; the vendor says agent lanes must carry the agent's identity, a verifiable link to the person, and a scope narrower than the person's, and that current drafts each carry only one.",
+    "topics": [
+      "security"
+    ],
+    "updated": "2026-11-12T00:54:00Z"
+  },
+  {
+    "id": "google-chrome-auto-browse-help",
+    "title": "Google, Gemini in Chrome auto browse help",
+    "url": "https://support.google.com/chrome/answer/16821166",
+    "kind": "vendor",
+    "era": null,
+    "finding": "Chrome's auto browse agent uses the user's signed-in sites, is limited to sites relevant to the task, asks before sensitive sites and consequential actions, and marks pages it visited in history; nothing tells the visited site an agent is driving.",
+    "topics": [
+      "security"
+    ],
+    "updated": "2026-11-12T00:54:00Z"
+  },
+  {
+    "id": "microsoft-edge-agentic-browsing-2026",
+    "title": "Microsoft, New in Edge for Business: AI for work, safe from day one, 2026",
+    "url": "https://blogs.windows.com/msedgedev/2026/05/20/new-in-edge-for-business-ai-for-work-safe-from-day-one/",
+    "kind": "vendor",
+    "era": null,
+    "caveat": "limited preview",
+    "finding": "Edge for Business agentic browsing is off unless enabled by policy, runs only on sites IT designates, pauses before passwords and card numbers, and keeps signed-in sites signed in through the user's cookies.",
+    "topics": [
+      "security"
+    ],
+    "updated": "2026-11-12T00:54:00Z"
+  },
+  {
+    "id": "w3c-webmcp-draft",
+    "title": "W3C Web Machine Learning Community Group, WebMCP draft report",
+    "url": "https://webmachinelearning.github.io/webmcp/",
+    "kind": "essay",
+    "era": null,
+    "caveat": "draft, not on the Standards Track",
+    "finding": "Lets a page publish tools agents can call, with read-only and consequential hints; states that agents inherit the user's identity and session, that the hints are advisory, and leaves identity, permissions and delegation to other work.",
+    "topics": [
+      "security"
+    ],
+    "updated": "2026-11-12T00:54:00Z"
+  },
+  {
+    "id": "meunier-major-ietf-web-bot-auth-2026",
+    "title": "Meunier & Major, IETF draft 2026",
+    "url": "https://www.ietf.org/archive/id/draft-ietf-webbotauth-httpsig-protocol-00.html",
+    "kind": "essay",
+    "era": null,
+    "caveat": "working group draft",
+    "finding": "Defines how automated clients sign HTTP requests so a site can verify which agent sent them; states it does not authenticate human users and does not define authorization or delegation.",
+    "topics": [
+      "security"
+    ],
+    "updated": "2026-11-12T00:54:00Z"
+  },
+  {
+    "id": "w3c-agentic-web-wg-charter-2026",
+    "title": "W3C, Agentic Web Working Group draft charter, 2026",
+    "url": "https://w3c.github.io/charter-drafts/2026/agenticweb-wg.html",
+    "kind": "essay",
+    "era": null,
+    "caveat": "proposed charter",
+    "finding": "Proposes a working group whose first deliverable is site capabilities for agents; agent identity and agent delegation are listed only as possible later deliverables, with no draft.",
+    "topics": [
+      "security"
+    ],
+    "updated": "2026-11-12T00:54:00Z"
   }
 ]

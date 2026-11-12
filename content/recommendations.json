@@ -3933,5 +3933,25 @@
       "luu-more-ambitious-software-2026"
     ],
     "updated": "2026-11-08T16:55:00Z"
+  },
+  {
+    "id": "limit-browser-agents-to-the-sites-a-task-needs",
+    "title": "Limit browser agents to the sites a task needs",
+    "ring": "trial",
+    "topics": [
+      "security"
+    ],
+    "summary": "A browser agent in a signed-in session acts with your full access, and the site sees only you. Allow it only on the sites the task needs, and require a person's approval before saves, deletes and payments.",
+    "signals": [
+      "Browser agents and agentic extensions in use, each with a named owner",
+      "Sites agents may act on that grant admin or production access",
+      "Consequential agent actions run without an approval prompt"
+    ],
+    "evidence": [
+      "token-security-agent-broke-our-security-rules-2026",
+      "google-chrome-auto-browse-help",
+      "microsoft-edge-agentic-browsing-2026"
+    ],
+    "updated": "2026-11-12T00:54:00Z"
   }
 ]
