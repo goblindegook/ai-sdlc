@@ -3380,5 +3380,183 @@
       "security"
     ],
     "updated": "2026-11-12T16:36:00Z"
+  },
+  {
+    "id": "sivasubramanian-aws-emulator-2026",
+    "title": "Sivasubramanian (Amazon), AWS Emulator and the engineer's job when agents write the code, 2026",
+    "url": "https://www.allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html",
+    "kind": "vendor",
+    "era": null,
+    "caveat": "vendor launch post",
+    "finding": "A local copy of AWS for coding agents, built entirely by agents from public API models and verified against real AWS; argues the engineer's job is to build the specs, tests and merge gates that decide when agent work is correct, and says a rebuild took about two hours once a test environment existed, after four nights of supervising an agent without one.",
+    "topics": [
+      "testing",
+      "delivery"
+    ],
+    "updated": "2026-11-13T10:50:00Z"
+  },
+  {
+    "id": "goldberg-how-agents-built-aws-emulator-2026",
+    "title": "Goldberg (Amazon), How autonomous AI agents built AWS Emulator, 2026",
+    "url": "https://aboutamazon.com/news/aws/how-autonomous-ai-agents-built-aws-emulator",
+    "kind": "vendor",
+    "era": null,
+    "caveat": "vendor launch post",
+    "finding": "The project lead says agents wrote the emulator without human code or review: tests written from the AWS CLI and checked against real AWS, then an in-memory build iterated until they passed, now run by separate teams of agents for tests, issue finding and fixing behind a merge gate.",
+    "topics": [
+      "testing",
+      "delivery"
+    ],
+    "updated": "2026-11-13T10:50:00Z"
+  },
+  {
+    "id": "aws-emulator-repository-fidelity-scores",
+    "title": "AWS Emulator, repository and published fidelity scores",
+    "url": "https://github.com/aws/aws-emulator",
+    "kind": "vendor",
+    "era": null,
+    "caveat": "the project's own scores",
+    "finding": "In release v1.0.338 about 26,000 of 43,548 published fidelity tests passed (59.7 percent), a median of 73 percent per service; unimplemented operations return HTTP 501 and the documentation says it is not for production or security testing.",
+    "topics": [
+      "testing",
+      "delivery"
+    ],
+    "updated": "2026-11-13T10:50:00Z"
+  },
+  {
+    "id": "alex-vibes-dont-maintain-2026",
+    "title": "Alex (bacon roll), Vibes don't maintain, 2026",
+    "url": "https://roll.bybacon.com/2026/10/14/vibes-dont-maintain.html",
+    "kind": "practitioner",
+    "era": null,
+    "caveat": "one anecdote",
+    "finding": "A restaurant task app a friend built with Claude Code and no coding experience was a click-dummy covering only the happy path, and its reasoning lived in a chat that was gone; what survives is the written record of intent.",
+    "topics": [
+      "delivery",
+      "understanding"
+    ],
+    "updated": "2026-11-13T10:50:00Z"
+  },
+  {
+    "id": "bloomberg-goldman-restricts-ai-tools-2026",
+    "title": "Bloomberg (via FA Magazine), Goldman restricts traders and bankers from using some AI tools, 2026",
+    "url": "https://www.fa-mag.com/news/goldman-restricts-traders-and-bankers-from-using-some-ai-tools-89026.html",
+    "kind": "essay",
+    "era": null,
+    "caveat": "anonymous sources",
+    "finding": "Goldman Sachs limited Claude Code and GitHub tools to engineers in October after reviewing productivity and risk, having let traders and bankers use them for months; the bank's reasons beyond that are not public.",
+    "topics": [
+      "delivery",
+      "reviewing"
+    ],
+    "updated": "2026-11-13T10:50:00Z"
+  },
+  {
+    "id": "state-of-ai-goldman-pulls-claude-code-2026",
+    "title": "State of AI, Goldman Sachs is pulling Claude Code from its bankers and traders, 2026",
+    "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+    "kind": "essay",
+    "era": null,
+    "caveat": "secondary, commentary",
+    "finding": "Rewrites the Bloomberg report and argues companies should name an engineer who owns agent-built code before it touches production data; the reasons it gives are the site's own, not Goldman's.",
+    "topics": [
+      "delivery",
+      "understanding"
+    ],
+    "updated": "2026-11-13T10:50:00Z"
+  },
+  {
+    "id": "argenti-goldman-via-the-next-web-2026",
+    "title": "Argenti (Goldman Sachs) via The Next Web, AI turns developers into managers of managers, 2026",
+    "url": "https://thenextweb.com/news/marco-argenti-goldman-sachs-ai-third-wave-growth-wave-by-vento",
+    "kind": "practitioner",
+    "era": null,
+    "caveat": "conference report",
+    "finding": "The bank's CIO describes moving from proxy measures such as commit counts to outcomes such as projects finishing in two months instead of three, and assuming models make errors.",
+    "topics": [
+      "measuring"
+    ],
+    "updated": "2026-11-13T10:50:00Z"
+  },
+  {
+    "id": "keles-bug-finding-considered-harmful-2026",
+    "title": "Keles, Bug finding considered harmful?, 2026",
+    "url": "https://alperenkeles.com/posts/bug-finding-considered-harmful/",
+    "kind": "practitioner",
+    "era": null,
+    "caveat": "personal experience",
+    "finding": "After filing over 500 bug reports in a month, argues a bug is quick to verify and report but a good fix is forward-looking and much harder to verify, so finding will keep overwhelming fixing; suggests both finders and maintainers be selective.",
+    "topics": [
+      "reviewing",
+      "security"
+    ],
+    "updated": "2026-11-13T10:50:00Z"
+  },
+  {
+    "id": "haas-postgres-19-is-late-2026",
+    "title": "Haas (PostgreSQL), Postgres 19 is late, and it's AI's fault, 2026",
+    "url": "https://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html",
+    "kind": "practitioner",
+    "era": null,
+    "caveat": "author's own counts",
+    "finding": "A PostgreSQL committer says LLM-assisted bug reports raised back-patched commits by about 61 percent on the release branch and 74 percent on the previous one, several large features were reverted late, and committer time shifted from new work to back-branch fixes.",
+    "topics": [
+      "reviewing",
+      "delivery"
+    ],
+    "updated": "2026-11-13T10:50:00Z"
+  },
+  {
+    "id": "sole-et-al-llm-cognitive-virus-2026",
+    "title": "Solé et al., arXiv 2026",
+    "url": "https://arxiv.org/abs/2609.03344",
+    "kind": "study",
+    "era": null,
+    "caveat": "theory preprint, illustrative parameters",
+    "finding": "A mean-field model of LLM use as contagion has a bistable region: past a threshold the population flips to a lower-competence, dependent state, and recovery needs a larger reduction in use than the rise took; proposes protected unaided practice as 'cognitive immunization'.",
+    "topics": [
+      "understanding"
+    ],
+    "updated": "2026-11-13T10:50:00Z"
+  },
+  {
+    "id": "demirbas-writing-as-a-thinking-tool-2026",
+    "title": "Demirbas, Writing as a thinking tool, 2026",
+    "url": "https://muratbuffalo.blogspot.com/2026/11/writing-as-thinking-tool.html",
+    "kind": "essay",
+    "era": null,
+    "finding": "Argues writing is how thinking gets done and that LLMs make a six-page memo possible with no thinking, so writing the thing yourself is the check.",
+    "topics": [
+      "understanding"
+    ],
+    "updated": "2026-11-13T10:50:00Z"
+  },
+  {
+    "id": "thines-agent-memory-opentelemetry-moment-2026",
+    "title": "Thines (LoreKit), Agent memory needs its OpenTelemetry moment, 2026",
+    "url": "https://www.lorekit.io/blog/open-agent-memory-format",
+    "kind": "vendor",
+    "era": null,
+    "caveat": "by a memory-tool maker",
+    "finding": "Compares nine agent memory formats, finds each tool keeps memory in its own shape and none can read the others, and argues for a shared data model, conventions and conformance tests.",
+    "topics": [
+      "understanding",
+      "specification"
+    ],
+    "updated": "2026-11-13T10:50:00Z"
+  },
+  {
+    "id": "brown-et-al-large-language-monkeys-2024",
+    "title": "Brown et al., arXiv 2024",
+    "url": "https://arxiv.org/abs/2407.21787",
+    "kind": "benchmark",
+    "era": "older",
+    "caveat": "abstract only",
+    "finding": "Coverage grows with the number of samples over four orders of magnitude; where answers can be checked automatically, as with code, it turns into performance (SWE-bench Lite 15.9 to 56 percent with 250 samples), but without a verifier, majority voting and reward models plateau.",
+    "topics": [
+      "looping",
+      "testing"
+    ],
+    "updated": "2026-11-13T10:50:00Z"
   }
 ]

@@ -148,12 +148,13 @@
     "topics": [
       "understanding"
     ],
-    "summary": "Checking agent code well takes hands-on coding skill, and relying on agents can wear that skill down. Without deliberate practice, a team loses the ability to review what it ships. Nobody knows yet whether the loss reverses or how to measure it.",
+    "summary": "Checking agent code well takes hands-on coding skill, and relying on agents can wear that skill down. Without deliberate practice, a team loses the ability to review what it ships. Nobody knows yet whether the loss reverses or how to measure it; one theoretical model suggests that past a point, easing off isn't enough to recover, so protect unaided practice early.",
     "evidence": [
       "anthropic-internal-study",
-      "storey-cognitive-debt"
+      "storey-cognitive-debt",
+      "sole-et-al-llm-cognitive-virus-2026"
     ],
-    "updated": "2026-11-04T15:43:00Z"
+    "updated": "2026-11-13T10:50:00Z"
   },
   {
     "id": "juniors-ask-the-model-instead-of-colleagues",
@@ -356,12 +357,15 @@
       "delivery",
       "understanding"
     ],
-    "summary": "Some practitioners say agents make far larger builds worth attempting; others say most teams lack clear pass/fail checks and can't reason about large black boxes, so should aim smaller. Both say the checks decide. Neither side has numbers.",
+    "summary": "Some practitioners say agents make far larger builds worth attempting; others say most teams lack clear pass/fail checks and can't reason about large black boxes, so should aim smaller. Both say the checks decide. Neither side has numbers. One vendor's large agent-built system had checks verified against the real service and still only partly matched it.",
     "evidence": [
       "luu-more-ambitious-software-2026",
-      "kunal-resisting-cognitive-surrender-2026"
+      "kunal-resisting-cognitive-surrender-2026",
+      "sivasubramanian-aws-emulator-2026",
+      "goldberg-how-agents-built-aws-emulator-2026",
+      "aws-emulator-repository-fidelity-scores"
     ],
-    "updated": "2026-11-08T16:55:00Z"
+    "updated": "2026-11-13T10:50:00Z"
   },
   {
     "id": "apps-cant-tell-an-agent-from-the-person-it-acts-for",
@@ -377,5 +381,21 @@
       "w3c-agentic-web-wg-charter-2026"
     ],
     "updated": "2026-11-12T00:54:00Z"
+  },
+  {
+    "id": "ai-finds-bugs-faster-than-people-can-fix-them",
+    "title": "AI finds bugs faster than people can fix them",
+    "topics": [
+      "reviewing",
+      "security",
+      "delivery"
+    ],
+    "summary": "Bug reports are now cheap to produce, but a good fix still needs a person to choose, write and check it, so fixing crowds out new work and delays releases. Which AI-found bugs are worth a maintainer's time, such as only security ones or ones a real user can hit, isn't settled.",
+    "evidence": [
+      "keles-bug-finding-considered-harmful-2026",
+      "haas-postgres-19-is-late-2026",
+      "stenberg-end-of-the-curl-bug-bounty-2026"
+    ],
+    "updated": "2026-11-13T10:50:00Z"
   }
 ]

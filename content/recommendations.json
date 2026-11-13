@@ -391,9 +391,10 @@
     ],
     "evidence": [
       "swe-gym-icml-2025",
-      "swe-search-iclr-2025"
+      "swe-search-iclr-2025",
+      "brown-et-al-large-language-monkeys-2024"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-13T10:50:00Z"
   },
   {
     "id": "run-a-strong-models-checks-once-as-a-final-gate",
@@ -485,9 +486,10 @@
       "meta-cto-post-via-reuters-and-ars-technica",
       "peng-et-al",
       "harness",
-      "dora-2025"
+      "dora-2025",
+      "argenti-goldman-via-the-next-web-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-13T10:50:00Z"
   },
   {
     "id": "time-real-tasks-instead-of-trusting-forecasts-or-surveys",
@@ -2770,9 +2772,10 @@
     ],
     "evidence": [
       "bainbridge-1983",
-      "anthropic-internal-study"
+      "anthropic-internal-study",
+      "sole-et-al-llm-cognitive-virus-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-13T10:50:00Z"
   },
   {
     "id": "dont-judge-learning-by-self-report",
@@ -2866,9 +2869,10 @@
     "evidence": [
       "tanna-hand-write-commits",
       "antirez",
-      "generation-effect-meta-analysis"
+      "generation-effect-meta-analysis",
+      "demirbas-writing-as-a-thinking-tool-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-13T10:50:00Z"
   },
   {
     "id": "keep-an-adr-per-agent-built-feature",
@@ -3109,9 +3113,10 @@
     "evidence": [
       "letta",
       "chhikara-et-al-mem0",
-      "liao-agents-dont-need-memory"
+      "liao-agents-dont-need-memory",
+      "thines-agent-memory-opentelemetry-moment-2026"
     ],
-    "updated": "2026-11-04T14:31:00Z"
+    "updated": "2026-11-13T10:50:00Z"
   },
   {
     "id": "test-on-demand-explainers-against-reading-diffs",
@@ -4091,5 +4096,50 @@
       "baltes-et-al"
     ],
     "updated": "2026-11-12T16:36:00Z"
+  },
+  {
+    "id": "check-agent-written-tests-against-the-real-system-first",
+    "title": "Check agent-written tests against the real system first",
+    "ring": "trial",
+    "topics": [
+      "testing",
+      "delivery"
+    ],
+    "summary": "When rebuilding or replacing a system that already exists, have agents write tests from its written interface and check each test against the real system before building until they pass. Keep the merge gate and test framework out of the agents' reach.",
+    "signals": [
+      "Tests that fail against the real system when first run",
+      "Share of the new system's tests passing, release over release",
+      "Agent edits to the framework or gate that were blocked",
+      "Time from spec to first passing build"
+    ],
+    "evidence": [
+      "sivasubramanian-aws-emulator-2026",
+      "goldberg-how-agents-built-aws-emulator-2026",
+      "aws-emulator-repository-fidelity-scores"
+    ],
+    "updated": "2026-11-13T10:50:00Z"
+  },
+  {
+    "id": "name-an-owner-before-a-non-engineers-agent-built-tool-goes-live",
+    "title": "Name an owner before a non-engineer's agent-built tool goes live",
+    "ring": "trial",
+    "topics": [
+      "delivery",
+      "understanding",
+      "reviewing"
+    ],
+    "summary": "Before a tool built by someone who doesn't code reaches real users or data, name an engineer who owns it and run it through your normal review, tests and deployment. A working demo is cheap; the checks and the recorded reasoning are what keep it running. Some firms restrict agents to engineers instead, and nothing measures which works better.",
+    "signals": [
+      "Agent-built tools in use with no named owner",
+      "Time from a non-engineer's demo to an owned, deployed service",
+      "Incidents in tools built outside engineering",
+      "Tools whose original prompt or spec can't be found"
+    ],
+    "evidence": [
+      "alex-vibes-dont-maintain-2026",
+      "bloomberg-goldman-restricts-ai-tools-2026",
+      "state-of-ai-goldman-pulls-claude-code-2026"
+    ],
+    "updated": "2026-11-13T10:50:00Z"
   }
 ]
