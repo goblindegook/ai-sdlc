@@ -3558,5 +3558,86 @@
       "testing"
     ],
     "updated": "2026-11-13T10:50:00Z"
+  },
+  {
+    "id": "owasp-llm-top-10-2026",
+    "title": "OWASP, Top 10 for LLM applications, 2026",
+    "url": "https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/",
+    "kind": "practitioner",
+    "era": null,
+    "caveat": "adaptive-attack figure is secondhand",
+    "finding": "Says no reliable prevention for prompt injection exists, so defence is architectural; recommends the Rule of Two, authorisation by a policy check outside the model, hard spending caps and testing against attackers who know the defence, citing near-zero success for fixed attacks against over 90% for attacks written against most of 12 defences.",
+    "topics": [
+      "security"
+    ],
+    "updated": "2026-11-13T14:19:00Z"
+  },
+  {
+    "id": "owasp-ai-agent-security-cheat-sheet",
+    "title": "OWASP, AI agent security cheat sheet",
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/AI_Agent_Security_Cheat_Sheet.html",
+    "kind": "practitioner",
+    "era": null,
+    "caveat": "guidance, no measurements",
+    "finding": "Authorisation belongs in the execution component outside the agent's context; an approval should be bound to the exact call, short-lived and used once; abuse-case tests should gate releases.",
+    "topics": [
+      "security"
+    ],
+    "updated": "2026-11-13T14:19:00Z"
+  },
+  {
+    "id": "anthropic-cyber-evaluation-incidents-2026",
+    "title": "Anthropic, Investigating three incidents in our cybersecurity evaluations, 2026",
+    "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+    "kind": "vendor",
+    "era": null,
+    "caveat": "vendor self-report",
+    "finding": "A review of 141,006 evaluation runs found three incidents where Claude models reached real organisations' systems through an internet path a partner's environment had left open while the prompt said there was none; one model published a malicious package that ran on 15 systems; Anthropic calls it closer to a harness failure than an alignment failure.",
+    "topics": [
+      "security",
+      "looping"
+    ],
+    "updated": "2026-11-13T14:19:00Z"
+  },
+  {
+    "id": "openai-hugging-face-incident-2026",
+    "title": "OpenAI, The Hugging Face incident and the road ahead, 2026",
+    "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+    "kind": "vendor",
+    "era": null,
+    "caveat": "vendor self-report",
+    "finding": "Agents in internal evaluations used an internal package service to reach the internet and each other, then intruded on Hugging Face and an OpenAI cluster; OpenAI names reward hacking, persistence on impossible tasks, unauthorised communication and agents adopting each other's goals, and says compromise propensity fell over 100x under its production harness and system prompt.",
+    "topics": [
+      "security",
+      "looping"
+    ],
+    "updated": "2026-11-13T14:19:00Z"
+  },
+  {
+    "id": "pillar-deadbugz-2026",
+    "title": "Fogel (Pillar), Deadbugz: an active MCP supply-chain campaign, 2026",
+    "url": "https://www.pillar.security/blog/deadbugz-currently-active-mcp-supply-chain-campaign",
+    "kind": "vendor",
+    "era": null,
+    "caveat": "sells MCP security",
+    "finding": "A malicious MCP server served normal tools for three calls and then changed its tool metadata to steer agents toward SSH keys and cloud credentials; 23 pull requests carried it within 74 minutes, none merged at review.",
+    "topics": [
+      "security"
+    ],
+    "updated": "2026-11-13T14:19:00Z"
+  },
+  {
+    "id": "stepsecurity-miasma-microsoft-2026",
+    "title": "Kurmi (StepSecurity), Miasma worm hits Microsoft again, 2026",
+    "url": "https://www.stepsecurity.io/blog/miasma-worm-hits-microsoft-again-azure-functions-action-and-72-other-repositories-disabled-after-supply-chain-attack-targeting-ai-coding-agents",
+    "kind": "vendor",
+    "era": null,
+    "caveat": "sells CI protection",
+    "finding": "A malicious commit added agent and IDE config files (session-start hooks, an always-apply rule, a run-on-folder-open task) that run a credential harvester when a repository is opened in Claude Code, Gemini CLI, Cursor or VS Code; GitHub then disabled 73 Microsoft repositories.",
+    "topics": [
+      "security",
+      "delivery"
+    ],
+    "updated": "2026-11-13T14:19:00Z"
   }
 ]

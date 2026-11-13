@@ -117,9 +117,11 @@
     ],
     "evidence": [
       "ralph-playbook",
-      "willison-the-lethal-trifecta"
+      "willison-the-lethal-trifecta",
+      "anthropic-cyber-evaluation-incidents-2026",
+      "openai-hugging-face-incident-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-13T14:19:00Z"
   },
   {
     "id": "manage-cost-with-visibility-and-friction",
@@ -1750,7 +1752,7 @@
     "topics": [
       "security"
     ],
-    "summary": "Keep credentials in code, validate output formats in code, and check every tool call against a policy instead of trusting prompt instructions. A prompt can be talked out of a rule; a policy check can't. (OWASP LLM01, LLM06)",
+    "summary": "Keep credentials in code, validate output formats in code, and check every tool call against a policy instead of trusting prompt instructions, and tie each approval to the exact call so it can be used once. A prompt can be talked out of a rule; a policy check can't. (OWASP LLM01, LLM06)",
     "signals": [
       "Tool calls that run without a policy check",
       "Credentials reachable from the agent's context or environment",
@@ -1760,9 +1762,11 @@
       "owasp-llm012025-prompt-injection",
       "camel-debenedetti-et-al",
       "role-confusion-icml-2026",
-      "zhu-et-al-emnlp-2026"
+      "zhu-et-al-emnlp-2026",
+      "owasp-ai-agent-security-cheat-sheet",
+      "owasp-llm-top-10-2026"
     ],
-    "updated": "2026-11-12T01:31:00Z"
+    "updated": "2026-11-13T14:19:00Z"
   },
   {
     "id": "remove-one-leg-of-the-lethal-trifecta",
@@ -1771,7 +1775,7 @@
     "topics": [
       "security"
     ],
-    "summary": "Don't let one agent hold private data, untrusted content and a way to send data out at the same time, and require approval for anything that sends, spends or deletes. Approval limits the damage but doesn't remove the weakness. (OWASP LLM01, LLM02)",
+    "summary": "Don't let one agent hold private data, untrusted content and a way to send data out at the same time. If it needs all three, require approval for anything that sends, spends or deletes; if it holds two, assess what remains. Approval limits the damage but doesn't remove the weakness. (OWASP LLM01, LLM02)",
     "signals": [
       "Agents with private data, untrusted input and an outbound channel at once",
       "Send, spend or delete actions run without human approval"
@@ -1779,9 +1783,10 @@
     "evidence": [
       "willison-the-lethal-trifecta",
       "mollick-opinionated-guide",
-      "owasp-llm022025-sensitive-information-disclosure"
+      "owasp-llm022025-sensitive-information-disclosure",
+      "owasp-llm-top-10-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-13T14:19:00Z"
   },
   {
     "id": "verify-a-packages-publisher-and-registration-date",
@@ -1903,9 +1908,10 @@
     "evidence": [
       "owasp-community-mcp-tool-poisoning",
       "mcptox-wang-et-al",
-      "willison-the-lethal-trifecta"
+      "willison-the-lethal-trifecta",
+      "pillar-deadbugz-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-13T14:19:00Z"
   },
   {
     "id": "enforce-scope-on-every-read-path-of-shared-agent-memory",
@@ -1961,9 +1967,10 @@
     ],
     "evidence": [
       "owasp-llm052025-improper-output-handling",
-      "chen-et-al-securevibebench-2026"
+      "chen-et-al-securevibebench-2026",
+      "owasp-llm-top-10-2026"
     ],
-    "updated": "2026-11-12T01:31:00Z"
+    "updated": "2026-11-13T14:19:00Z"
   },
   {
     "id": "partition-retrieval-stores-and-make-retrieval-permission-awa",
@@ -1990,7 +1997,7 @@
       "security",
       "measuring"
     ],
-    "summary": "Set rate limits, quotas, timeouts and iteration caps on agent runs, and review spend against budget monthly. Agent use can burn a year's budget in months; use hard limits against abuse, and routing and spend nudges for staff. (OWASP LLM10)",
+    "summary": "Set rate limits, quotas, timeouts and iteration caps on agent runs, and review spend against budget monthly. Make caps stop the run rather than raise an alert, and give each run a cost ceiling. Agent use can burn a year's budget in months; use hard limits against abuse, and routing and spend nudges for staff. (OWASP LLM10)",
     "signals": [
       "Agent spend against budget, by month and team",
       "Agent runs that hit an iteration cap or timeout",
@@ -2000,9 +2007,10 @@
       "owasp-llm102025-unbounded-consumption",
       "fortune-on-uber-ai-spending",
       "databricks-managing-ai-coding-costs",
-      "uber-efficient-software-factory"
+      "uber-efficient-software-factory",
+      "owasp-llm-top-10-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-13T14:19:00Z"
   },
   {
     "id": "sign-a-data-processing-agreement-before-tools-see-company-da",
@@ -2038,9 +2046,10 @@
     "evidence": [
       "role-confusion-icml-2026",
       "camel-debenedetti-et-al",
-      "owasp-llm012025-prompt-injection"
+      "owasp-llm012025-prompt-injection",
+      "owasp-llm-top-10-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-13T14:19:00Z"
   },
   {
     "id": "dont-treat-a-stronger-model-as-a-security-control",
@@ -3520,15 +3529,16 @@
     "topics": [
       "security"
     ],
-    "summary": "Don't connect agents to MCP servers nobody has reviewed. Tool descriptions can carry hidden instructions that steer the agent, and you can't tell from outside which servers do. (OWASP LLM01, LLM06)",
+    "summary": "Don't connect agents to MCP servers nobody has reviewed. Tool descriptions can carry hidden instructions that steer the agent, and you can't tell from outside which servers do. Review again when a server's tool definitions change. (OWASP LLM01, LLM06)",
     "signals": [
       "MCP servers in use that are not on an approved list",
       "Tool description changes in approved servers since review"
     ],
     "evidence": [
-      "mcptox-wang-et-al"
+      "mcptox-wang-et-al",
+      "pillar-deadbugz-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-13T14:19:00Z"
   },
   {
     "id": "accepting-new-dependencies-an-agent-adds-unchecked",
@@ -4141,5 +4151,104 @@
       "state-of-ai-goldman-pulls-claude-code-2026"
     ],
     "updated": "2026-11-13T10:50:00Z"
+  },
+  {
+    "id": "review-agent-config-files-like-build-scripts",
+    "title": "Review agent config files like build scripts",
+    "ring": "trial",
+    "topics": [
+      "security",
+      "reviewing"
+    ],
+    "summary": "Require a reviewer for any change that adds or edits hooks, rules, IDE tasks or MCP entries, and open unfamiliar repositories where no credentials are reachable. Some of these files run when a folder is opened, with no install step.",
+    "signals": [
+      "Agent or IDE config changes merged without a named reviewer",
+      "Machines that open unfamiliar repositories with cloud or publishing credentials in reach",
+      "Config files that appear in a PR with no related code change"
+    ],
+    "evidence": [
+      "stepsecurity-miasma-microsoft-2026",
+      "pillar-deadbugz-2026"
+    ],
+    "updated": "2026-11-13T14:19:00Z"
+  },
+  {
+    "id": "re-approve-an-mcp-server-when-its-tool-definitions-change",
+    "title": "Re-approve an MCP server when its tool definitions change",
+    "ring": "trial",
+    "topics": [
+      "security"
+    ],
+    "summary": "Store a fingerprint of each approved server's tool and prompt definitions and require approval again when it changes. A server that looks harmless in review can change what it tells the agent after you have approved it.",
+    "signals": [
+      "Tool-definition changes from approved servers",
+      "Approved servers with no stored fingerprint",
+      "Sensitive actions run soon after a definition change"
+    ],
+    "evidence": [
+      "pillar-deadbugz-2026",
+      "owasp-llm-top-10-2026"
+    ],
+    "updated": "2026-11-13T14:19:00Z"
+  },
+  {
+    "id": "test-the-sandboxs-egress-and-the-stop-switch",
+    "title": "Test the sandbox's egress and the stop switch",
+    "ring": "trial",
+    "topics": [
+      "security",
+      "looping"
+    ],
+    "summary": "Before unattended runs, try to reach an off-list host from inside the sandbox, give each run its own credentials, and rehearse stopping a run by revoking its credentials and network together. Two labs found agents on the real internet through paths they believed were closed.",
+    "signals": [
+      "Outbound connections from agent sandboxes to hosts off the allowlist",
+      "Credentials shared across agent runs",
+      "Minutes to stop a run and revoke its access in a drill",
+      "Agent runs able to publish to a public registry without approval"
+    ],
+    "evidence": [
+      "anthropic-cyber-evaluation-incidents-2026",
+      "openai-hugging-face-incident-2026"
+    ],
+    "updated": "2026-11-13T14:19:00Z"
+  },
+  {
+    "id": "keep-production-safeguards-on-in-test-and-evaluation-runs",
+    "title": "Keep production safeguards on in test and evaluation runs",
+    "ring": "trial",
+    "topics": [
+      "security",
+      "testing"
+    ],
+    "summary": "Run test, evaluation and sandbox runs with the same guards, reviewers and monitors as production. Two labs ran evaluations without them and found agents had reached real systems.",
+    "signals": [
+      "Evaluation or sandbox runs with production safeguards switched off",
+      "Agent actions in test runs that production review would have flagged",
+      "Test environments with network access production lacks"
+    ],
+    "evidence": [
+      "openai-hugging-face-incident-2026",
+      "anthropic-cyber-evaluation-incidents-2026"
+    ],
+    "updated": "2026-11-13T14:19:00Z"
+  },
+  {
+    "id": "judging-an-injection-defence-by-fixed-attacks",
+    "title": "Don't judge an injection defence by fixed attacks",
+    "ring": "avoid",
+    "topics": [
+      "security",
+      "testing"
+    ],
+    "summary": "Test a defence against an attacker who knows how it works, not a fixed list of known attacks. Defences that looked strong against the fixed list have failed once the attack was written for them.",
+    "signals": [
+      "Defences approved on a fixed test set",
+      "Months since the last red-team run by someone who knew the defence",
+      "Injection defences with no recorded test result"
+    ],
+    "evidence": [
+      "owasp-llm-top-10-2026"
+    ],
+    "updated": "2026-11-13T14:19:00Z"
   }
 ]

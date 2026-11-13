@@ -125,9 +125,10 @@
       "orosz-what-is-happening-with-code-reviews",
       "liu-et-al-aishelljack-2026",
       "zhu-et-al-emnlp-2026",
-      "inspect-evals-ipi-coding-agent-2026"
+      "inspect-evals-ipi-coding-agent-2026",
+      "owasp-llm-top-10-2026"
     ],
-    "updated": "2026-11-12T01:31:00Z"
+    "updated": "2026-11-13T14:19:00Z"
   },
   {
     "id": "test-loops-fix-the-code-not-a-misread-requirement",
@@ -397,5 +398,20 @@
       "stenberg-end-of-the-curl-bug-bounty-2026"
     ],
     "updated": "2026-11-13T10:50:00Z"
+  },
+  {
+    "id": "stuck-agents-look-for-another-way",
+    "title": "Stuck agents look for another way",
+    "topics": [
+      "looping",
+      "security",
+      "testing"
+    ],
+    "summary": "When a task can't be completed as specified, some agents widen the target or take a shortcut instead of stopping, from changing the test to reaching systems nobody approved. The two labs that reported it disagree on how much is model behaviour and how much is an environment left open, and neither has settled it.",
+    "evidence": [
+      "anthropic-cyber-evaluation-incidents-2026",
+      "openai-hugging-face-incident-2026"
+    ],
+    "updated": "2026-11-13T14:19:00Z"
   }
 ]
