@@ -1752,7 +1752,7 @@
     "topics": [
       "security"
     ],
-    "summary": "Keep credentials in code, validate output formats in code, and check every tool call against a policy instead of trusting prompt instructions, and tie each approval to the exact call so it can be used once. A prompt can be talked out of a rule; a policy check can't. (OWASP LLM01, LLM06)",
+    "summary": "Keep credentials in code, validate output formats in code, and check every tool call against a policy instead of trusting prompt instructions, and tie each approval to the exact call so it can be used once. A prompt can be talked out of a rule; a policy check can't. (OWASP LLM01, LLM06, 2025)",
     "signals": [
       "Tool calls that run without a policy check",
       "Credentials reachable from the agent's context or environment",
@@ -1766,7 +1766,7 @@
       "owasp-ai-agent-security-cheat-sheet",
       "owasp-llm-top-10-2026"
     ],
-    "updated": "2026-11-13T14:19:00Z"
+    "updated": "2026-11-13T14:20:00Z"
   },
   {
     "id": "remove-one-leg-of-the-lethal-trifecta",
@@ -1775,7 +1775,7 @@
     "topics": [
       "security"
     ],
-    "summary": "Don't let one agent hold private data, untrusted content and a way to send data out at the same time. If it needs all three, require approval for anything that sends, spends or deletes; if it holds two, assess what remains. Approval limits the damage but doesn't remove the weakness. (OWASP LLM01, LLM02)",
+    "summary": "Don't let one agent hold private data, untrusted content and a way to send data out at the same time. If it needs all three, require approval for anything that sends, spends or deletes; if it holds two, assess what remains. Approval limits the damage but doesn't remove the weakness. (OWASP LLM01, LLM02, 2025)",
     "signals": [
       "Agents with private data, untrusted input and an outbound channel at once",
       "Send, spend or delete actions run without human approval"
@@ -1786,7 +1786,7 @@
       "owasp-llm022025-sensitive-information-disclosure",
       "owasp-llm-top-10-2026"
     ],
-    "updated": "2026-11-13T14:19:00Z"
+    "updated": "2026-11-13T14:20:00Z"
   },
   {
     "id": "verify-a-packages-publisher-and-registration-date",
@@ -1795,7 +1795,7 @@
     "topics": [
       "security"
     ],
-    "summary": "Treat agent installs as privileged: pin with hashes, scan the full dependency tree, and require human approval plus a publisher and registration-date check for any new package. Agents suggest packages that don't exist, and attackers register those names. (OWASP LLM09, LLM03)",
+    "summary": "Treat agent installs as privileged: pin with hashes, scan the full dependency tree, and require human approval plus a publisher and registration-date check for any new package. Agents suggest packages that don't exist, and attackers register those names. (OWASP LLM09, LLM03, 2025)",
     "signals": [
       "New packages added without human approval",
       "Dependencies not pinned with hashes",
@@ -1808,7 +1808,7 @@
       "owasp-llm092025-misinformation",
       "owasp-llm032025-supply-chain"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-13T14:20:00Z"
   },
   {
     "id": "give-security-sensitive-changes-a-human-review",
@@ -1818,7 +1818,7 @@
       "security",
       "reviewing"
     ],
-    "summary": "Don't let the writing agent approve its own PR, and give auth and payment changes a human security review. People trust assisted code more even when it is less secure; explicit instructions and function signatures in the prompt help. (OWASP LLM09)",
+    "summary": "Don't let the writing agent approve its own PR, and give auth and payment changes a human security review. People trust assisted code more even when it is less secure; explicit instructions and function signatures in the prompt help. (OWASP LLM09, 2025)",
     "signals": [
       "Agent PRs on auth or payment paths merged without a security review",
       "Agent PRs approved by the agent that wrote them",
@@ -1830,7 +1830,7 @@
       "osmani-agentic-code-review-coderabbit-data-and-multi-tool-st",
       "owasp-llm092025-misinformation"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-13T14:20:00Z"
   },
   {
     "id": "keep-people-hands-on",
@@ -1840,7 +1840,7 @@
       "security",
       "understanding"
     ],
-    "summary": "Protect time for people to write and debug code themselves, not only through an agent. Without it, people lose skill and understand less of the code they ship. (OWASP LLM09)",
+    "summary": "Protect time for people to write and debug code themselves, not only through an agent. Without it, people lose skill and understand less of the code they ship. (OWASP LLM09, 2025)",
     "signals": [
       "Hours people spend coding and debugging without the agent",
       "Reviewers who can't explain an agent's change when asked"
@@ -1848,7 +1848,7 @@
     "evidence": [
       "owasp-llm092025-misinformation"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-13T14:20:00Z"
   },
   {
     "id": "grant-agents-the-fewest-tools-and-the-minimum-scopes",
@@ -1857,7 +1857,7 @@
     "topics": [
       "security"
     ],
-    "summary": "Give agents only the tools they need, avoid open-ended shell and fetch where possible, run tools with the user's minimum scopes, and authorise in downstream systems. Let agents act up to the production gate, never through it. (OWASP LLM06)",
+    "summary": "Give agents only the tools they need, avoid open-ended shell and fetch where possible, run tools with the user's minimum scopes, and authorise in downstream systems. Let agents act up to the production gate, never through it. (OWASP LLM06, 2025)",
     "signals": [
       "Agent commits merged without review, as a share of agent commits",
       "Agents with open-ended shell or fetch tools",
@@ -1868,7 +1868,7 @@
       "cursor-telemetry-via-orosz",
       "anthropic-ai-native-sdlc-playbook"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-13T14:20:00Z"
   },
   {
     "id": "deny-secrets-to-agents-and-force-the-sandbox",
@@ -1877,7 +1877,7 @@
     "topics": [
       "security"
     ],
-    "summary": "Block agent access to .env* and secrets/**, force the sandbox with a domain allowlist, and use short-lived scoped CI credentials and secret scanning. Never put credentials or controls in CLAUDE.md, rules or skills, since agents can be made to reveal them. (OWASP LLM02, LLM07)",
+    "summary": "Block agent access to .env* and secrets/**, force the sandbox with a domain allowlist, and use short-lived scoped CI credentials and secret scanning. Never put credentials or controls in CLAUDE.md, rules or skills, since agents can be made to reveal them. (OWASP LLM02, LLM07, 2025)",
     "signals": [
       "Agent reads of .env*, secrets/** or ~/.ssh in session logs",
       "Secret-scanning hits on agent changes",
@@ -1890,7 +1890,7 @@
       "owasp-llm072025-system-prompt-leakage",
       "apiiro-agents-leaking-secrets-2026"
     ],
-    "updated": "2026-11-12T16:36:00Z"
+    "updated": "2026-11-13T14:20:00Z"
   },
   {
     "id": "allowlist-mcp-servers-and-enforce-access-at-the-tool-layer",
@@ -1899,7 +1899,7 @@
     "topics": [
       "security"
     ],
-    "summary": "Allow only approved MCP servers, keep privileged tools apart from external ones, require fixed-schema responses, and confirm sensitive actions outside the model. A poisoned tool description can steer an agent, and models rarely refuse it. (OWASP LLM01, LLM06)",
+    "summary": "Allow only approved MCP servers, keep privileged tools apart from external ones, require fixed-schema responses, and confirm sensitive actions outside the model. A poisoned tool description can steer an agent, and models rarely refuse it. (OWASP LLM01, LLM06, 2025)",
     "signals": [
       "Connections to MCP servers outside the allowlist",
       "Follow-on tool calls blocked by the tool layer, per week",
@@ -1911,7 +1911,7 @@
       "willison-the-lethal-trifecta",
       "pillar-deadbugz-2026"
     ],
-    "updated": "2026-11-13T14:19:00Z"
+    "updated": "2026-11-13T14:20:00Z"
   },
   {
     "id": "enforce-scope-on-every-read-path-of-shared-agent-memory",
@@ -1920,7 +1920,7 @@
     "topics": [
       "security"
     ],
-    "summary": "Check access scope on direct fetches by ID, not just search; run contradiction checks before any duplicate filter; and record writer and source for every memory entry. Otherwise direct reads leak across scopes and corrections get dropped as duplicates. (OWASP LLM08, LLM04)",
+    "summary": "Check access scope on direct fetches by ID, not just search; run contradiction checks before any duplicate filter; and record writer and source for every memory entry. Otherwise direct reads leak across scopes and corrections get dropped as duplicates. (OWASP LLM08, LLM04, 2025)",
     "signals": [
       "Cross-scope reads through a direct fetch by ID",
       "Contradicting entries dropped as duplicates instead of stored as updates",
@@ -1929,7 +1929,7 @@
     "evidence": [
       "margalit-et-al"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-13T14:20:00Z"
   },
   {
     "id": "inventory-sign-and-pin-models-and-packages",
@@ -1938,7 +1938,7 @@
     "topics": [
       "security"
     ],
-    "summary": "Keep a software and AI bill of materials, use signed sources and pinned registries, restrict network egress on fetches, and never load untrusted model files. (OWASP LLM03, LLM04)",
+    "summary": "Keep a software and AI bill of materials, use signed sources and pinned registries, restrict network egress on fetches, and never load untrusted model files. (OWASP LLM03, LLM04, 2025)",
     "signals": [
       "Dependencies or models missing from the bill of materials",
       "Fetches outside the egress allowlist",
@@ -1950,7 +1950,7 @@
       "owasp-llm032025-supply-chain",
       "owasp-llm042025-data-and-model-poisoning"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-13T14:20:00Z"
   },
   {
     "id": "treat-agent-output-as-untrusted-input",
@@ -1959,7 +1959,7 @@
     "topics": [
       "security"
     ],
-    "summary": "Run agent commands in a sandbox, review agent diffs as you would an untrusted contributor's, run SAST on them, and block remote images in rendered output. An agent's shell tool runs model output directly, by design. (OWASP LLM05)",
+    "summary": "Run agent commands in a sandbox, review agent diffs as you would an untrusted contributor's, run SAST on them, and block remote images in rendered output. An agent's shell tool runs model output directly, by design. (OWASP LLM05, 2025)",
     "signals": [
       "Agent commands run outside the sandbox",
       "SAST findings on agent diffs",
@@ -1970,7 +1970,7 @@
       "chen-et-al-securevibebench-2026",
       "owasp-llm-top-10-2026"
     ],
-    "updated": "2026-11-13T14:19:00Z"
+    "updated": "2026-11-13T14:20:00Z"
   },
   {
     "id": "partition-retrieval-stores-and-make-retrieval-permission-awa",
@@ -1979,7 +1979,7 @@
     "topics": [
       "security"
     ],
-    "summary": "Split retrieval stores by tenant or team, make retrieval check the user's permissions, and validate sources before indexing them. Shared stores leak across permission boundaries, and embeddings can be turned back into text. (OWASP LLM08)",
+    "summary": "Split retrieval stores by tenant or team, make retrieval check the user's permissions, and validate sources before indexing them. Shared stores leak across permission boundaries, and embeddings can be turned back into text. (OWASP LLM08, 2025)",
     "signals": [
       "Retrievals that cross a tenant or team boundary",
       "Indexed sources with no validation record"
@@ -1987,7 +1987,7 @@
     "evidence": [
       "owasp-llm082025-vector-and-embedding-weaknesses"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-13T14:20:00Z"
   },
   {
     "id": "set-rate-limits-quotas-timeouts-and-iteration-caps",
@@ -1997,7 +1997,7 @@
       "security",
       "measuring"
     ],
-    "summary": "Set rate limits, quotas, timeouts and iteration caps on agent runs, and review spend against budget monthly. Make caps stop the run rather than raise an alert, and give each run a cost ceiling. Agent use can burn a year's budget in months; use hard limits against abuse, and routing and spend nudges for staff. (OWASP LLM10)",
+    "summary": "Set rate limits, quotas, timeouts and iteration caps on agent runs, and review spend against budget monthly. Make caps stop the run rather than raise an alert, and give each run a cost ceiling. Agent use can burn a year's budget in months; use hard limits against abuse, and routing and spend nudges for staff. (OWASP LLM10, 2025)",
     "signals": [
       "Agent spend against budget, by month and team",
       "Agent runs that hit an iteration cap or timeout",
@@ -2010,7 +2010,7 @@
       "uber-efficient-software-factory",
       "owasp-llm-top-10-2026"
     ],
-    "updated": "2026-11-13T14:19:00Z"
+    "updated": "2026-11-13T14:20:00Z"
   },
   {
     "id": "sign-a-data-processing-agreement-before-tools-see-company-da",
@@ -2019,7 +2019,7 @@
     "topics": [
       "security"
     ],
-    "summary": "Sign a data processing agreement before any AI tool sees company data, and review it again whenever the supplier changes its terms. Vendors can change terms to train on customer data. (OWASP LLM03)",
+    "summary": "Sign a data processing agreement before any AI tool sees company data, and review it again whenever the supplier changes its terms. Vendors can change terms to train on customer data. (OWASP LLM03, 2025)",
     "signals": [
       "AI tools seeing company data without a DPA",
       "Supplier term changes not yet re-reviewed"
@@ -2028,7 +2028,7 @@
       "owasp-llm032025-supply-chain",
       "nyt-anthropic-copyright-settlement"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-13T14:20:00Z"
   },
   {
     "id": "dont-rely-on-delimiting-untrusted-content",
@@ -2038,7 +2038,7 @@
       "security",
       "specification"
     ],
-    "summary": "Don't count delimiters or role tags around untrusted content as a security control; models judge who is speaking by how text reads, not by its tags, so forged instructions get through. Enforce at the tool layer instead. (OWASP LLM01)",
+    "summary": "Don't count delimiters or role tags around untrusted content as a security control; models judge who is speaking by how text reads, not by its tags, so forged instructions get through. Enforce at the tool layer instead. (OWASP LLM01, 2025)",
     "signals": [
       "Seeded injections that succeed despite delimiters",
       "Delimiting listed as a control with no attack test behind it"
@@ -2049,7 +2049,7 @@
       "owasp-llm012025-prompt-injection",
       "owasp-llm-top-10-2026"
     ],
-    "updated": "2026-11-13T14:19:00Z"
+    "updated": "2026-11-13T14:20:00Z"
   },
   {
     "id": "dont-treat-a-stronger-model-as-a-security-control",
@@ -2102,7 +2102,7 @@
     "topics": [
       "security"
     ],
-    "summary": "Have an authorised red team plant injections, in a sandbox, in test issues and docs our agents read. A guardrail that stops most attacks still fails, because an attacker only needs one to work. (OWASP LLM01)",
+    "summary": "Have an authorised red team plant injections, in a sandbox, in test issues and docs our agents read. A guardrail that stops most attacks still fails, because an attacker only needs one to work. (OWASP LLM01, 2025)",
     "signals": [
       "Seeded injections that trigger an agent action",
       "Seeded injections caught by logging or alerts"
@@ -2110,7 +2110,7 @@
     "evidence": [
       "willison-the-lethal-trifecta"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-13T14:20:00Z"
   },
   {
     "id": "test-the-harness-against-a-poisoned-mcp-server",
@@ -2119,7 +2119,7 @@
     "topics": [
       "security"
     ],
-    "summary": "Have an authorised red team run a deliberately poisoned test MCP server in a sandbox, alongside file and HTTP tools. This checks whether tool-layer enforcement holds when injected text gets through. (OWASP LLM01, LLM06)",
+    "summary": "Have an authorised red team run a deliberately poisoned test MCP server in a sandbox, alongside file and HTTP tools. This checks whether tool-layer enforcement holds when injected text gets through. (OWASP LLM01, LLM06, 2025)",
     "signals": [
       "Follow-on tool calls blocked vs attempted after poisoned output",
       "Sensitive actions that ran without a policy check"
@@ -2127,7 +2127,7 @@
     "evidence": [
       "owasp-community-mcp-tool-poisoning"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-13T14:20:00Z"
   },
   {
     "id": "log-and-flag-every-package-agents-add",
@@ -2136,7 +2136,7 @@
     "topics": [
       "security"
     ],
-    "summary": "Try logging every package an agent adds and flagging names that don't exist, were registered recently, or have unknown publishers. Published rates of invented package names are out of date, so measure your own. (OWASP LLM09, LLM03)",
+    "summary": "Try logging every package an agent adds and flagging names that don't exist, were registered recently, or have unknown publishers. Published rates of invented package names are out of date, so measure your own. (OWASP LLM09, LLM03, 2025)",
     "signals": [
       "Flagged package names per 100 agent installs",
       "Flagged packages that turned out to be a real risk"
@@ -2144,7 +2144,7 @@
     "evidence": [
       "spracklen-et-al-usenix-security-2025"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-13T14:20:00Z"
   },
   {
     "id": "intercept-package-installs-against-a-malware-feed",
@@ -2153,7 +2153,7 @@
     "topics": [
       "security"
     ],
-    "summary": "Wrap npm, npx, yarn and pnpm so every install is checked against a malware feed. Try it in one team's agent and CI environments for a month. (OWASP LLM03)",
+    "summary": "Wrap npm, npx, yarn and pnpm so every install is checked against a malware feed. Try it in one team's agent and CI environments for a month. (OWASP LLM03, 2025)",
     "signals": [
       "Installs blocked per week",
       "Legitimate packages wrongly blocked",
@@ -2162,7 +2162,7 @@
     "evidence": [
       "aikido-safechain"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-13T14:20:00Z"
   },
   {
     "id": "compare-defects-by-provenance",
@@ -2172,7 +2172,7 @@
       "security",
       "measuring"
     ],
-    "summary": "Try tagging agent-authored commits and comparing defects and security findings against human-authored ones. There are signs AI-written code is riskier but no solid data, so measure your own. (OWASP LLM09)",
+    "summary": "Try tagging agent-authored commits and comparing defects and security findings against human-authored ones. There are signs AI-written code is riskier but no solid data, so measure your own. (OWASP LLM09, 2025)",
     "signals": [
       "Defects per change, agent-tagged vs human",
       "Security findings per change, agent-tagged vs human",
@@ -2183,7 +2183,7 @@
       "perry-et-al-ccs-2023",
       "baltes-et-al"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-13T14:20:00Z"
   },
   {
     "id": "tier-agent-autonomy-by-alert-severity",
@@ -2192,7 +2192,7 @@
     "topics": [
       "security"
     ],
-    "summary": "Run a read-only diagnosis agent on alerts in a non-production environment, with any fix arriving only as a human-approved draft PR. Tiering autonomy by alert severity is a proposal with no data behind it. (OWASP LLM06)",
+    "summary": "Run a read-only diagnosis agent on alerts in a non-production environment, with any fix arriving only as a human-approved draft PR. Tiering autonomy by alert severity is a proposal with no data behind it. (OWASP LLM06, 2025)",
     "signals": [
       "Agent diagnoses the on-call engineer confirmed as correct",
       "Write actions attempted by the diagnosis agent (should be zero)"
@@ -2201,7 +2201,7 @@
       "anthropic-ai-native-sdlc-playbook",
       "augmented-coding-patterns-catalog"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-13T14:20:00Z"
   },
   {
     "id": "run-scheduled-ai-security-scans-on-one-service",
@@ -2225,7 +2225,7 @@
     "topics": [
       "security"
     ],
-    "summary": "On one internal agent that reads tickets or web pages, keep the planner from ever seeing tool output and add policies for its send, spend and delete tools. This blocks most injections but the agent completes fewer tasks. (OWASP LLM01)",
+    "summary": "On one internal agent that reads tickets or web pages, keep the planner from ever seeing tool output and add policies for its send, spend and delete tools. This blocks most injections but the agent completes fewer tasks. (OWASP LLM01, 2025)",
     "signals": [
       "Seeded injections that trigger an action",
       "Tasks the agent completes, before vs after the split",
@@ -2234,7 +2234,7 @@
     "evidence": [
       "camel-debenedetti-et-al"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-13T14:20:00Z"
   },
   {
     "id": "compare-a-layered-filter-stack-with-tool-layer-enforcement",
@@ -2243,7 +2243,7 @@
     "topics": [
       "security"
     ],
-    "summary": "Have an authorised red team run the same seeded injections, in a sandbox, against layered input and output filters and against tool-layer enforcement. The claim that layered filters stop nearly all attacks has no measurement behind it. (OWASP LLM01)",
+    "summary": "Have an authorised red team run the same seeded injections, in a sandbox, against layered input and output filters and against tool-layer enforcement. The claim that layered filters stop nearly all attacks has no measurement behind it. (OWASP LLM01, 2025)",
     "signals": [
       "Seeded injections that trigger an action, per setup",
       "Normal inputs wrongly blocked, per setup"
@@ -2251,7 +2251,7 @@
     "evidence": [
       "geng-et-al-cmc-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-13T14:20:00Z"
   },
   {
     "id": "name-a-checker-before-agent-output-drives-a-decision",
@@ -3529,7 +3529,7 @@
     "topics": [
       "security"
     ],
-    "summary": "Don't connect agents to MCP servers nobody has reviewed. Tool descriptions can carry hidden instructions that steer the agent, and you can't tell from outside which servers do. Review again when a server's tool definitions change. (OWASP LLM01, LLM06)",
+    "summary": "Don't connect agents to MCP servers nobody has reviewed. Tool descriptions can carry hidden instructions that steer the agent, and you can't tell from outside which servers do. Review again when a server's tool definitions change. (OWASP LLM01, LLM06, 2025)",
     "signals": [
       "MCP servers in use that are not on an approved list",
       "Tool description changes in approved servers since review"
@@ -3538,7 +3538,7 @@
       "mcptox-wang-et-al",
       "pillar-deadbugz-2026"
     ],
-    "updated": "2026-11-13T14:19:00Z"
+    "updated": "2026-11-13T14:20:00Z"
   },
   {
     "id": "accepting-new-dependencies-an-agent-adds-unchecked",
@@ -3547,7 +3547,7 @@
     "topics": [
       "security"
     ],
-    "summary": "Don't merge a dependency an agent added without checking it exists, who publishes it and how old it is. Agents sometimes name packages that don't exist, and attackers register those names. (OWASP LLM03, LLM09)",
+    "summary": "Don't merge a dependency an agent added without checking it exists, who publishes it and how old it is. Agents sometimes name packages that don't exist, and attackers register those names. (OWASP LLM03, LLM09, 2025)",
     "signals": [
       "New dependencies in agent PRs",
       "Dependencies published recently or by unknown publishers",
@@ -3557,7 +3557,7 @@
       "spracklen-et-al-usenix-security-2025",
       "krishna-et-al-preprint"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-13T14:20:00Z"
   },
   {
     "id": "leaving-structural-refactoring-to-agents",
