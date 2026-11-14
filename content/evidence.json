@@ -3639,5 +3639,19 @@
       "delivery"
     ],
     "updated": "2026-11-13T14:19:00Z"
+  },
+  {
+    "id": "mirzadeh-et-al-iclr-2025",
+    "title": "Mirzadeh et al. (Apple), ICLR 2025",
+    "url": "https://arxiv.org/abs/2410.05229",
+    "kind": "study",
+    "era": "older",
+    "caveat": "math word problems, 2024 models",
+    "finding": "On grade-school math questions regenerated from templates, accuracy for the same question varied by up to 15 points across versions; changing numbers or adding one irrelevant sentence cut accuracy by 17.5 points for the strongest model tested and by up to 65.7 for a small one, while the strongest model held steady when relevant clauses were added.",
+    "topics": [
+      "measuring",
+      "testing"
+    ],
+    "updated": "2026-11-14T19:21:00Z"
   }
 ]

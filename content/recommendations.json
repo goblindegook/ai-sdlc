@@ -608,9 +608,10 @@
       "Model switches made on a gap that sits inside the interval"
     ],
     "evidence": [
-      "bean-et-al-neurips-2025"
+      "bean-et-al-neurips-2025",
+      "mirzadeh-et-al-iclr-2025"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-14T19:21:00Z"
   },
   {
     "id": "check-llm-judges-against-human-labels",
@@ -4250,5 +4251,24 @@
       "owasp-llm-top-10-2026"
     ],
     "updated": "2026-11-13T14:19:00Z"
+  },
+  {
+    "id": "retest-key-tasks-with-reworded-inputs",
+    "title": "Retest key tasks with reworded inputs",
+    "ring": "trial",
+    "topics": [
+      "measuring",
+      "testing"
+    ],
+    "summary": "Before relying on a model for a task type, rerun it on reworded copies of the same tasks: change names and numbers and add a sentence that doesn't matter. A pass that disappears under rewording was the best case, not the usual one.",
+    "signals": [
+      "Pass rate on reworded copies of a task against the original",
+      "Agent changes that break when an irrelevant detail in the ticket changes",
+      "Model comparisons made on one phrasing of each task"
+    ],
+    "evidence": [
+      "mirzadeh-et-al-iclr-2025"
+    ],
+    "updated": "2026-11-14T19:21:00Z"
   }
 ]

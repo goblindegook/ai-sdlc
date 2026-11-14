@@ -19,11 +19,12 @@
     "topics": [
       "measuring"
     ],
-    "summary": "Agents fail on tasks unlike what they were trained on, not on tasks that look hard. A task that seems easy can fail and a hard one succeed, so judge from real results on your work.",
+    "summary": "Agents fail on tasks unlike what they were trained on, not on tasks that look hard. A task that seems easy can fail and a hard one succeed, so judge from real results on your work. Even small, irrelevant changes to a task's wording or numbers can flip the result.",
     "evidence": [
-      "shojaee-et-al-the-illusion-of-thinking"
+      "shojaee-et-al-the-illusion-of-thinking",
+      "mirzadeh-et-al-iclr-2025"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-14T19:21:00Z"
   },
   {
     "id": "every-line-in-the-context-file-costs-money",
