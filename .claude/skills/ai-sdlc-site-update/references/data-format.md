@@ -24,7 +24,15 @@ all built from these files, so editing them is the whole job.
   the latest one, and the skill's next run starts from the latest one. Only a change a reader would see in the
   item's own text, ring, evidence or signals counts. Renaming, reordering or reassigning topics does not: leave
   `updated` alone, or the next run starts later than the last real update and skips wiki notes ingested in between.
+- `added`: UTC time the item went on the site, same format as `updated`. The item shows only its day ("Added 19
+  November 2026"), followed by "Updated ..." when `updated` falls on a later day. Set it once on a new item, equal
+  to its `updated`. When a Trial is promoted to Adopt or Avoid, set it to the time of the promotion, so the date
+  shows when the practice became a recommendation. Leave it alone on every other change, a demotion to Trial
+  included.
 - `evidence`: ids from `content/evidence.json`. The build fails if one doesn't exist.
+
+`src/content.config.ts` checks every field (types, topic slugs, rings, kinds, date formats, no unknown keys) and the
+build fails on a mismatch; `src/data/index.ts` checks that ids are unique across all files.
 
 ## recommendations.json
 
@@ -37,6 +45,7 @@ all built from these files, so editing them is the whole job.
   "summary": "What to do in your own team, then why in one plain sentence. No study names or figures.",
   "signals": ["Something the team can count in its repo, CI, PRs or spend", "Another one"],
   "evidence": ["author-venue-year"],
+  "added": "2026-11-04T11:31:00Z",
   "updated": "2026-11-04T11:31:00Z"
 }
 ```
@@ -51,7 +60,7 @@ all built from these files, so editing them is the whole job.
 
 ```json
 { "id": "...", "title": "...", "topics": ["testing"],
-  "summary": "What goes wrong and what it costs a team, in plain words.", "evidence": ["..."], "updated": "..." }
+  "summary": "What goes wrong and what it costs a team, in plain words.", "evidence": ["..."], "added": "...", "updated": "..." }
 ```
 
 - An unsettled question is a challenge too: title it as the problem ("Nobody knows how much to specify up
@@ -71,6 +80,7 @@ all built from these files, so editing them is the whole job.
   "caveat": "preprint",
   "finding": "One sentence on what the source found or claims, with its own numbers if it has any.",
   "topics": ["testing"],
+  "added": "2026-11-04T11:31:00Z",
   "updated": "2026-11-04T11:31:00Z"
 }
 ```

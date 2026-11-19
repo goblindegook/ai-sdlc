@@ -19,6 +19,7 @@
       "pancher-et-al-xp-2025",
       "osmani-claude-code-verification-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-19T11:44:00Z"
   },
   {
@@ -40,6 +41,7 @@
       "madaan-et-al-self-refine",
       "shinn-et-al-reflexion"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -58,6 +60,7 @@
       "shinn-et-al-reflexion",
       "madaan-et-al-self-refine"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -76,6 +79,7 @@
     "evidence": [
       "swe-agent-neurips-2024"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -101,6 +105,7 @@
       "robbes-et-al-tosem-2026",
       "milanese-et-al-arxiv-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-06T15:45:00Z"
   },
   {
@@ -122,6 +127,7 @@
       "anthropic-cyber-evaluation-incidents-2026",
       "openai-hugging-face-incident-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T14:19:00Z"
   },
   {
@@ -141,6 +147,7 @@
       "uber-efficient-software-factory",
       "databricks-managing-ai-coding-costs"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -159,6 +166,7 @@
     "evidence": [
       "cooper-driving-in-gears"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-04T17:15:00Z"
   },
   {
@@ -176,6 +184,7 @@
     "evidence": [
       "osmani-software-factories"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -195,6 +204,7 @@
       "dan-luu-pl-tokens",
       "loopsbench"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -213,6 +223,7 @@
       "osmani-software-factories",
       "augmented-coding-patterns-catalog"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -230,6 +241,7 @@
     "evidence": [
       "anthropic-effective-harnesses-for-long-running-agents"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -247,6 +259,7 @@
     "evidence": [
       "humanlayer-software-factory-write-up"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -269,6 +282,7 @@
       "anthropic-solving-code-review-at-anthropic",
       "osmani-claude-code-verification-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-19T11:44:00Z"
   },
   {
@@ -288,6 +302,7 @@
       "fornasier-getting-out-of-the-loop",
       "zechner-slowing-down"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -307,6 +322,7 @@
       "karpathy-on-dwarkesh-2025-10",
       "metr-rct-2025"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -322,6 +338,7 @@
       "Tasks completed after the floor is added"
     ],
     "evidence": [],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -341,6 +358,7 @@
       "chen-et-al-self-debugging",
       "swe-search-iclr-2025"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -361,6 +379,7 @@
       "emanuel-overprompting",
       "anthropic-the-advisor-strategy"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -379,6 +398,7 @@
     "evidence": [
       "loopsbench"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -398,6 +418,7 @@
       "swe-search-iclr-2025",
       "brown-et-al-large-language-monkeys-2024"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T10:50:00Z"
   },
   {
@@ -416,6 +437,7 @@
     "evidence": [
       "jain-are-harnesses-worth-the-cost-martinfowlercom"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -434,6 +456,7 @@
       "morris-humans-and-agents",
       "laycock-thoughtworks-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-08T16:55:00Z"
   },
   {
@@ -451,6 +474,7 @@
     "evidence": [
       "boeckeler-local-models-for-coding"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -469,6 +493,7 @@
     "evidence": [
       "posthog-scheduled-agents"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -493,6 +518,7 @@
       "dora-2025",
       "argenti-goldman-via-the-next-web-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T10:50:00Z"
   },
   {
@@ -514,6 +540,7 @@
       "guardian",
       "dora-2025"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -536,6 +563,7 @@
       "stanford-ai-index-2026",
       "destefanis-aste-arxiv-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-19T11:44:00Z"
   },
   {
@@ -556,6 +584,7 @@
       "cursor-telemetry-via-orosz",
       "posthog-newsletter"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -578,6 +607,7 @@
       "chatterji-et-al-openai",
       "fortune-on-uber-ai-spending"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -596,6 +626,7 @@
     "evidence": [
       "iconiq-state-of-ai-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -614,6 +645,7 @@
       "bean-et-al-neurips-2025",
       "mirzadeh-et-al-iclr-2025"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-14T19:21:00Z"
   },
   {
@@ -633,6 +665,7 @@
     "evidence": [
       "raicea-posthog"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -654,6 +687,7 @@
       "newton-king-opentelemetry-2026",
       "liu-solomon-opentelemetry-2025"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-06T15:45:00Z"
   },
   {
@@ -672,6 +706,7 @@
     "evidence": [
       "dan-luu-pl-tokens"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -692,6 +727,7 @@
       "uber-efficient-software-factory",
       "fan-et-al-arxiv-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-19T11:44:00Z"
   },
   {
@@ -712,6 +748,7 @@
       "anderson",
       "posthog-newsletter"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -733,6 +770,7 @@
       "ewerlof",
       "baltes-et-al"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-12T16:36:00Z"
   },
   {
@@ -754,6 +792,7 @@
       "honeycomb",
       "liebscher-et-al"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -772,6 +811,7 @@
       "fornasier-getting-out-of-the-loop",
       "bean-strauss-singh-hbr"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -791,6 +831,7 @@
     "evidence": [
       "tabarsi-et-al"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -809,6 +850,7 @@
     "evidence": [
       "loopsbench"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -829,6 +871,7 @@
       "pinecoder",
       "orosz-roi-of-ai-spend"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -849,6 +892,7 @@
       "orosz-roi-of-ai-spend",
       "abitbol-revolut-ai-engineer-nyc-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-04T14:31:00Z"
   },
   {
@@ -869,6 +913,7 @@
       "gloaguen-et-al",
       "liu-et-al-aishelljack-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-12T01:31:00Z"
   },
   {
@@ -887,6 +932,7 @@
     "evidence": [
       "gloaguen-et-al"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -906,6 +952,7 @@
       "shim-et-al-iclr-2026",
       "paulsen"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -928,6 +975,7 @@
       "uber-efficient-software-factory",
       "fan-et-al-arxiv-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-19T11:44:00Z"
   },
   {
@@ -946,6 +994,7 @@
     "evidence": [
       "swe-agent-neurips-2024"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -966,6 +1015,7 @@
       "augmented-coding-patterns-catalog",
       "fan-et-al-arxiv-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-19T11:44:00Z"
   },
   {
@@ -986,6 +1036,7 @@
       "bache-selander-probity-interview",
       "bache-ordog-habit-hooks-interview"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-04T14:31:00Z"
   },
   {
@@ -1004,6 +1055,7 @@
       "dodell",
       "langchain-anatomy-of-an-agent-harness"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1023,6 +1075,7 @@
     "evidence": [
       "augmented-coding-patterns-catalog"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1039,6 +1092,7 @@
     "evidence": [
       "kassner-schutze-acl-2020"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1056,6 +1110,7 @@
     "evidence": [
       "min-et-al-emnlp-2022"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1073,6 +1128,7 @@
     "evidence": [
       "system-design-newsletter-spec-driven-development"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1093,6 +1149,7 @@
       "margalit-et-al",
       "anthropic-components-of-agent-memory-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-08T16:55:00Z"
   },
   {
@@ -1110,6 +1167,7 @@
     "evidence": [
       "augmented-coding-patterns-catalog"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1128,6 +1186,7 @@
     "evidence": [
       "karpathy-on-dwarkesh-2025-10"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1145,6 +1204,7 @@
     "evidence": [
       "augmented-coding-patterns-catalog"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1164,6 +1224,7 @@
       "piskala",
       "beck-earn-and-learn-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-12T16:36:00Z"
   },
   {
@@ -1183,6 +1244,7 @@
       "shim-et-al-iclr-2026",
       "paulsen"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1200,6 +1262,7 @@
     "evidence": [
       "galster-et-al-aiware-26"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1221,6 +1284,7 @@
       "foote-yoder-1997",
       "perez-nng-context-architecture"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1241,6 +1305,7 @@
       "neo-kim-and-gencay-claude-code-token-usage",
       "gloaguen-et-al"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1259,6 +1324,7 @@
       "fowler-2026-09-28",
       "paltenghi-chandra-arxiv-260709900-aftervibe"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1276,6 +1342,7 @@
     "evidence": [
       "gonzalez-2026-03"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1293,6 +1360,7 @@
     "evidence": [
       "marin-perez-2026-05-20"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1310,6 +1378,7 @@
     "evidence": [
       "boeckeler-three-spec-driven-development-tools"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1327,6 +1396,7 @@
     "evidence": [
       "lopopolo-openai-harness-engineering"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1344,6 +1414,7 @@
     "evidence": [
       "uber-on-pragmatic-engineer"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1361,6 +1432,7 @@
     "evidence": [
       "uber-on-pragmatic-engineer"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1381,6 +1453,7 @@
       "metr-research-update-2025-08",
       "perry-et-al-ccs-2023"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1402,6 +1475,7 @@
       "anthropic-solving-code-review-at-anthropic",
       "uber-on-pragmatic-engineer"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-04T17:15:00Z"
   },
   {
@@ -1420,6 +1494,7 @@
     "evidence": [
       "osmani-agentic-code-review-coderabbit-data-and-multi-tool-st"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1438,6 +1513,7 @@
     "evidence": [
       "augmented-coding-patterns-catalog"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1457,6 +1533,7 @@
       "humanlayer-software-factory-write-up",
       "orosz-what-is-happening-with-code-reviews"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1474,6 +1551,7 @@
     "evidence": [
       "osmani-agentic-code-review-coderabbit-data-and-multi-tool-st"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1492,6 +1570,7 @@
       "orosz-the-pulse-concern-about-ai-review",
       "lin-et-al-arxiv-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-19T11:44:00Z"
   },
   {
@@ -1511,6 +1590,7 @@
       "evil-martians-ten-anti-ai-slop-moves",
       "osmani-claude-code-verification-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-19T11:44:00Z"
   },
   {
@@ -1529,6 +1609,7 @@
     "evidence": [
       "anthropic-ai-native-sdlc-playbook"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1549,6 +1630,7 @@
       "brasil-when-i-reject-ai-code-even-if-it-works",
       "tanna-hand-write-commits"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1566,6 +1648,7 @@
     "evidence": [
       "lawson-you-can-just-choose-how-many-bugs-you-want"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1584,6 +1667,7 @@
     "evidence": [
       "dan-luu-ai-coding"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1602,6 +1686,7 @@
     "evidence": [
       "tornhill-controlling-the-uncertainty-machine"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1622,6 +1707,7 @@
       "osmani-claude-code-verification-2026",
       "laiq-et-al-arxiv-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-19T11:44:00Z"
   },
   {
@@ -1643,6 +1729,7 @@
       "pinecoder",
       "kunal-resisting-cognitive-surrender-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-08T16:55:00Z"
   },
   {
@@ -1662,6 +1749,7 @@
     "evidence": [
       "cervera-vibe-everything"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1680,6 +1768,7 @@
     "evidence": [
       "ellens-the-system-is-on-the-other-side"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1698,6 +1787,7 @@
     "evidence": [
       "anthropic-solving-code-review-at-anthropic"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1717,6 +1807,7 @@
       "anthropic-solving-code-review-at-anthropic",
       "osmani-claude-code-verification-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-19T11:44:00Z"
   },
   {
@@ -1737,6 +1828,7 @@
       "astrogator-uiuc-and-ibm",
       "anthropic-and-theorem-formal-verification"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1755,6 +1847,7 @@
     "evidence": [
       "openai-scaling-code-verification"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -1778,6 +1871,7 @@
       "owasp-ai-agent-security-cheat-sheet",
       "owasp-llm-top-10-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T14:20:00Z"
   },
   {
@@ -1798,6 +1892,7 @@
       "owasp-llm022025-sensitive-information-disclosure",
       "owasp-llm-top-10-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T14:20:00Z"
   },
   {
@@ -1820,6 +1915,7 @@
       "owasp-llm092025-misinformation",
       "owasp-llm032025-supply-chain"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T14:20:00Z"
   },
   {
@@ -1842,6 +1938,7 @@
       "osmani-agentic-code-review-coderabbit-data-and-multi-tool-st",
       "owasp-llm092025-misinformation"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T14:20:00Z"
   },
   {
@@ -1860,6 +1957,7 @@
     "evidence": [
       "owasp-llm092025-misinformation"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T14:20:00Z"
   },
   {
@@ -1880,6 +1978,7 @@
       "cursor-telemetry-via-orosz",
       "anthropic-ai-native-sdlc-playbook"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T14:20:00Z"
   },
   {
@@ -1902,6 +2001,7 @@
       "owasp-llm072025-system-prompt-leakage",
       "apiiro-agents-leaking-secrets-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T14:20:00Z"
   },
   {
@@ -1923,6 +2023,7 @@
       "willison-the-lethal-trifecta",
       "pillar-deadbugz-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T14:20:00Z"
   },
   {
@@ -1941,6 +2042,7 @@
     "evidence": [
       "margalit-et-al"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T14:20:00Z"
   },
   {
@@ -1962,6 +2064,7 @@
       "owasp-llm032025-supply-chain",
       "owasp-llm042025-data-and-model-poisoning"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T14:20:00Z"
   },
   {
@@ -1982,6 +2085,7 @@
       "chen-et-al-securevibebench-2026",
       "owasp-llm-top-10-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T14:20:00Z"
   },
   {
@@ -1999,6 +2103,7 @@
     "evidence": [
       "owasp-llm082025-vector-and-embedding-weaknesses"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T14:20:00Z"
   },
   {
@@ -2022,6 +2127,7 @@
       "uber-efficient-software-factory",
       "owasp-llm-top-10-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T14:20:00Z"
   },
   {
@@ -2040,6 +2146,7 @@
       "owasp-llm032025-supply-chain",
       "nyt-anthropic-copyright-settlement"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T14:20:00Z"
   },
   {
@@ -2061,6 +2168,7 @@
       "owasp-llm012025-prompt-injection",
       "owasp-llm-top-10-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T14:20:00Z"
   },
   {
@@ -2081,6 +2189,7 @@
       "zhu-et-al-emnlp-2026",
       "chen-et-al-securevibebench-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-12T01:31:00Z"
   },
   {
@@ -2105,6 +2214,7 @@
       "he-et-al-via-ehsani-et-al",
       "baltes-et-al"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -2122,6 +2232,7 @@
     "evidence": [
       "willison-the-lethal-trifecta"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T14:20:00Z"
   },
   {
@@ -2139,6 +2250,7 @@
     "evidence": [
       "owasp-community-mcp-tool-poisoning"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T14:20:00Z"
   },
   {
@@ -2156,6 +2268,7 @@
     "evidence": [
       "spracklen-et-al-usenix-security-2025"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T14:20:00Z"
   },
   {
@@ -2174,6 +2287,7 @@
     "evidence": [
       "aikido-safechain"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T14:20:00Z"
   },
   {
@@ -2195,6 +2309,7 @@
       "perry-et-al-ccs-2023",
       "baltes-et-al"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T14:20:00Z"
   },
   {
@@ -2213,6 +2328,7 @@
       "anthropic-ai-native-sdlc-playbook",
       "augmented-coding-patterns-catalog"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T14:20:00Z"
   },
   {
@@ -2228,6 +2344,7 @@
       "Triage minutes per finding"
     ],
     "evidence": [],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -2246,6 +2363,7 @@
     "evidence": [
       "camel-debenedetti-et-al"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T14:20:00Z"
   },
   {
@@ -2263,6 +2381,7 @@
     "evidence": [
       "geng-et-al-cmc-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T14:20:00Z"
   },
   {
@@ -2282,6 +2401,7 @@
       "times-of-israel-ai-flagged-cargo-cnn-relay",
       "trending-topics-false-ai-intelligence-report-cnn-relay"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -2301,6 +2421,7 @@
       "openai-coordinated-disclosure",
       "orosz-time-to-rethink-software"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -2318,6 +2439,7 @@
     "evidence": [
       "anthropic-using-llms-to-secure-source-code"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -2337,6 +2459,7 @@
     "evidence": [
       "github-changelog-security-validation-for-third-party-agents"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -2365,6 +2488,7 @@
       "haroon-et-al-arxiv-2026",
       "charoosaei-et-al-arxiv-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-19T11:44:00Z"
   },
   {
@@ -2385,6 +2509,7 @@
       "fucci-et-al-ieee-tse-2017",
       "pancher-et-al-xp-2025"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-06T15:45:00Z"
   },
   {
@@ -2404,6 +2529,7 @@
     "evidence": [
       "mathews-nagappan-ase-2024"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -2425,6 +2551,7 @@
       "mathews-nagappan-ase-2024",
       "hamidi-et-al-arxiv-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-06T15:45:00Z"
   },
   {
@@ -2447,6 +2574,7 @@
       "slopcodebench",
       "swe-ci"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -2470,6 +2598,7 @@
       "bache-the-last-year-changed-everything-about-tdd",
       "boeckeler-tdd-comparisons-repository"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-04T14:31:00Z"
   },
   {
@@ -2489,6 +2618,7 @@
     "evidence": [
       "alonso-tdad-preprint"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -2508,6 +2638,7 @@
       "tdd-bench-verified-ibm",
       "shinn-et-al-reflexion"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -2530,6 +2661,7 @@
       "bache-the-last-year-changed-everything-about-tdd",
       "boeckeler-tdd-comparisons-repository"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-04T14:31:00Z"
   },
   {
@@ -2550,6 +2682,7 @@
       "vaccari-acceptance-tests-for-ai-assisted-development",
       "farley-the-industry-is-catching-up"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-04T14:31:00Z"
   },
   {
@@ -2570,6 +2703,7 @@
       "vaccari-acceptance-tests-for-ai-assisted-development",
       "beck-on-pragmatic-engineer-tdd-ai-agents"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -2590,6 +2724,7 @@
       "beck-on-pragmatic-engineer-tdd-ai-agents",
       "beck-augmented-coding-beyond-the-vibes"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -2609,6 +2744,7 @@
       "bockeler-sensors-for-coding-agents",
       "evil-martians-ten-anti-ai-slop-moves"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -2631,6 +2767,7 @@
       "alphaverus-icml-2025",
       "anthropic-and-theorem-formal-verification"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -2652,6 +2789,7 @@
       "vaccari-acceptance-tests-for-ai-assisted-development",
       "farley-the-industry-is-catching-up"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-04T14:31:00Z"
   },
   {
@@ -2672,6 +2810,7 @@
       "suoniemi-prompt-vs-metric-eval",
       "bache-ordog-habit-hooks-interview"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-04T14:31:00Z"
   },
   {
@@ -2690,6 +2829,7 @@
       "ai-made-tools-tdd-with-ai",
       "mock-russo-emse-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-06T15:45:00Z"
   },
   {
@@ -2708,6 +2848,7 @@
     "evidence": [
       "ellens-the-system-is-on-the-other-side"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -2726,6 +2867,7 @@
       "saga-neurips-2025",
       "anthropic-using-llms-to-secure-source-code"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -2745,6 +2887,7 @@
       "shen-tamkin-anthropic-rct",
       "liu-christian-et-al-colm-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -2762,6 +2905,7 @@
     "evidence": [
       "bastani-et-al-pnas-2025"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -2779,6 +2923,7 @@
     "evidence": [
       "kosmyna-et-al"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -2798,6 +2943,7 @@
       "anthropic-internal-study",
       "sole-et-al-llm-cognitive-virus-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T10:50:00Z"
   },
   {
@@ -2817,6 +2963,7 @@
       "rathje-et-al",
       "metr-rct-2025"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -2836,6 +2983,7 @@
     "evidence": [
       "perry-et-al-ccs-2023"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -2856,6 +3004,7 @@
       "storey-cognitive-debt",
       "ewerlof"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -2875,6 +3024,7 @@
       "litt",
       "wursch"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -2895,6 +3045,7 @@
       "generation-effect-meta-analysis",
       "demirbas-writing-as-a-thinking-tool-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T10:50:00Z"
   },
   {
@@ -2913,6 +3064,7 @@
       "storey-cognitive-debt-revisited",
       "augmented-coding-patterns-catalog"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -2933,6 +3085,7 @@
       "james",
       "bache-agentic-ai-breaks-mob-programming"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-04T14:31:00Z"
   },
   {
@@ -2952,6 +3105,7 @@
       "dora-2025",
       "anthropic-internal-study"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -2972,6 +3126,7 @@
       "spati-nobody-knows-anything-anymore",
       "sahai"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -2991,6 +3146,7 @@
     "evidence": [
       "margalit-et-al"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -3008,6 +3164,7 @@
     "evidence": [
       "tablan-et-al"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -3026,6 +3183,7 @@
       "spati-from-obsidian-to-enterprise-company-brain",
       "margalit-et-al"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -3044,6 +3202,7 @@
     "evidence": [
       "stannard"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -3062,6 +3221,7 @@
       "karpathy-x-post",
       "generation-effect-meta-analysis"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -3082,6 +3242,7 @@
       "teeni-katz-hhai-2026",
       "gloaguen-et-al"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -3099,6 +3260,7 @@
     "evidence": [
       "ellens-the-system-is-on-the-other-side"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -3118,6 +3280,7 @@
       "rezazadeh-et-al",
       "tiwari-gupta"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -3139,6 +3302,7 @@
       "liao-agents-dont-need-memory",
       "thines-agent-memory-opentelemetry-moment-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T10:50:00Z"
   },
   {
@@ -3157,6 +3321,7 @@
     "evidence": [
       "anthropic-solving-code-review-at-anthropic"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -3179,6 +3344,7 @@
       "farnam-street-feynman-technique",
       "feynman-lecture-excerpt"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -3198,6 +3364,7 @@
       "dora-2025",
       "demirer-et-al-nber-w35275"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -3217,6 +3384,7 @@
     "evidence": [
       "gloaguen-et-al"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -3235,6 +3403,7 @@
       "james-the-weight-of-ai-on-engineers",
       "augmented-coding-patterns-catalog"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -3253,6 +3422,7 @@
     "evidence": [
       "james-the-weight-of-ai-on-engineers"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -3272,6 +3442,7 @@
       "hbr-2026",
       "augmented-coding-patterns-catalog"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -3291,6 +3462,7 @@
       "vaccari-acceptance-tests-for-ai-assisted-development",
       "farley-the-industry-is-catching-up"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-04T14:31:00Z"
   },
   {
@@ -3308,6 +3480,7 @@
     "evidence": [
       "fowler-site-refactoring-economic-benefit"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -3327,6 +3500,7 @@
       "laforgia",
       "faler-the-illusion-of-velocity"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -3345,6 +3519,7 @@
     "evidence": [
       "goblindegook"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -3363,6 +3538,7 @@
     "evidence": [
       "zechner-slowing-down"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -3381,6 +3557,7 @@
       "tornhill-compressed-cognition",
       "yegge-the-ai-vampire"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -3400,6 +3577,7 @@
     "evidence": [
       "beck-on-pragmatic-engineer-tdd-ai-agents"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -3422,6 +3600,7 @@
       "welter-et-al-ase-2025",
       "gardella-et-al-icer-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-19T11:44:00Z"
   },
   {
@@ -3441,6 +3620,7 @@
     "evidence": [
       "boag-smashing-magazine"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -3459,6 +3639,7 @@
     "evidence": [
       "shinn-et-al-reflexion"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -3478,6 +3659,7 @@
       "swe-ci",
       "slopcodebench"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -3498,6 +3680,7 @@
       "sun-bai-dredze-task-matters-findings-of-acl-2026",
       "karpathy-on-dwarkesh-2025-10"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -3517,6 +3700,7 @@
       "github-blog-copilot-code-quality",
       "suprmind-ai-hallucination-rates"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -3535,6 +3719,7 @@
     "evidence": [
       "cursor-telemetry-via-orosz"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -3553,6 +3738,7 @@
       "mcptox-wang-et-al",
       "pillar-deadbugz-2026"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T14:20:00Z"
   },
   {
@@ -3572,6 +3758,7 @@
       "spracklen-et-al-usenix-security-2025",
       "krishna-et-al-preprint"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-13T14:20:00Z"
   },
   {
@@ -3592,6 +3779,7 @@
       "slopcodebench",
       "saba-et-al"
     ],
+    "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-03T17:17:00Z"
   },
   {
@@ -3615,6 +3803,7 @@
       "tufano-et-al-specops-2026",
       "shi-kristensson-tochi-2026"
     ],
+    "added": "2026-11-04T14:38:26Z",
     "updated": "2026-11-06T15:45:00Z"
   },
   {
@@ -3634,6 +3823,7 @@
     "evidence": [
       "bache-agentic-ai-breaks-mob-programming"
     ],
+    "added": "2026-11-04T14:38:26Z",
     "updated": "2026-11-04T14:31:00Z"
   },
   {
@@ -3653,6 +3843,7 @@
     "evidence": [
       "bache-agentic-ai-breaks-mob-programming"
     ],
+    "added": "2026-11-04T14:38:26Z",
     "updated": "2026-11-04T14:31:00Z"
   },
   {
@@ -3672,6 +3863,7 @@
     "evidence": [
       "abitbol-revolut-ai-engineer-nyc-2026"
     ],
+    "added": "2026-11-04T14:38:26Z",
     "updated": "2026-11-04T14:31:00Z"
   },
   {
@@ -3691,6 +3883,7 @@
     "evidence": [
       "tufano-et-al-specops-2026"
     ],
+    "added": "2026-11-06T15:58:19Z",
     "updated": "2026-11-06T15:45:00Z"
   },
   {
@@ -3709,6 +3902,7 @@
     "evidence": [
       "milanese-et-al-arxiv-2026"
     ],
+    "added": "2026-11-06T15:58:19Z",
     "updated": "2026-11-06T15:45:00Z"
   },
   {
@@ -3728,6 +3922,7 @@
       "hora-robbes-msr-2026",
       "milanese-et-al-arxiv-2026"
     ],
+    "added": "2026-11-06T15:58:19Z",
     "updated": "2026-11-06T15:45:00Z"
   },
   {
@@ -3746,6 +3941,7 @@
     "evidence": [
       "hasan-et-al-arxiv-2025"
     ],
+    "added": "2026-11-06T15:58:19Z",
     "updated": "2026-11-06T15:45:00Z"
   },
   {
@@ -3765,6 +3961,7 @@
       "shi-kristensson-tochi-2026",
       "ardic-et-al-emse-2026"
     ],
+    "added": "2026-11-06T15:58:19Z",
     "updated": "2026-11-06T15:45:00Z"
   },
   {
@@ -3783,6 +3980,7 @@
       "milanese-et-al-arxiv-2026",
       "hamza-et-al-esem-2026"
     ],
+    "added": "2026-11-06T15:58:19Z",
     "updated": "2026-11-19T11:44:00Z"
   },
   {
@@ -3802,6 +4000,7 @@
       "newton-king-opentelemetry-2026",
       "liu-solomon-opentelemetry-2025"
     ],
+    "added": "2026-11-06T15:58:19Z",
     "updated": "2026-11-06T15:45:00Z"
   },
   {
@@ -3821,6 +4020,7 @@
     "evidence": [
       "anthropic-components-of-agent-memory-2026"
     ],
+    "added": "2026-11-08T16:56:11Z",
     "updated": "2026-11-08T16:55:00Z"
   },
   {
@@ -3839,6 +4039,7 @@
     "evidence": [
       "anthropic-components-of-agent-memory-2026"
     ],
+    "added": "2026-11-08T16:56:11Z",
     "updated": "2026-11-08T16:55:00Z"
   },
   {
@@ -3858,6 +4059,7 @@
       "anthropic-components-of-agent-memory-2026",
       "edwards-alexander-accidental-blackboard-2026"
     ],
+    "added": "2026-11-08T16:56:11Z",
     "updated": "2026-11-08T16:55:00Z"
   },
   {
@@ -3878,6 +4080,7 @@
       "edwards-alexander-accidental-blackboard-2026",
       "destefanis-aste-arxiv-2026"
     ],
+    "added": "2026-11-08T16:56:11Z",
     "updated": "2026-11-19T11:44:00Z"
   },
   {
@@ -3897,6 +4100,7 @@
     "evidence": [
       "kunal-resisting-cognitive-surrender-2026"
     ],
+    "added": "2026-11-08T16:56:11Z",
     "updated": "2026-11-08T16:55:00Z"
   },
   {
@@ -3916,6 +4120,7 @@
       "kunal-resisting-cognitive-surrender-2026",
       "chou-et-al-arxiv-2026"
     ],
+    "added": "2026-11-08T16:56:11Z",
     "updated": "2026-11-19T11:44:00Z"
   },
   {
@@ -3935,6 +4140,7 @@
     "evidence": [
       "griffith-code-review-2026"
     ],
+    "added": "2026-11-08T16:56:11Z",
     "updated": "2026-11-08T16:55:00Z"
   },
   {
@@ -3954,6 +4160,7 @@
     "evidence": [
       "laycock-thoughtworks-2026"
     ],
+    "added": "2026-11-08T16:56:11Z",
     "updated": "2026-11-08T16:55:00Z"
   },
   {
@@ -3973,6 +4180,7 @@
     "evidence": [
       "luu-more-ambitious-software-2026"
     ],
+    "added": "2026-11-08T16:56:11Z",
     "updated": "2026-11-08T16:55:00Z"
   },
   {
@@ -3993,6 +4201,7 @@
       "google-chrome-auto-browse-help",
       "microsoft-edge-agentic-browsing-2026"
     ],
+    "added": "2026-11-12T01:29:21Z",
     "updated": "2026-11-12T00:54:00Z"
   },
   {
@@ -4012,6 +4221,7 @@
     "evidence": [
       "zhu-et-al-emnlp-2026"
     ],
+    "added": "2026-11-12T01:34:30Z",
     "updated": "2026-11-12T01:31:00Z"
   },
   {
@@ -4032,6 +4242,7 @@
       "liu-et-al-aishelljack-2026",
       "zhu-et-al-emnlp-2026"
     ],
+    "added": "2026-11-12T01:34:30Z",
     "updated": "2026-11-12T01:31:00Z"
   },
   {
@@ -4051,6 +4262,7 @@
     "evidence": [
       "chen-et-al-securevibebench-2026"
     ],
+    "added": "2026-11-12T01:34:30Z",
     "updated": "2026-11-12T01:31:00Z"
   },
   {
@@ -4069,6 +4281,7 @@
     "evidence": [
       "beck-earn-and-learn-2026"
     ],
+    "added": "2026-11-12T16:38:50Z",
     "updated": "2026-11-12T16:36:00Z"
   },
   {
@@ -4087,6 +4300,7 @@
     "evidence": [
       "apiiro-agents-leaking-secrets-2026"
     ],
+    "added": "2026-11-12T16:38:50Z",
     "updated": "2026-11-12T16:36:00Z"
   },
   {
@@ -4105,6 +4319,7 @@
     "evidence": [
       "apiiro-agents-leaking-secrets-2026"
     ],
+    "added": "2026-11-12T16:38:50Z",
     "updated": "2026-11-12T16:36:00Z"
   },
   {
@@ -4123,6 +4338,7 @@
     "evidence": [
       "baltes-et-al"
     ],
+    "added": "2026-11-12T16:38:50Z",
     "updated": "2026-11-12T16:36:00Z"
   },
   {
@@ -4145,6 +4361,7 @@
       "goldberg-how-agents-built-aws-emulator-2026",
       "aws-emulator-repository-fidelity-scores"
     ],
+    "added": "2026-11-13T10:50:43Z",
     "updated": "2026-11-13T10:50:00Z"
   },
   {
@@ -4168,6 +4385,7 @@
       "bloomberg-goldman-restricts-ai-tools-2026",
       "state-of-ai-goldman-pulls-claude-code-2026"
     ],
+    "added": "2026-11-13T10:50:43Z",
     "updated": "2026-11-13T10:50:00Z"
   },
   {
@@ -4188,6 +4406,7 @@
       "stepsecurity-miasma-microsoft-2026",
       "pillar-deadbugz-2026"
     ],
+    "added": "2026-11-13T14:19:35Z",
     "updated": "2026-11-13T14:19:00Z"
   },
   {
@@ -4207,6 +4426,7 @@
       "pillar-deadbugz-2026",
       "owasp-llm-top-10-2026"
     ],
+    "added": "2026-11-13T14:19:35Z",
     "updated": "2026-11-13T14:19:00Z"
   },
   {
@@ -4228,6 +4448,7 @@
       "anthropic-cyber-evaluation-incidents-2026",
       "openai-hugging-face-incident-2026"
     ],
+    "added": "2026-11-13T14:19:35Z",
     "updated": "2026-11-13T14:19:00Z"
   },
   {
@@ -4248,6 +4469,7 @@
       "openai-hugging-face-incident-2026",
       "anthropic-cyber-evaluation-incidents-2026"
     ],
+    "added": "2026-11-13T14:19:35Z",
     "updated": "2026-11-13T14:19:00Z"
   },
   {
@@ -4267,6 +4489,7 @@
     "evidence": [
       "owasp-llm-top-10-2026"
     ],
+    "added": "2026-11-13T14:19:35Z",
     "updated": "2026-11-13T14:19:00Z"
   },
   {
@@ -4286,6 +4509,7 @@
     "evidence": [
       "mirzadeh-et-al-iclr-2025"
     ],
+    "added": "2026-11-14T19:25:03Z",
     "updated": "2026-11-14T19:21:00Z"
   },
   {
@@ -4305,6 +4529,7 @@
     "evidence": [
       "osmani-claude-code-verification-2026"
     ],
+    "added": "2026-11-19T11:47:25Z",
     "updated": "2026-11-19T11:44:00Z"
   },
   {
@@ -4324,6 +4549,7 @@
     "evidence": [
       "osmani-claude-code-verification-2026"
     ],
+    "added": "2026-11-19T11:47:25Z",
     "updated": "2026-11-19T11:44:00Z"
   },
   {
@@ -4342,6 +4568,7 @@
     "evidence": [
       "osmani-claude-code-verification-2026"
     ],
+    "added": "2026-11-19T11:47:25Z",
     "updated": "2026-11-19T11:44:00Z"
   },
   {
@@ -4360,6 +4587,7 @@
     "evidence": [
       "lin-et-al-arxiv-2026"
     ],
+    "added": "2026-11-19T11:47:25Z",
     "updated": "2026-11-19T11:44:00Z"
   },
   {
@@ -4377,6 +4605,7 @@
     "evidence": [
       "osmani-claude-code-verification-2026"
     ],
+    "added": "2026-11-19T11:47:25Z",
     "updated": "2026-11-19T11:44:00Z"
   },
   {
@@ -4395,6 +4624,7 @@
     "evidence": [
       "ozayturk-buzluca-esem-2026"
     ],
+    "added": "2026-11-19T11:47:25Z",
     "updated": "2026-11-19T11:44:00Z"
   },
   {
@@ -4415,6 +4645,7 @@
       "long-et-al-arxiv-2026",
       "chou-et-al-arxiv-2026"
     ],
+    "added": "2026-11-19T11:47:25Z",
     "updated": "2026-11-19T11:44:00Z"
   },
   {
@@ -4434,6 +4665,7 @@
     "evidence": [
       "peng-et-al-arxiv-2026"
     ],
+    "added": "2026-11-19T11:47:25Z",
     "updated": "2026-11-19T11:44:00Z"
   },
   {
@@ -4452,6 +4684,7 @@
     "evidence": [
       "destefanis-aste-arxiv-2026"
     ],
+    "added": "2026-11-19T11:47:25Z",
     "updated": "2026-11-19T11:44:00Z"
   },
   {
@@ -4470,6 +4703,7 @@
     "evidence": [
       "fan-et-al-arxiv-2026"
     ],
+    "added": "2026-11-19T11:47:25Z",
     "updated": "2026-11-19T11:44:00Z"
   }
 ]

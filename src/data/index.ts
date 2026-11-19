@@ -1,6 +1,7 @@
 // The site's content is content/*.json: one file per kind of item, every item written exactly as the site shows
-// it, each with an `updated` time. This module only links items together (evidence "Used in" lists) and checks
-// that every reference resolves, so a bad edit fails the build instead of shipping a broken link.
+// it. src/content.config.ts validates each file; this module links items together (evidence "Used in" lists) and
+// checks what one schema can't see on its own: ids unique across all files.
+import { getCollection, type CollectionEntry, type CollectionKey } from 'astro:content';
 import { TOPICS, type Topic } from './topics';
 import recsJson from '../../content/recommendations.json';
 import challengesJson from '../../content/challenges.json';
@@ -8,33 +9,43 @@ import evidenceJson from '../../content/evidence.json';
 
 export type Ring = 'adopt' | 'trial' | 'avoid';
 // `topics` lists every topic an item bears on. The first is the one it sits under on the Overview and sorts by.
-interface Item { id: string; topics: Topic[]; evidence: string[]; updated: string }
+// `added` is when an item went on the site; for a Trial promoted to Adopt or Avoid, when it was promoted.
+interface Item { id: string; topics: Topic[]; evidence: string[]; added: string; updated: string }
 export const mainTopic = (x: { topics: Topic[] }) => x.topics[0];
 export const topicOrder = (x: { topics: Topic[] }) => TOPICS.findIndex((t) => t.slug === mainTopic(x));
 export interface Rec extends Item { title: string; ring: Ring; summary: string; signals: string[] }
 export interface Challenge extends Item { title: string; summary: string }
 export interface Evidence {
   id: string; title: string; url: string; kind: string; era: string | null; caveat?: string;
-  finding: string; topics: Topic[]; updated: string;
+  finding: string; topics: Topic[]; added: string; updated: string;
   backs: string[]; cited: string[];
 }
 
-export const recs = recsJson as Rec[];
-export const challenges = challengesJson as Challenge[];
-export const evidence = (evidenceJson as Omit<Evidence, 'backs' | 'cited'>[]).map((e) => ({ ...e, backs: [], cited: [] })) as Evidence[];
-export const evidenceById = new Map(evidence.map((e) => [e.id, e]));
-
-const topics = new Set(TOPICS.map((t) => t.slug));
-const ids = new Set<string>();
-for (const [kind, list] of [['recommendation', recs], ['challenge', challenges], ['evidence', evidence]] as const) {
-  for (const x of list as { id: string; topics: Topic[]; updated: string }[]) {
-    if (ids.has(x.id)) throw new Error(`duplicate id: ${x.id}`);
-    ids.add(x.id);
-    if (kind !== 'evidence' && !x.topics.length) throw new Error(`${kind} ${x.id}: needs at least one topic`);
-    for (const t of x.topics) if (!topics.has(t)) throw new Error(`${kind} ${x.id}: unknown topic ${t}`);
-    if (Number.isNaN(Date.parse(x.updated))) throw new Error(`${kind} ${x.id}: bad updated time ${x.updated}`);
-  }
+// Ids must be unique across all files. Checked on the files themselves: the loader silently keeps one of two
+// entries that share an id, and each file's schema can't see the other files.
+const seen = new Set<string>();
+for (const { id } of [...recsJson, ...challengesJson, ...evidenceJson]) {
+  if (seen.has(id)) throw new Error(`duplicate id: ${id}`);
+  seen.add(id);
 }
+
+// getCollection doesn't keep the files' order, and the owner's order is the order lists show in, so restore it.
+const FILE_ORDER = { recommendations: recsJson, challenges: challengesJson, evidence: evidenceJson };
+const load = async <C extends CollectionKey>(c: C): Promise<CollectionEntry<C>['data'][]> => {
+  const entries = await getCollection(c);
+  // The collections come from a store in .astro/; if it was deleted or is stale, say so instead of failing later.
+  if (entries.length !== FILE_ORDER[c].length) {
+    throw new Error(`content store out of sync: ${c} has ${entries.length} entries, content/${c}.json has ${FILE_ORDER[c].length}. Restart astro dev.`);
+  }
+  const at = new Map(FILE_ORDER[c].map((x, i) => [x.id, i]));
+  return entries.map((e) => e.data).sort((a, b) => at.get(a.id)! - at.get(b.id)!);
+};
+// A schema reference parses to { collection, id }; the site only needs the id.
+const ids = (refs: { id: string }[]) => refs.map((r) => r.id);
+export const recs: Rec[] = (await load('recommendations')).map((r) => ({ ...r, evidence: ids(r.evidence) }));
+export const challenges: Challenge[] = (await load('challenges')).map((c) => ({ ...c, evidence: ids(c.evidence) }));
+export const evidence: Evidence[] = (await load('evidence')).map((e) => ({ ...e, backs: [], cited: [] }));
+export const evidenceById = new Map(evidence.map((e) => [e.id, e]));
 
 // Evidence lists what uses it, and shows under every topic that cites it.
 const link = (users: Item[], field: 'backs' | 'cited') => {
@@ -53,8 +64,14 @@ export const challengeById = new Map(challenges.map((c) => [c.id, c]));
 // Trials have their own page; Adopt and Avoid share the Recommendations page.
 export const recPage = (r: Rec) => (r.ring === 'trial' ? 'trials' : 'recommendations');
 
+// The day of an `added` or `updated` time as readers see it, e.g. "4 November 2026". Pages show days only, in UTC,
+// so the day never shifts with the build machine's time zone.
+export const dayOf = (time: string) => time.slice(0, 10);
+export const formatDay = (time: string) =>
+  new Date(`${dayOf(time)}T00:00:00Z`).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+
 // The footer date: when any item last changed.
-export const updated = [...recs, ...challenges, ...evidence].map((x) => x.updated).sort().at(-1)!.slice(0, 10);
+export const updated = dayOf([...recs, ...challenges, ...evidence].map((x) => x.updated).sort().at(-1)!);
 
 export const RINGS: { slug: Ring; label: string; rule: string }[] = [
   { slug: 'adopt', label: 'Adopt', rule: 'Proven. Use it by default.' },

@@ -88,7 +88,8 @@ For each qualifying source, decide what it adds:
   topic already exists, extend it rather than adding a second one.
 - **Ring change** of an existing item (promote or demote) when new evidence clearly calls for it. Propose it,
   never apply it without the owner's yes. When approved, say what changed in a short clause of the summary
-  ("Now measured in teams' own delivery data.") so a reader who saw the old ring isn't confused.
+  ("Now measured in teams' own delivery data.") so a reader who saw the old ring isn't confused. A Trial promoted
+  to Adopt or Avoid also gets `added` set to the time of the promotion (see the data format).
 
 The owner has been specific about how the site reads. These come from their corrections, so keep them:
 - **Practical, not study-specific.** Summaries say what to do in your own team and why, in plain words. No study
@@ -131,7 +132,7 @@ they change wording or rings, use theirs.
 ### 5. Write, build, check
 
 Write only what was approved, straight into the content files (see the data format), with `updated` set to now
-on every item you add or change. Then, in `<site>`:
+on every item you add or change, and `added` set to the same time on every item you add. Then, in `<site>`:
 
 ```bash
 npx astro build

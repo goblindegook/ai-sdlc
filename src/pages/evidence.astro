@@ -19,7 +19,7 @@ const groups = KINDS.map((k) => ({ slug: `kind-${k.slug}`, label: k.label, items
   {groups.map((g) => (
     <Section id={g.slug} title={g.label}>
       {g.items.map((e) => (
-        <Item id={e.id} title={e.title} topics={e.topics}>
+        <Item id={e.id} title={e.title} topics={e.topics} added={e.added} updated={e.updated}>
           <div class="rec-grid">
             <div>
               {(e.era || e.caveat) && <p class="meta">{e.era && <strong>{ERA[e.era] ?? e.era}</strong>}{e.era && e.caveat && ' · '}{e.caveat && <span class="caveat">{e.caveat[0].toUpperCase() + e.caveat.slice(1)}</span>}</p>}

@@ -15,7 +15,7 @@ const items = [...challenges].sort((a, b) => topicOrder(a) - topicOrder(b));
 
   <div class="ruled">
     {items.map((c) => (
-      <Item id={c.id} title={c.title} topics={c.topics} level={2}>
+      <Item id={c.id} title={c.title} topics={c.topics} added={c.added} updated={c.updated} level={2}>
         <div class="rec-grid">
           <p>{c.summary}</p>
           <EvidenceList ids={c.evidence} level={3} />

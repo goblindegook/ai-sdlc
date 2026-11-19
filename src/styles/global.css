@@ -166,6 +166,8 @@ main.wrap { padding-block: clamp(2.5rem, 6vw, 4rem) 4rem; }
 .topics.plain { color: var(--muted); }
 .item[open] > summary .topics { display: none; } /* the body repeats them as links */
 .item-body > .topics { margin: 0 0 0.6rem; }
+.item-body > .topics:has(+ .item-added) { margin-bottom: 0.15rem; }
+.item-added { font-size: 0.8125rem; margin: 0 0 0.6rem; }
 
 /* ruled lists instead of cards */
 .ruled { list-style: none; margin: 0; padding: 0; }

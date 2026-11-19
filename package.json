@@ -11,5 +11,9 @@
     "@astrojs/sitemap": "^3.7.4",
     "@vite-pwa/astro": "^2.0.0",
     "astro": "^7.4.4"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "typescript": "^6.0.3"
   }
 }

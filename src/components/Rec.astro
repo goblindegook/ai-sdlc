@@ -6,9 +6,9 @@ import type { Rec } from '../data';
 interface Props { rec: Rec; level?: 2 | 3 }
 const { rec: r, level } = Astro.props;
 const sub = (level ?? 3) + 1 as 3 | 4; // sub-headings sit one level below the item title
-const H = `h${sub}`;
+const H = `h${sub}` as const;
 ---
-<Item id={r.id} title={r.title} topics={r.topics} level={level} ring={r.ring}>
+<Item id={r.id} title={r.title} topics={r.topics} added={r.added} updated={r.updated} level={level} ring={r.ring}>
   <div class="rec-grid">
     <div>
       <p>{r.summary}</p>

@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import LoopDiagram from '../components/LoopDiagram.astro';
 import { TOPICS } from '../data/topics';
-import { recs, recById, recPage, mainTopic, RINGS } from '../data';
+import { recs, recById, recPage, mainTopic, RINGS, updated, formatDay } from '../data';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 // Each recommendation sits under the topic that raised it, so the radar lists it once.
@@ -21,7 +21,8 @@ const rec = (id: string) => `${base}/${recPage(recById.get(id)!)}/#${id}`;
     </div>
     <p class="radar-intro">
       Practices for building software with AI coding agents, each backed by <a href={`${base}/evidence/`}>evidence</a>.{' '}
-      <a href={`${base}/trials/`}>Trials</a> are ideas worth testing that the evidence doesn't back yet.
+      <a href={`${base}/trials/`}>Trials</a> are ideas worth testing that the evidence doesn't back yet.{' '}
+      Last updated <time datetime={updated}>{formatDay(updated)}</time>.
     </p>
     <LoopDiagram />
     <h2 class="radar-title">By topic</h2>

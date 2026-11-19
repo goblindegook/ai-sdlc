@@ -5,7 +5,7 @@ import { evidenceById } from '../data';
 // `level` is the sub-heading's level: one below the item title it sits in, so the outline never skips a level.
 interface Props { ids: string[]; level?: 3 | 4 }
 const { ids, level = 4 } = Astro.props;
-const H = `h${level}`;
+const H = `h${level}` as const;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const KIND: Record<string, string> = {
   rct: 'RCT', study: 'study', benchmark: 'benchmark', telemetry: 'telemetry', survey: 'survey',
