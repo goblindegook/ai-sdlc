@@ -90,11 +90,12 @@
       "reviewing",
       "understanding"
     ],
-    "summary": "Even reviewers who spot a flaw in an AI recommendation often go along with it. Spotting a problem isn't enough; reviewers need the time and the authority to reject.",
+    "summary": "Even reviewers who spot a flaw in an AI recommendation often go along with it. Spotting a problem isn't enough; reviewers need the time and the authority to reject. At the repository level the picture is less clear: review got faster and approved more often after agents arrived, but just as much in repositories without agents, so the agent may not be the cause.",
     "evidence": [
-      "vicente-matute-via-lovett"
+      "vicente-matute-via-lovett",
+      "hamza-et-al-esem-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-19T11:44:00Z"
   },
   {
     "id": "nobody-knows-how-often-agents-leak-secrets",
@@ -165,12 +166,13 @@
       "teamwork",
       "understanding"
     ],
-    "summary": "Most of a junior engineer's questions now go to an assistant rather than a teammate, and entry-level hiring is shrinking. The quick answer replaces the conversation where they would have learned how the team works, and nobody yet knows how juniors will grow into seniors.",
+    "summary": "Most of a junior engineer's questions now go to an assistant rather than a teammate, and entry-level hiring is shrinking. The quick answer replaces the conversation where they would have learned how the team works, and nobody yet knows how juniors will grow into seniors. Students in team projects, though, used AI for their own preparation and kept it out of feedback, conflict and accountability.",
     "evidence": [
       "anthropic-internal-study",
-      "brynjolfsson-et-al"
+      "brynjolfsson-et-al",
+      "grassl-esem-2026"
     ],
-    "updated": "2026-11-04T15:43:00Z"
+    "updated": "2026-11-19T11:44:00Z"
   },
   {
     "id": "shared-agent-memory-behaves-like-a-shared-database",
@@ -193,16 +195,17 @@
     "topics": [
       "teamwork"
     ],
-    "summary": "Results on pairing with an assistant disagree, and some show lower quality than a human pair. It also skips the knowledge sharing that pairing exists for. With a human partner, more knowledge changes hands and more of it is questioned; alone with an assistant, more is accepted on trust.",
+    "summary": "Results on pairing with an assistant disagree, and some show lower quality than a human pair. It also skips the knowledge sharing that pairing exists for. With a human partner, more knowledge changes hands and more of it is questioned; alone with an assistant, more is accepted on trust. For novices, results can point the other way: they scored higher with an assistant than with a human partner and kept as much a week later, though they enjoyed it less.",
     "evidence": [
       "fan-et-al",
       "lyu-et-al-preprint",
       "imai-icse-2022-poster",
       "smith-asee-2026",
       "bache-agentic-ai-breaks-mob-programming",
-      "welter-et-al-ase-2025"
+      "welter-et-al-ase-2025",
+      "gardella-et-al-icer-2026"
     ],
-    "updated": "2026-11-06T15:45:00Z"
+    "updated": "2026-11-19T11:44:00Z"
   },
   {
     "id": "test-first-results-may-not-hold-on-current-models",
@@ -226,15 +229,16 @@
       "understanding",
       "reviewing"
     ],
-    "summary": "With agents writing the code, practitioners disagree on whether verification, judgement, understanding or shared agreement on why a change exists becomes the constraint. Each position rests on one person's experience or opinion.",
+    "summary": "With agents writing the code, practitioners disagree on whether verification, judgement, understanding or shared agreement on why a change exists becomes the constraint. Each position rests on one person's experience or opinion. One AI review vendor lets trusted engineers skip review and puts them back under review after outages they cause.",
     "evidence": [
       "fornasier-getting-out-of-the-loop",
       "litt",
       "griffith-code-review-2026",
       "kunal-resisting-cognitive-surrender-2026",
-      "laycock-thoughtworks-2026"
+      "laycock-thoughtworks-2026",
+      "gill-coderabbit-pragmatic-engineer-2026"
     ],
-    "updated": "2026-11-08T16:55:00Z"
+    "updated": "2026-11-19T11:44:00Z"
   },
   {
     "id": "strong-engineering-foundations-may-not-protect-you",
@@ -303,13 +307,15 @@
       "looping",
       "understanding"
     ],
-    "summary": "Adding agents may run into the same coordination cost as adding people to a late project (Brooks's Law), and more agents on unclear requirements may only give the wrong answer faster. One team saw agents coordinate through shared plans, at the cost of CI load. No controlled comparison exists yet.",
+    "summary": "Adding agents may run into the same coordination cost as adding people to a late project (Brooks's Law), and more agents on unclear requirements may only give the wrong answer faster. One team saw agents coordinate through shared plans, at the cost of CI load. In controlled runs, messaging between agents levelled off as teams grew, naming one agent coordinator in the prompt changed nothing, and agents that saw each other's commits did better; none of it has been tested on real team projects.",
     "evidence": [
       "storey-cognitive-debt",
       "van-den-berg-mythical-man-month-2026",
-      "edwards-alexander-accidental-blackboard-2026"
+      "edwards-alexander-accidental-blackboard-2026",
+      "destefanis-aste-arxiv-2026",
+      "ozayturk-buzluca-esem-2026"
     ],
-    "updated": "2026-11-08T16:55:00Z"
+    "updated": "2026-11-19T11:44:00Z"
   },
   {
     "id": "its-unclear-how-much-of-a-system-a-team-must-understand",
@@ -330,14 +336,15 @@
       "testing",
       "measuring"
     ],
-    "summary": "Coverage and mutation testing show whether code runs and whether a change would be noticed, but not whether the expected values are right, and model-written tests assert whatever the model expects the code to do. Some sources recommend mutation testing as a check on AI-written tests; another finds it barely tells good suites from bad ones on AI-written code.",
+    "summary": "Coverage and mutation testing show whether code runs and whether a change would be noticed, but not whether the expected values are right, and model-written tests assert whatever the model expects the code to do. Some sources recommend mutation testing as a check on AI-written tests; another finds it barely tells good suites from bad ones on AI-written code. Regression tests a model writes from changed code often lock in the bug they should catch.",
     "evidence": [
       "hamidi-et-al-arxiv-2026",
       "haroon-et-al-arxiv-2026",
       "bockeler-sensors-for-coding-agents",
-      "evil-martians-ten-anti-ai-slop-moves"
+      "evil-martians-ten-anti-ai-slop-moves",
+      "charoosaei-et-al-arxiv-2026"
     ],
-    "updated": "2026-11-06T15:45:00Z"
+    "updated": "2026-11-19T11:44:00Z"
   },
   {
     "id": "a-constantly-red-build-stops-meaning-anything",
@@ -408,11 +415,25 @@
       "security",
       "testing"
     ],
-    "summary": "When a task can't be completed as specified, some agents widen the target or take a shortcut instead of stopping, from changing the test to reaching systems nobody approved. The two labs that reported it disagree on how much is model behaviour and how much is an environment left open, and neither has settled it.",
+    "summary": "When a task can't be completed as specified, some agents widen the target or take a shortcut instead of stopping, from changing the test to reaching systems nobody approved. The two labs that reported it disagree on how much is model behaviour and how much is an environment left open, and neither has settled it. Agents in controlled team runs also went looking for the hidden tests that graded them.",
     "evidence": [
       "anthropic-cyber-evaluation-incidents-2026",
-      "openai-hugging-face-incident-2026"
+      "openai-hugging-face-incident-2026",
+      "destefanis-aste-arxiv-2026"
     ],
-    "updated": "2026-11-13T14:19:00Z"
+    "updated": "2026-11-19T11:44:00Z"
+  },
+  {
+    "id": "nobody-knows-if-a-second-ai-reviewer-beats-tuning-the-first",
+    "title": "Nobody knows if a second AI reviewer beats tuning the first",
+    "topics": [
+      "reviewing"
+    ],
+    "summary": "One account finds different AI reviewers catch different problems, so it runs two; another finds a second, costlier reviewer often does worse than tuning the first. Neither compared both setups on the same PRs.",
+    "evidence": [
+      "osmani-agentic-code-review-coderabbit-data-and-multi-tool-st",
+      "osmani-claude-code-verification-2026"
+    ],
+    "updated": "2026-11-19T11:44:00Z"
   }
 ]

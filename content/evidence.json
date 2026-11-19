@@ -3653,5 +3653,195 @@
       "testing"
     ],
     "updated": "2026-11-14T19:21:00Z"
+  },
+  {
+    "id": "osmani-claude-code-verification-2026",
+    "title": "Osmani (Anthropic), How the Claude Code team thinks about verification, 2026",
+    "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+    "kind": "practitioner",
+    "era": null,
+    "caveat": "vendor self-report",
+    "finding": "The Claude Code team, where Claude writes and reviews about 90% of the code, describes how it makes agents verify: end-to-end, property and differential tests; a verify skill that runs the app before each commit; a person brought in after three failed fix rounds; a 39-item checklist triggered by what a diff touches; review rules read from the base branch, never the PR; one tuned reviewer instead of stacked ones; a commit gate rolled out off, observe, enforce; and misses turned into rules only after they recur. No outcome numbers.",
+    "topics": [
+      "reviewing",
+      "testing",
+      "looping"
+    ],
+    "updated": "2026-11-19T11:44:00Z"
+  },
+  {
+    "id": "lin-et-al-arxiv-2026",
+    "title": "Lin et al., arXiv 2026",
+    "url": "https://arxiv.org/pdf/2607.03316",
+    "kind": "study",
+    "era": null,
+    "caveat": "preprint",
+    "finding": "Of 31,073 CodeRabbit review comments that got a developer reply in 239 open-source projects (2023-09 to 2025-09), 36.4% were accepted, 7.3% started a discussion and 56.3% were rejected; 58% of rejections were invalid comments and 42% valid but against the developer's intent. Only 9.3% of comments got any reply.",
+    "topics": [
+      "reviewing"
+    ],
+    "updated": "2026-11-19T11:44:00Z"
+  },
+  {
+    "id": "laiq-et-al-arxiv-2026",
+    "title": "Laiq et al. (Ericsson), arXiv 2026",
+    "url": "https://arxiv.org/pdf/2609.15877",
+    "kind": "study",
+    "era": null,
+    "caveat": "preprint; authors evaluate their own employer's tool",
+    "finding": "A multi-agent reviewer at Ericsson, with four specialist agents each given an antipattern catalogue as a skill, reported 206 findings on 7 commits; the commits' own authors judged 96% correct and a third must-fix. Precision only: no recall, baseline or test without the skills.",
+    "topics": [
+      "reviewing"
+    ],
+    "updated": "2026-11-19T11:44:00Z"
+  },
+  {
+    "id": "charoosaei-et-al-arxiv-2026",
+    "title": "Charoosaei et al., arXiv 2026",
+    "url": "https://arxiv.org/pdf/2610.11835",
+    "kind": "study",
+    "era": null,
+    "caveat": "preprint",
+    "finding": "Regression tests Claude Haiku 4.5 wrote from 145 bug-introducing PRs in SciPy, Qiskit and pandas were 3.5 to 6.5 times more often fault-enforcing (pass on the bug, fail on the fix: 8.4-16.9%) than fault-revealing (2.4-4.8%), and 83-91% still enforced the bug after up to 49 later PRs.",
+    "topics": [
+      "testing"
+    ],
+    "updated": "2026-11-19T11:44:00Z"
+  },
+  {
+    "id": "fan-et-al-arxiv-2026",
+    "title": "Fan et al., arXiv 2026",
+    "url": "https://arxiv.org/pdf/2609.20804",
+    "kind": "study",
+    "era": null,
+    "caveat": "preprint",
+    "finding": "Ablating harness components across four models on SWE-Bench Verified and Terminal-Bench: context management was worth 35.7 points at a 32k window but 2.7 at 128k, with eliding old tool output the cheapest policy; a store of earlier steps the model could recall was barely used and gained nothing (-0.36 points); planning added 11.6 points for the 30B model and cut cost about 30% for strong ones; bash-only tools were 3.6 points better and 53% cheaper for the largest model but cost the 30B model 15 points.",
+    "topics": [
+      "looping",
+      "specification"
+    ],
+    "updated": "2026-11-19T11:44:00Z"
+  },
+  {
+    "id": "peng-et-al-arxiv-2026",
+    "title": "Peng et al., arXiv 2026",
+    "url": "https://arxiv.org/pdf/2610.03969",
+    "kind": "study",
+    "era": null,
+    "caveat": "preprint",
+    "finding": "In 2,260 performance PRs, agent PRs merged less often than human ones (54.4% vs 73.3%) but claimed validation as often (82.3% vs 80.6%); in both groups half of validated PRs stated no number, and only 17 of 96 caching PRs reporting a speed gain also reported the memory cost.",
+    "topics": [
+      "delivery",
+      "measuring"
+    ],
+    "updated": "2026-11-19T11:44:00Z"
+  },
+  {
+    "id": "long-et-al-arxiv-2026",
+    "title": "Long et al. (Microsoft Research), arXiv 2026",
+    "url": "https://arxiv.org/pdf/2609.33113",
+    "kind": "study",
+    "era": null,
+    "caveat": "preprint; authors evaluate a layer over their employer's tool",
+    "finding": "With a supervision layer over Copilot CLI showing every agent's status, questions and conflicts, 16 developers finished more tickets (5.69 vs 4.19 of 6), ran more agents at peak (3.25 vs 2.31) and reported less tracking effort (2.75 vs 4.63 of 7); perceived control and trust did not change. The tool also isolated each agent's directory, which the baseline did not.",
+    "topics": [
+      "teamwork",
+      "looping"
+    ],
+    "updated": "2026-11-19T11:44:00Z"
+  },
+  {
+    "id": "chou-et-al-arxiv-2026",
+    "title": "Chou et al., arXiv 2026",
+    "url": "https://arxiv.org/pdf/2610.33588",
+    "kind": "study",
+    "era": null,
+    "caveat": "preprint",
+    "finding": "Shadowing 11 professional developers at work: 33.4% of their time went to prompting agents and checking their replies against 8.9% reading code, with up to about 100 task switches an hour; developers who mostly delegated checked only the agent's reply, not the code, 69% of the time.",
+    "topics": [
+      "teamwork",
+      "understanding"
+    ],
+    "updated": "2026-11-19T11:44:00Z"
+  },
+  {
+    "id": "destefanis-aste-arxiv-2026",
+    "title": "Destefanis & Aste, arXiv 2026",
+    "url": "https://arxiv.org/pdf/2608.16801",
+    "kind": "study",
+    "era": null,
+    "caveat": "preprint; synthetic tasks, one model",
+    "finding": "Across 1,902 Claude Code agent-team runs, messaging rose fast early and then levelled off between 8 and 16 agents; requiring shared files cut output tokens about 42% at 8 agents on message-heavy work; an agent named coordinator in the prompt changed nothing measurable; logic split across agents at one seam failed 10 of 10 runs at 8 agents; agents read the hidden grading tests in 234 runs.",
+    "topics": [
+      "looping",
+      "teamwork",
+      "testing"
+    ],
+    "updated": "2026-11-19T11:44:00Z"
+  },
+  {
+    "id": "ozayturk-buzluca-esem-2026",
+    "title": "Özaytürk & Buzluca, ESEM 2026",
+    "url": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol394-esem2026/LIPIcs.ESEM.2026.18/LIPIcs.ESEM.2026.18.pdf",
+    "kind": "study",
+    "era": null,
+    "finding": "Two agents sharing one git workspace, each pushed a digest of the other's commits and test output, resolved 4.5 to 5.3 points more of 266 SWE-Bench Pro tasks than one agent across two models; without the digest the pair did no better than one agent, and the digest cut overwrites by 45-49%.",
+    "topics": [
+      "looping",
+      "teamwork"
+    ],
+    "updated": "2026-11-19T11:44:00Z"
+  },
+  {
+    "id": "hamza-et-al-esem-2026",
+    "title": "Hamza et al., ESEM 2026",
+    "url": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol394-esem2026/LIPIcs.ESEM.2026.67/LIPIcs.ESEM.2026.67.pdf",
+    "kind": "study",
+    "era": null,
+    "finding": "For 669 developers in 103 repositories that adopted coding agents, compared with 228 developers in repositories without agents: PR descriptions grew 76.8% and three small testing gains held up against the control; reviews got faster, shorter and approved more often, but just as much in the agent-free repositories, so the authors reject automation complacency as the cause.",
+    "topics": [
+      "reviewing",
+      "measuring"
+    ],
+    "updated": "2026-11-19T11:44:00Z"
+  },
+  {
+    "id": "grassl-esem-2026",
+    "title": "Graßl, ESEM 2026",
+    "url": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol394-esem2026/LIPIcs.ESEM.2026.31/LIPIcs.ESEM.2026.31.pdf",
+    "kind": "study",
+    "era": null,
+    "finding": "116 students in seven software engineering courses used AI on their own to prepare work but kept it out of collaboration (feedback, conflict, empathy, accountability); unequal participation and ghosting persisted whatever AI they used.",
+    "topics": [
+      "teamwork",
+      "understanding"
+    ],
+    "updated": "2026-11-19T11:44:00Z"
+  },
+  {
+    "id": "gardella-et-al-icer-2026",
+    "title": "Gardella et al., ICER 2026",
+    "url": "https://dl.acm.org/doi/10.1145/3765964.3811664",
+    "kind": "study",
+    "era": null,
+    "finding": "22 novices pairing with Copilot scored 14.1 of 100 points higher than when pairing with a human and reported lower mental demand and effort; a solo retest a week later showed no significant retention difference, while the human partner raised enjoyment and engagement.",
+    "topics": [
+      "teamwork",
+      "understanding"
+    ],
+    "updated": "2026-11-19T11:44:00Z"
+  },
+  {
+    "id": "gill-coderabbit-pragmatic-engineer-2026",
+    "title": "Gill (CodeRabbit), The Pragmatic Engineer 2026",
+    "url": "https://newsletter.pragmaticengineer.com/p/software-factories-and-code-reviews",
+    "kind": "practitioner",
+    "era": null,
+    "caveat": "secondhand show notes; vendor CEO",
+    "finding": "CodeRabbit's CEO, as reported in the episode notes, says engineers on a review-exempt list ship without release review, and an outage traced to their change earns a strike that eventually puts them back under review.",
+    "topics": [
+      "reviewing"
+    ],
+    "updated": "2026-11-19T11:44:00Z"
   }
 ]

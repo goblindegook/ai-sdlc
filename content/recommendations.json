@@ -16,9 +16,10 @@
     "evidence": [
       "mathews-nagappan-ase-2024",
       "swe-agent-neurips-2024",
-      "pancher-et-al-xp-2025"
+      "pancher-et-al-xp-2025",
+      "osmani-claude-code-verification-2026"
     ],
-    "updated": "2026-11-06T15:45:00Z"
+    "updated": "2026-11-19T11:44:00Z"
   },
   {
     "id": "loop-only-against-a-check-the-machine-runs",
@@ -265,9 +266,10 @@
       "bockeler-sensors-for-coding-agents",
       "huntley-ralph",
       "uber-on-pragmatic-engineer",
-      "anthropic-solving-code-review-at-anthropic"
+      "anthropic-solving-code-review-at-anthropic",
+      "osmani-claude-code-verification-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-19T11:44:00Z"
   },
   {
     "id": "time-track-agent-work-by-phase",
@@ -531,9 +533,10 @@
     "evidence": [
       "swe-bench",
       "tdd-bench-verified-ibm",
-      "stanford-ai-index-2026"
+      "stanford-ai-index-2026",
+      "destefanis-aste-arxiv-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-19T11:44:00Z"
   },
   {
     "id": "normalise-cost-by-accepted-output",
@@ -686,9 +689,10 @@
     ],
     "evidence": [
       "databricks-managing-ai-coding-costs",
-      "uber-efficient-software-factory"
+      "uber-efficient-software-factory",
+      "fan-et-al-arxiv-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-19T11:44:00Z"
   },
   {
     "id": "show-cost-per-merged-change-next-to-total-spend",
@@ -921,9 +925,10 @@
     "evidence": [
       "swe-agent-neurips-2024",
       "posthog-newsletter",
-      "uber-efficient-software-factory"
+      "uber-efficient-software-factory",
+      "fan-et-al-arxiv-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-19T11:44:00Z"
   },
   {
     "id": "dont-give-the-agent-tools-shaped-for-people",
@@ -958,9 +963,10 @@
     ],
     "evidence": [
       "anthropic-ai-native-sdlc-playbook",
-      "augmented-coding-patterns-catalog"
+      "augmented-coding-patterns-catalog",
+      "fan-et-al-arxiv-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-19T11:44:00Z"
   },
   {
     "id": "enforce-the-most-violated-rules-with-hooks",
@@ -1483,9 +1489,10 @@
       "PRs approved within minutes while AI comments are still open"
     ],
     "evidence": [
-      "orosz-the-pulse-concern-about-ai-review"
+      "orosz-the-pulse-concern-about-ai-review",
+      "lin-et-al-arxiv-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-19T11:44:00Z"
   },
   {
     "id": "phase-in-deterministic-gates",
@@ -1501,9 +1508,10 @@
       "Warnings fixed before merge vs ignored"
     ],
     "evidence": [
-      "evil-martians-ten-anti-ai-slop-moves"
+      "evil-martians-ten-anti-ai-slop-moves",
+      "osmani-claude-code-verification-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-19T11:44:00Z"
   },
   {
     "id": "write-a-review-policy",
@@ -1610,9 +1618,11 @@
       "Skills or lint rules added from review comments"
     ],
     "evidence": [
-      "tornhill-controlling-the-uncertainty-machine"
+      "tornhill-controlling-the-uncertainty-machine",
+      "osmani-claude-code-verification-2026",
+      "laiq-et-al-arxiv-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-19T11:44:00Z"
   },
   {
     "id": "set-how-much-agent-code-is-read-by-risk-tolerance",
@@ -1704,9 +1714,10 @@
       "False alarms on the clean set, per reviewer config"
     ],
     "evidence": [
-      "anthropic-solving-code-review-at-anthropic"
+      "anthropic-solving-code-review-at-anthropic",
+      "osmani-claude-code-verification-2026"
     ],
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-19T11:44:00Z"
   },
   {
     "id": "review-a-checked-spec-instead-of-the-code",
@@ -2341,7 +2352,8 @@
     "signals": [
       "Spec tests whose assertions no human wrote or approved",
       "Agent-written tests later found to pass buggy code",
-      "Bugs reaching review that the supplied spec tests should have caught"
+      "Bugs reaching review that the supplied spec tests should have caught",
+      "Bug-fix PRs that must change an agent-written regression test"
     ],
     "evidence": [
       "mathews-nagappan-ase-2024",
@@ -2350,9 +2362,10 @@
       "verina-iclr-2026",
       "metr-research-update-2025-08",
       "hamidi-et-al-arxiv-2026",
-      "haroon-et-al-arxiv-2026"
+      "haroon-et-al-arxiv-2026",
+      "charoosaei-et-al-arxiv-2026"
     ],
-    "updated": "2026-11-06T15:45:00Z"
+    "updated": "2026-11-19T11:44:00Z"
   },
   {
     "id": "work-in-short-steady-test-and-code-cycles",
@@ -3406,9 +3419,10 @@
       "fan-et-al",
       "lyu-et-al-preprint",
       "imai-icse-2022-poster",
-      "welter-et-al-ase-2025"
+      "welter-et-al-ase-2025",
+      "gardella-et-al-icer-2026"
     ],
-    "updated": "2026-11-06T15:45:00Z"
+    "updated": "2026-11-19T11:44:00Z"
   },
   {
     "id": "lead-ai-rollout-with-enthusiasts-and-a-few-principles",
@@ -3766,9 +3780,10 @@
       "Repos where the gap points the other way from the org-wide figure"
     ],
     "evidence": [
-      "milanese-et-al-arxiv-2026"
+      "milanese-et-al-arxiv-2026",
+      "hamza-et-al-esem-2026"
     ],
-    "updated": "2026-11-06T15:45:00Z"
+    "updated": "2026-11-19T11:44:00Z"
   },
   {
     "id": "export-agent-telemetry-to-your-own-tracing-backend",
@@ -3860,9 +3875,10 @@
       "Plan lines marked done but not merged"
     ],
     "evidence": [
-      "edwards-alexander-accidental-blackboard-2026"
+      "edwards-alexander-accidental-blackboard-2026",
+      "destefanis-aste-arxiv-2026"
     ],
-    "updated": "2026-11-08T16:55:00Z"
+    "updated": "2026-11-19T11:44:00Z"
   },
   {
     "id": "show-the-agents-reasoning-beside-the-diff",
@@ -3897,9 +3913,10 @@
       "Defects traced to such sessions"
     ],
     "evidence": [
-      "kunal-resisting-cognitive-surrender-2026"
+      "kunal-resisting-cognitive-surrender-2026",
+      "chou-et-al-arxiv-2026"
     ],
-    "updated": "2026-11-08T16:55:00Z"
+    "updated": "2026-11-19T11:44:00Z"
   },
   {
     "id": "ask-why-a-change-exists-before-judging-how",
@@ -4270,5 +4287,189 @@
       "mirzadeh-et-al-iclr-2025"
     ],
     "updated": "2026-11-14T19:21:00Z"
+  },
+  {
+    "id": "keep-the-rules-that-judge-a-change-out-of-its-reach",
+    "title": "Keep the rules that judge a change out of the change's reach",
+    "ring": "trial",
+    "topics": [
+      "reviewing",
+      "security",
+      "testing"
+    ],
+    "summary": "Read review rules, CI gates and checklists from the main branch, never from the PR being judged. A change that can edit the check that judges it makes the check meaningless.",
+    "signals": [
+      "PRs that edit review rules or CI gate config",
+      "Gate config changes merged without a second approver"
+    ],
+    "evidence": [
+      "osmani-claude-code-verification-2026"
+    ],
+    "updated": "2026-11-19T11:44:00Z"
+  },
+  {
+    "id": "stamp-each-commit-with-how-it-was-verified",
+    "title": "Stamp each commit with how it was verified",
+    "ring": "trial",
+    "topics": [
+      "reviewing",
+      "measuring",
+      "delivery"
+    ],
+    "summary": "Record on every commit which checks ran, including 'none', and start any new commit gate in log-only mode before it blocks. You see unverified work, and the gate's false alarms, before anyone gets stuck.",
+    "signals": [
+      "Share of commits stamped 'none'",
+      "Would-be blocks in log-only mode judged false alarms"
+    ],
+    "evidence": [
+      "osmani-claude-code-verification-2026"
+    ],
+    "updated": "2026-11-19T11:44:00Z"
+  },
+  {
+    "id": "trigger-checklist-items-from-what-the-diff-touches",
+    "title": "Trigger checklist items from what the diff touches",
+    "ring": "trial",
+    "topics": [
+      "reviewing",
+      "delivery"
+    ],
+    "summary": "Keep a reliability checklist where each item names the kind of change that triggers it and the incident behind it, and have the agent check only the items a diff triggers. Nobody has to remember past outages.",
+    "signals": [
+      "Incidents whose cause matches an existing checklist item",
+      "Checklist items that never triggered in a quarter"
+    ],
+    "evidence": [
+      "osmani-claude-code-verification-2026"
+    ],
+    "updated": "2026-11-19T11:44:00Z"
+  },
+  {
+    "id": "track-how-authors-respond-to-ai-review-comments",
+    "title": "Track how authors respond to AI review comments",
+    "ring": "trial",
+    "topics": [
+      "reviewing",
+      "measuring"
+    ],
+    "summary": "Sort each AI review comment by what the author did with it: fixed it, called it wrong, or said the behaviour was intended. Many AI comments are rejected, some as wrong and some as missing what the author meant, and the split tells you what to tune.",
+    "signals": [
+      "AI comments fixed vs dismissed as wrong vs dismissed as intended",
+      "Dismissals per file or rule"
+    ],
+    "evidence": [
+      "lin-et-al-arxiv-2026"
+    ],
+    "updated": "2026-11-19T11:44:00Z"
+  },
+  {
+    "id": "add-property-and-differential-tests-to-agent-work",
+    "title": "Add property and differential tests to agent work",
+    "ring": "trial",
+    "topics": [
+      "testing"
+    ],
+    "summary": "Use generated-input property tests to find the edge cases an agent missed, and on migrations run the old and new code on the same inputs and compare. Neither check shares the assumptions of the agent that wrote the code.",
+    "signals": [
+      "Property-test failures on agent PRs",
+      "Unapproved differences in migration comparison runs"
+    ],
+    "evidence": [
+      "osmani-claude-code-verification-2026"
+    ],
+    "updated": "2026-11-19T11:44:00Z"
+  },
+  {
+    "id": "show-each-agent-the-others-commits",
+    "title": "Show each agent the others' commits",
+    "ring": "adopt",
+    "topics": [
+      "looping",
+      "teamwork"
+    ],
+    "summary": "When several agents work in one repository, push each one a short digest of the others' commits and test results. Agents that can't see each other's work overwrite it and do no better than one agent, at several times the cost.",
+    "signals": [
+      "Edits overwritten or reverted between concurrent agents",
+      "Parallel sessions that end in a merge conflict"
+    ],
+    "evidence": [
+      "ozayturk-buzluca-esem-2026"
+    ],
+    "updated": "2026-11-19T11:44:00Z"
+  },
+  {
+    "id": "give-people-one-view-of-all-their-running-agents",
+    "title": "Give people one view of all their running agents",
+    "ring": "trial",
+    "topics": [
+      "teamwork",
+      "looping"
+    ],
+    "summary": "When someone runs several agents at once, give them one place that shows each agent's status, its open questions and clashing edits. Checking on agents takes far more of a developer's day than reading code, and a single view cuts that tracking effort.",
+    "signals": [
+      "Time agents sit waiting for a reply",
+      "Agents each person runs at once",
+      "Clashing edits between one person's agents"
+    ],
+    "evidence": [
+      "long-et-al-arxiv-2026",
+      "chou-et-al-arxiv-2026"
+    ],
+    "updated": "2026-11-19T11:44:00Z"
+  },
+  {
+    "id": "ask-for-a-measured-number-on-performance-prs",
+    "title": "Ask for a measured number on performance PRs",
+    "ring": "trial",
+    "topics": [
+      "delivery",
+      "reviewing",
+      "measuring"
+    ],
+    "summary": "Have every performance PR, agent or human, state before and after numbers, and the memory cost of any cache it adds. Many performance PRs claim they were checked without giving a number.",
+    "signals": [
+      "Performance PRs with before and after numbers",
+      "Caching PRs that report memory cost"
+    ],
+    "evidence": [
+      "peng-et-al-arxiv-2026"
+    ],
+    "updated": "2026-11-19T11:44:00Z"
+  },
+  {
+    "id": "give-coupled-logic-to-one-agent",
+    "title": "Give coupled logic to one agent",
+    "ring": "trial",
+    "topics": [
+      "looping",
+      "teamwork"
+    ],
+    "summary": "When splitting work between agents, keep each tightly coupled piece of logic with a single agent. Logic split across agents tends to break at the seam between them.",
+    "signals": [
+      "Defects at the boundary between two agents' changes",
+      "Tasks where two agents edited the same function"
+    ],
+    "evidence": [
+      "destefanis-aste-arxiv-2026"
+    ],
+    "updated": "2026-11-19T11:44:00Z"
+  },
+  {
+    "id": "dont-give-the-agent-a-memory-store-it-has-to-choose-to-search",
+    "title": "Don't give the agent a memory store it has to choose to search",
+    "ring": "avoid",
+    "topics": [
+      "looping",
+      "specification"
+    ],
+    "summary": "Agents rarely call a store of their own earlier steps and gain nothing from it. Keep what the agent needs in its context, or put it where every run reads it.",
+    "signals": [
+      "Calls to memory or recall tools per session",
+      "Tasks where the needed fact was stored but never looked up"
+    ],
+    "evidence": [
+      "fan-et-al-arxiv-2026"
+    ],
+    "updated": "2026-11-19T11:44:00Z"
   }
 ]
