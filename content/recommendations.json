@@ -645,10 +645,11 @@
     ],
     "evidence": [
       "bean-et-al-neurips-2025",
-      "mirzadeh-et-al-iclr-2025"
+      "mirzadeh-et-al-iclr-2025",
+      "liu-han-arxiv-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-14T19:21:00Z"
+    "updated": "2026-11-20T17:30:00Z"
   },
   {
     "id": "check-llm-judges-against-human-labels",
@@ -1545,16 +1546,18 @@
     "topics": [
       "reviewing"
     ],
-    "summary": "Run two AI reviewers side by side on the same PRs for a month. Different AI reviewers tend to flag different problems, with little overlap.",
+    "summary": "Run two AI reviewers side by side on the same PRs for a month. Different AI reviewers tend to flag different problems, with little overlap, and one reviewer's repeat runs differ too.",
     "signals": [
       "Valid findings that only one reviewer raised",
       "Comments dismissed as noise, per reviewer"
     ],
     "evidence": [
-      "osmani-agentic-code-review-coderabbit-data-and-multi-tool-st"
+      "osmani-agentic-code-review-coderabbit-data-and-multi-tool-st",
+      "zeng-et-al-fse-2026",
+      "klishevich-et-al-arxiv-2025"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-20T17:30:00Z"
   },
   {
     "id": "show-only-high-confidence-ai-review-comments",
@@ -1570,10 +1573,12 @@
     ],
     "evidence": [
       "orosz-the-pulse-concern-about-ai-review",
-      "lin-et-al-arxiv-2026"
+      "lin-et-al-arxiv-2026",
+      "pereira-et-al-arxiv-2026",
+      "zeng-et-al-fse-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-19T11:44:00Z"
+    "updated": "2026-11-20T17:30:00Z"
   },
   {
     "id": "phase-in-deterministic-gates",
@@ -1750,10 +1755,11 @@
       "Review minutes per agent PR"
     ],
     "evidence": [
-      "cervera-vibe-everything"
+      "cervera-vibe-everything",
+      "houck-the-ai-native-developer-dx-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-20T17:30:00Z"
   },
   {
     "id": "check-ai-approved-prs-by-running-them",
@@ -4610,10 +4616,11 @@
       "Unapproved differences in migration comparison runs"
     ],
     "evidence": [
-      "osmani-claude-code-verification-2026"
+      "osmani-claude-code-verification-2026",
+      "bergmann-which-of-your-tests-would-survive-a-rewrite-2026"
     ],
     "added": "2026-11-19T11:47:25Z",
-    "updated": "2026-11-19T11:44:00Z"
+    "updated": "2026-11-20T17:30:00Z"
   },
   {
     "id": "show-each-agent-the-others-commits",
@@ -4750,5 +4757,134 @@
     ],
     "added": "2026-11-20T13:10:11Z",
     "updated": "2026-11-20T13:10:11Z"
+  },
+  {
+    "id": "test-an-ai-reviewers-fix-before-showing-its-objection",
+    "title": "Test an AI reviewer's proposed fix before showing its objection",
+    "ring": "trial",
+    "topics": [
+      "reviewing",
+      "testing"
+    ],
+    "summary": "Have the AI reviewer propose a fix for each objection, run your tests with it, and hide objections whose fix breaks them. Asked to explain and fix, models reject far more correct code.",
+    "signals": [
+      "Objections dropped by the test check",
+      "Dropped objections a human later says were right",
+      "Share of shown objections acted on"
+    ],
+    "evidence": [
+      "jin-chen-automated-software-engineering-2026"
+    ],
+    "added": "2026-11-20T17:30:00Z",
+    "updated": "2026-11-20T17:30:00Z"
+  },
+  {
+    "id": "compare-a-minimal-agent-setup-with-your-full-one-on-your-own-tickets",
+    "title": "Compare a minimal agent setup with your full one on your own tickets",
+    "ring": "trial",
+    "topics": [
+      "looping",
+      "measuring"
+    ],
+    "summary": "Run the same tickets through your elaborate agent setup and a bare one for a month. Elaborate setups showed no consistent gain in two published comparisons, and the result changed with the model.",
+    "signals": [
+      "Accepted changes per dollar under each setup",
+      "Tasks whose result flips between two runs of the same setup",
+      "Cost per accepted change, by model"
+    ],
+    "evidence": [
+      "liu-han-arxiv-2026",
+      "brilliantov-et-al-arxiv-2026",
+      "jain-are-harnesses-worth-the-cost-martinfowlercom"
+    ],
+    "added": "2026-11-20T17:30:00Z",
+    "updated": "2026-11-20T17:30:00Z"
+  },
+  {
+    "id": "check-whether-agents-do-worse-in-your-messiest-modules",
+    "title": "Check whether agents do worse in your messiest modules",
+    "ring": "trial",
+    "topics": [
+      "delivery",
+      "measuring"
+    ],
+    "summary": "Split a month of agent changes by how tangled the module is and compare rework and first-push CI failures. Published comparisons suggest messy code hurts small models, but the strongest models showed little effect.",
+    "signals": [
+      "Agent changes failing CI on first push, by module complexity",
+      "Rework per agent PR, messiest against tidiest modules",
+      "Time to an accepted change, by module"
+    ],
+    "evidence": [
+      "borg-et-al-forge-2026",
+      "esfahani-et-al-arxiv-2026",
+      "xie-et-al-icml-2026",
+      "wang-et-al-jsea-2024",
+      "yakubov-research-square-2025"
+    ],
+    "added": "2026-11-20T17:30:00Z",
+    "updated": "2026-11-20T17:30:00Z"
+  },
+  {
+    "id": "write-tests-against-the-interface-you-would-keep",
+    "title": "Write tests against the interface you would keep",
+    "ring": "trial",
+    "topics": [
+      "testing",
+      "delivery"
+    ],
+    "summary": "Pick ten tests at random and ask whether each would still mean something against a reimplementation. Tests bound to internals are scaffolding; tests on the public interface are the specification.",
+    "signals": [
+      "Tests that fail after a refactor that changed no behaviour",
+      "Share of the suite that runs through the public interface"
+    ],
+    "evidence": [
+      "bergmann-which-of-your-tests-would-survive-a-rewrite-2026"
+    ],
+    "added": "2026-11-20T17:30:00Z",
+    "updated": "2026-11-20T17:30:00Z"
+  },
+  {
+    "id": "ask-who-will-maintain-a-new-dependency-before-adopting-it",
+    "title": "Ask who will maintain a new dependency before adopting it",
+    "ring": "trial",
+    "topics": [
+      "security",
+      "delivery"
+    ],
+    "summary": "Add to the dependency checklist who maintains it and can explain a design choice, who pays, what it promises, how releases are made and how you would leave. Agents made a rewrite cheap, not the years of fixes behind it.",
+    "signals": [
+      "New dependencies with a single maintainer",
+      "Dependencies with no stated support or security policy",
+      "Dependencies under a year old added per quarter"
+    ],
+    "evidence": [
+      "bergmann-cheap-to-write-expensive-to-depend-on-2026",
+      "stenberg-actual-curl-rewrites-in-rust-2026"
+    ],
+    "added": "2026-11-20T17:30:00Z",
+    "updated": "2026-11-20T17:30:00Z"
+  },
+  {
+    "id": "ask-developers-for-the-moments-they-chose-not-to-use-ai",
+    "title": "Ask developers for the moments they chose not to use AI",
+    "ring": "trial",
+    "topics": [
+      "teamwork",
+      "delivery"
+    ],
+    "summary": "Ask blamelessly for specific moments someone chose not to use AI and sort them: no room to learn, it doesn't add up, can't stand behind it, decided without me. Each points at something the organization hasn't supplied.",
+    "signals": [
+      "Reasons logged per month, by kind",
+      "Task types with a recorded works or not-yet finding",
+      "Agent changes waiting over a day for review"
+    ],
+    "evidence": [
+      "kalliamvakou-carey-dx-2026",
+      "houck-the-ai-native-developer-dx-2026",
+      "laycock-thoughtworks-2026",
+      "boag-smashing-magazine"
+    ],
+    "added": "2026-11-20T17:30:00Z",
+    "updated": "2026-11-20T17:30:00Z"
   }
 ]

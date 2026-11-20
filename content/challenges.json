@@ -468,5 +468,40 @@
     ],
     "added": "2026-11-19T11:47:25Z",
     "updated": "2026-11-19T11:44:00Z"
+  },
+  {
+    "id": "nobody-knows-how-much-an-ai-reviewer-misses",
+    "title": "Nobody knows how much an AI reviewer misses",
+    "topics": [
+      "reviewing",
+      "measuring"
+    ],
+    "summary": "Published tests show AI reviewers with low precision and recall, and their answers change between runs. Figures from real teams measure other things, such as comments accepted or rated correct, and none reports what the reviewer missed. No source compares AI review with linters or human reviewers.",
+    "evidence": [
+      "pereira-et-al-arxiv-2026",
+      "zeng-et-al-fse-2026",
+      "jin-chen-automated-software-engineering-2026",
+      "klishevich-et-al-arxiv-2025"
+    ],
+    "added": "2026-11-20T17:30:00Z",
+    "updated": "2026-11-20T17:30:00Z"
+  },
+  {
+    "id": "nobody-knows-if-code-that-is-easy-for-people-is-easy-for-agents",
+    "title": "Nobody knows if code that is easy for people is easy for agents",
+    "topics": [
+      "delivery",
+      "understanding"
+    ],
+    "summary": "Clear names and simple structure helped small models in several published comparisons, but the effect was weak or not significant for the strongest models, the designs are confounded, and none measured people. Teams can't yet tell whether tidying code for readers also helps their agents.",
+    "evidence": [
+      "borg-et-al-forge-2026",
+      "esfahani-et-al-arxiv-2026",
+      "xie-et-al-icml-2026",
+      "wang-et-al-jsea-2024",
+      "yakubov-research-square-2025"
+    ],
+    "added": "2026-11-20T17:30:00Z",
+    "updated": "2026-11-20T17:30:00Z"
   }
 ]

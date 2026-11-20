@@ -4219,5 +4219,242 @@
     ],
     "added": "2026-11-20T13:10:11Z",
     "updated": "2026-11-20T13:10:11Z"
+  },
+  {
+    "id": "liu-han-arxiv-2026",
+    "title": "Liu & Han, arXiv 2026",
+    "url": "https://arxiv.org/abs/2610.04433",
+    "kind": "study",
+    "era": null,
+    "caveat": "preprint",
+    "finding": "Across seven models and three agent harnesses (Claude Code, mini-SWE-agent, OpenCode) on SWE-bench Verified, no harness led across models; swapping the harness flipped about as many tasks (median 13%) as rerunning the same setup, and cost gaps ran from 1.03x to 4.0x depending on the model.",
+    "topics": [
+      "looping",
+      "measuring"
+    ],
+    "added": "2026-11-20T17:30:00Z",
+    "updated": "2026-11-20T17:30:00Z"
+  },
+  {
+    "id": "brilliantov-et-al-arxiv-2026",
+    "title": "Brilliantov et al., arXiv 2026",
+    "url": "https://arxiv.org/abs/2609.40303",
+    "kind": "study",
+    "era": null,
+    "caveat": "preprint; open-weight models on machine-learning tasks",
+    "finding": "The authors' own minimal single-session coding agent matched or beat four published machine-learning-engineering harnesses (69.7% against 61.4% percentile with one open model), and most added machinery (time nudges, skills, delegation) did not help.",
+    "topics": [
+      "looping",
+      "measuring"
+    ],
+    "added": "2026-11-20T17:30:00Z",
+    "updated": "2026-11-20T17:30:00Z"
+  },
+  {
+    "id": "zeng-et-al-fse-2026",
+    "title": "Zeng et al., FSE 2026",
+    "url": "https://arxiv.org/abs/2509.01494",
+    "kind": "benchmark",
+    "era": null,
+    "caveat": "Python projects; scored by an LLM judge",
+    "finding": "On 1,000 pull requests every AI review tool scored low (best F1 19.4, four tools under 10% precision), recall fell to 8.9% for PRs with five or more issues, repeated runs overlapped little, and merging several drafts lifted F1 by up to 43.7%.",
+    "topics": [
+      "reviewing"
+    ],
+    "added": "2026-11-20T17:30:00Z",
+    "updated": "2026-11-20T17:30:00Z"
+  },
+  {
+    "id": "pereira-et-al-arxiv-2026",
+    "title": "Pereira et al. (Nutanix), arXiv 2026",
+    "url": "https://arxiv.org/abs/2603.11078",
+    "kind": "benchmark",
+    "era": null,
+    "caveat": "preprint; LLM judge; no human or linter baseline",
+    "finding": "On 584 pull requests, AI review agents found 18-33% of the one known bug per PR at 3-5% precision, and a self-reflecting review style raised recall but cut the signal-to-noise ratio.",
+    "topics": [
+      "reviewing"
+    ],
+    "added": "2026-11-20T17:30:00Z",
+    "updated": "2026-11-20T17:30:00Z"
+  },
+  {
+    "id": "jin-chen-automated-software-engineering-2026",
+    "title": "Jin & Chen, Automated Software Engineering 2026",
+    "url": "https://link.springer.com/article/10.1007/s10515-026-00638-5",
+    "kind": "study",
+    "era": "older",
+    "caveat": "single functions only; no diffs, linters or humans",
+    "finding": "Five LLMs asked whether a function met a requirement rejected many correct ones: asking for an explanation and a fix raised GPT-4o's false rejections from 26% to 73% on HumanEval, and running the model's own fix against tests cut averaged false rejections from 55% to 16%.",
+    "topics": [
+      "reviewing",
+      "testing"
+    ],
+    "added": "2026-11-20T17:30:00Z",
+    "updated": "2026-11-20T17:30:00Z"
+  },
+  {
+    "id": "klishevich-et-al-arxiv-2025",
+    "title": "Klishevich et al., arXiv 2025",
+    "url": "https://arxiv.org/abs/2502.20747",
+    "kind": "study",
+    "era": "older",
+    "caveat": "preprint; 2025 models; 70 Java commits",
+    "finding": "Asked the same five review questions about 70 commits five times at temperature zero, the GPT-4o models agreed with themselves at about 0.72 correlation against 0.90 for Claude 3.5 Sonnet, and maintainability judgements were the least stable.",
+    "topics": [
+      "reviewing"
+    ],
+    "added": "2026-11-20T17:30:00Z",
+    "updated": "2026-11-20T17:30:00Z"
+  },
+  {
+    "id": "borg-et-al-forge-2026",
+    "title": "Borg et al. (CodeScene), FORGE 2026",
+    "url": "https://arxiv.org/abs/2601.02200",
+    "kind": "vendor",
+    "era": null,
+    "caveat": "by the vendor's own staff; competitive-programming files",
+    "finding": "Healthier code broke less when five open models refactored it (relative risk 0.69 to 0.85), but the effect was not significant for Claude Sonnet 4.5 or Claude Code, and the health score predicted outcomes only weakly.",
+    "topics": [
+      "delivery",
+      "understanding"
+    ],
+    "added": "2026-11-20T17:30:00Z",
+    "updated": "2026-11-20T17:30:00Z"
+  },
+  {
+    "id": "esfahani-et-al-arxiv-2026",
+    "title": "Esfahani et al., arXiv 2026",
+    "url": "https://arxiv.org/abs/2609.37405",
+    "kind": "study",
+    "era": "older",
+    "caveat": "preprint; complexity confounded with problem source",
+    "finding": "Two code models predicting the return values of 300 short Python functions fell from 94% and 87% correct on low-complexity functions to 53% and 47% on high-complexity ones.",
+    "topics": [
+      "delivery",
+      "understanding"
+    ],
+    "added": "2026-11-20T17:30:00Z",
+    "updated": "2026-11-20T17:30:00Z"
+  },
+  {
+    "id": "xie-et-al-icml-2026",
+    "title": "Xie et al., ICML 2026",
+    "url": "https://proceedings.mlr.press/v306/xie26j.html",
+    "kind": "study",
+    "era": null,
+    "caveat": "authors propose their own metric",
+    "finding": "Classical complexity metrics lacked a consistent correlation with DeepSeek-V3 performance, while the authors' language-model-based score correlated at -0.80 to -0.97 (binned), and rewriting code to lower it raised pass@1 by 1 to 4 points.",
+    "topics": [
+      "delivery",
+      "understanding"
+    ],
+    "added": "2026-11-20T17:30:00Z",
+    "updated": "2026-11-20T17:30:00Z"
+  },
+  {
+    "id": "wang-et-al-jsea-2024",
+    "title": "Wang et al., JSEA 2024",
+    "url": "https://www.scirp.org/journal/paperinformation?paperid=137296",
+    "kind": "study",
+    "era": "older",
+    "caveat": "125M-parameter encoder, not a modern LLM; no statistics",
+    "finding": "Replacing all names with random strings cut a 125M-parameter encoder's Java code-search accuracy (mean reciprocal rank) from 70.4 to 17.4 and clone-detection F1 from 94.9 to 86.8.",
+    "topics": [
+      "delivery",
+      "understanding"
+    ],
+    "added": "2026-11-20T17:30:00Z",
+    "updated": "2026-11-20T17:30:00Z"
+  },
+  {
+    "id": "yakubov-research-square-2025",
+    "title": "Yakubov, Research Square 2025",
+    "url": "https://assets-eu.researchsquare.com/files/rs-7180885/v1_covered_b9b4be91-5746-4a79-a944-015d65fe9d49.pdf",
+    "kind": "study",
+    "era": null,
+    "caveat": "preprint; small models; one model also judged the results",
+    "finding": "Eight small models (0.5B-8B) completing 25 tokens of 500 Python samples scored best with descriptive variable names (semantic similarity 0.874) and worst with obfuscated ones (0.802).",
+    "topics": [
+      "delivery",
+      "understanding"
+    ],
+    "added": "2026-11-20T17:30:00Z",
+    "updated": "2026-11-20T17:30:00Z"
+  },
+  {
+    "id": "bergmann-which-of-your-tests-would-survive-a-rewrite-2026",
+    "title": "Bergmann (PHPUnit), Which of your tests would survive a rewrite?, 2026",
+    "url": "https://phpunit.expert/articles/which-of-your-tests-would-survive-a-rewrite.html",
+    "kind": "essay",
+    "era": null,
+    "caveat": "sells consulting on this; case facts relayed, not checked",
+    "finding": "When agents can regenerate an implementation in a day, the checkable asset is a reference implementation plus tests bound to the interface you keep; running old and new on the same inputs is the oracle, and a parity harness proves agreement, not correctness.",
+    "topics": [
+      "testing",
+      "delivery"
+    ],
+    "added": "2026-11-20T17:30:00Z",
+    "updated": "2026-11-20T17:30:00Z"
+  },
+  {
+    "id": "bergmann-cheap-to-write-expensive-to-depend-on-2026",
+    "title": "Bergmann (PHPUnit), Cheap to write, expensive to depend on, 2026",
+    "url": "https://phpunit.expert/articles/cheap-to-write-expensive-to-depend-on.html",
+    "kind": "essay",
+    "era": null,
+    "caveat": "sells consulting on this; one cited 2019 study",
+    "finding": "Agents made rewrites cheap but not the years of fixes, security response and support behind a dependency, so he judges a new one by who maintains it, who pays, what it promises, how it is verified and released, and how you could leave.",
+    "topics": [
+      "security",
+      "delivery"
+    ],
+    "added": "2026-11-20T17:30:00Z",
+    "updated": "2026-11-20T17:30:00Z"
+  },
+  {
+    "id": "stenberg-actual-curl-rewrites-in-rust-2026",
+    "title": "Stenberg (curl), Actual curl rewrites in Rust, 2026",
+    "url": "https://daniel.haxx.se/blog/2026/11/17/actual-curl-rewrites-in-rust/",
+    "kind": "practitioner",
+    "era": null,
+    "caveat": "maintainer of the project being copied",
+    "finding": "While agents converted 185,000 lines of curl's C into Rust over three-plus weeks, curl itself merged over 300 commits, about 200 of them bug fixes the rewrites lack; 14 of 81 vulnerabilities confirmed in 2026 were memory-safety mistakes.",
+    "topics": [
+      "security",
+      "delivery"
+    ],
+    "added": "2026-11-20T17:30:00Z",
+    "updated": "2026-11-20T17:30:00Z"
+  },
+  {
+    "id": "kalliamvakou-carey-dx-2026",
+    "title": "Kalliamvakou & Carey (DX), What to do when developers say no to AI, 2026",
+    "url": "https://newsletter.getdx.com/p/what-to-do-when-developers-say-no",
+    "kind": "essay",
+    "era": null,
+    "caveat": "vendor newsletter; no prevalence data",
+    "finding": "Sorts developers' refusals of AI into four kinds (no room to learn, it doesn't add up, can't stand behind it, decided without me), each pointing at a gap the organization hasn't filled, and advises asking for specific moments of not using AI.",
+    "topics": [
+      "teamwork",
+      "delivery"
+    ],
+    "added": "2026-11-20T17:30:00Z",
+    "updated": "2026-11-20T17:30:00Z"
+  },
+  {
+    "id": "houck-the-ai-native-developer-dx-2026",
+    "title": "Houck (DX), The AI-native developer, 2026",
+    "url": "https://newsletter.getdx.com/p/the-ai-native-developer",
+    "kind": "essay",
+    "era": null,
+    "caveat": "secondhand: a co-author's summary of an ACM Queue paper",
+    "finding": "A survey of over 1,300 developers and interviews with 22 AI-fluent ones describe a four-stage fluency path in which skeptics were moved by urgency, three tensions (learning, deskilling, accountability), and a possible future where reviewers become rubber-stamping 'Software Signatories'.",
+    "topics": [
+      "teamwork",
+      "reviewing"
+    ],
+    "added": "2026-11-20T17:30:00Z",
+    "updated": "2026-11-20T17:30:00Z"
   }
 ]
