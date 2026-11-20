@@ -617,17 +617,19 @@
     "topics": [
       "measuring"
     ],
-    "summary": "Randomly assign about 30 real tickets to AI-allowed or not, and record each developer's time forecast before they start. Self-reported time savings are unreliable, so compare forecasts with what was actually timed.",
+    "summary": "Randomly assign about 30 real tickets to AI-allowed or not, and record each developer's time forecast before they start. Self-reported savings are unreliable and before-and-after comparisons can over- or understate the effect, so compare forecasts with what was actually timed.",
     "signals": [
       "Time to merge, AI-allowed versus not, against each forecast",
       "Rework within 30 days, AI-allowed versus not",
-      "Whether AI-allowed tickets merge faster without more rework"
+      "Whether AI-allowed tickets merge faster without more rework",
+      "Share of developers given access who used the tool in the period"
     ],
     "evidence": [
-      "iconiq-state-of-ai-2026"
+      "iconiq-state-of-ai-2026",
+      "cui-et-al-working-paper-2025"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-20T13:10:11Z"
   },
   {
     "id": "report-confidence-intervals-on-model-comparisons",
@@ -1677,17 +1679,18 @@
     "topics": [
       "reviewing"
     ],
-    "summary": "For a month, tag agent PRs as low or high uncertainty at planning: light inspection for bug fixes, deeper structural review for novel features.",
+    "summary": "For a month, tag agent PRs as low or high uncertainty at planning: light inspection for bug fixes, deeper structural review for novel features. Reviewers accept more wrong suggested changes on complex code, so give hard code the deeper look.",
     "signals": [
       "Escaped defects per uncertainty tag",
       "Review minutes per PR, by tag",
       "PRs whose uncertainty tag proved wrong in hindsight"
     ],
     "evidence": [
-      "tornhill-controlling-the-uncertainty-machine"
+      "tornhill-controlling-the-uncertainty-machine",
+      "singh-et-al-fse-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-20T13:10:11Z"
   },
   {
     "id": "turn-repeated-review-findings-into-agent-skills",
@@ -2471,7 +2474,7 @@
       "specification",
       "delivery"
     ],
-    "summary": "Have a human write or approve what the tests assert, and give those tests to the agent before it writes code. Tests an agent writes for itself tend to share its misunderstanding, so they pass wrong code.",
+    "summary": "Have a human write what the tests assert, or check it against a concrete example, and give those tests to the agent before it writes code. Tests an agent writes for itself tend to share its misunderstanding, and people reading a model's assertions miss many wrong ones.",
     "signals": [
       "Spec tests whose assertions no human wrote or approved",
       "Agent-written tests later found to pass buggy code",
@@ -2486,10 +2489,12 @@
       "metr-research-update-2025-08",
       "hamidi-et-al-arxiv-2026",
       "haroon-et-al-arxiv-2026",
-      "charoosaei-et-al-arxiv-2026"
+      "charoosaei-et-al-arxiv-2026",
+      "cassieri-et-al-tosem-2026",
+      "kaufman-et-al-arxiv-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-19T11:44:00Z"
+    "updated": "2026-11-20T13:10:11Z"
   },
   {
     "id": "work-in-short-steady-test-and-code-cycles",
@@ -2820,17 +2825,18 @@
     "topics": [
       "testing"
     ],
-    "summary": "On one feature, have a human write test intent, the agent expand it into tests, a human write the production code and the agent only refactor after. When AI writes both tests and code, each just confirms the other. People writing the tests and a model writing the code has also turned out no more correct than people working alone, so check the split earns its cost.",
+    "summary": "On one feature, have a human write test intent, the agent expand it into tests, a human write the production code and the agent only refactor after. When AI writes both tests and code, each just confirms the other. People writing the tests and a model writing the code has sometimes turned out no more correct than people working alone, and sometimes more productive, so check the split earns its cost.",
     "signals": [
       "Escaped defects on the split feature vs comparable AI-writes-both features",
       "Time to merge, split flow vs normal flow"
     ],
     "evidence": [
       "ai-made-tools-tdd-with-ai",
-      "mock-russo-emse-2026"
+      "mock-russo-emse-2026",
+      "cassieri-et-al-tosem-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-06T15:45:00Z"
+    "updated": "2026-11-20T13:10:11Z"
   },
   {
     "id": "attach-evidence-of-what-ran-to-green-results",
@@ -3300,10 +3306,11 @@
       "letta",
       "chhikara-et-al-mem0",
       "liao-agents-dont-need-memory",
-      "thines-agent-memory-opentelemetry-moment-2026"
+      "thines-agent-memory-opentelemetry-moment-2026",
+      "derehag-et-al-arxiv-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-13T10:50:00Z"
+    "updated": "2026-11-20T13:10:11Z"
   },
   {
     "id": "test-on-demand-explainers-against-reading-diffs",
@@ -4705,5 +4712,43 @@
     ],
     "added": "2026-11-19T11:47:25Z",
     "updated": "2026-11-19T11:44:00Z"
+  },
+  {
+    "id": "dont-rely-on-the-models-explanation-to-review-a-generated-test",
+    "title": "Don't rely on the model's explanation to review a generated test",
+    "ring": "avoid",
+    "topics": [
+      "testing",
+      "reviewing"
+    ],
+    "summary": "Don't count on a model's plain-English explanation of a test or assertion to help a reviewer judge it. Explanations didn't make reviewers more accurate, and incomplete ones made them more confident while less accurate.",
+    "signals": [
+      "Generated tests approved with only the model's explanation as review",
+      "Generated tests later changed because they asserted the wrong value"
+    ],
+    "evidence": [
+      "kaufman-et-al-arxiv-2026"
+    ],
+    "added": "2026-11-20T13:10:11Z",
+    "updated": "2026-11-20T13:10:11Z"
+  },
+  {
+    "id": "try-an-input-the-assertion-should-reject-before-accepting-it",
+    "title": "Try an input the assertion should reject before accepting it",
+    "ring": "trial",
+    "topics": [
+      "testing",
+      "reviewing"
+    ],
+    "summary": "Before accepting a model-written assertion, run or walk through one input it should fail on. Reading alone misses wrong assertions, and the wrong ones people did catch were caught this way.",
+    "signals": [
+      "Generated-test PRs that include a negative case",
+      "Assertions changed after a bug because they accepted wrong output"
+    ],
+    "evidence": [
+      "kaufman-et-al-arxiv-2026"
+    ],
+    "added": "2026-11-20T13:10:11Z",
+    "updated": "2026-11-20T13:10:11Z"
   }
 ]

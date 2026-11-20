@@ -4133,5 +4133,91 @@
     ],
     "added": "2026-11-19T11:47:25Z",
     "updated": "2026-11-19T11:44:00Z"
+  },
+  {
+    "id": "cui-et-al-working-paper-2025",
+    "title": "Cui et al., working paper 2025",
+    "url": "https://economics.mit.edu/sites/default/files/inline-files/draft_copilot_experiments.pdf",
+    "kind": "rct",
+    "era": "older",
+    "caveat": "two of six authors work at Microsoft; draft",
+    "finding": "Randomised Copilot access at three companies (4,867 developers) raised weekly pull requests 26% (SE 10%) with no significant change in commits; a third of developers given access never tried it, and before-and-after estimates differed widely from the randomised ones.",
+    "topics": [
+      "measuring"
+    ],
+    "added": "2026-11-20T13:10:11Z",
+    "updated": "2026-11-20T13:10:11Z"
+  },
+  {
+    "id": "borg-et-al-emse-2026",
+    "title": "Borg et al., EMSE 2026",
+    "url": "https://link.springer.com/content/pdf/10.1007/s10664-026-10889-1.pdf",
+    "kind": "rct",
+    "era": "early-2025",
+    "caveat": "first author works for the maker of the maintainability score used",
+    "finding": "Code written with AI assistants was no harder for a second developer to extend (75 randomised developers; time, maintainability score and coverage; powered only for large effects), while AI users finished the first task 30.7% faster by median in a non-randomised phase.",
+    "topics": [
+      "measuring",
+      "testing"
+    ],
+    "added": "2026-11-20T13:10:11Z",
+    "updated": "2026-11-20T13:10:11Z"
+  },
+  {
+    "id": "cassieri-et-al-tosem-2026",
+    "title": "Cassieri et al., TOSEM 2026",
+    "url": "https://doi.org/10.1145/3828553",
+    "kind": "study",
+    "era": "older",
+    "caveat": "authors built the tool; students on one exercise the model had already solved",
+    "finding": "With a human writing each failing test and GPT-4 Turbo writing the code, 40 students passed 78.6% of acceptance tests against 40.3% with plain TDD on one kata; the model passed about 90% of 315 kata tests on the first attempt, and a current Claude model about 92%.",
+    "topics": [
+      "testing"
+    ],
+    "added": "2026-11-20T13:10:11Z",
+    "updated": "2026-11-20T13:10:11Z"
+  },
+  {
+    "id": "kaufman-et-al-arxiv-2026",
+    "title": "Kaufman et al., arXiv 2026",
+    "url": "https://arxiv.org/pdf/2607.08885",
+    "kind": "study",
+    "era": "older",
+    "caveat": "preprint",
+    "finding": "86 programmers judged LLM-written assertions: 74% of correct ones were accepted but only 49% of wrong ones were rejected, with equal confidence; plain-English explanations did not improve accuracy, and incomplete ones lowered it while raising confidence.",
+    "topics": [
+      "testing",
+      "reviewing"
+    ],
+    "added": "2026-11-20T13:10:11Z",
+    "updated": "2026-11-20T13:10:11Z"
+  },
+  {
+    "id": "singh-et-al-fse-2026",
+    "title": "Singh et al., FSE 2026",
+    "url": "https://dl.acm.org/doi/epdf/10.1145/3808165",
+    "kind": "rct",
+    "era": null,
+    "caveat": "two code snippets stand in for low and high complexity",
+    "finding": "385 participants accepted a buggy suggested revision more often on complex code than on simple code (82 of 209 against 44 of 176), while labelling the same revision as AI- or human-written made no detectable difference.",
+    "topics": [
+      "reviewing"
+    ],
+    "added": "2026-11-20T13:10:11Z",
+    "updated": "2026-11-20T13:10:11Z"
+  },
+  {
+    "id": "derehag-et-al-arxiv-2026",
+    "title": "Derehag et al. (Midbrain), arXiv 2026",
+    "url": "https://arxiv.org/pdf/2603.15599",
+    "kind": "vendor",
+    "era": null,
+    "caveat": "preprint; competitor scores copied from other papers",
+    "finding": "Plain text search over raw conversation history with a reranker scored as high as structured memory stores on two memory benchmarks, and the same full-history baseline scored 77% or 91% depending on the judging setup.",
+    "topics": [
+      "understanding"
+    ],
+    "added": "2026-11-20T13:10:11Z",
+    "updated": "2026-11-20T13:10:11Z"
   }
 ]

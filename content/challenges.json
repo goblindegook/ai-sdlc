@@ -6,13 +6,14 @@
       "looping",
       "measuring"
     ],
-    "summary": "Each agent change on top of earlier agent changes adds a little duplication and complexity. Better prompts set a better starting point but don't stop the slide; only refactoring and review do. Whether newer models maintain code better is disputed: one measure shows fast gains, another the same decay across model tiers.",
+    "summary": "Each agent change on top of earlier agent changes adds a little duplication and complexity. Better prompts set a better starting point but don't stop the slide; only refactoring and review do. Whether newer models maintain code better is disputed: one measure shows fast gains, another the same decay across model tiers. In a controlled hand-off, code written with AI assistants was no harder for the next developer to change, so the slide may come from volume and repeated agent edits rather than any single change.",
     "evidence": [
       "slopcodebench",
-      "swe-ci"
+      "swe-ci",
+      "borg-et-al-emse-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-04T15:43:00Z"
+    "updated": "2026-11-20T13:10:11Z"
   },
   {
     "id": "you-cant-tell-from-a-task-how-well-the-agent-will-do",
@@ -96,13 +97,14 @@
       "reviewing",
       "understanding"
     ],
-    "summary": "Even reviewers who spot a flaw in an AI recommendation often go along with it. Spotting a problem isn't enough; reviewers need the time and the authority to reject. At the repository level the picture is less clear: review got faster and approved more often after agents arrived, but just as much in repositories without agents, so the agent may not be the cause.",
+    "summary": "Even reviewers who spot a flaw in an AI recommendation often go along with it. Spotting a problem isn't enough; reviewers need the time and the authority to reject. At the repository level the picture is less clear: review got faster and approved more often after agents arrived, but just as much in repositories without agents, so the agent may not be the cause. In a controlled review, labelling a suggested change as AI-written made no difference to how often a wrong one was accepted; harder code did.",
     "evidence": [
       "vicente-matute-via-lovett",
-      "hamza-et-al-esem-2026"
+      "hamza-et-al-esem-2026",
+      "singh-et-al-fse-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-19T11:44:00Z"
+    "updated": "2026-11-20T13:10:11Z"
   },
   {
     "id": "nobody-knows-how-often-agents-leak-secrets",
@@ -228,14 +230,15 @@
       "testing",
       "delivery"
     ],
-    "summary": "The evidence that writing tests first helps agents comes from one language and from models that predate current ones, and nobody has re-checked it. Vague requirements, where test-first is said to help most as a way of thinking, haven't been tried with agents.",
+    "summary": "The evidence that writing tests first helps agents comes from one language and from models that predate current ones, and only a lab re-check on small exercises has been done since. Vague requirements, where test-first is said to help most as a way of thinking, haven't been tried with agents.",
     "evidence": [
       "tdd-bench-verified-ibm",
       "mock-russo-emse-2026",
-      "pancher-et-al-xp-2025"
+      "pancher-et-al-xp-2025",
+      "cassieri-et-al-tosem-2026"
     ],
     "added": "2026-11-04T15:59:57Z",
-    "updated": "2026-11-06T15:45:00Z"
+    "updated": "2026-11-20T13:10:11Z"
   },
   {
     "id": "nobody-agrees-what-the-human-bottleneck-is-now",
@@ -358,16 +361,17 @@
       "testing",
       "measuring"
     ],
-    "summary": "Coverage and mutation testing show whether code runs and whether a change would be noticed, but not whether the expected values are right, and model-written tests assert whatever the model expects the code to do. Some sources recommend mutation testing as a check on AI-written tests; another finds it barely tells good suites from bad ones on AI-written code. Regression tests a model writes from changed code often lock in the bug they should catch.",
+    "summary": "Coverage and mutation testing show whether code runs and whether a change would be noticed, but not whether the expected values are right, and model-written tests assert whatever the model expects the code to do. Some sources recommend mutation testing as a check on AI-written tests; another finds it barely tells good suites from bad ones on AI-written code. Regression tests a model writes from changed code often lock in the bug they should catch. People reading model-written assertions miss wrong ones about as often as they catch them, and the model's plain-English explanations don't help.",
     "evidence": [
       "hamidi-et-al-arxiv-2026",
       "haroon-et-al-arxiv-2026",
       "bockeler-sensors-for-coding-agents",
       "evil-martians-ten-anti-ai-slop-moves",
-      "charoosaei-et-al-arxiv-2026"
+      "charoosaei-et-al-arxiv-2026",
+      "kaufman-et-al-arxiv-2026"
     ],
     "added": "2026-11-06T15:58:19Z",
-    "updated": "2026-11-19T11:44:00Z"
+    "updated": "2026-11-20T13:10:11Z"
   },
   {
     "id": "a-constantly-red-build-stops-meaning-anything",
