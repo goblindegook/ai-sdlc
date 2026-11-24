@@ -230,15 +230,16 @@
       "testing",
       "delivery"
     ],
-    "summary": "The evidence that writing tests first helps agents comes from one language and from models that predate current ones, and only a lab re-check on small exercises has been done since. Vague requirements, where test-first is said to help most as a way of thinking, haven't been tried with agents.",
+    "summary": "The evidence that writing tests first helps agents comes from one language and from models that predate current ones, and only a lab re-check on small exercises has been done since. Vague requirements, where test-first is said to help most as a way of thinking, haven't been tried with agents. On newer models, an agent that writes tests first and revises both tests and code beat a plain loop, but the gain came from the revision loop, not the ordering, and most of its failures passed its own tests.",
     "evidence": [
       "tdd-bench-verified-ibm",
       "mock-russo-emse-2026",
       "pancher-et-al-xp-2025",
-      "cassieri-et-al-tosem-2026"
+      "cassieri-et-al-tosem-2026",
+      "yu-et-al-emnlp-2026"
     ],
     "added": "2026-11-04T15:59:57Z",
-    "updated": "2026-11-20T13:10:11Z"
+    "updated": "2026-11-24T14:21:00Z"
   },
   {
     "id": "nobody-agrees-what-the-human-bottleneck-is-now",
@@ -247,17 +248,18 @@
       "understanding",
       "reviewing"
     ],
-    "summary": "With agents writing the code, practitioners disagree on whether verification, judgement, understanding or shared agreement on why a change exists becomes the constraint. Each position rests on one person's experience or opinion. One AI review vendor lets trusted engineers skip review and puts them back under review after outages they cause.",
+    "summary": "With agents writing the code, practitioners disagree on whether verification, judgement, understanding or shared agreement on why a change exists becomes the constraint. Each position rests on one person's experience or opinion. One AI review vendor lets trusted engineers skip review and puts them back under review after outages they cause. One large vendor reads it differently: coding got faster, but choosing what to change, review and production operations did not, so the whole lifecycle gains little.",
     "evidence": [
       "fornasier-getting-out-of-the-loop",
       "litt",
       "griffith-code-review-2026",
       "kunal-resisting-cognitive-surrender-2026",
       "laycock-thoughtworks-2026",
-      "gill-coderabbit-pragmatic-engineer-2026"
+      "gill-coderabbit-pragmatic-engineer-2026",
+      "pavlenko-et-al-arxiv-2026"
     ],
     "added": "2026-11-04T15:59:57Z",
-    "updated": "2026-11-19T11:44:00Z"
+    "updated": "2026-11-24T14:21:00Z"
   },
   {
     "id": "strong-engineering-foundations-may-not-protect-you",

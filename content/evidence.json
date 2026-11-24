@@ -4456,5 +4456,80 @@
     ],
     "added": "2026-11-20T17:30:00Z",
     "updated": "2026-11-20T17:30:00Z"
+  },
+  {
+    "id": "chen-et-al-acl-2025",
+    "title": "Chen et al., ACL 2025",
+    "url": "https://aclanthology.org/2025.acl-long.881.pdf",
+    "kind": "study",
+    "era": "older",
+    "finding": "Four 2024 models that wrote 10 tests per problem and then debugged against them lost up to 9.7 points on HumanEval+; only 44-59% of whole self-written suites were fully correct, so correct code was often told it was wrong.",
+    "topics": [
+      "testing",
+      "looping"
+    ],
+    "added": "2026-11-24T14:21:00Z",
+    "updated": "2026-11-24T14:21:00Z"
+  },
+  {
+    "id": "yu-et-al-emnlp-2026",
+    "title": "Yu et al., EMNLP 2026",
+    "url": "https://aclanthology.org/2026.emnlp-main.1845.pdf",
+    "kind": "benchmark",
+    "era": null,
+    "caveat": "no variance reported",
+    "finding": "An agent that wrote tests first and revised tests and code from its own runs reached 78.2% on RepoEval function completion with GPT-5-mini against 61.3% for a bash-only agent; freezing its tests scored below code-only reflection for two of three models, and 71-93% of its failures passed its own tests but failed the repository's.",
+    "topics": [
+      "testing",
+      "looping"
+    ],
+    "added": "2026-11-24T14:21:00Z",
+    "updated": "2026-11-24T14:21:00Z"
+  },
+  {
+    "id": "hu-et-al-issre-2026",
+    "title": "Hu et al., ISSRE 2026",
+    "url": "https://arxiv.org/pdf/2509.24148",
+    "kind": "benchmark",
+    "era": null,
+    "caveat": "preprint; the supplied tests come from the suite that grades the result",
+    "finding": "On RepoCod with DeepSeek-V3, an agent given three developer-written tests chosen from different callers solved 49.2% of tasks against 44.3% with ten tests and 33.1% with the whole suite.",
+    "topics": [
+      "testing",
+      "specification"
+    ],
+    "added": "2026-11-24T14:21:00Z",
+    "updated": "2026-11-24T14:21:00Z"
+  },
+  {
+    "id": "chen-et-al-smu-arxiv-2026",
+    "title": "Chen et al. (SMU), arXiv 2026",
+    "url": "https://arxiv.org/pdf/2602.07900",
+    "kind": "study",
+    "era": null,
+    "caveat": "preprint; one run per condition",
+    "finding": "Across 5,000 bash-only agent runs on SWE-bench Verified, models wrote scratch test files in 2% to 99% of tasks with no link to how many they solved, the files held more value prints than assertions, and forbidding them cut input tokens by 33-49% with no significant change in solved tasks.",
+    "topics": [
+      "testing",
+      "measuring",
+      "looping"
+    ],
+    "added": "2026-11-24T14:21:00Z",
+    "updated": "2026-11-24T14:21:00Z"
+  },
+  {
+    "id": "pavlenko-et-al-arxiv-2026",
+    "title": "Pavlenko et al. (Microsoft), arXiv 2026",
+    "url": "https://arxiv.org/abs/2609.36323",
+    "kind": "vendor",
+    "era": null,
+    "caveat": "vision paper; the builders' own estimates",
+    "finding": "Coding agents sped up coding but barely moved the whole lifecycle, so the authors propose automating targeting, review and incident response too and estimate 3x engineering efficiency over agentic coding.",
+    "topics": [
+      "delivery",
+      "reviewing"
+    ],
+    "added": "2026-11-24T14:21:00Z",
+    "updated": "2026-11-24T14:21:00Z"
   }
 ]

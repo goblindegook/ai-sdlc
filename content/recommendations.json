@@ -39,10 +39,11 @@
     "evidence": [
       "chen-et-al-self-debugging",
       "madaan-et-al-self-refine",
-      "shinn-et-al-reflexion"
+      "shinn-et-al-reflexion",
+      "chen-et-al-acl-2025"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-24T14:21:00Z"
   },
   {
     "id": "dont-loop-on-self-critique-alone",
@@ -561,10 +562,11 @@
       "swe-bench",
       "tdd-bench-verified-ibm",
       "stanford-ai-index-2026",
-      "destefanis-aste-arxiv-2026"
+      "destefanis-aste-arxiv-2026",
+      "yu-et-al-emnlp-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-19T11:44:00Z"
+    "updated": "2026-11-24T14:21:00Z"
   },
   {
     "id": "normalise-cost-by-accepted-output",
@@ -2497,10 +2499,11 @@
       "haroon-et-al-arxiv-2026",
       "charoosaei-et-al-arxiv-2026",
       "cassieri-et-al-tosem-2026",
-      "kaufman-et-al-arxiv-2026"
+      "kaufman-et-al-arxiv-2026",
+      "chen-et-al-acl-2025"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-20T13:10:11Z"
+    "updated": "2026-11-24T14:21:00Z"
   },
   {
     "id": "work-in-short-steady-test-and-code-cycles",
@@ -2531,17 +2534,18 @@
       "testing",
       "specification"
     ],
-    "summary": "Give the agent a few distinct example tests per task, about two to four, rather than a long list. Past a handful, extra tests stop helping and can make results worse.",
+    "summary": "Give the agent a few distinct example tests per task, about two to four, rather than a long list, picked so they reach the code from different callers. Past a handful, extra tests stop helping and can make results worse.",
     "signals": [
       "Supplied tests per task in agent prompts",
       "Tasks whose supplied tests are near-duplicates of each other",
       "First-push CI failures, grouped by number of supplied tests"
     ],
     "evidence": [
-      "mathews-nagappan-ase-2024"
+      "mathews-nagappan-ase-2024",
+      "hu-et-al-issre-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-24T14:21:00Z"
   },
   {
     "id": "dont-read-coverage-as-quality-for-ai-written-tests",
@@ -4886,5 +4890,26 @@
     ],
     "added": "2026-11-20T17:30:00Z",
     "updated": "2026-11-20T17:30:00Z"
+  },
+  {
+    "id": "compare-agent-runs-with-and-without-scratch-test-files",
+    "title": "Compare agent runs with and without scratch test files",
+    "ring": "trial",
+    "topics": [
+      "testing",
+      "measuring",
+      "looping"
+    ],
+    "summary": "On a sample of your own tasks, run the agent as usual and with throwaway test files discouraged, then compare accepted changes and token spend. Agents write many scratch checks that print values instead of asserting them, and discouraging them cut spend sharply with no significant drop in fixes.",
+    "signals": [
+      "Tokens per accepted change, with and without scratch tests",
+      "Share of agent runs that write a new test file",
+      "Scratch test files that print values and assert nothing"
+    ],
+    "evidence": [
+      "chen-et-al-smu-arxiv-2026"
+    ],
+    "added": "2026-11-24T14:21:00Z",
+    "updated": "2026-11-24T14:21:00Z"
   }
 ]
