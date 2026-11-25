@@ -607,10 +607,12 @@
       "forbes",
       "ludic",
       "chatterji-et-al-openai",
-      "fortune-on-uber-ai-spending"
+      "fortune-on-uber-ai-spending",
+      "no-ai-slop-manifesto-2026",
+      "swyx-ai-engineer-code-summit-2025"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-25T23:12:00Z"
   },
   {
     "id": "randomise-real-tickets-to-test-speed-gains",
@@ -1715,10 +1717,11 @@
     "evidence": [
       "tornhill-controlling-the-uncertainty-machine",
       "osmani-claude-code-verification-2026",
-      "laiq-et-al-arxiv-2026"
+      "laiq-et-al-arxiv-2026",
+      "no-ai-slop-manifesto-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-19T11:44:00Z"
+    "updated": "2026-11-25T23:12:00Z"
   },
   {
     "id": "set-how-much-agent-code-is-read-by-risk-tolerance",
@@ -1737,10 +1740,11 @@
     "evidence": [
       "ewerlof",
       "pinecoder",
-      "kunal-resisting-cognitive-surrender-2026"
+      "kunal-resisting-cognitive-surrender-2026",
+      "no-ai-slop-manifesto-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-08T16:55:00Z"
+    "updated": "2026-11-25T23:12:00Z"
   },
   {
     "id": "give-reviewers-time-and-authority-to-reject",
@@ -1999,9 +2003,10 @@
     "topics": [
       "security"
     ],
-    "summary": "Block agent access to .env* and secrets/**, force the sandbox with a domain allowlist, and use short-lived scoped CI credentials and secret scanning. Never put credentials or controls in CLAUDE.md, rules or skills, since agents can be made to reveal them. (OWASP LLM02, LLM07, 2025)",
+    "summary": "Block agent access to .env* and secrets/**, force the sandbox with a domain allowlist, and keep credentials outside it: an egress proxy adds a short-lived credential scoped to each destination, backed by secret scanning. Never put credentials or controls in CLAUDE.md, rules or skills, since agents can be made to reveal them. (OWASP LLM02, LLM07, 2025)",
     "signals": [
       "Agent reads of .env*, secrets/** or ~/.ssh in session logs",
+      "Secrets or API keys found inside agent sandboxes",
       "Secret-scanning hits on agent changes",
       "Credentials or controls found in CLAUDE.md, rules or skills"
     ],
@@ -2010,10 +2015,11 @@
       "anthropic-ai-native-sdlc-playbook",
       "owasp-llm022025-sensitive-information-disclosure",
       "owasp-llm072025-system-prompt-leakage",
-      "apiiro-agents-leaking-secrets-2026"
+      "apiiro-agents-leaking-secrets-2026",
+      "lesse-secure-agents-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-13T14:20:00Z"
+    "updated": "2026-11-25T23:12:00Z"
   },
   {
     "id": "allowlist-mcp-servers-and-enforce-access-at-the-tool-layer",
@@ -4463,10 +4469,11 @@
     ],
     "evidence": [
       "anthropic-cyber-evaluation-incidents-2026",
-      "openai-hugging-face-incident-2026"
+      "openai-hugging-face-incident-2026",
+      "lesse-secure-agents-2026"
     ],
     "added": "2026-11-13T14:19:35Z",
-    "updated": "2026-11-13T14:19:00Z"
+    "updated": "2026-11-25T23:12:00Z"
   },
   {
     "id": "keep-production-safeguards-on-in-test-and-evaluation-runs",

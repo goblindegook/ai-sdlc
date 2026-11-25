@@ -4531,5 +4531,79 @@
     ],
     "added": "2026-11-24T14:21:00Z",
     "updated": "2026-11-24T14:21:00Z"
+  },
+  {
+    "id": "lesse-secure-agents-2026",
+    "title": "Lesse (Anthropic), Secure agents: architecture and sandboxing, 2026",
+    "url": "https://www.katelynlesse.com/blog/secure-agents-architecture-and-sandboxing",
+    "kind": "practitioner",
+    "era": null,
+    "caveat": "no data or named incidents; the author's company sells agent infrastructure",
+    "finding": "A platform lead recommends keeping the agent loop, session state and credentials outside the sandbox, with an egress proxy injecting destination-scoped credentials, microVM isolation rather than containers, ephemeral sandboxes, default-deny egress, and logs and a fleet-wide kill switch the sandbox cannot reach.",
+    "topics": [
+      "security",
+      "looping"
+    ],
+    "added": "2026-11-25T23:12:00Z",
+    "updated": "2026-11-25T23:12:00Z"
+  },
+  {
+    "id": "lesse-new-problems-for-engineers-2026",
+    "title": "Lesse (Anthropic), The new set of problems for engineers to solve, 2026",
+    "url": "https://www.katelynlesse.com/blog/new-problems-for-engineers-to-solve",
+    "kind": "essay",
+    "era": null,
+    "caveat": "opinion, no data",
+    "finding": "Names unsolved problems for systems of many persistent agents: consent for agents acting on a person's behalf for weeks, trust between agents, injected instructions spreading through shared memory, and telling well-meant persistence from attack when monitoring.",
+    "topics": [
+      "security"
+    ],
+    "added": "2026-11-25T23:12:00Z",
+    "updated": "2026-11-25T23:12:00Z"
+  },
+  {
+    "id": "no-ai-slop-manifesto-2026",
+    "title": "Speakers and attendees of AIE Code Summit, No AI slop: a manifesto, 2026",
+    "url": "https://www.slopmanifesto.com",
+    "kind": "essay",
+    "era": null,
+    "caveat": "community statement; signatories self-selected",
+    "finding": "Defines slop as output that takes less effort to produce than to understand, and resolves to own what you ship, say when an agent wrote it, review a subset scaled to the stakes, measure shipped outcomes over output volume, and fix the system when a mistake repeats.",
+    "topics": [
+      "reviewing",
+      "teamwork",
+      "measuring"
+    ],
+    "added": "2026-11-25T23:12:00Z",
+    "updated": "2026-11-25T23:12:00Z"
+  },
+  {
+    "id": "swyx-ai-engineer-code-summit-2025",
+    "title": "swyx, AI Engineer Code Summit 2025",
+    "url": "https://www.youtube.com/watch?v=IoiHI7p12Ao",
+    "kind": "essay",
+    "era": null,
+    "caveat": "read from auto-generated captions",
+    "finding": "Keynote arguing slop is cheap to make and costly to refute, and that claims of long autonomous agent runs say how long the agent ran, not whether the code was good: no autonomy without accountability.",
+    "topics": [
+      "reviewing",
+      "measuring"
+    ],
+    "added": "2026-11-25T23:12:00Z",
+    "updated": "2026-11-25T23:12:00Z"
+  },
+  {
+    "id": "schilke-reimann-obhdp-2025",
+    "title": "Schilke & Reimann, OBHDP 2025",
+    "url": "https://doi.org/10.1016/j.obhdp.2025.104405",
+    "kind": "study",
+    "era": null,
+    "caveat": "scenario experiments, not about code",
+    "finding": "Across 13 experiments, people who disclosed using AI were trusted less than those who did not, through lower perceived legitimacy; the penalty held for voluntary and mandatory disclosure and was smaller than being exposed by a third party.",
+    "topics": [
+      "teamwork"
+    ],
+    "added": "2026-11-25T23:12:00Z",
+    "updated": "2026-11-25T23:12:00Z"
   }
 ]

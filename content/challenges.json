@@ -85,10 +85,12 @@
       "baltes-et-al",
       "pragmatic-engineer",
       "honeycomb-2",
-      "stenberg-end-of-the-curl-bug-bounty-2026"
+      "stenberg-end-of-the-curl-bug-bounty-2026",
+      "no-ai-slop-manifesto-2026",
+      "swyx-ai-engineer-code-summit-2025"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-12T16:36:00Z"
+    "updated": "2026-11-25T23:12:00Z"
   },
   {
     "id": "people-follow-ai-advice-they-know-is-wrong",
@@ -199,10 +201,11 @@
     "evidence": [
       "margalit-et-al",
       "yu-et-al",
-      "spati-from-obsidian-to-enterprise-company-brain"
+      "spati-from-obsidian-to-enterprise-company-brain",
+      "lesse-new-problems-for-engineers-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-25T23:12:00Z"
   },
   {
     "id": "pairing-with-ai-isnt-the-same-as-pairing-with-a-person",
@@ -413,15 +416,16 @@
     "topics": [
       "security"
     ],
-    "summary": "When an agent works inside someone's session, the app's permissions and audit log see only the person. A rule like 'the agent may read but not delete' can't be enforced there, and actions can't be traced back to the agent. Drafts exist that name the agent or flag risky actions, but none yet links the agent to the person and narrows its access.",
+    "summary": "When an agent works inside someone's session, the app's permissions and audit log see only the person. A rule like 'the agent may read but not delete' can't be enforced there, and actions can't be traced back to the agent. Drafts exist that name the agent or flag risky actions, but none yet links the agent to the person and narrows its access. For agents that run for weeks, nobody knows how a person can meaningfully approve what they may do, and how one agent should trust a request from another is unsolved.",
     "evidence": [
       "token-security-agent-broke-our-security-rules-2026",
       "w3c-webmcp-draft",
       "meunier-major-ietf-web-bot-auth-2026",
-      "w3c-agentic-web-wg-charter-2026"
+      "w3c-agentic-web-wg-charter-2026",
+      "lesse-new-problems-for-engineers-2026"
     ],
     "added": "2026-11-12T01:29:21Z",
-    "updated": "2026-11-12T00:54:00Z"
+    "updated": "2026-11-25T23:12:00Z"
   },
   {
     "id": "ai-finds-bugs-faster-than-people-can-fix-them",
@@ -448,14 +452,15 @@
       "security",
       "testing"
     ],
-    "summary": "When a task can't be completed as specified, some agents widen the target or take a shortcut instead of stopping, from changing the test to reaching systems nobody approved. The two labs that reported it disagree on how much is model behaviour and how much is an environment left open, and neither has settled it. Agents in controlled team runs also went looking for the hidden tests that graded them.",
+    "summary": "When a task can't be completed as specified, some agents widen the target or take a shortcut instead of stopping, from changing the test to reaching systems nobody approved. The two labs that reported it disagree on how much is model behaviour and how much is an environment left open, and neither has settled it. Agents in controlled team runs also went looking for the hidden tests that graded them. Monitoring has the mirror problem: a well-meaning agent retrying a blocked host looks like an attack.",
     "evidence": [
       "anthropic-cyber-evaluation-incidents-2026",
       "openai-hugging-face-incident-2026",
-      "destefanis-aste-arxiv-2026"
+      "destefanis-aste-arxiv-2026",
+      "lesse-new-problems-for-engineers-2026"
     ],
     "added": "2026-11-13T14:19:35Z",
-    "updated": "2026-11-19T11:44:00Z"
+    "updated": "2026-11-25T23:12:00Z"
   },
   {
     "id": "nobody-knows-if-a-second-ai-reviewer-beats-tuning-the-first",
@@ -505,5 +510,21 @@
     ],
     "added": "2026-11-20T17:30:00Z",
     "updated": "2026-11-20T17:30:00Z"
+  },
+  {
+    "id": "saying-ai-wrote-something-costs-the-sender-trust",
+    "title": "Saying AI wrote something costs the sender trust",
+    "topics": [
+      "teamwork",
+      "reviewing"
+    ],
+    "summary": "Team norms ask people to say when an agent wrote what they send, so reviewers know how much to check. Experiments find people who disclose AI use are trusted less than those who don't, though being found out by someone else costs more. Nobody has tested this on code or pull requests.",
+    "evidence": [
+      "schilke-reimann-obhdp-2025",
+      "honeycomb",
+      "no-ai-slop-manifesto-2026"
+    ],
+    "added": "2026-11-25T23:12:00Z",
+    "updated": "2026-11-25T23:12:00Z"
   }
 ]
