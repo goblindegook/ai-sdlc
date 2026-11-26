@@ -156,10 +156,11 @@
     ],
     "summary": "Letting an agent iterate against tests repairs edge cases and type errors, but if it misunderstood what was asked, it stays misunderstood. Only a person checking intent catches that.",
     "evidence": [
-      "mathews-nagappan-ase-2024"
+      "mathews-nagappan-ase-2024",
+      "nazarova-evil-martians-type-errors-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-26T14:51:00Z"
   },
   {
     "id": "supervising-agents-needs-the-skills-agents-erode",

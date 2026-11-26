@@ -283,10 +283,11 @@
       "huntley-ralph",
       "uber-on-pragmatic-engineer",
       "anthropic-solving-code-review-at-anthropic",
-      "osmani-claude-code-verification-2026"
+      "osmani-claude-code-verification-2026",
+      "nazarova-evil-martians-type-errors-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-19T11:44:00Z"
+    "updated": "2026-11-26T14:51:00Z"
   },
   {
     "id": "time-track-agent-work-by-phase",
@@ -1044,10 +1045,11 @@
       "anthropic-ai-native-sdlc-playbook",
       "augmented-coding-obstacles-selective-hearing",
       "bache-selander-probity-interview",
-      "bache-ordog-habit-hooks-interview"
+      "bache-ordog-habit-hooks-interview",
+      "nazarova-evil-martians-type-errors-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-04T14:31:00Z"
+    "updated": "2026-11-26T14:51:00Z"
   },
   {
     "id": "move-repeated-procedures-into-on-demand-skills",
@@ -4951,5 +4953,45 @@
     ],
     "added": "2026-11-26T12:20:00Z",
     "updated": "2026-11-26T12:20:00Z"
+  },
+  {
+    "id": "test-types-with-and-without-before-adding-them-for-agents",
+    "title": "Test types with and without before adding them for agents",
+    "ring": "trial",
+    "topics": [
+      "testing",
+      "looping"
+    ],
+    "summary": "Before adding a type checker or moving to a typed language to help agents, run the same tasks with and without it and compare tasks solved and session time. Where this has been measured, types cost agent time without solving more tasks, and agents often silenced the checker instead of fixing the code.",
+    "signals": [
+      "Share of agent session time spent in type-check runs",
+      "Tasks solved with versus without the checker on the same task set",
+      "Agent edits that add casts, `any`, `ts-ignore` or untyped signatures to pass the check"
+    ],
+    "evidence": [
+      "nazarova-evil-martians-type-errors-2026"
+    ],
+    "added": "2026-11-26T14:51:00Z",
+    "updated": "2026-11-26T14:51:00Z"
+  },
+  {
+    "id": "check-the-agent-actually-sees-your-in-session-checks",
+    "title": "Check the agent actually sees your in-session checks",
+    "ring": "trial",
+    "topics": [
+      "looping",
+      "testing"
+    ],
+    "summary": "Look in session logs to confirm that language servers, editor diagnostics and lint hooks fire on the agent's edits. An installed checker can stay silent if the agent edits through the shell; a hook that routes edits through the tool the checker watches fixes that.",
+    "signals": [
+      "Sessions where an installed checker reported nothing",
+      "Agent edits made through shell commands instead of the edit tool",
+      "Checker output the agent saw before its last step"
+    ],
+    "evidence": [
+      "nazarova-evil-martians-type-errors-2026"
+    ],
+    "added": "2026-11-26T14:51:00Z",
+    "updated": "2026-11-26T14:51:00Z"
   }
 ]

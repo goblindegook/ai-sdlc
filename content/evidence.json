@@ -4672,5 +4672,20 @@
     ],
     "added": "2026-11-26T12:20:00Z",
     "updated": "2026-11-26T12:20:00Z"
+  },
+  {
+    "id": "nazarova-evil-martians-type-errors-2026",
+    "title": "Nazarova (Evil Martians), Type errors cost our coding agents under 1% of their time, 2026",
+    "url": "https://evilmartians.com/chronicles/type-errors-cost-our-coding-agents-under-one-percent-of-their-time",
+    "kind": "practitioner",
+    "era": null,
+    "caveat": "sells benchmarking services",
+    "finding": "Typed and dynamic languages solved about 65% of the same tasks at equal difficulty. On one Rails app, adding a type checker left the solve rate unchanged (57-61% against 58%) and the type tools took 20-28% of agent time. A TypeScript language server stayed silent because the agent edited through the shell.",
+    "topics": [
+      "testing",
+      "looping"
+    ],
+    "added": "2026-11-26T14:51:00Z",
+    "updated": "2026-11-26T14:51:00Z"
   }
 ]
