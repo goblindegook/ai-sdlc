@@ -4605,5 +4605,72 @@
     ],
     "added": "2026-11-25T23:12:00Z",
     "updated": "2026-11-25T23:12:00Z"
+  },
+  {
+    "id": "anthropic-migrating-messages-api-to-rust-2026",
+    "title": "Martin et al. (Anthropic), Migrating our Messages API to Rust, 2026",
+    "url": "https://www.anthropic.com/research/migrating-api-to-rust",
+    "kind": "vendor",
+    "era": null,
+    "caveat": "vendor self-report",
+    "finding": "A Python-to-Rust rewrite passed about 98% of tests while only about a quarter of production inputs matched; comparing on shadowed live traffic raised matches to 99.6%, and more than 100 of about 700 ported tests had weakened assertions.",
+    "topics": [
+      "testing",
+      "delivery",
+      "looping",
+      "reviewing"
+    ],
+    "added": "2026-11-26T12:20:00Z",
+    "updated": "2026-11-26T12:20:00Z"
+  },
+  {
+    "id": "lesse-pragmatic-engineer-podcast-2026",
+    "title": "Lesse (Anthropic), Pragmatic Engineer podcast 2026",
+    "url": "https://youtu.be/9oNvKMd7xJo",
+    "kind": "vendor",
+    "era": null,
+    "caveat": "vendor self-report; sympathetic host",
+    "finding": "An Anthropic platform lead says a classifier decides whether each pull request needs a human (the no-human share is still small), about 80% of agent-opened PRs in a rewrite were not read in depth, a Claude shadowed on-call for months before pages went to it first, and the coding interview was phased out.",
+    "topics": [
+      "reviewing",
+      "security",
+      "delivery",
+      "teamwork",
+      "measuring"
+    ],
+    "added": "2026-11-26T12:20:00Z",
+    "updated": "2026-11-26T12:20:00Z"
+  },
+  {
+    "id": "deng-et-al-arxiv-2026",
+    "title": "Deng et al., arXiv 2026",
+    "url": "https://arxiv.org/abs/2603.13428",
+    "kind": "benchmark",
+    "era": null,
+    "caveat": "preprint",
+    "finding": "Scores fell from over 80% on isolated tasks to at most 38% when agents evolved a codebase through dependent steps; new features kept landing but regression avoidance saturated, and early regressions snowballed into later steps.",
+    "topics": [
+      "testing",
+      "looping",
+      "measuring",
+      "delivery"
+    ],
+    "added": "2026-11-26T12:20:00Z",
+    "updated": "2026-11-26T12:20:00Z"
+  },
+  {
+    "id": "humanlayer-slopcodebench-update-2026",
+    "title": "Dex (HumanLayer), SlopCodeBench update, 2026",
+    "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-new-models-on-slop-code-bench.md",
+    "kind": "practitioner",
+    "era": null,
+    "caveat": "single runs; sells maintainability checks",
+    "finding": "In ten single runs of frontier models, strict pass was 12-16% of checkpoints; the highest effort cost 2-4x the medium setting and passed more only for one of three models, and final code still failed many tests that earlier steps passed.",
+    "topics": [
+      "looping",
+      "measuring"
+    ],
+    "added": "2026-11-26T12:20:00Z",
+    "updated": "2026-11-26T12:20:00Z"
   }
 ]

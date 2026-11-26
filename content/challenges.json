@@ -6,14 +6,16 @@
       "looping",
       "measuring"
     ],
-    "summary": "Each agent change on top of earlier agent changes adds a little duplication and complexity. Better prompts set a better starting point but don't stop the slide; only refactoring and review do. Whether newer models maintain code better is disputed: one measure shows fast gains, another the same decay across model tiers. In a controlled hand-off, code written with AI assistants was no harder for the next developer to change, so the slide may come from volume and repeated agent edits rather than any single change.",
+    "summary": "Each agent change on top of earlier agent changes adds a little duplication and complexity. Better prompts set a better starting point but don't stop the slide; only refactoring and review do. Whether newer models maintain code better is disputed: one measure shows fast gains, another the same decay across model tiers. In a controlled hand-off, code written with AI assistants was no harder for the next developer to change, so the slide may come from volume and repeated agent edits rather than any single change. Features keep landing at a steady pace, but breakage of earlier work does not fall, and early breakage compounds.",
     "evidence": [
       "slopcodebench",
       "swe-ci",
-      "borg-et-al-emse-2026"
+      "borg-et-al-emse-2026",
+      "deng-et-al-arxiv-2026",
+      "humanlayer-slopcodebench-update-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-20T13:10:11Z"
+    "updated": "2026-11-26T12:20:00Z"
   },
   {
     "id": "you-cant-tell-from-a-task-how-well-the-agent-will-do",
@@ -457,10 +459,11 @@
       "anthropic-cyber-evaluation-incidents-2026",
       "openai-hugging-face-incident-2026",
       "destefanis-aste-arxiv-2026",
-      "lesse-new-problems-for-engineers-2026"
+      "lesse-new-problems-for-engineers-2026",
+      "anthropic-migrating-messages-api-to-rust-2026"
     ],
     "added": "2026-11-13T14:19:35Z",
-    "updated": "2026-11-25T23:12:00Z"
+    "updated": "2026-11-26T12:20:00Z"
   },
   {
     "id": "nobody-knows-if-a-second-ai-reviewer-beats-tuning-the-first",
@@ -526,5 +529,19 @@
     ],
     "added": "2026-11-25T23:12:00Z",
     "updated": "2026-11-25T23:12:00Z"
+  },
+  {
+    "id": "hiring-and-promotion-signals-break-when-agents-write-the-code",
+    "title": "Hiring and promotion signals break when agents write the code",
+    "topics": [
+      "teamwork",
+      "measuring"
+    ],
+    "summary": "Strong candidates fail a hand-coding interview because they no longer write code by hand, and time to finish a project no longer shows how hard it was. One company moved to interviews done with an agent and to promotion on impact; nobody has shown either picks better engineers.",
+    "evidence": [
+      "lesse-pragmatic-engineer-podcast-2026"
+    ],
+    "added": "2026-11-26T12:20:00Z",
+    "updated": "2026-11-26T12:20:00Z"
   }
 ]

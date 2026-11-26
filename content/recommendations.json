@@ -138,18 +138,20 @@
     "topics": [
       "looping"
     ],
-    "summary": "Make agent spend visible per team and per task, set sensible default effort levels, and nudge before large spends. Route simple tasks to cheaper models, but check that results hold up.",
+    "summary": "Make agent spend visible per team and per task, set sensible default effort levels, and nudge before large spends. Route simple tasks to cheaper models, but check that results hold up. The highest effort setting cost several times more without reliably passing more.",
     "signals": [
       "Agent spend per merged change, by team",
       "Sessions over a spend threshold each week",
-      "Accepted-change rate after routing tasks to cheaper models"
+      "Accepted-change rate after routing tasks to cheaper models",
+      "Spend per accepted change, by effort setting"
     ],
     "evidence": [
       "uber-efficient-software-factory",
-      "databricks-managing-ai-coding-costs"
+      "databricks-managing-ai-coding-costs",
+      "humanlayer-slopcodebench-update-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-26T12:20:00Z"
   },
   {
     "id": "set-review-cadence-by-certainty-and-blast-radius",
@@ -391,16 +393,17 @@
       "looping",
       "testing"
     ],
-    "summary": "In multi-day agent work, require a test for each finished step and run them all before starting the next. Long loops tend to break work that was already done.",
+    "summary": "In multi-day agent work, require a test for each finished step and run them all before starting the next. Long loops tend to break work that was already done, and early breakage snowballs into later steps.",
     "signals": [
       "Earlier steps broken by later steps",
       "Finished steps with no test protecting them"
     ],
     "evidence": [
-      "loopsbench"
+      "loopsbench",
+      "deng-et-al-arxiv-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-26T12:20:00Z"
   },
   {
     "id": "pick-among-several-agent-attempts",
@@ -1480,10 +1483,11 @@
     "evidence": [
       "orosz-what-is-happening-with-code-reviews",
       "anthropic-solving-code-review-at-anthropic",
-      "uber-on-pragmatic-engineer"
+      "uber-on-pragmatic-engineer",
+      "lesse-pragmatic-engineer-podcast-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-04T17:15:00Z"
+    "updated": "2026-11-26T12:20:00Z"
   },
   {
     "id": "add-an-intake-gate-to-the-agent-pr-template",
@@ -1718,10 +1722,11 @@
       "tornhill-controlling-the-uncertainty-machine",
       "osmani-claude-code-verification-2026",
       "laiq-et-al-arxiv-2026",
-      "no-ai-slop-manifesto-2026"
+      "no-ai-slop-manifesto-2026",
+      "anthropic-migrating-messages-api-to-rust-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-25T23:12:00Z"
+    "updated": "2026-11-26T12:20:00Z"
   },
   {
     "id": "set-how-much-agent-code-is-read-by-risk-tolerance",
@@ -1741,7 +1746,8 @@
       "ewerlof",
       "pinecoder",
       "kunal-resisting-cognitive-surrender-2026",
-      "no-ai-slop-manifesto-2026"
+      "no-ai-slop-manifesto-2026",
+      "lesse-pragmatic-engineer-podcast-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
     "updated": "2026-11-25T23:12:00Z"
@@ -2336,17 +2342,19 @@
     "topics": [
       "security"
     ],
-    "summary": "Run a read-only diagnosis agent on alerts in a non-production environment, with any fix arriving only as a human-approved draft PR. Tiering autonomy by alert severity is a proposal with no data behind it. (OWASP LLM06, 2025)",
+    "summary": "Run a read-only diagnosis agent on alerts in a non-production environment, with any fix arriving only as a human-approved draft PR. Tiering autonomy by alert severity is a proposal with no data behind it. Start by letting the agent shadow the on-call rotation for months before it sees pages first. (OWASP LLM06, 2025)",
     "signals": [
       "Agent diagnoses the on-call engineer confirmed as correct",
-      "Write actions attempted by the diagnosis agent (should be zero)"
+      "Write actions attempted by the diagnosis agent (should be zero)",
+      "Pages the agent called noise that a person later had to act on"
     ],
     "evidence": [
       "anthropic-ai-native-sdlc-playbook",
-      "augmented-coding-patterns-catalog"
+      "augmented-coding-patterns-catalog",
+      "lesse-pragmatic-engineer-podcast-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-13T14:20:00Z"
+    "updated": "2026-11-26T12:20:00Z"
   },
   {
     "id": "run-scheduled-ai-security-scans-on-one-service",
@@ -2593,10 +2601,11 @@
     "evidence": [
       "metr-research-update-2025-08",
       "slopcodebench",
-      "swe-ci"
+      "swe-ci",
+      "anthropic-migrating-messages-api-to-rust-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-26T12:20:00Z"
   },
   {
     "id": "dont-have-an-agent-run-tdd-alone-on-a-clear-spec",
@@ -2786,10 +2795,11 @@
       "beck-on-pragmatic-engineer-tdd-ai-agents",
       "tornhill-practices-i-abandoned-with-agents",
       "alphaverus-icml-2025",
-      "anthropic-and-theorem-formal-verification"
+      "anthropic-and-theorem-formal-verification",
+      "anthropic-migrating-messages-api-to-rust-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-26T12:20:00Z"
   },
   {
     "id": "try-hard-to-fake-test-formats-in-one-module",
@@ -4406,10 +4416,11 @@
     "evidence": [
       "alex-vibes-dont-maintain-2026",
       "bloomberg-goldman-restricts-ai-tools-2026",
-      "state-of-ai-goldman-pulls-claude-code-2026"
+      "state-of-ai-goldman-pulls-claude-code-2026",
+      "lesse-pragmatic-engineer-podcast-2026"
     ],
     "added": "2026-11-13T10:50:43Z",
-    "updated": "2026-11-13T10:50:00Z"
+    "updated": "2026-11-26T12:20:00Z"
   },
   {
     "id": "review-agent-config-files-like-build-scripts",
@@ -4918,5 +4929,27 @@
     ],
     "added": "2026-11-24T14:21:00Z",
     "updated": "2026-11-24T14:21:00Z"
+  },
+  {
+    "id": "shadow-live-traffic-when-an-agent-rewrites-a-service",
+    "title": "Shadow live traffic when an agent rewrites a service",
+    "ring": "trial",
+    "topics": [
+      "testing",
+      "delivery",
+      "looping"
+    ],
+    "summary": "Run the new service beside the old on copied production traffic and compare each step, recording every difference as a short fingerprint the agent can act on. A green test suite says little about whether real requests behave the same.",
+    "signals": [
+      "Share of shadowed requests where old and new differ, by week",
+      "Differences still open, by kind",
+      "Agent fixes rejected at review for only matching the output"
+    ],
+    "evidence": [
+      "anthropic-migrating-messages-api-to-rust-2026",
+      "lesse-pragmatic-engineer-podcast-2026"
+    ],
+    "added": "2026-11-26T12:20:00Z",
+    "updated": "2026-11-26T12:20:00Z"
   }
 ]
