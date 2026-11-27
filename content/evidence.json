@@ -4687,5 +4687,35 @@
     ],
     "added": "2026-11-26T14:51:00Z",
     "updated": "2026-11-26T14:51:00Z"
+  },
+  {
+    "id": "mager-varbedain-medisetty-uber-skills-2026",
+    "title": "Mager, Varbedain & Medisetty (Uber), How Uber evals 1 million agent skill invocations a month, 2026",
+    "url": "https://www.uber.com/us/en/blog/optimizing-ubers-agent-skills/",
+    "kind": "practitioner",
+    "era": null,
+    "caveat": "self-report",
+    "finding": "Replaying real prompts with and without a skill, judged blind, showed skills helped most when they supplied something the agent couldn't easily find; one warehouse skill won 87% of comparisons. Moving fixed steps into scripts, running lookups in a cheaper-model worker and moving polling out of the main session cut per-skill cost by 32-46%. With over 100 tools, MCP definitions took 50,000-70,000 tokens before the user typed anything. Agents filed thousands of bug reports against skills in three months.",
+    "topics": [
+      "specification",
+      "measuring"
+    ],
+    "added": "2026-11-27T11:33:00Z",
+    "updated": "2026-11-27T11:33:00Z"
+  },
+  {
+    "id": "varda-pai-cloudflare-code-mode-2025",
+    "title": "Varda & Pai (Cloudflare), Code Mode: the better way to use MCP, 2025",
+    "url": "https://blog.cloudflare.com/code-mode/",
+    "kind": "vendor",
+    "era": null,
+    "caveat": "no measurements",
+    "finding": "Proposes turning MCP tools into a code API and running the agent's code in a throwaway sandbox with no network, reaching tools only through bindings, with keys held by the supervisor. Claims agents chain calls better this way; gives no results.",
+    "topics": [
+      "specification",
+      "security"
+    ],
+    "added": "2026-11-27T11:33:00Z",
+    "updated": "2026-11-27T11:33:00Z"
   }
 ]

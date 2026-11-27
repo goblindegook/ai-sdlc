@@ -984,10 +984,12 @@
       "swe-agent-neurips-2024",
       "posthog-newsletter",
       "uber-efficient-software-factory",
-      "fan-et-al-arxiv-2026"
+      "fan-et-al-arxiv-2026",
+      "mager-varbedain-medisetty-uber-skills-2026",
+      "varda-pai-cloudflare-code-mode-2025"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-19T11:44:00Z"
+    "updated": "2026-11-27T11:33:00Z"
   },
   {
     "id": "dont-give-the-agent-tools-shaped-for-people",
@@ -1065,10 +1067,11 @@
     ],
     "evidence": [
       "dodell",
-      "langchain-anatomy-of-an-agent-harness"
+      "langchain-anatomy-of-an-agent-harness",
+      "mager-varbedain-medisetty-uber-skills-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-27T11:33:00Z"
   },
   {
     "id": "add-a-focused-commit-or-review-subagent",
@@ -1442,10 +1445,11 @@
       "Task success, MCP versus CLI"
     ],
     "evidence": [
-      "uber-on-pragmatic-engineer"
+      "uber-on-pragmatic-engineer",
+      "mager-varbedain-medisetty-uber-skills-2026"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-03T17:17:00Z"
+    "updated": "2026-11-27T11:33:00Z"
   },
   {
     "id": "keep-an-accountable-human-review-on-ai-changes",
@@ -2024,10 +2028,11 @@
       "owasp-llm022025-sensitive-information-disclosure",
       "owasp-llm072025-system-prompt-leakage",
       "apiiro-agents-leaking-secrets-2026",
-      "lesse-secure-agents-2026"
+      "lesse-secure-agents-2026",
+      "varda-pai-cloudflare-code-mode-2025"
     ],
     "added": "2026-11-04T12:44:42Z",
-    "updated": "2026-11-25T23:12:00Z"
+    "updated": "2026-11-27T11:33:00Z"
   },
   {
     "id": "allowlist-mcp-servers-and-enforce-access-at-the-tool-layer",
@@ -4033,10 +4038,11 @@
     ],
     "evidence": [
       "newton-king-opentelemetry-2026",
-      "liu-solomon-opentelemetry-2025"
+      "liu-solomon-opentelemetry-2025",
+      "mager-varbedain-medisetty-uber-skills-2026"
     ],
     "added": "2026-11-06T15:58:19Z",
-    "updated": "2026-11-06T15:45:00Z"
+    "updated": "2026-11-27T11:33:00Z"
   },
   {
     "id": "check-memory-notes-against-session-logs",
@@ -4993,5 +4999,65 @@
     ],
     "added": "2026-11-26T14:51:00Z",
     "updated": "2026-11-26T14:51:00Z"
+  },
+  {
+    "id": "replay-real-tasks-with-and-without-a-skill-before-keeping-it",
+    "title": "Replay real tasks with and without a skill before keeping it",
+    "ring": "trial",
+    "topics": [
+      "specification",
+      "measuring"
+    ],
+    "summary": "Before keeping or promoting a shared skill, replay the same real prompts with and without it and have a judge who can't see which is which pick the better answer; repeat after a model upgrade. Skills that only restate what the model already knows can be dropped, and extra words can hurt as models improve.",
+    "signals": [
+      "Skills whose with-versus-without comparison shows no win",
+      "Skills left unchanged across a model upgrade without a re-check",
+      "Tool errors and tool calls per task, with versus without the skill"
+    ],
+    "evidence": [
+      "mager-varbedain-medisetty-uber-skills-2026"
+    ],
+    "added": "2026-11-27T11:33:00Z",
+    "updated": "2026-11-27T11:33:00Z"
+  },
+  {
+    "id": "measure-cost-per-skill-call-and-trim-the-costliest",
+    "title": "Measure cost per skill call and trim the costliest",
+    "ring": "trial",
+    "topics": [
+      "measuring",
+      "looping"
+    ],
+    "summary": "Record the spend between the start and end of each skill call, total it per skill and compare before and after every change. Move fixed steps into scripts, run lookups in a cheaper-model worker that returns a short summary, and move polling out of the main session.",
+    "signals": [
+      "Cost per invocation by skill, before and after a change",
+      "Share of session spend in polling or notification turns",
+      "Model turns per skill run"
+    ],
+    "evidence": [
+      "mager-varbedain-medisetty-uber-skills-2026"
+    ],
+    "added": "2026-11-27T11:33:00Z",
+    "updated": "2026-11-27T11:33:00Z"
+  },
+  {
+    "id": "let-agents-file-bug-reports-against-skills-and-tools",
+    "title": "Let agents file bug reports against skills and tools",
+    "ring": "trial",
+    "topics": [
+      "looping",
+      "measuring"
+    ],
+    "summary": "Add an always-available skill that lets an agent file a short report (what it tried, what it expected, what happened, what would fix it) when a tool, flag or doc fails, grouped by skill for its owner. Agents hit silent failures first, and the reports tell owners what to fix.",
+    "signals": [
+      "Reports filed per skill per week",
+      "Reports still open after two weeks",
+      "The same failure reported again after its fix"
+    ],
+    "evidence": [
+      "mager-varbedain-medisetty-uber-skills-2026"
+    ],
+    "added": "2026-11-27T11:33:00Z",
+    "updated": "2026-11-27T11:33:00Z"
   }
 ]
